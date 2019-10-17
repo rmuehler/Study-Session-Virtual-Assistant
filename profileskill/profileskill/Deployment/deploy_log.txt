@@ -1,0 +1,427 @@
+{
+  "error": null,
+  "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Resources/deployments/deployment_dry_run",
+  "name": "deployment_dry_run",
+  "properties": {
+    "correlationId": "52d4f974-4724-4bfe-9685-f445f11ab185",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Web/serverfarms/profileskill-zyoa2gw",
+            "resourceGroup": "profileskill",
+            "resourceName": "profileskill-zyoa2gw",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Web/sites/profileskill-zyoa2gw",
+        "resourceGroup": "profileskill",
+        "resourceName": "profileskill-zyoa2gw",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Insights/components/profileskill-zyoa2gw",
+            "resourceGroup": "profileskill",
+            "resourceName": "profileskill-zyoa2gw",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.BotService/botServices/profileskill-zyoa2gw",
+        "resourceGroup": "profileskill",
+        "resourceName": "profileskill-zyoa2gw",
+        "resourceType": "Microsoft.BotService/botServices"
+      }
+    ],
+    "duration": "PT0S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "profileskill-zyoa2gw"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "profileskill-zyoa2gw"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "profileskill-zyoa2gw"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "profileskill-zyoa2gw"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "profileskill-zyoa2gw"
+      },
+      "location": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceName": {
+        "type": "String",
+        "value": "profileskill-luis-zyoa2gw"
+      },
+      "luisServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "330d1a20-5df0-4473-921b-3e398cf107bc"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "profile444$$$skill"
+      },
+      "name": {
+        "type": "String",
+        "value": "profileskill"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "profileskill-zyoa2gw"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "zyoa2gw"
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "7016030270368423824",
+    "templateLink": null,
+    "timestamp": "2019-10-15T20:51:38.035289+00:00",
+    "validatedResources": [
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Resources/deployments/99ea37e6-a3e6-4102-a249-71c880607386",
+        "name": "99ea37e6-a3e6-4102-a249-71c880607386",
+        "properties": {
+          "mode": "Incremental",
+          "template": {
+            "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+            "contentVersion": "1.0.0.0",
+            "resources": []
+          }
+        },
+        "resourceGroup": "profileskill",
+        "type": "Microsoft.Resources/deployments"
+      },
+      {
+        "apiVersion": "2015-04-08",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.DocumentDB/databaseAccounts/profileskill-zyoa2gw",
+        "kind": "GlobalDocumentDB",
+        "location": "westus",
+        "name": "profileskill-zyoa2gw",
+        "properties": {
+          "databaseAccountOfferType": "Standard",
+          "locations": [
+            {
+              "failoverPriority": 0,
+              "locationName": "westus"
+            }
+          ]
+        },
+        "resourceGroup": "profileskill",
+        "type": "Microsoft.DocumentDB/databaseAccounts"
+      },
+      {
+        "apiVersion": "2018-07-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Storage/storageAccounts/profileskillzyoa2gw",
+        "kind": "StorageV2",
+        "location": "westus",
+        "name": "profileskillzyoa2gw",
+        "resourceGroup": "profileskill",
+        "sku": {
+          "name": "Standard_LRS"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Web/serverFarms/profileskill-zyoa2gw",
+        "location": "westus",
+        "name": "profileskill-zyoa2gw",
+        "properties": {},
+        "resourceGroup": "profileskill",
+        "sku": {
+          "name": "S1",
+          "tier": "Standard"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      {
+        "apiVersion": "2015-05-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Insights/components/profileskill-zyoa2gw",
+        "kind": "web",
+        "location": "westus",
+        "name": "profileskill-zyoa2gw",
+        "properties": {
+          "Application_Type": "web"
+        },
+        "resourceGroup": "profileskill",
+        "type": "Microsoft.Insights/components"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "dependsOn": [
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Web/serverfarms/profileskill-zyoa2gw"
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Web/sites/profileskill-zyoa2gw",
+        "location": "westus",
+        "name": "profileskill-zyoa2gw",
+        "properties": {
+          "serverFarmId": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Web/serverfarms/profileskill-zyoa2gw",
+          "siteConfig": {
+            "appSettings": [
+              {
+                "name": "MicrosoftAppId",
+                "value": "330d1a20-5df0-4473-921b-3e398cf107bc"
+              },
+              {
+                "name": "MicrosoftAppPassword",
+                "value": "profile444$$$skill"
+              }
+            ],
+            "webSocketsEnabled": true
+          }
+        },
+        "resourceGroup": "profileskill",
+        "type": "Microsoft.Web/sites"
+      },
+      {
+        "apiVersion": "2018-07-12",
+        "dependsOn": [
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.Insights/components/profileskill-zyoa2gw"
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.BotService/botServices/profileskill-zyoa2gw",
+        "kind": "sdk",
+        "location": "global",
+        "name": "profileskill-zyoa2gw",
+        "properties": {
+          "developerAppInsightKey": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).InstrumentationKey]",
+          "developerAppInsightsApplicationId": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).ApplicationId]",
+          "displayName": "profileskill-zyoa2gw",
+          "endpoint": "https://profileskill-zyoa2gw.azurewebsites.net/api/messages",
+          "msaAppId": "330d1a20-5df0-4473-921b-3e398cf107bc"
+        },
+        "resourceGroup": "profileskill",
+        "sku": {
+          "name": "S1"
+        },
+        "type": "Microsoft.BotService/botServices"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/profileskill/providers/Microsoft.CognitiveServices/accounts/profileskill-luis-zyoa2gw",
+        "kind": "LUIS",
+        "location": "westus",
+        "name": "profileskill-luis-zyoa2gw",
+        "resourceGroup": "profileskill",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      }
+    ]
+  },
+  "resourceGroup": "profileskill"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "c3d4cd6e-bc7e-4aa2-8c8f-2856b44c8fa2"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=profileskillzyoa2gw;AccountKey=NNLaWTfNOeckregrDXKvoGUmYrhgoKuX1BXQ6i/HX4mbMbqQ2AWmqI9sOccc9/OUphb6ERr2DEOhbqc6JyCLuw==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "profileskill-zyoa2gw"
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "SDzchim7ugiFKe9e5yqdtZjeUYdK288C8VkYTBY55eNuWLpTXN3gdyTUBNphY8UHbPbY6e3wx0D0NOhYRI6Y2g==",
+      "collectionId": "botstate-collection",
+      "cosmosDBEndpoint": "https://profileskill-zyoa2gw.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "accountName": "profileskill-luis-zyoa2gw",
+      "key": "191c170eeb114896bd65f0f71999547f",
+      "region": "westus"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "profileskill"
+  }
+}

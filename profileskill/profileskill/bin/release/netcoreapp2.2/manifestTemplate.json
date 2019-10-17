@@ -1,0 +1,26 @@
+{
+  "id": "profileskill",
+  "name": "profileskill",
+  "description": "",
+  "iconUrl": "",
+  "authenticationConnections": [],
+  "actions": [
+    {
+      "id": "profileskill_Sample",
+      "definition": {
+        "description": "Sample Skill action with no slots",
+        "slots": [],
+        "triggers": {
+          "utteranceSources": [
+            {
+              "locale": "en",
+              "source": [
+                "profileskill#Sample"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

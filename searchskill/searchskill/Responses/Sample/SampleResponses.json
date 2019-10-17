@@ -1,0 +1,24 @@
+{
+  "NamePrompt": {
+    "replies": [
+      {
+        "text": "What is your name?(search skill)",
+        "speak": "What is your name?(search skill)"
+      }
+    ],
+    "inputHint": "expectingInput"
+  },
+  "HaveNameMessage": {
+    "replies": [
+      {
+        "text": "Hi, {Name}(search skill)!",
+        "speak": "Hi, {Name}(search skill)!"
+      },
+      {
+        "text": "Nice to meet you, {Name}(search skill)!",
+        "speak": "Nice to meet you, {Name}(search skill)!"
+      }
+    ],
+    "inputHint": "acceptingInput"
+  }
+}

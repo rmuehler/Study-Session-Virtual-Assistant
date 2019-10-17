@@ -1,0 +1,427 @@
+{
+  "error": null,
+  "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Resources/deployments/deployment_dry_run",
+  "name": "deployment_dry_run",
+  "properties": {
+    "correlationId": "1e1d9852-c452-4984-9572-c415db11845c",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Web/serverfarms/searchskill-lb7xerf",
+            "resourceGroup": "searchskill",
+            "resourceName": "searchskill-lb7xerf",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Web/sites/searchskill-lb7xerf",
+        "resourceGroup": "searchskill",
+        "resourceName": "searchskill-lb7xerf",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Insights/components/searchskill-lb7xerf",
+            "resourceGroup": "searchskill",
+            "resourceName": "searchskill-lb7xerf",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.BotService/botServices/searchskill-lb7xerf",
+        "resourceGroup": "searchskill",
+        "resourceName": "searchskill-lb7xerf",
+        "resourceType": "Microsoft.BotService/botServices"
+      }
+    ],
+    "duration": "PT0S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "searchskill-lb7xerf"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "searchskill-lb7xerf"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "searchskill-lb7xerf"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "searchskill-lb7xerf"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "searchskill-lb7xerf"
+      },
+      "location": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceName": {
+        "type": "String",
+        "value": "searchskill-luis-lb7xerf"
+      },
+      "luisServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "764ed113-e818-48c9-ba03-dfd954592fa4"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "search44$$skill"
+      },
+      "name": {
+        "type": "String",
+        "value": "searchskill"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "searchskill-lb7xerf"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "lb7xerf"
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "7016030270368423824",
+    "templateLink": null,
+    "timestamp": "2019-10-16T00:31:17.310309+00:00",
+    "validatedResources": [
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Resources/deployments/99ea37e6-a3e6-4102-a249-71c880607386",
+        "name": "99ea37e6-a3e6-4102-a249-71c880607386",
+        "properties": {
+          "mode": "Incremental",
+          "template": {
+            "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+            "contentVersion": "1.0.0.0",
+            "resources": []
+          }
+        },
+        "resourceGroup": "searchskill",
+        "type": "Microsoft.Resources/deployments"
+      },
+      {
+        "apiVersion": "2015-04-08",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.DocumentDB/databaseAccounts/searchskill-lb7xerf",
+        "kind": "GlobalDocumentDB",
+        "location": "westus",
+        "name": "searchskill-lb7xerf",
+        "properties": {
+          "databaseAccountOfferType": "Standard",
+          "locations": [
+            {
+              "failoverPriority": 0,
+              "locationName": "westus"
+            }
+          ]
+        },
+        "resourceGroup": "searchskill",
+        "type": "Microsoft.DocumentDB/databaseAccounts"
+      },
+      {
+        "apiVersion": "2018-07-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Storage/storageAccounts/searchskilllb7xerf",
+        "kind": "StorageV2",
+        "location": "westus",
+        "name": "searchskilllb7xerf",
+        "resourceGroup": "searchskill",
+        "sku": {
+          "name": "Standard_LRS"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Web/serverFarms/searchskill-lb7xerf",
+        "location": "westus",
+        "name": "searchskill-lb7xerf",
+        "properties": {},
+        "resourceGroup": "searchskill",
+        "sku": {
+          "name": "S1",
+          "tier": "Standard"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      {
+        "apiVersion": "2015-05-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Insights/components/searchskill-lb7xerf",
+        "kind": "web",
+        "location": "westus",
+        "name": "searchskill-lb7xerf",
+        "properties": {
+          "Application_Type": "web"
+        },
+        "resourceGroup": "searchskill",
+        "type": "Microsoft.Insights/components"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "dependsOn": [
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Web/serverfarms/searchskill-lb7xerf"
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Web/sites/searchskill-lb7xerf",
+        "location": "westus",
+        "name": "searchskill-lb7xerf",
+        "properties": {
+          "serverFarmId": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Web/serverfarms/searchskill-lb7xerf",
+          "siteConfig": {
+            "appSettings": [
+              {
+                "name": "MicrosoftAppId",
+                "value": "764ed113-e818-48c9-ba03-dfd954592fa4"
+              },
+              {
+                "name": "MicrosoftAppPassword",
+                "value": "search44$$skill"
+              }
+            ],
+            "webSocketsEnabled": true
+          }
+        },
+        "resourceGroup": "searchskill",
+        "type": "Microsoft.Web/sites"
+      },
+      {
+        "apiVersion": "2018-07-12",
+        "dependsOn": [
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.Insights/components/searchskill-lb7xerf"
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.BotService/botServices/searchskill-lb7xerf",
+        "kind": "sdk",
+        "location": "global",
+        "name": "searchskill-lb7xerf",
+        "properties": {
+          "developerAppInsightKey": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).InstrumentationKey]",
+          "developerAppInsightsApplicationId": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).ApplicationId]",
+          "displayName": "searchskill-lb7xerf",
+          "endpoint": "https://searchskill-lb7xerf.azurewebsites.net/api/messages",
+          "msaAppId": "764ed113-e818-48c9-ba03-dfd954592fa4"
+        },
+        "resourceGroup": "searchskill",
+        "sku": {
+          "name": "S1"
+        },
+        "type": "Microsoft.BotService/botServices"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/searchskill/providers/Microsoft.CognitiveServices/accounts/searchskill-luis-lb7xerf",
+        "kind": "LUIS",
+        "location": "westus",
+        "name": "searchskill-luis-lb7xerf",
+        "resourceGroup": "searchskill",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      }
+    ]
+  },
+  "resourceGroup": "searchskill"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "4de64cd8-5f29-4953-a4da-2e10de7fee44"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=searchskilllb7xerf;AccountKey=yrOPn28o1KYQR9a3ywcFVWVW9WyMrqmwI4lpsWGoL9OMPi24FZgkHGAsaeQuPcqF/kGvX7WYBKV/e/hbTUJmzw==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "searchskill-lb7xerf"
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "kyrBA4OC89MT7ddPeNumlMuX7aA847j1BTPHYoG1MC5ZrrA53Lz4nRChF23n9IDui21aeQQXtUOy4oAuAJfCeg==",
+      "collectionId": "botstate-collection",
+      "cosmosDBEndpoint": "https://searchskill-lb7xerf.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "accountName": "searchskill-luis-lb7xerf",
+      "key": "6395783a4edf468e8d5685daa2300c08",
+      "region": "westus"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "searchskill"
+  }
+}

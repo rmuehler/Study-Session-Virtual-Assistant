@@ -1,0 +1,31 @@
+{
+    "skills": [
+        {
+            "id": "profileskill",
+            "msaAppId": "b3651466-008e-4dcc-a9c5-398d9a6ac26e",
+            "name": "profileskill",
+            "endpoint": "http://profileskillresources-qnkjpgs.azurewebsites.net/api/skill/messages",
+            "description": "",
+            "authenticationConnections": [],
+            "actions": [
+                {
+                    "id": "profileskill_Sample",
+                    "definition": {
+                        "description": "Sample Skill action with no slots",
+                        "slots": [],
+                        "triggers": {
+                            "utteranceSources": [
+                                {
+                                    "locale": "en",
+                                    "source": [
+                                        "profileskill#Sample"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

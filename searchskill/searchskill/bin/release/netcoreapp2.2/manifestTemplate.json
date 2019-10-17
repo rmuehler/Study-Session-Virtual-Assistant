@@ -1,0 +1,26 @@
+{
+  "id": "searchskill",
+  "name": "searchskill",
+  "description": "",
+  "iconUrl": "",
+  "authenticationConnections": [],
+  "actions": [
+    {
+      "id": "searchskill_Sample",
+      "definition": {
+        "description": "Sample Skill action with no slots",
+        "slots": [],
+        "triggers": {
+          "utteranceSources": [
+            {
+              "locale": "en",
+              "source": [
+                "searchskill#Sample"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

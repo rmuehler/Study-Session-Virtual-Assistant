@@ -1,0 +1,84 @@
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.de.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.es.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.fr.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.it.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.zh.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.de.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.es.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.fr.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.it.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.zh.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Resources\chitchat_default.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Resources\chitchat_greeting.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Resources\faq_default.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Resources\faq_overview.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.deps.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.runtimeconfig.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.runtimeconfig.dev.json
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.pdb
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.pdb
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\de\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\es\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\fr\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\it\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\zh\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.csprojAssemblyReference.cache
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.Utterances.ChitchatUtterances.resources
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.Utterances.FaqUtterances.resources
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.Utterances.GeneralUtterances.resources
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.csproj.GenerateResource.cache
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.csproj.CoreCompileInputs.cache
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.AssemblyInfoInputs.cache
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.AssemblyInfo.cs
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.csproj.CopyComplete
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.dll
+C:\Users\mtuzc\Desktop\USF\5-F\Senior Project\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.pdb
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.Utterances.ChitchatUtterances.resources
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.Utterances.FaqUtterances.resources
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.Utterances.GeneralUtterances.resources
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.csproj.GenerateResource.cache
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.csproj.CoreCompileInputs.cache
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.AssemblyInfoInputs.cache
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.AssemblyInfo.cs
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.de.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.es.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.fr.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.it.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.zh.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.de.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.es.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.fr.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.it.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Content\ReturningUserGreeting.zh.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Resources\chitchat_default.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Resources\chitchat_greeting.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Resources\faq_default.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\Resources\faq_overview.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.deps.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.runtimeconfig.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.runtimeconfig.dev.json
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.Tests.pdb
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\VirtualAssistant.pdb
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\de\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\es\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\fr\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\it\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\bin\Debug\netcoreapp2.2\zh\VirtualAssistant.resources.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.csprojAssemblyReference.cache
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.csproj.CopyComplete
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.dll
+C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant.Tests\obj\Debug\netcoreapp2.2\VirtualAssistant.Tests.pdb

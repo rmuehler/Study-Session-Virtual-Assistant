@@ -1,0 +1,73 @@
+{
+  "authoringRegion": "westus",
+  "culture": "en-us",
+  "hierarchical": true,
+  "useAllTrainingData": false,
+  "dontReviseUtterance": false,
+  "copyLuisData": true,
+  "normalizeDiacritics": true,
+  "services": [
+    {
+      "intentName": "l_General",
+      "appId": "58795b63-a6b5-4e90-8184-8e89e43033da",
+      "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "virtualassistanten_General",
+      "id": "1"
+    },
+    {
+      "intentName": "q_Chitchat",
+      "kbId": "bcbab52a-2150-47fd-a269-2379dce47e4a",
+      "subscriptionKey": "34ca716543ac4dc5a47cde380432a377",
+      "type": "qna",
+      "name": "Chitchat",
+      "id": "2"
+    },
+    {
+      "intentName": "q_Faq",
+      "kbId": "1a55681d-a4ac-4a8c-9157-2d0ab64da10b",
+      "subscriptionKey": "34ca716543ac4dc5a47cde380432a377",
+      "type": "qna",
+      "name": "Faq",
+      "id": "3"
+    },
+    {
+      "intentName": "q_ProjectFAQ",
+      "kbId": "d54f473f-4464-4bf6-8823-8d9b21799fdd",
+      "subscriptionKey": "34ca716543ac4dc5a47cde380432a377",
+      "type": "qna",
+      "name": "ProjectFAQ",
+      "id": "4"
+    },
+    {
+      "intentName": "searchskill",
+      "path": "C:\\Users\\mtuzc\\desktop\\usf\\5-f\\seniorproject\\project\\searchskill\\searchskill\\Deployment\\Resources\\LU\\en\\searchskill.luis",
+      "type": "file",
+      "name": "searchskill",
+      "id": "6"
+    },
+    {
+      "intentName": "profileskill",
+      "path": "C:\\Users\\mtuzc\\desktop\\usf\\5-f\\seniorproject\\project\\profileskill\\profileskill\\Deployment\\Resources\\LU\\en\\profileskill.luis",
+      "type": "file",
+      "name": "profileskill",
+      "id": "6"
+    }
+  ],
+  "serviceIds": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "6",
+    "6"
+  ],
+  "appId": "51a465d5-0fe6-46f6-9b7b-658983b642d3",
+  "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "virtualassistanten_Dispatch"
+}

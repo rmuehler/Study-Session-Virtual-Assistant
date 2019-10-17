@@ -1,0 +1,29 @@
+{
+  "defaultLocale": "en-us",
+  "cognitiveModels": {
+    "en": {
+      "languageModels": [
+        {
+          "region": "westus",
+          "appId": "d2b6c004-87d8-4df3-b1de-f54848ca6059",
+          "name": "profileskillen_General",
+          "id": "General",
+          "subscriptionKey": "191c170eeb114896bd65f0f71999547f",
+          "version": "0.1",
+          "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+          "authoringRegion": "westus"
+        },
+        {
+          "region": "westus",
+          "appId": "167f202d-7a46-4dae-a052-f5b4e0dee9ca",
+          "name": "profileskillen_profileskill",
+          "id": "profileskill",
+          "subscriptionKey": "191c170eeb114896bd65f0f71999547f",
+          "version": "0.1",
+          "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+          "authoringRegion": "westus"
+        }
+      ]
+    }
+  }
+}

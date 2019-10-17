@@ -1,0 +1,684 @@
+{
+  "error": null,
+  "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Resources/deployments/deployment_dry_run",
+  "name": "deployment_dry_run",
+  "properties": {
+    "correlationId": "9688b2b2-4c38-4ec8-be2b-d1d7f1c3d863",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/serverfarms/virtualassistant-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-lmo3sv4",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/sites/virtualassistant-lmo3sv4",
+        "resourceGroup": "virtualassistant",
+        "resourceName": "virtualassistant-lmo3sv4",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Insights/components/virtualassistant-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-lmo3sv4",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.BotService/botServices/virtualassistant-lmo3sv4",
+        "resourceGroup": "virtualassistant",
+        "resourceName": "virtualassistant-lmo3sv4",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/Sites/virtualassistant-qnahost-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-qnahost-lmo3sv4",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Search/searchServices/virtualassistant-search-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-search-lmo3sv4",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/microsoft.insights/components/virtualassistant-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-lmo3sv4",
+            "resourceType": "microsoft.insights/components"
+          }
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.CognitiveServices/accounts/virtualassistant-qna-lmo3sv4",
+        "resourceGroup": "virtualassistant",
+        "resourceName": "virtualassistant-qna-lmo3sv4",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/serverFarms/virtualassistant-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-lmo3sv4",
+            "resourceType": "Microsoft.Web/serverFarms"
+          }
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/sites/virtualassistant-qnahost-lmo3sv4",
+        "resourceGroup": "virtualassistant",
+        "resourceName": "virtualassistant-qnahost-lmo3sv4",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/Sites/virtualassistant-qnahost-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-qnahost-lmo3sv4",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Insights/components/virtualassistant-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-lmo3sv4",
+            "resourceType": "Microsoft.Insights/components"
+          },
+          {
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Search/searchServices/virtualassistant-search-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-search-lmo3sv4",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "actionName": "listAdminKeys",
+            "apiVersion": "2015-08-19",
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Search/searchServices/virtualassistant-search-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-search-lmo3sv4",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "apiVersion": "2015-05-01",
+            "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Insights/components/virtualassistant-lmo3sv4",
+            "resourceGroup": "virtualassistant",
+            "resourceName": "virtualassistant-lmo3sv4",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/sites/virtualassistant-qnahost-lmo3sv4/config/appsettings",
+        "resourceGroup": "virtualassistant",
+        "resourceName": "virtualassistant-qnahost-lmo3sv4/appsettings",
+        "resourceType": "Microsoft.Web/sites/config"
+      }
+    ],
+    "duration": "PT0S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "virtualassistant-lmo3sv4"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "virtualassistant-lmo3sv4"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "virtualassistant-lmo3sv4"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "virtualassistant-lmo3sv4"
+      },
+      "contentModeratorLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "contentModeratorName": {
+        "type": "String",
+        "value": "virtualassistant-cm-lmo3sv4"
+      },
+      "contentModeratorSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "virtualassistant-lmo3sv4"
+      },
+      "location": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceName": {
+        "type": "String",
+        "value": "virtualassistant-luis-lmo3sv4"
+      },
+      "luisServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "e7605198-e2ab-463e-8dfc-fde511713384"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "virtual4$password"
+      },
+      "name": {
+        "type": "String",
+        "value": "virtualassistant"
+      },
+      "qnaMakerSearchName": {
+        "type": "String",
+        "value": "virtualassistant-search-lmo3sv4"
+      },
+      "qnaMakerSearchSku": {
+        "type": "String",
+        "value": "standard"
+      },
+      "qnaMakerServiceName": {
+        "type": "String",
+        "value": "virtualassistant-qna-lmo3sv4"
+      },
+      "qnaMakerServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "qnaMakerWebAppName": {
+        "type": "String",
+        "value": "virtualassistant-qnahost-lmo3sv4"
+      },
+      "qnaServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "virtualassistant-lmo3sv4"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "lmo3sv4"
+      },
+      "useContentModerator": {
+        "type": "Bool",
+        "value": true
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "sites/config"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Search",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "searchServices"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "8448749211256882724",
+    "templateLink": null,
+    "timestamp": "2019-10-15T20:21:58.053960+00:00",
+    "validatedResources": [
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Resources/deployments/3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "name": "3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "properties": {
+          "mode": "Incremental",
+          "template": {
+            "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+            "contentVersion": "1.0.0.0",
+            "resources": []
+          }
+        },
+        "resourceGroup": "virtualassistant",
+        "type": "Microsoft.Resources/deployments"
+      },
+      {
+        "apiVersion": "2015-04-08",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.DocumentDB/databaseAccounts/virtualassistant-lmo3sv4",
+        "kind": "GlobalDocumentDB",
+        "location": "westus",
+        "name": "virtualassistant-lmo3sv4",
+        "properties": {
+          "databaseAccountOfferType": "Standard",
+          "locations": [
+            {
+              "failoverPriority": 0,
+              "locationName": "westus"
+            }
+          ]
+        },
+        "resourceGroup": "virtualassistant",
+        "type": "Microsoft.DocumentDB/databaseAccounts"
+      },
+      {
+        "apiVersion": "2018-07-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Storage/storageAccounts/virtualassistantlmo3sv4",
+        "kind": "StorageV2",
+        "location": "westus",
+        "name": "virtualassistantlmo3sv4",
+        "resourceGroup": "virtualassistant",
+        "sku": {
+          "name": "Standard_LRS"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/serverFarms/virtualassistant-lmo3sv4",
+        "location": "westus",
+        "name": "virtualassistant-lmo3sv4",
+        "properties": {},
+        "resourceGroup": "virtualassistant",
+        "sku": {
+          "name": "S1",
+          "tier": "Standard"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      {
+        "apiVersion": "2015-05-01",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Insights/components/virtualassistant-lmo3sv4",
+        "kind": "web",
+        "location": "westus",
+        "name": "virtualassistant-lmo3sv4",
+        "properties": {
+          "Application_Type": "web"
+        },
+        "resourceGroup": "virtualassistant",
+        "type": "Microsoft.Insights/components"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "dependsOn": [
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/serverfarms/virtualassistant-lmo3sv4"
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/sites/virtualassistant-lmo3sv4",
+        "location": "westus",
+        "name": "virtualassistant-lmo3sv4",
+        "properties": {
+          "serverFarmId": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/serverfarms/virtualassistant-lmo3sv4",
+          "siteConfig": {
+            "appSettings": [
+              {
+                "name": "MicrosoftAppId",
+                "value": "e7605198-e2ab-463e-8dfc-fde511713384"
+              },
+              {
+                "name": "MicrosoftAppPassword",
+                "value": "virtual4$password"
+              }
+            ],
+            "webSocketsEnabled": true
+          }
+        },
+        "resourceGroup": "virtualassistant",
+        "type": "Microsoft.Web/sites"
+      },
+      {
+        "apiVersion": "2018-07-12",
+        "dependsOn": [
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Insights/components/virtualassistant-lmo3sv4"
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.BotService/botServices/virtualassistant-lmo3sv4",
+        "kind": "sdk",
+        "location": "global",
+        "name": "virtualassistant-lmo3sv4",
+        "properties": {
+          "developerAppInsightKey": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).InstrumentationKey]",
+          "developerAppInsightsApplicationId": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).ApplicationId]",
+          "displayName": "virtualassistant-lmo3sv4",
+          "endpoint": "https://virtualassistant-lmo3sv4.azurewebsites.net/api/messages",
+          "isStreamingSupported": true,
+          "msaAppId": "e7605198-e2ab-463e-8dfc-fde511713384"
+        },
+        "resourceGroup": "virtualassistant",
+        "sku": {
+          "name": "S1"
+        },
+        "type": "Microsoft.BotService/botServices"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.CognitiveServices/accounts/virtualassistant-cm-lmo3sv4",
+        "kind": "ContentModerator",
+        "location": "westus",
+        "name": "virtualassistant-cm-lmo3sv4",
+        "resourceGroup": "virtualassistant",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.CognitiveServices/accounts/virtualassistant-luis-lmo3sv4",
+        "kind": "LUIS",
+        "location": "westus",
+        "name": "virtualassistant-luis-lmo3sv4",
+        "resourceGroup": "virtualassistant",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "dependsOn": [
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/Sites/virtualassistant-qnahost-lmo3sv4",
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Search/searchServices/virtualassistant-search-lmo3sv4",
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/microsoft.insights/components/virtualassistant-lmo3sv4"
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.CognitiveServices/accounts/virtualassistant-qna-lmo3sv4",
+        "kind": "QnAMaker",
+        "location": "westus",
+        "name": "virtualassistant-qna-lmo3sv4",
+        "properties": {
+          "apiProperties": {
+            "qnaRuntimeEndpoint": "[concat('https://',reference(resourceId('Microsoft.Web/sites', variables('qnaMakerWebAppName'))).hostNames[0])]"
+          }
+        },
+        "resourceGroup": "virtualassistant",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "apiVersion": "2015-08-19",
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Search/searchServices/virtualassistant-search-lmo3sv4",
+        "location": "westus",
+        "name": "virtualassistant-search-lmo3sv4",
+        "properties": {
+          "hostingMode": "default",
+          "partitionCount": 1,
+          "replicaCount": 1
+        },
+        "resourceGroup": "virtualassistant",
+        "sku": {
+          "name": "standard"
+        },
+        "type": "Microsoft.Search/searchServices"
+      },
+      {
+        "apiVersion": "2016-08-01",
+        "dependsOn": [
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/serverFarms/virtualassistant-lmo3sv4"
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/sites/virtualassistant-qnahost-lmo3sv4",
+        "location": "westus",
+        "name": "virtualassistant-qnahost-lmo3sv4",
+        "properties": {
+          "enabled": true,
+          "hostingEnvironment": "",
+          "name": "virtualassistant-qnahost-lmo3sv4",
+          "serverFarmId": "/subscriptions//subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourcegroups/virtualassistant/providers/Microsoft.Web/serverfarms/virtualassistant-lmo3sv4",
+          "siteConfig": {
+            "cors": {
+              "allowedOrigins": [
+                "*"
+              ]
+            }
+          }
+        },
+        "resourceGroup": "virtualassistant",
+        "type": "Microsoft.Web/sites"
+      },
+      {
+        "apiVersion": "2016-08-01",
+        "dependsOn": [
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/Sites/virtualassistant-qnahost-lmo3sv4",
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Insights/components/virtualassistant-lmo3sv4",
+          "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Search/searchServices/virtualassistant-search-lmo3sv4"
+        ],
+        "id": "/subscriptions/2b68c616-d75a-4a89-8dae-1bd3aed13440/resourceGroups/virtualassistant/providers/Microsoft.Web/sites/virtualassistant-qnahost-lmo3sv4/config/appsettings",
+        "name": "virtualassistant-qnahost-lmo3sv4/appsettings",
+        "properties": {
+          "AzureSearchAdminKey": "[listAdminKeys(resourceId('Microsoft.Search/searchServices/', variables('qnaMakerSearchName')), '2015-08-19').primaryKey]",
+          "AzureSearchName": "virtualassistant-search-lmo3sv4",
+          "DefaultAnswer": "No good match found in KB.",
+          "PrimaryEndpointKey": "virtualassistant-qnahost-lmo3sv4-PrimaryEndpointKey",
+          "QNAMAKER_EXTENSION_VERSION": "latest",
+          "SecondaryEndpointKey": "virtualassistant-qnahost-lmo3sv4-SecondaryEndpointKey",
+          "UserAppInsightsAppId": "[reference(resourceId('Microsoft.Insights/components/', parameters('appInsightsName')), '2015-05-01').AppId]",
+          "UserAppInsightsKey": "[reference(resourceId('Microsoft.Insights/components/', parameters('appInsightsName')), '2015-05-01').InstrumentationKey]",
+          "UserAppInsightsName": "virtualassistant-lmo3sv4"
+        },
+        "resourceGroup": "virtualassistant",
+        "type": "Microsoft.Web/sites/config"
+      }
+    ]
+  },
+  "resourceGroup": "virtualassistant"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "72006f3d-e665-4ab3-8de1-18d63f88abd5"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=virtualassistantlmo3sv4;AccountKey=hzDFC2IKa6K3DEf+pG1rluOPDqmeFemzDP+GC7k4v3AbhtyMEDZL6hyAMydO5VhpOBaqLDkWt56LWQWHIxpAbA==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "virtualassistant-lmo3sv4"
+  },
+  "contentModerator": {
+    "type": "Object",
+    "value": {
+      "key": "c5e65f8667bb4f0d91174c779ec2a59c"
+    }
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "Hg45kvzCHsb4xUVd105Azbpn24Aw42sSLxeHzzVjkizFX1rirgF4onYzJ7qmzXj4BVLicDL74qp4wCvFCbsowA==",
+      "collectionId": "botstate-collection",
+      "cosmosDBEndpoint": "https://virtualassistant-lmo3sv4.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "accountName": "virtualassistant-luis-lmo3sv4",
+      "key": "2dbe4637871141efa9ff0b5e0ae7c60f",
+      "region": "westus"
+    }
+  },
+  "qnaMaker": {
+    "type": "Object",
+    "value": {
+      "endpoint": "https://virtualassistant-qnahost-lmo3sv4.azurewebsites.net",
+      "key": "34ca716543ac4dc5a47cde380432a377"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "virtualassistant"
+  }
+}

@@ -1,0 +1,5 @@
+Microsoft (R) Build Engine version 16.2.32702+c4012a063 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Services\DispatchLuis.cs(57,39): error CS0117: 'DispatchLuis.Intent' does not contain a definition for 'None' [C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant\VirtualAssistant.csproj]
+Dialogs\MainDialog.cs(101,52): error CS0117: 'DispatchLuis.Intent' does not contain a definition for 'l_General' [C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant\VirtualAssistant.csproj]

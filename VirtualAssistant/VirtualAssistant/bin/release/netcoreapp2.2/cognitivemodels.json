@@ -1,0 +1,43 @@
+{
+  "defaultLocale": "en-us",
+  "cognitiveModels": {
+    "en": {
+      "dispatchModel": {
+        "type": "dispatch",
+        "subscriptionkey": "2dbe4637871141efa9ff0b5e0ae7c60f",
+        "appid": "04d25f68-cef0-4e86-a6f1-1579d4d31698",
+        "region": "westus",
+        "authoringkey": "a8859226aff14fc4a883e5feeddbbdbb",
+        "authoringRegion": "westus",
+        "name": "virtualassistanten_Dispatch"
+      },
+      "languageModels": [],
+      "knowledgebases": [
+        {
+          "subscriptionKey": "34ca716543ac4dc5a47cde380432a377",
+          "kbId": "fde78ed5-5b12-4d29-b794-9a92bae6b470",
+          "endpointKey": "72381dc8-71fe-4ec8-b259-b2a1931e0fb2",
+          "hostname": "https://virtualassistant-qnahost-lmo3sv4.azurewebsites.net",
+          "name": "Chitchat",
+          "id": "Chitchat"
+        },
+        {
+          "subscriptionKey": "34ca716543ac4dc5a47cde380432a377",
+          "kbId": "b143d433-347f-4925-a991-f4b467c51df9",
+          "endpointKey": "72381dc8-71fe-4ec8-b259-b2a1931e0fb2",
+          "hostname": "https://virtualassistant-qnahost-lmo3sv4.azurewebsites.net",
+          "name": "Faq",
+          "id": "Faq"
+        },
+        {
+          "subscriptionKey": "34ca716543ac4dc5a47cde380432a377",
+          "kbId": "4659368b-8497-4b64-a556-acf4e4bcaebb",
+          "endpointKey": "72381dc8-71fe-4ec8-b259-b2a1931e0fb2",
+          "hostname": "https://virtualassistant-qnahost-lmo3sv4.azurewebsites.net",
+          "name": "ProjectFAQ",
+          "id": "ProjectFAQ"
+        }
+      ]
+    }
+  }
+}
