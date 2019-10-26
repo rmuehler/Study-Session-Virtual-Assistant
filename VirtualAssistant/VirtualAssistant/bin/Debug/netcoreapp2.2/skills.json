@@ -1,0 +1,58 @@
+{
+    "skills": [
+        {
+            "id": "searchskill",
+            "msaAppId": "764ed113-e818-48c9-ba03-dfd954592fa4",
+            "name": "searchskill",
+            "endpoint": "http://searchskill-lb7xerf.azurewebsites.net/api/skill/messages",
+            "description": "",
+            "authenticationConnections": [],
+            "actions": [
+                {
+                    "id": "searchskill_Sample",
+                    "definition": {
+                        "description": "Sample Skill action with no slots",
+                        "slots": [],
+                        "triggers": {
+                            "utteranceSources": [
+                                {
+                                    "locale": "en",
+                                    "source": [
+                                        "searchskill#Sample"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "profileskill",
+            "msaAppId": "330d1a20-5df0-4473-921b-3e398cf107bc",
+            "name": "profileskill",
+            "endpoint": "http://profileskill-zyoa2gw.azurewebsites.net/api/skill/messages",
+            "description": "",
+            "authenticationConnections": [],
+            "actions": [
+                {
+                    "id": "profileskill_Sample",
+                    "definition": {
+                        "description": "Sample Skill action with no slots",
+                        "slots": [],
+                        "triggers": {
+                            "utteranceSources": [
+                                {
+                                    "locale": "en",
+                                    "source": [
+                                        "profileskill#Sample"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "cognitiveModels": {
+    "en": {
+      "languageModels": [
+        {
+          "version": "0.1",
+          "authoringRegion": "westus",
+          "region": "westus",
+          "appId": "2870111d-3b23-44e2-bcee-a485f3c10e8b",
+          "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+          "id": "General",
+          "name": "searchskillen_General",
+          "subscriptionKey": "6395783a4edf468e8d5685daa2300c08"
+        },
+        {
+          "version": "0.1",
+          "authoringRegion": "westus",
+          "region": "westus",
+          "appId": "8240a254-2552-4164-ba9e-07fd828d25e6",
+          "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+          "id": "searchskill",
+          "name": "searchskillen_searchskill",
+          "subscriptionKey": "6395783a4edf468e8d5685daa2300c08"
+        }
+      ]
+    }
+  },
+  "defaultLocale": "en-us"
+}
