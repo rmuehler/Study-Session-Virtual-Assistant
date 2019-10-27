@@ -24,18 +24,9 @@ namespace Luis
             Escalate, 
             FinishTask, 
             GoBack, 
-            Help, 
-            Logout, 
             None, 
-            ReadAloud, 
             Reject, 
             Repeat, 
-            SelectAny, 
-            SelectItem, 
-            SelectNone, 
-            ShowNext, 
-            ShowPrevious, 
-            StartOver, 
             Stop
         };
         [JsonProperty("intents")]

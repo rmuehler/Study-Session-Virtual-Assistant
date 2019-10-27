@@ -3,13 +3,19 @@ LUIS app :58795b63-a6b5-4e90-8184-8e89e43033da already added to virtualassistant
 QnA kb id:68226587-11a3-4dd8-8573-aaede0fcb472, name:Faq already added to virtualassistanten_Dispatch.dispatch
 QnA kb id:7050d822-1db3-4eed-a169-ec5014bb062b, name:ChitChat already added to virtualassistanten_Dispatch.dispatch
 Exporting services for dispatch...
-Exporting virtualassistanten_General LUIS application...
-Exported LUIS app JSON is at C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_L_virtualassistanten_General.json
-Exporting Chitchat QnA kb...
+Exporting searchskillen_searchskill LUIS application...
+Exported LUIS app JSON is at C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_L_searchskillen_searchskill.json
+Exporting ChitChat QnA kb...
+Exported QnA app JSON is at C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_Q_q_Chitchat.json
+Expanding kb 7050d822-1db3-4eed-a169-ec5014bb062b with word alterations
+Exporting ChitChat QnA kb...
+Exported QnA app JSON is at C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_Q_q_Faq.json
+Expanding kb 68226587-11a3-4dd8-8573-aaede0fcb472 with word alterations
+Exporting General LUIS application...
 
 ERROR
-One or more errors occurred. (The remote server returned an error: (401) Access Denied.)
+One or more errors occurred. (The remote server returned an error: (429) Too Many Requests.)
 
-Request url: https://westus.api.cognitive.microsoft.com/qnamaker/v4.0/knowledgebases/bcbab52a-2150-47fd-a269-2379dce47e4a/Test/qna
-Response: {"error":{"code":"401","message": "Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource."}}
+Request url: https://westus.api.cognitive.microsoft.com/luis/api/v2.0/apps/58795b63-a6b5-4e90-8184-8e89e43033da/versions/0.1/export
+Response: {"error":{"code":"429","message": "Rate limit is exceeded. Try again in 1 seconds."}}
 ------

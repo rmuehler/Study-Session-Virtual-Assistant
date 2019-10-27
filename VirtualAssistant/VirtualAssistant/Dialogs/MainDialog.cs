@@ -133,6 +133,41 @@ namespace VirtualAssistant.Dialogs
                     }
                 }
             }
+            else if (intent == DispatchLuis.Intent.l_searchskill)
+            {
+                // If dispatch result is General luis model
+                cognitiveModels.LuisServices.TryGetValue("General", out var luisService);
+
+                if (luisService == null)
+                {
+                    throw new Exception("The General LUIS Model could not be found in your Bot Services configuration.");
+                }
+                else
+                {
+                    var result = await luisService.RecognizeAsync<GeneralLuis>(dc.Context, CancellationToken.None);
+
+                    var generalIntent = result?.TopIntent().intent;
+
+                    // switch on general intents
+                    switch (generalIntent)
+                    {
+                        case GeneralLuis.Intent.Escalate:
+                            {
+                                // start escalate dialog
+                                await dc.BeginDialogAsync(nameof(SearchDialog));
+                                break;
+                            }
+
+                        case GeneralLuis.Intent.None:
+                        default:
+                            {
+                                // No intent was identified, send confused message
+                                await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
+                                break;
+                            }
+                    }
+                }
+            }
             else if (intent == DispatchLuis.Intent.q_Faq)
             {
                 cognitiveModels.QnAServices.TryGetValue("Faq", out var qnaService);
@@ -292,7 +327,7 @@ namespace VirtualAssistant.Dialogs
 
                     if (luisResult.TopIntent().score > 0.5)
                     {
-                        switch (intent)
+             /*           switch (intent)
                         {
                             case GeneralLuis.Intent.Cancel:
                                 {
@@ -308,7 +343,7 @@ namespace VirtualAssistant.Dialogs
                                 {
                                     return await OnLogout(dc);
                                 }
-                        }
+                        }*/
                     }
                 }
             }

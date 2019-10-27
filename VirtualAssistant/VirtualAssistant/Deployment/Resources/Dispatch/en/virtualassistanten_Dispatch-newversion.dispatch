@@ -1,0 +1,59 @@
+{
+  "authoringRegion": "westus",
+  "culture": "en-us",
+  "hierarchical": true,
+  "useAllTrainingData": false,
+  "dontReviseUtterance": false,
+  "copyLuisData": true,
+  "normalizeDiacritics": true,
+  "services": [
+    {
+      "intentName": "l_searchskill",
+      "appId": "8240a254-2552-4164-ba9e-07fd828d25e6",
+      "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "searchskillen_searchskill",
+      "id": "1"
+    },
+    {
+      "intentName": "q_Chitchat",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "subscriptionKey": "8efacdbe5a2241c8b88c8345bd93dc69",
+      "type": "qna",
+      "name": "ChitChat",
+      "id": "2"
+    },
+	{
+      "intentName": "q_Faq",
+      "kbId": "68226587-11a3-4dd8-8573-aaede0fcb472",
+      "subscriptionKey": "8efacdbe5a2241c8b88c8345bd93dc69",
+      "type": "qna",
+      "name": "ChitChat",
+      "id": "3"
+    },
+    {
+      "intentName": "l_General",
+      "appId": "58795b63-a6b5-4e90-8184-8e89e43033da",
+      "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "General",
+      "id": "4"
+    }
+  ],
+  "serviceIds": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "appId": "51a465d5-0fe6-46f6-9b7b-658983b642d3",
+  "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "virtualassistanten_Dispatch"
+}

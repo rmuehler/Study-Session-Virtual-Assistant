@@ -34,54 +34,23 @@ namespace Luis
             // Simple entities
             public string[] Tutor;
 
-            public string[] day;
-
-            public string[] id;
-
             public string[] subject;
 
-            public string[] time;
+            // Built-in entities
+            public DateTimeSpec[] datetime;
 
-            // Composites
-            public class _Instancedate
-            {
-                public InstanceData[] time;
-                public InstanceData[] day;
-            }
-            public class dateClass
-            {
-                public string[] time;
-                public string[] day;
-                [JsonProperty("$instance")]
-                public _Instancedate _instance;
-            }
-            public dateClass[] date;
+            public string[] email;
 
-            public class _Instancesearch
-            {
-                public InstanceData[] subject;
-                public InstanceData[] time;
-            }
-            public class searchClass
-            {
-                public string[] subject;
-                public string[] time;
-                [JsonProperty("$instance")]
-                public _Instancesearch _instance;
-            }
-            public searchClass[] search;
+            public string[] personName;
 
             // Instance
             public class _Instance
             {
                 public InstanceData[] Tutor;
-                public InstanceData[] date;
-                public InstanceData[] timeslot;
-                public InstanceData[] day;
-                public InstanceData[] id;
-                public InstanceData[] search;
+                public InstanceData[] datetime;
+                public InstanceData[] email;
+                public InstanceData[] personName;
                 public InstanceData[] subject;
-                public InstanceData[] time;
             }
             [JsonProperty("$instance")]
             public _Instance _instance;

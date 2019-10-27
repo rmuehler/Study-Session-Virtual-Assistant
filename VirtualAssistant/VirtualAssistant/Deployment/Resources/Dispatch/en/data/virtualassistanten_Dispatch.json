@@ -7,7 +7,7 @@
   "tokenizerVersion": "1.0.0",
   "intents": [
     {
-      "name": "l_General"
+      "name": "l_searchskill"
     },
     {
       "name": "q_Chitchat"
@@ -16,13 +16,7 @@
       "name": "q_Faq"
     },
     {
-      "name": "q_ProjectFAQ"
-    },
-    {
-      "name": "searchskill"
-    },
-    {
-      "name": "profileskill"
+      "name": "l_General"
     }
   ],
   "entities": [],

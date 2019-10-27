@@ -25,42 +25,11 @@
       "roles": []
     },
     {
-      "name": "time",
-      "roles": []
-    },
-    {
-      "name": "day",
-      "roles": []
-    },
-    {
-      "name": "id",
-      "roles": []
-    },
-    {
       "name": "Tutor",
       "roles": []
     }
   ],
-  "composites": [
-    {
-      "name": "date",
-      "children": [
-        "time",
-        "day"
-      ],
-      "roles": [
-        "time-slot"
-      ]
-    },
-    {
-      "name": "search",
-      "children": [
-        "subject",
-        "time"
-      ],
-      "roles": []
-    }
-  ],
+  "composites": [],
   "closedLists": [],
   "regex_entities": [],
   "model_features": [],
@@ -85,11 +54,6 @@
           "entity": "subject",
           "startPos": 20,
           "endPos": 27
-        },
-        {
-          "entity": "time",
-          "startPos": 45,
-          "endPos": 47
         }
       ]
     },
@@ -97,17 +61,6 @@
       "text": "i'm available on friday at 2am to teach algorithms if anyone wants help",
       "intent": "find time and date tutor",
       "entities": [
-        {
-          "entity": "day",
-          "startPos": 17,
-          "endPos": 22
-        },
-        {
-          "entity": "date",
-          "startPos": 27,
-          "endPos": 29,
-          "role": "time-slot"
-        },
         {
           "entity": "subject",
           "startPos": 40,
@@ -123,17 +76,6 @@
           "entity": "subject",
           "startPos": 3,
           "endPos": 42
-        },
-        {
-          "entity": "date",
-          "startPos": 47,
-          "endPos": 54
-        },
-        {
-          "entity": "date",
-          "startPos": 56,
-          "endPos": 64,
-          "role": "time-slot"
         }
       ]
     },
@@ -145,17 +87,6 @@
           "entity": "subject",
           "startPos": 53,
           "endPos": 59
-        },
-        {
-          "entity": "day",
-          "startPos": 64,
-          "endPos": 72
-        },
-        {
-          "entity": "date",
-          "startPos": 74,
-          "endPos": 92,
-          "role": "time-slot"
         }
       ]
     },
@@ -172,11 +103,6 @@
           "entity": "subject",
           "startPos": 28,
           "endPos": 34
-        },
-        {
-          "entity": "time",
-          "startPos": 57,
-          "endPos": 59
         }
       ]
     },
@@ -184,11 +110,6 @@
       "text": "at 5pm i would like to meet some to help me with afsdfasdf",
       "intent": "find time and subject student",
       "entities": [
-        {
-          "entity": "time",
-          "startPos": 3,
-          "endPos": 5
-        },
         {
           "entity": "subject",
           "startPos": 49,
@@ -204,13 +125,7 @@
     {
       "text": "does any tutor understand the labs in computer system design because i am stuck, i am free at 1pm.",
       "intent": "find time and subject student",
-      "entities": [
-        {
-          "entity": "time",
-          "startPos": 94,
-          "endPos": 96
-        }
-      ]
+      "entities": []
     },
     {
       "text": "hello, i need a tutor for math at 2pm.",
@@ -220,24 +135,13 @@
           "entity": "subject",
           "startPos": 26,
           "endPos": 29
-        },
-        {
-          "entity": "time",
-          "startPos": 34,
-          "endPos": 36
         }
       ]
     },
     {
       "text": "hi i need a tutor that teaches java at 3pm, thanks in advance.",
       "intent": "find time and subject student",
-      "entities": [
-        {
-          "entity": "time",
-          "startPos": 39,
-          "endPos": 41
-        }
-      ]
+      "entities": []
     },
     {
       "text": "hi, i need a tutor for physics at 4pm to help me please.",
@@ -247,11 +151,6 @@
           "entity": "subject",
           "startPos": 23,
           "endPos": 29
-        },
-        {
-          "entity": "time",
-          "startPos": 34,
-          "endPos": 36
         }
       ]
     },
@@ -259,11 +158,6 @@
       "text": "how much time in advance do i need to request a tutor because i need help friday at 9am to study electronic materials for my final.",
       "intent": "find time and subject student",
       "entities": [
-        {
-          "entity": "time",
-          "startPos": 84,
-          "endPos": 86
-        },
         {
           "entity": "subject",
           "startPos": 97,
@@ -289,11 +183,6 @@
           "entity": "subject",
           "startPos": 31,
           "endPos": 44
-        },
-        {
-          "entity": "time",
-          "startPos": 74,
-          "endPos": 76
         }
       ]
     },
@@ -305,11 +194,6 @@
           "entity": "subject",
           "startPos": 73,
           "endPos": 86
-        },
-        {
-          "entity": "time",
-          "startPos": 97,
-          "endPos": 99
         }
       ]
     },
@@ -321,34 +205,18 @@
           "entity": "subject",
           "startPos": 66,
           "endPos": 86
-        },
-        {
-          "entity": "time",
-          "startPos": 91,
-          "endPos": 93
         }
       ]
     },
     {
       "text": "i need a tutor asap that can help me understand calc3 at 5pm.",
       "intent": "find time and subject student",
-      "entities": [
-        {
-          "entity": "time",
-          "startPos": 57,
-          "endPos": 59
-        }
-      ]
+      "entities": []
     },
     {
       "text": "i need a tutor at 4pm to help me with chemistry",
       "intent": "find time and subject student",
       "entities": [
-        {
-          "entity": "time",
-          "startPos": 18,
-          "endPos": 20
-        },
         {
           "entity": "subject",
           "startPos": 38,
@@ -364,11 +232,6 @@
           "entity": "subject",
           "startPos": 35,
           "endPos": 53
-        },
-        {
-          "entity": "time",
-          "startPos": 58,
-          "endPos": 60
         }
       ]
     },
@@ -380,16 +243,6 @@
           "entity": "subject",
           "startPos": 35,
           "endPos": 38
-        },
-        {
-          "entity": "time",
-          "startPos": 55,
-          "endPos": 55
-        },
-        {
-          "entity": "time",
-          "startPos": 57,
-          "endPos": 60
         }
       ]
     },
@@ -401,38 +254,22 @@
           "entity": "subject",
           "startPos": 17,
           "endPos": 24
-        },
-        {
-          "entity": "time",
-          "startPos": 63,
-          "endPos": 66
         }
       ]
     },
     {
       "text": "i really need help in english, does anyone tutor this subject at 9pm?",
       "intent": "find time and subject student",
-      "entities": [
-        {
-          "entity": "time",
-          "startPos": 65,
-          "endPos": 67
-        }
-      ]
+      "entities": []
     },
     {
-      "text": "is anyone at 6asfdsdf available to help with asdfsdfsad",
+      "text": "is anyone at 6 available to help with asdfsdfsad",
       "intent": "find time and subject student",
       "entities": [
         {
-          "entity": "time",
-          "startPos": 13,
-          "endPos": 20
-        },
-        {
           "entity": "subject",
-          "startPos": 45,
-          "endPos": 54
+          "startPos": 38,
+          "endPos": 47
         }
       ]
     },
@@ -440,11 +277,6 @@
       "text": "is anyone available today at 12pm to help me study algebra?",
       "intent": "find time and subject student",
       "entities": [
-        {
-          "entity": "time",
-          "startPos": 29,
-          "endPos": 32
-        },
         {
           "entity": "subject",
           "startPos": 51,
@@ -458,31 +290,20 @@
       "entities": []
     },
     {
-      "text": "is there someone that teaches asdfsdf around 3242343",
+      "text": "is there someone that teaches asdfsdf around 4 today?",
       "intent": "find time and subject student",
       "entities": [
         {
           "entity": "subject",
           "startPos": 30,
           "endPos": 36
-        },
-        {
-          "entity": "time",
-          "startPos": 45,
-          "endPos": 51
         }
       ]
     },
     {
       "text": "logic design is my worst course, is there a tutor that comprehends this subject well available at 7pm?",
       "intent": "find time and subject student",
-      "entities": [
-        {
-          "entity": "time",
-          "startPos": 98,
-          "endPos": 100
-        }
-      ]
+      "entities": []
     },
     {
       "text": "the professor that teaches theory in cs sucks, can i get help by a tutor with this course at 9am?",
@@ -492,11 +313,6 @@
           "entity": "subject",
           "startPos": 27,
           "endPos": 32
-        },
-        {
-          "entity": "time",
-          "startPos": 93,
-          "endPos": 95
         }
       ]
     },
@@ -570,11 +386,6 @@
       "intent": "Sample",
       "entities": [
         {
-          "entity": "time",
-          "startPos": 15,
-          "endPos": 18
-        },
-        {
           "entity": "subject",
           "startPos": 25,
           "endPos": 31
@@ -634,51 +445,40 @@
     {
       "text": "my id card is 2343245234",
       "intent": "say id back",
-      "entities": [
-        {
-          "entity": "id",
-          "startPos": 14,
-          "endPos": 23
-        }
-      ]
+      "entities": []
     },
     {
       "text": "my id is 23453125",
       "intent": "say id back",
-      "entities": [
-        {
-          "entity": "id",
-          "startPos": 9,
-          "endPos": 16
-        }
-      ]
+      "entities": []
     },
     {
       "text": "my id number is 32402394",
       "intent": "say id back",
-      "entities": [
-        {
-          "entity": "id",
-          "startPos": 16,
-          "endPos": 23
-        }
-      ]
+      "entities": []
     },
     {
       "text": "my identification number is 111222",
       "intent": "say id back",
-      "entities": [
-        {
-          "entity": "id",
-          "startPos": 28,
-          "endPos": 33
-        }
-      ]
+      "entities": []
     }
   ],
   "patterns": [],
   "patternAnyEntities": [],
-  "prebuiltEntities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    },
+    {
+      "name": "email",
+      "roles": []
+    },
+    {
+      "name": "personName",
+      "roles": []
+    }
+  ],
   "luis_schema_version": "3.0.0",
   "versionId": "0.1",
   "name": "searchskill",

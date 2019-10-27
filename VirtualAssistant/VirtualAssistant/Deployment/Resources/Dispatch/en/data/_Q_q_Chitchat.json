@@ -1,0 +1,21 @@
+{
+  "qnaDocuments": [
+    {
+      "id": 7,
+      "answer": "Chat",
+      "source": "custom editorial",
+      "questions": [
+        "Chit"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    }
+  ]
+}

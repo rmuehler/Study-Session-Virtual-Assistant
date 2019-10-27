@@ -19,11 +19,10 @@ namespace Luis
         public string AlteredText;
 
         public enum Intent {
-            l_General, 
+            l_searchskill, 
             q_Chitchat, 
             q_Faq, 
-            q_ProjectFAQ, 
-            searchskill, 
+            l_General, 
             None
         };
         [JsonProperty("intents")]
