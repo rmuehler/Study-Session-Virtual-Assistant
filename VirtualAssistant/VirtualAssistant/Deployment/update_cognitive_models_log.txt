@@ -1,9 +1,10 @@
 LUIS app :8240a254-2552-4164-ba9e-07fd828d25e6 already added to virtualassistanten_Dispatch.dispatch
+LUIS app :58795b63-a6b5-4e90-8184-8e89e43033da already added to virtualassistanten_Dispatch.dispatch
 QnA kb id:68226587-11a3-4dd8-8573-aaede0fcb472, name:Faq already added to virtualassistanten_Dispatch.dispatch
 QnA kb id:7050d822-1db3-4eed-a169-ec5014bb062b, name:ChitChat already added to virtualassistanten_Dispatch.dispatch
 Exporting services for dispatch...
 Exporting virtualassistanten_General LUIS application...
-Exported LUIS app JSON is at C:\Users\rober\source\repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_L_virtualassistanten_General.json
+Exported LUIS app JSON is at C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_L_virtualassistanten_General.json
 Exporting Chitchat QnA kb...
 
 ERROR

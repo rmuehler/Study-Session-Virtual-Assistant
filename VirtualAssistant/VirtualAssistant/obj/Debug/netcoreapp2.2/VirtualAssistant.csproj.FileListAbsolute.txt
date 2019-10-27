@@ -120,20 +120,6 @@ C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAss
 C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant\obj\Debug\netcoreapp2.2\VirtualAssistant.dll
 C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant\obj\Debug\netcoreapp2.2\VirtualAssistant.pdb
 C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant\obj\Debug\netcoreapp2.2\VirtualAssistant.csprojAssemblyReference.cache
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\.filenesting.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\appsettings.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Connected Services\Application Insights\ConnectedService.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Content\NewUserGreeting - Copy.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\data\seniorprojectvaen_Dispatch.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\data\virtualassistanten_Dispatch.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\seniorprojectvaen_Dispatch.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\virtualassistanten_Dispatch.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\parameters.template.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\template.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\skills.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\cognitivemodels.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\data\_L_virtualassistanten_General.json
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.de.json
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.es.json
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Content\NewUserGreeting.fr.json
@@ -194,3 +180,4 @@ C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Session
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\obj\Debug\netcoreapp2.2\VirtualAssistant.RazorTargetAssemblyInfo.cache
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\obj\Debug\netcoreapp2.2\VirtualAssistant.dll
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\obj\Debug\netcoreapp2.2\VirtualAssistant.pdb
+C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\obj\Debug\netcoreapp2.2\VirtualAssistant.csproj.CoreCompileInputs.cache

@@ -1,0 +1,16 @@
+{
+  "urls": [],
+  "qnaList": [
+    {
+      "id": 0,
+      "answer": "Chat",
+      "source": "custom editorial",
+      "questions": [
+        "Chit"
+      ],
+      "metadata": []
+    }
+  ],
+  "files": [],
+  "name": "Chitchat"
+}

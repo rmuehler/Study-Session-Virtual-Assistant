@@ -21,6 +21,16 @@
           "version": "0.1",
           "authoringkey": "a8859226aff14fc4a883e5feeddbbdbb",
           "authoringRegion": "westus"
+        },
+        {
+          "region": "westus",
+          "appid": "58795b63-a6b5-4e90-8184-8e89e43033da",
+          "name": "virtualassistanten_General",
+          "id": "General",
+          "subscriptionkey": "2dbe4637871141efa9ff0b5e0ae7c60f",
+          "version": "0.1",
+          "authoringkey": "a8859226aff14fc4a883e5feeddbbdbb",
+          "authoringRegion": "westus"
         }
       ],
       "knowledgebases": [
