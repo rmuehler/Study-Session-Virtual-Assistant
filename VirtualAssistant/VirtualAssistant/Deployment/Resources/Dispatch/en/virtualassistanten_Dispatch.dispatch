@@ -64,6 +64,14 @@
       "type": "luis",
       "name": "searchskillen_searchskill",
       "id": "7"
+    },
+    {
+      "intentName": "q_Chitchat",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "subscriptionKey": "8efacdbe5a2241c8b88c8345bd93dc69",
+      "type": "qna",
+      "name": "ChitChat",
+      "id": "8"
     }
   ],
   "serviceIds": [
@@ -73,7 +81,8 @@
     "4",
     "6",
     "6",
-    "7"
+    "7",
+    "8"
   ],
   "appId": "51a465d5-0fe6-46f6-9b7b-658983b642d3",
   "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
