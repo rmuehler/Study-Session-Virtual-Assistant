@@ -54,6 +54,16 @@
       "type": "file",
       "name": "profileskill",
       "id": "6"
+    },
+    {
+      "intentName": "l_searchskill",
+      "appId": "8240a254-2552-4164-ba9e-07fd828d25e6",
+      "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "searchskillen_searchskill",
+      "id": "7"
     }
   ],
   "serviceIds": [
@@ -62,7 +72,8 @@
     "3",
     "4",
     "6",
-    "6"
+    "6",
+    "7"
   ],
   "appId": "51a465d5-0fe6-46f6-9b7b-658983b642d3",
   "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",

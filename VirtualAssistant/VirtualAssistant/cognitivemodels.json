@@ -14,10 +14,10 @@
       "languageModels": [
         {
           "region": "westus",
-          "appid": "58795b63-a6b5-4e90-8184-8e89e43033da",
-          "name": "virtualassistanten_General",
-          "id": "General",
-          "subscriptionkey": "2dbe4637871141efa9ff0b5e0ae7c60f",
+          "appid": "8240a254-2552-4164-ba9e-07fd828d25e6",
+          "name": "searchskillen_searchskill",
+          "id": "searchskill",
+          "subscriptionkey": "6395783a4edf468e8d5685daa2300c08",
           "version": "0.1",
           "authoringkey": "a8859226aff14fc4a883e5feeddbbdbb",
           "authoringRegion": "westus"
@@ -31,6 +31,14 @@
           "hostname": "https://virtualassistant-qnamaker.azurewebsites.net/qnamaker",
           "name": "Faq",
           "id": "Faq"
+        },
+        {
+          "subscriptionKey": "11319157e4374b59b130dc3d83ffd240",
+          "kbId": "3db2b1e2-869f-4a17-a8d8-ad450633b7cf",
+          "endpointKey": "97c1bb63-1330-4fff-be96-69b32732b13d",
+          "hostname": "https://virtualassistant-qnamaker.azurewebsites.net/qnamaker",
+          "name": "ProjectFAQ",
+          "id": "ProjectFAQ"
         }
       ]
     }
