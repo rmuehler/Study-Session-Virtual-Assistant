@@ -1,6 +1,6 @@
 LUIS app :8240a254-2552-4164-ba9e-07fd828d25e6 already added to virtualassistanten_Dispatch.dispatch
 QnA kb id:3169dfae-feb6-45e2-b6a3-c1c7aa5834d6, name:Faq already added to virtualassistanten_Dispatch.dispatch
-QnA kb id:3db2b1e2-869f-4a17-a8d8-ad450633b7cf, name:ProjectFAQ already added to virtualassistanten_Dispatch.dispatch
+QnA kb id:20f33a38-cad0-4d53-b435-1447bc7d429e, name:ProjectFAQ already added to virtualassistanten_Dispatch.dispatch
 Exporting services for dispatch...
 Exporting virtualassistanten_General LUIS application...
 Exported LUIS app JSON is at C:\Users\rober\source\repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_L_virtualassistanten_General.json

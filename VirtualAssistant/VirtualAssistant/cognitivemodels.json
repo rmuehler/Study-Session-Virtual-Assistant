@@ -34,7 +34,7 @@
         },
         {
           "subscriptionKey": "11319157e4374b59b130dc3d83ffd240",
-          "kbId": "3db2b1e2-869f-4a17-a8d8-ad450633b7cf",
+          "kbId": "20f33a38-cad0-4d53-b435-1447bc7d429e",
           "endpointKey": "97c1bb63-1330-4fff-be96-69b32732b13d",
           "hostname": "https://virtualassistant-qnamaker.azurewebsites.net/qnamaker",
           "name": "ProjectFAQ",
