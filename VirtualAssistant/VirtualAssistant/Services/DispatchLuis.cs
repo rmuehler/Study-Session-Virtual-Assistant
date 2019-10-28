@@ -23,6 +23,7 @@ namespace Luis
             q_Chitchat, 
             q_Faq, 
             l_General, 
+            l_profileskill, 
             None
         };
         [JsonProperty("intents")]

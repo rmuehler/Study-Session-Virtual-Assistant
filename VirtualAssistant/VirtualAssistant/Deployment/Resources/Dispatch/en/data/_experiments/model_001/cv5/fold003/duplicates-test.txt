@@ -1,0 +1,3 @@
+Utterance	Intents
+that is correct	l_General, q_Faq
+fine	l_General, q_Faq

@@ -1,0 +1,3 @@
+Utterance	Intents
+hi	None, q_Faq
+stop talking	l_General, q_Faq

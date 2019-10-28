@@ -1,0 +1,7 @@
+demo dialog
+run dialog
+run sample dialog
+sample dialog
+test dialog
+test profile
+test proifle

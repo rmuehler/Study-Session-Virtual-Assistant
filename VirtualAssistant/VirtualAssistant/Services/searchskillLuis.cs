@@ -19,12 +19,9 @@ namespace Luis
         public string AlteredText;
 
         public enum Intent {
-            find_time_and_date_tutor, 
-            find_time_and_subject_student, 
-            Name, 
             None, 
-            Sample, 
-            say_id_back
+            Search_by_Subject, 
+            Search_by_Tutor
         };
         [JsonProperty("intents")]
         public Dictionary<Intent, IntentScore> Intents;
@@ -32,8 +29,6 @@ namespace Luis
         public class _Entities
         {
             // Simple entities
-            public string[] Tutor;
-
             public string[] subject;
 
             // Built-in entities
@@ -46,7 +41,6 @@ namespace Luis
             // Instance
             public class _Instance
             {
-                public InstanceData[] Tutor;
                 public InstanceData[] datetime;
                 public InstanceData[] email;
                 public InstanceData[] personName;

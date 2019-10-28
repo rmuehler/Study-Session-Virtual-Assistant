@@ -1,11 +1,55 @@
 {
   "qnaDocuments": [
     {
-      "id": 7,
-      "answer": "Chat",
+      "id": 12,
+      "answer": "You need to make an account",
       "source": "custom editorial",
       "questions": [
-        "Chit"
+        "How do I use the virtual assistant so that I can find study sessions?",
+        "How do I use this application?",
+        "How do I find s tutor?",
+        "How do I find study sessions with a tutor",
+        "How does this thing work",
+        "Help me learn how to get a tutor",
+        "I would like a tutor please, where do I start",
+        "Start looking for a tutor\\n\\n",
+        "Instructions how to find a tutor",
+        "Please assist in how to use this",
+        "Give me instructions on how to use this to find a tutor"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 13,
+      "answer": "You need to make an account, ask for a tutor service with course subject and time listed",
+      "source": "custom editorial",
+      "questions": [
+        "I need help with this service."
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 14,
+      "answer": "You still need to provide was information to make an account first",
+      "source": "custom editorial",
+      "questions": [
+        "I just need a tutor"
       ],
       "metadata": [],
       "alternateQuestions": "",

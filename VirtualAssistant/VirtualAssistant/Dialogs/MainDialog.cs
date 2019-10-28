@@ -39,6 +39,7 @@ namespace VirtualAssistant.Dialogs
             OnboardingDialog onboardingDialog,
             EscalateDialog escalateDialog,
             CancelDialog cancelDialog,
+            ProfileDialog profileDialog,
             List<SkillDialog> skillDialogs,
             IBotTelemetryClient telemetryClient,
             UserState userState)
@@ -53,6 +54,7 @@ namespace VirtualAssistant.Dialogs
             AddDialog(onboardingDialog);
             AddDialog(escalateDialog);
             AddDialog(cancelDialog);
+            AddDialog(profileDialog);
 
             foreach (var skillDialog in skillDialogs)
             {
@@ -154,7 +156,42 @@ namespace VirtualAssistant.Dialogs
                         case GeneralLuis.Intent.Escalate:
                             {
                                 // start escalate dialog
-                                await dc.BeginDialogAsync(nameof(SearchDialog));
+                                await dc.BeginDialogAsync(nameof(ProfileDialog));
+                                break;
+                            }
+
+                        case GeneralLuis.Intent.None:
+                        default:
+                            {
+                                // No intent was identified, send confused message
+                                await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
+                                break;
+                            }
+                    }
+                }
+            }
+            else if (intent == DispatchLuis.Intent.l_profileskill)
+            {
+                // If dispatch result is General luis model
+                cognitiveModels.LuisServices.TryGetValue("General", out var luisService);
+
+                if (luisService == null)
+                {
+                    throw new Exception("The General LUIS Model could not be found in your Bot Services configuration.");
+                }
+                else
+                {
+                    var result = await luisService.RecognizeAsync<GeneralLuis>(dc.Context, CancellationToken.None);
+
+                    var generalIntent = result?.TopIntent().intent;
+
+                    // switch on general intents
+                    switch (generalIntent)
+                    {
+                        case GeneralLuis.Intent.Escalate:
+                            {
+                                // start escalate dialog
+                                await dc.BeginDialogAsync(nameof(ProfileDialog));
                                 break;
                             }
 

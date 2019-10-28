@@ -1,0 +1,2 @@
+Utterance	Intents
+okay	l_General, q_Faq

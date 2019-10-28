@@ -14,13 +14,13 @@ using System.Collections.Generic;
 
 namespace VirtualAssistant.Dialogs
 {
-    public class SearchDialog : ComponentDialog
+    public class ProfileDialog : ComponentDialog
     {
 
-        public SearchDialog(UserState userState) : base(nameof(SearchDialog))
+        public ProfileDialog(BotServices botServices,
+            UserState userState,
+            IBotTelemetryClient telemetryClient) : base(nameof(ProfileDialog))
         {
-
-
             // This array defines how the Waterfall will execute.
             var waterfallSteps = new WaterfallStep[]
             {
@@ -104,7 +104,7 @@ namespace VirtualAssistant.Dialogs
             await stepContext.Context.SendActivityAsync(MessageFactory.Text(msg), cancellationToken);
 
             // WaterfallStep always finishes with the end of the Waterfall or with another dialog, here it is a Prompt Dialog.
-            return await stepContext.PromptAsync(nameof(ConfirmPrompt), new PromptOptions { Prompt = MessageFactory.Text("Is this ok?") }, cancellationToken);
+            return await stepContext.PromptAsync(nameof(CancelDialog), new PromptOptions { Prompt = MessageFactory.Text("Is this ok?") }, cancellationToken);
         }
 
         private async Task<DialogTurnResult> SummaryStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)

@@ -42,13 +42,24 @@
       "type": "luis",
       "name": "General",
       "id": "4"
+    },
+    {
+      "intentName": "l_profileskill",
+      "appId": "167f202d-7a46-4dae-a052-f5b4e0dee9ca",
+      "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "profileskillen_profileskill",
+      "id": "5"
     }
   ],
   "serviceIds": [
     "1",
     "2",
     "3",
-    "4"
+    "4",
+    "5"
   ],
   "appId": "51a465d5-0fe6-46f6-9b7b-658983b642d3",
   "authoringKey": "a8859226aff14fc4a883e5feeddbbdbb",

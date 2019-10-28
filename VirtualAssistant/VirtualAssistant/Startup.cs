@@ -95,6 +95,9 @@ namespace VirtualAssistant
             services.AddTransient<MainDialog>();
             services.AddTransient<OnboardingDialog>();
 
+            //new dialogs:
+            services.AddTransient<ProfileDialog>();
+
             // Register skill dialogs
             services.AddTransient(sp =>
             {

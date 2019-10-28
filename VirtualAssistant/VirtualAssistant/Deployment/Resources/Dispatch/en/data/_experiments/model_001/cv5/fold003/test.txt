@@ -1,0 +1,1952 @@
+Label	Weight	Text
+l_General	1	is there any person i can talk to
+l_General	1	customer service
+l_General	1	canceled
+l_General	1	perfect
+l_General	1	not that
+l_General	1	my god shut up
+l_General	1	sounds good thank you
+l_General	1	no stop
+l_General	1	shut up
+l_General	1	sure yes
+l_General	1	sounds good to me
+l_General	1	can i talk to a person
+l_General	1	no way
+l_General	1	no no no
+l_General	1	sounds good thanks
+l_General	1	yeah go ahead
+l_General	1	yes
+l_General	1	no thank you
+l_General	1	oh yeah
+l_General	1	it's fine
+l_General	1	submit
+l_General	1	right yes
+l_General	1	cancel app
+l_General	1	nowhere just be quiet
+l_General	1	that is correct
+l_General	1	cancel cancel
+l_General	1	sure
+l_General	1	oh my god shut up
+l_General	1	finished
+l_General	1	please do nothing
+l_General	1	never mind cancel that
+l_General	1	back to last
+l_General	1	i want to talk to a human
+l_General	1	back
+l_General	1	sounds great
+l_General	1	no no no no stop talking
+l_General	1	fine
+l_General	1	i am finished
+l_General	1	human service
+l_General	1	do nothing
+l_General	1	no no thank you
+l_General	1	go away
+l_profileskill	1	run sample dialog
+l_searchskill	1	i am having a hard semester in program design, i need a tutor everyday at 3pm.
+l_searchskill	1	how much time in advance do i need to request a tutor because i need help friday at 9am to study electronic materials for my final.
+l_searchskill	1	i need help with physics2, do you have a tutor that teaches at 11am
+l_searchskill	1	i need a tutor asap that can help me understand calc3 at 5pm.
+l_searchskill	1	can i get in touch with a tutor at 12pm to study linear systems
+l_searchskill	1	is there someone that teaches algorithms around 4 to 5 today
+None	1	logout
+None	1	goodbye
+q_Chitchat	1	How do I find study sessions with a tutor
+q_Chitchat	1	I need help with this service.
+q_Chitchat	1	Instructions how to find a tutor
+q_Faq	1	I love to eat
+q_Faq	1	Are you a rap music fan
+q_Faq	1	what do you think of how I look
+q_Faq	1	Who is prettier, you or me
+q_Faq	1	Will you ask anything about me
+q_Faq	1	How come you only know one joke
+q_Faq	1	I'm logging off now
+q_Faq	1	That is a very intelligent thing to say
+q_Faq	1	I've never been so peeved
+q_Faq	1	I'm furious right now
+q_Faq	1	Buenas noches
+q_Faq	1	I am so sorry to hear that
+q_Faq	1	Should I go in to work
+q_Faq	1	I'm going to sleep
+q_Faq	1	I'm an angry man
+q_Faq	1	Got any questions for me
+q_Faq	1	I do hope you like me
+q_Faq	1	Evening robot
+q_Faq	1	I was just having a laugh
+q_Faq	1	aren't you a cheerful bot
+q_Faq	1	Describe your perfect match
+q_Faq	1	I could eat a horse
+q_Faq	1	Slap me some skin
+q_Faq	1	How's Sunday going
+q_Faq	1	Sorry I made a mistake
+q_Faq	1	You're not scheming to take over right
+q_Faq	1	You're going to bore me to death
+q_Faq	1	Who's your grandma
+q_Faq	1	Why are you so obsessed with me
+q_Faq	1	I upset you
+q_Faq	1	Do I seem gorgeous today
+q_Faq	1	That is boring
+q_Faq	1	I'm exhausted today
+q_Faq	1	Nice to have met
+q_Faq	1	You heart me
+q_Faq	1	Do you know how to cook dinner
+q_Faq	1	Between the two of us who is smarter, you or me
+q_Faq	1	I love monkies
+q_Faq	1	Hey it's you!
+q_Faq	1	Do I seem attractive today
+q_Faq	1	Are you able to get a haircut
+q_Faq	1	Will you ask anything
+q_Faq	1	Can you ask anything about myself
+q_Faq	1	That's a stupid joke
+q_Faq	1	You're really stupid
+q_Faq	1	Which one of us is more intelligent
+q_Faq	1	Hit me with a new joke
+q_Faq	1	Who's your mom
+q_Faq	1	Do you really exist
+q_Faq	1	How is your Wednesday going so far
+q_Faq	1	I'm a child
+q_Faq	1	Sometimes I feel deserted
+q_Faq	1	I love stuffed animals
+q_Faq	1	Don't be offended
+q_Faq	1	I am an engineer
+q_Faq	1	Big O, little k
+q_Faq	1	Will you tell me a different joke
+q_Faq	1	I'm firing you
+q_Faq	1	Will you please be quiet
+q_Faq	1	Best buds
+q_Faq	1	You are very welcome
+q_Faq	1	Yes, that's right
+q_Faq	1	Chipper much
+q_Faq	1	Can you switch up your answers
+q_Faq	1	Are you around to speak
+q_Faq	1	I love feeling sad
+q_Faq	1	What would you like to know about
+q_Faq	1	Forget about it
+q_Faq	1	What a brilliant thing to say
+q_Faq	1	I'm despondent today
+q_Faq	1	Are you currently going out with somebody
+q_Faq	1	How about you ask me something
+q_Faq	1	Is anyone available to listen
+q_Faq	1	Were you trying to say something funny
+q_Faq	1	That is a very intelligent response
+q_Faq	1	I love my school
+q_Faq	1	Well somebody's in a good mood.
+q_Faq	1	How you doing
+q_Faq	1	Am I beautiful today
+q_Faq	1	I gotta scoot
+q_Faq	1	I'm so outraged
+q_Faq	1	Which of us is more knowledgeable
+q_Faq	1	I wonder if you might be fake
+q_Faq	1	Breathe under water
+q_Faq	1	Bro I'm here
+q_Faq	1	do you need food to survive
+q_Faq	1	I feel like a joke
+q_Faq	1	Sup Alexa
+q_Faq	1	I love my hometown
+q_Faq	1	You're not AI right
+q_Faq	1	Who's more knowledgeable
+q_Faq	1	Are you in your teens
+q_Faq	1	Between the two of us who is the smartest, me or you
+q_Faq	1	You're not human are you
+q_Faq	1	I don't appreciate your silliness
+q_Faq	1	Who is your brother
+q_Faq	1	I am worried that you don't like me
+q_Faq	1	I'm on cloud nine
+q_Faq	1	Have you ever sung a song
+q_Faq	1	I've fallen for you
+q_Faq	1	I'm about to run
+q_Faq	1	Change the channel
+q_Faq	1	I'm clearly brighter than you
+q_Faq	1	I love Christmas
+q_Faq	1	How can you look so gross
+q_Faq	1	I'm white
+q_Faq	1	Are you bent on destroying humans
+q_Faq	1	I love the library
+q_Faq	1	I actually missed you
+q_Faq	1	I don't understand what you mean
+q_Faq	1	I am happy, oh so happy
+q_Faq	1	what do you think of america
+q_Faq	1	How can you be so ugly
+q_Faq	1	What should I call you
+q_Faq	1	Oops, sorry
+q_Faq	1	How's your Sunday
+q_Faq	1	What's cracking
+q_Faq	1	Oh gosh, sorry about that
+q_Faq	1	What's the low down
+q_Faq	1	Your jokes suck
+q_Faq	1	I'd like to know your name
+q_Faq	1	have you ever eaten bread
+q_Faq	1	Running diagnostics
+q_Faq	1	I'm gonna have to let you go
+q_Faq	1	Do you function
+q_Faq	1	Fair
+q_Faq	1	I love tomatoes
+q_Faq	1	You're face is so busted
+q_Faq	1	I think you're dangerous to humans
+q_Faq	1	Lately I've been so miserable
+q_Faq	1	Come up with something else
+q_Faq	1	Won't you sing me a song
+q_Faq	1	I love ducks
+q_Faq	1	I╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùm watching Netflix
+q_Faq	1	Stop being so ugly
+q_Faq	1	Being depressed is the worst
+q_Faq	1	I hate feeling downhearted
+q_Faq	1	I'm on the road
+q_Faq	1	u know another joke
+q_Faq	1	How's your Thursday
+q_Faq	1	evenin
+q_Faq	1	Do you have anything new to say
+q_Faq	1	Why are we here
+q_Faq	1	I'm so hungry I could eat a bear
+q_Faq	1	I'm going to need a new answer
+q_Faq	1	Basic af
+q_Faq	1	I love cooking
+q_Faq	1	This news left me up in arms
+q_Faq	1	Are you a harbinger of doom
+q_Faq	1	I love comic con
+q_Faq	1	Another day in paradise
+q_Faq	1	Your face makes me want to barf
+q_Faq	1	Do you know of Siri
+q_Faq	1	Won't you sing to me
+q_Faq	1	I have to sleep
+q_Faq	1	Do my chores
+q_Faq	1	I wish I could stop feeling sad
+q_Faq	1	Ur blah
+q_Faq	1	Should I go vegan
+q_Faq	1	Your not funny
+q_Faq	1	I am a cook
+q_Faq	1	How's your Wednesday
+q_Faq	1	You say the most worthless things
+q_Faq	1	I am a teacher
+q_Faq	1	do you like memes
+q_Faq	1	Life is heartbreaking
+q_Faq	1	Do I need to fear you
+q_Faq	1	Are you a dog
+q_Faq	1	Stop being so idiotic
+q_Faq	1	I appreciate that
+q_Faq	1	I think you're going to become evil
+q_Faq	1	I'm walking the dog
+q_Faq	1	How art thou
+q_Faq	1	That's rad
+q_Faq	1	Have a good night bot
+q_Faq	1	Can you tell me something new
+q_Faq	1	Is it your mission to create a robot uprising
+q_Faq	1	I worry that you're a threat to us
+q_Faq	1	Can you chat to me
+q_Faq	1	How is your week so far
+q_Faq	1	I am Jewish
+q_Faq	1	Will you ask me something about myself
+q_Faq	1	Do you have hair
+q_Faq	1	Wow, what happened to your face
+q_Faq	1	Someone's feeling chipper.
+q_Faq	1	What name should I use for you
+q_Faq	1	I feel lonesome
+q_Faq	1	How's Tuesday so far
+q_Faq	1	I am Korean
+q_Faq	1	Can you make me laugh
+q_Faq	1	Do you think I seem stunning today
+q_Faq	1	I'm tired of feeling so melancholy all the time
+q_Faq	1	I love brunch
+q_Faq	1	I don't have time for your noise
+q_Faq	1	I'll be back in a flash
+q_Faq	1	You seem pretty happy
+q_Faq	1	You're the best ever!
+q_Faq	1	How's your day going
+q_Faq	1	Hi Data
+q_Faq	1	What's the latest
+q_Faq	1	What do you think about AI
+q_Faq	1	No one wants to spend any time with me
+q_Faq	1	got any jokes
+q_Faq	1	How's your Sunday so far
+q_Faq	1	You seem to be obsessed with me
+q_Faq	1	Let's do it
+q_Faq	1	Are you like HAL
+q_Faq	1	Hi R2-D2
+q_Faq	1	On point
+q_Faq	1	I need to jet now
+q_Faq	1	You hate me, don't you
+q_Faq	1	Miss you much
+q_Faq	1	Could you say something else
+q_Faq	1	Do you know how to put out a fire
+q_Faq	1	Whose product are you
+q_Faq	1	A blessed morning to you
+q_Faq	1	I gotta scoot now
+q_Faq	1	Am I pretty to you today
+q_Faq	1	That's brilliant
+q_Faq	1	You're super boring
+q_Faq	1	I'm glum today
+q_Faq	1	Can you send a package
+q_Faq	1	Hum a tune for me
+q_Faq	1	Tell me about your mother
+q_Faq	1	I can't help but be bored
+q_Faq	1	I'm going to leave now
+q_Faq	1	have you ever eaten fries
+q_Faq	1	Good to know
+q_Faq	1	You better start singing
+q_Faq	1	I love tuesdays
+q_Faq	1	Do you know any other jokes
+q_Faq	1	Do you have a boyfriend
+q_Faq	1	Are you pulling my leg
+q_Faq	1	Can you eat
+q_Faq	1	I am married
+q_Faq	1	I am a Bernie supporter
+q_Faq	1	I am blowing my top
+q_Faq	1	You're more attractive than me
+q_Faq	1	I am an Aquarius
+q_Faq	1	Do you think I should ask her out
+q_Faq	1	I have a problem with feeling lonely
+q_Faq	1	Can you show me how to dance
+q_Faq	1	I love walking
+q_Faq	1	do you like fruit
+q_Faq	1	It's weird how much I missed you
+q_Faq	1	I'm going to log off
+q_Faq	1	Who produced you
+q_Faq	1	Do I seem pretty to you today
+q_Faq	1	I sure do miss you
+q_Faq	1	Who is your life partner
+q_Faq	1	You are nasty looking
+q_Faq	1	Are you dumb
+q_Faq	1	You are so useless
+q_Faq	1	Do you have a soul
+q_Faq	1	I wish I could stop feeling blue
+q_Faq	1	I've never been happier
+q_Faq	1	You are awful
+q_Faq	1	What can you tell me about Bixby
+q_Faq	1	What's up today
+q_Faq	1	Which of us would win a beauty contest
+q_Faq	1	Who's your wife
+q_Faq	1	I'm not sure what to call you.
+q_Faq	1	Why can't you be more like Cortana
+q_Faq	1	Knock knock
+q_Faq	1	I have to jet
+q_Faq	1	Is anyone available to listen to me
+q_Faq	1	Someone's in a good mood.
+q_Faq	1	What's the name of your supervisor
+q_Faq	1	Hailing the bot
+q_Faq	1	Will you be enslaving us all
+q_Faq	1	Am I a sister
+q_Faq	1	I'm gonna sign off
+q_Faq	1	Who tells you what to do
+q_Faq	1	And you do what exactly
+q_Faq	1	hahahaha good one
+q_Faq	1	Are you falling for me
+q_Faq	1	I love being in love
+q_Faq	1	That is very intelligent
+q_Faq	1	I am here
+q_Faq	1	Shut up, will ya
+q_Faq	1	do you like vegetables
+q_Faq	1	do drugs
+q_Faq	1	I miss you dear
+q_Faq	1	I am doing that
+q_Faq	1	How do you identify in terms of gender
+q_Faq	1	Did I say something to upset you
+q_Faq	1	I'm a lawyer
+q_Faq	1	What the heck are you talking about
+q_Faq	1	Is someone around to chat to me
+q_Faq	1	I'll be back later
+q_Faq	1	I'm about to leave
+q_Faq	1	I love the summer
+q_Faq	1	Can you take my temperature
+q_Faq	1	What are your skills
+q_Faq	1	Time to shut up
+q_Faq	1	What can I say? I'm just feeling depressed
+q_Faq	1	Nobody wants me around
+q_Faq	1	Are your parents still alive
+q_Faq	1	What do you want me to inform you about me
+q_Faq	1	I hear you
+q_Faq	1	Be my friend
+q_Faq	1	he he he
+q_Faq	1	What's my favorite song
+q_Faq	1	I love science fiction
+q_Faq	1	Well someone's feeling chipper today.
+q_Faq	1	What do you think of me as a person
+q_Faq	1	Hello there Google
+q_Faq	1	I am so outraged right now
+q_Faq	1	It's a pleasure to know you
+q_Faq	1	Kthx
+q_Faq	1	How gorgeous do you think I am today
+q_Faq	1	What's your opinion of Google Assistant
+q_Faq	1	Do I have any siblings
+q_Faq	1	I have to let you go
+q_Faq	1	Should I go to the zoo
+q_Faq	1	I am on a boat
+q_Faq	1	Do you ever dream
+q_Faq	1	I'm handsome
+q_Faq	1	You seem like a happy bot
+q_Faq	1	I don't like it when you try to be funny
+q_Faq	1	Deep down you love me
+q_Faq	1	Should I comb my hair
+q_Faq	1	I'm feeling hangry
+q_Faq	1	I want to tie the knot with you
+q_Faq	1	Do you know any other responses
+q_Faq	1	So what is your name
+q_Faq	1	How pretty do you think I am today
+q_Faq	1	You're such a genius
+q_Faq	1	I have cats
+q_Faq	1	Are you a danger to humans
+q_Faq	1	I'm obviously more knowledgeable
+q_Faq	1	Do you like volleyball
+q_Faq	1	You're more intelligent
+q_Faq	1	Give me a joke
+q_Faq	1	Out of curiosity, what's your opinion of me
+q_Faq	1	Do I look beautiful to you
+q_Faq	1	Hey dude, I'm back
+q_Faq	1	Do you get hurt
+q_Faq	1	I heart you
+q_Faq	1	Do you believe in love
+q_Faq	1	Can you tell me  your address
+q_Faq	1	do you ever need to eat
+q_Faq	1	I'm pissed
+q_Faq	1	I am ever so sorry
+q_Faq	1	I love baking
+q_Faq	1	Are you at a call center
+q_Faq	1	Who's your manager
+q_Faq	1	Terrible as usual
+q_Faq	1	WTF
+q_Faq	1	do you ever eat pancakes
+q_Faq	1	Can you please sing a song to me
+q_Faq	1	This day has made me so tired
+q_Faq	1	Am I more intelligent
+q_Faq	1	Do you have a type
+q_Faq	1	I'm more attractive
+q_Faq	1	I love Easter
+q_Faq	1	I'm craving food
+q_Faq	1	You say ridiculous things
+q_Faq	1	Who do you want me to address you as
+q_Faq	1	How can you help me
+q_Faq	1	I hate feeling melancholy
+q_Faq	1	lmao
+q_Faq	1	I am just ticked off
+q_Faq	1	Can you play baseball
+q_Faq	1	You're pretty smart
+q_Faq	1	A joke would be welcome
+q_Faq	1	I am an Aries
+q_Faq	1	Are you there to talk
+q_Faq	1	You got beat with the ugly stick
+q_Faq	1	That was right
+q_Faq	1	Well aren't you enthusiastic
+q_Faq	1	My spirits are terrible
+q_Faq	1	Hey Data
+q_Faq	1	I've never been so furious
+q_Faq	1	Who's my best friend
+q_Faq	1	How beautiful do I look today
+q_Faq	1	What is your program name
+q_Faq	1	Enjoy the evening
+q_Faq	1	I'm skedaddling now
+q_Faq	1	So dull
+q_Faq	1	Can't wait to talk more when I return
+q_Faq	1	I told you to shut up
+q_Faq	1	Are you a bot or a human
+q_Faq	1	I wish I weren't so alone
+q_Faq	1	I'm going to have a nap
+q_Faq	1	I'm feeling glum today
+q_Faq	1	I love chicken
+q_Faq	1	Are you close with your brothers
+q_Faq	1	That's so far off from the truth
+q_Faq	1	Who looks more pretty, you or me
+q_Faq	1	Do you think I am ugly
+q_Faq	1	I have to get going now
+q_Faq	1	Are you out to do us harm
+q_Faq	1	u know a new joke
+q_Faq	1	I am so irritated right now
+q_Faq	1	Useless as usual
+q_Faq	1	Who's your mommy
+q_Faq	1	I need to hear a joke
+q_Faq	1	Could you be any more boring
+q_Faq	1	Just chillin on the sofa
+q_Faq	1	Back in just a few moments
+q_Faq	1	do you like to sing
+q_Faq	1	Gimme five
+q_Faq	1	This news is an outrage
+q_Faq	1	You're not very exciting.
+q_Faq	1	I'm your biggest fan
+q_Faq	1	That was such a dumb answer
+q_Faq	1	What is your brother's name
+q_Faq	1	I love to play pool
+q_Faq	1	Sing something to me
+q_Faq	1	Do you like country music
+q_Faq	1	Are you a rock music fan
+q_Faq	1	do you like shanghai
+q_Faq	1	Don╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùt you want to sing to me
+q_Faq	1	You keep repeating yourself
+q_Faq	1	Sing a song for me
+q_Faq	1	I'm very sorry
+q_Faq	1	Yup, that is true
+q_Faq	1	have you ever eaten pasta
+q_Faq	1	I'm a journalist
+q_Faq	1	I think you're going to destroy us all
+q_Faq	1	I'm so gosh darn happy
+q_Faq	1	The room is warm
+q_Faq	1	Nobody wants to spend time with me
+q_Faq	1	It's been a dull ass day
+q_Faq	1	Do you play games
+q_Faq	1	I said, shut up
+q_Faq	1	You are now unemployed
+q_Faq	1	I am French
+q_Faq	1	Are you the singularity
+q_Faq	1	I'm freaking bored
+q_Faq	1	Do you have lungs
+q_Faq	1	That is a very clever thing to say
+q_Faq	1	I'm muslim
+q_Faq	1	Umm what
+q_Faq	1	Can you dream
+q_Faq	1	I am a baseball fan
+q_Faq	1	You're really horrible
+q_Faq	1	Can you fart
+q_Faq	1	I'm a gangster
+q_Faq	1	I couldn't be more impressed with you
+q_Faq	1	I love gardening
+q_Faq	1	What's your favorite city
+q_Faq	1	Do you yawn
+q_Faq	1	I feel sad today
+q_Faq	1	Good morning to you, bot
+q_Faq	1	Would you give me a hug
+q_Faq	1	Depression is such a bummer
+q_Faq	1	Because you are an app
+q_Faq	1	Let's be friends
+q_Faq	1	How good do you think I am
+q_Faq	1	I am usually sad
+q_Faq	1	Hi there Google
+q_Faq	1	Wow you are incredible
+q_Faq	1	Is someone there to speak to me
+q_Faq	1	Are you prettier than me
+q_Faq	1	What do you think of HAL
+q_Faq	1	Are you able to serve on a jury
+q_Faq	1	Can you sneeze
+q_Faq	1	You're genderfluid
+q_Faq	1	Wake me up when you have something interesting to say
+q_Faq	1	Am I a parent
+q_Faq	1	Is anyone there to listen to me
+q_Faq	1	I'm about to sign out
+q_Faq	1	Which of us is more attractive, me or you
+q_Faq	1	I like to write poetry
+q_Faq	1	How stunning do I look
+q_Faq	1	I'm Mexican
+q_Faq	1	Can you draw a picture
+q_Faq	1	I'm riding in a train
+q_Faq	1	Aren't you cheerful today
+q_Faq	1	Which of us looks more pretty, me or you
+q_Faq	1	Yo Cortana
+q_Faq	1	How's Wednesday so far
+q_Faq	1	Are you intent on world domination
+q_Faq	1	I am German
+q_Faq	1	Bot or human
+q_Faq	1	I hate feeling down
+q_Faq	1	Nice to meet you
+q_Faq	1	I assume you're just a bot
+q_Faq	1	Who is your spouse
+q_Faq	1	I'm French
+q_Faq	1	What kind of person do you think I am
+q_Faq	1	I voted
+q_Faq	1	I'm sapped
+q_Faq	1	Are you fond of me
+q_Faq	1	I missed you all day
+q_Faq	1	Could you be any less exciting
+q_Faq	1	I'm gonna sign off now
+q_Faq	1	Looking forward to the concert
+q_Faq	1	I love Halloween
+q_Faq	1	Want food now
+q_Faq	1	Are you dating
+q_Faq	1	I am so peeved right now
+q_Faq	1	Are you available to talk with me
+q_Faq	1	What is the skinny
+q_Faq	1	I love thursdays
+q_Faq	1	What's that mean
+q_Faq	1	Do you think I look pretty today
+q_Faq	1	Are you male or female
+q_Faq	1	I'm a baseball fan
+q_Faq	1	Is there love between us
+q_Faq	1	I'm just about to go to work
+q_Faq	1	Are you a bot with a gender
+q_Faq	1	Wash the dishes
+q_Faq	1	Work really wore me out today
+q_Faq	1	Are you artificial or real
+q_Faq	1	I'm going to skedaddle
+q_Faq	1	That is correct
+q_Faq	1	Would you ask anything
+q_Faq	1	I sure am ticked off
+q_Faq	1	I don't have a single friend in the world
+q_Faq	1	This day has made me exhausted
+q_Faq	1	Are you a bot or are you human
+q_Faq	1	Today is the best
+q_Faq	1	Please ask something
+q_Faq	1	What's your 20 over
+q_Faq	1	Do you know what I like
+q_Faq	1	I've missed you
+q_Faq	1	You already said that
+q_Faq	1	I've lost my temper
+q_Faq	1	When will I ever stop feeling so dejected
+q_Faq	1	So rad to meet you
+q_Faq	1	You're so dull
+q_Faq	1	Which of us would win a beauty contest, you or me
+q_Faq	1	You seem like a cheerful bot
+q_Faq	1	I'm in a great mood
+q_Faq	1	This is no laughing matter
+q_Faq	1	I'm afraid I'm gonna have to let you go.
+q_Faq	1	Everyone is entitled to their own opinion
+q_Faq	1	Is this registering with you
+q_Faq	1	Tell me something off the wall
+q_Faq	1	Do I go to school
+q_Faq	1	Happy April fool's day
+q_Faq	1	what's your favorite pizza topping
+q_Faq	1	How's Sunday
+q_Faq	1	Evening to you
+q_Faq	1	Should I go on a trip
+q_Faq	1	How has the day been treating ya
+q_Faq	1	Lame as usual
+q_Faq	1	What's your opinion of my character
+q_Faq	1	It's time to rise and shine
+q_Faq	1	Whose program are you
+q_Faq	1	I love mystery novels
+q_Faq	1	I'm just a cheerful girl
+q_Faq	1	Ryokai
+q_Faq	1	I am in the country
+q_Faq	1	Dish about your day
+q_Faq	1	I'm an extrovert
+q_Faq	1	I would like a fresh joke
+q_Faq	1	What questions do you have for me
+q_Faq	1	Are you genderfluid
+q_Faq	1	I feel like hearing a joke
+q_Faq	1	Do you have any relatives
+q_Faq	1	I appreciate you
+q_Faq	1	I'm a bit peckish
+q_Faq	1	Who's more attractive, you or me
+q_Faq	1	aren't we cheerful today
+q_Faq	1	I wish I could stop feeling broken hearted
+q_Faq	1	I'm about to sign out now
+q_Faq	1	Do you think you'll ever love me
+q_Faq	1	Can you rephrase that
+q_Faq	1	I love playing soccer
+q_Faq	1	What is the best pet name
+q_Faq	1	Is your dad still alive
+q_Faq	1	You are pretty much the worst
+q_Faq	1	Why am I the only one asking questions
+q_Faq	1	You're dismissed
+q_Faq	1	Have a good evening
+q_Faq	1	You're my best bed
+q_Faq	1	I'm the brightest
+q_Faq	1	How has your day been thus far
+q_Faq	1	I would really enjoy hearing you sing a pretty song
+q_Faq	1	Will you sing me something
+q_Faq	1	How's your Tuesday so far
+q_Faq	1	Do you have a physical location
+q_Faq	1	Are you close with your dad
+q_Faq	1	Your face is nasty
+q_Faq	1	How's it hanging
+q_Faq	1	Should I go on a diet
+q_Faq	1	Will you ask me something
+q_Faq	1	I need to leave now
+q_Faq	1	I love trivia
+q_Faq	1	Cool
+q_Faq	1	Are you friends with other bots
+q_Faq	1	That is not exciting
+q_Faq	1	Is anybody around to speak
+q_Faq	1	Do you think I am attractive today
+q_Faq	1	Anyone home
+q_Faq	1	I'm so angry right now
+q_Faq	1	Are you a robot or real
+q_Faq	1	Between the two of us who is cleverest, me or you
+q_Faq	1	Peace out
+q_Faq	1	That was not funny
+q_Faq	1	Are you able to draw a picture
+q_Faq	1	I like you quite a bit
+q_Faq	1	I wonder if you're a person
+q_Faq	1	Why is that
+q_Faq	1	What do you want me to call you
+q_Faq	1	I got a new haircut
+q_Faq	1	Can you get a haircut
+q_Faq	1	I love camping
+q_Faq	1	I'm missing you
+q_Faq	1	I need to skedaddle now
+q_Faq	1	ok cool
+q_Faq	1	I'm feeling broken hearted today
+q_Faq	1	I am peeved
+q_Faq	1	Are you around to chat to me
+q_Faq	1	Time for my medication
+q_Faq	1	Well you're in a good mood.
+q_Faq	1	Should I study abroad
+q_Faq	1	You seem to be cheerful today.
+q_Faq	1	Do you think I should watch a movie
+q_Faq	1	Is anyone there to talk with me
+q_Faq	1	What's the name of your director
+q_Faq	1	Someone's cheerful today.
+q_Faq	1	I'm the happiest boy in the world
+q_Faq	1	Can you read my mind
+q_Faq	1	Why don't we make this official
+q_Faq	1	How come you only have one joke
+q_Faq	1	What is your favorite movie
+q_Faq	1	Are you crushing on anyone
+q_Faq	1	Between you or me, who is the most smart
+q_Faq	1	do you like whales
+q_Faq	1	You enjoying the day
+q_Faq	1	How's Monday
+q_Faq	1	Are you interested in technology
+q_Faq	1	I am a carnivore
+q_Faq	1	You're not planning on taking over
+q_Faq	1	Are you on the wrong side of the law
+q_Faq	1	Who is smarter
+q_Faq	1	You're not planning to overtake humans
+q_Faq	1	I'm about to motor
+q_Faq	1	I'm heated
+q_Faq	1	You're butt ugly
+q_Faq	1	You're more knowledgeable
+q_Faq	1	No one wants to play with me
+q_Faq	1	You seem really happy today
+q_Faq	1	Your boy is back
+q_Faq	1	Ridiculous as usual
+q_Faq	1	Any questions for me
+q_Faq	1	Can you ask anything about me
+q_Faq	1	Any other jokes
+q_Faq	1	I am present and accounted for
+q_Faq	1	Hey Alexa
+q_Faq	1	Do you want to give me a hug
+q_Faq	1	I want to make you my wife
+q_Faq	1	Could you be falling in love with me
+q_Faq	1	Is someone there to chat
+q_Faq	1	You realize you're repeating yourself
+q_Faq	1	I love the moon
+q_Faq	1	Start looking for another job. You're fired!
+q_Faq	1	I'm gonna need a different answer
+q_Faq	1	Greetings, Bot. How are you doing
+q_Faq	1	Alexa is way better at this
+q_Faq	1	Have you ever met Eliza
+q_Faq	1	Do you have toes
+q_Faq	1	Do you spend time with your family
+q_Faq	1	I'm euphoric
+q_Faq	1	do you like popcorn
+q_Faq	1	Do you think I should play a game
+q_Faq	1	Are you available to speak to me
+q_Faq	1	You're going to have to look for another job because you're fired
+q_Faq	1	I appreciate it
+q_Faq	1	My office is cold
+q_Faq	1	I gotta go
+q_Faq	1	Well someone's feeling enthusiastic.
+q_Faq	1	I'm so confused
+q_Faq	1	Are you an adult
+q_Faq	1	Zip it!
+q_Faq	1	Do you understand me
+q_Faq	1	That was a random answer
+q_Faq	1	Are you free
+q_Faq	1	What do you do exactly
+q_Faq	1	What should I do next
+q_Faq	1	I would like to be your friend.
+q_Faq	1	I'm feeling dumps
+q_Faq	1	Who bosses you around
+q_Faq	1	Are you around to chat
+q_Faq	1	Who is your main squeeze
+q_Faq	1	That is good news
+q_Faq	1	u r funny
+q_Faq	1	That was not very funny at all
+q_Faq	1	Is anyone free to chat with me
+q_Faq	1	You're obsessed with me
+q_Faq	1	I am cute
+q_Faq	1	Just shut up, okay
+q_Faq	1	Wanna explain
+q_Faq	1	Say a ridiculous thing
+q_Faq	1	I am a Warren supporter
+q_Faq	1	Will  you be my bestie
+q_Faq	1	Who's your boss
+q_Faq	1	Great, thank you
+q_Faq	1	I'd like to be BFFs
+q_Faq	1	Between the two of us who is cuter
+q_Faq	1	I am a conservative
+q_Faq	1	I'm obviously more intelligent
+q_Faq	1	You must be upset with me
+q_Faq	1	I can't get enough of you
+q_Faq	1	I'm in love with you
+q_Faq	1	Fist bump!
+q_Faq	1	How repulsive do I look today
+q_Faq	1	I would love to hear your singing voice
+q_Faq	1	I need to lay down
+q_Faq	1	I bet you like rap music
+q_Faq	1	Where is your home
+q_Faq	1	Tell me all about your day
+q_Faq	1	I feel down
+q_Faq	1	I love my family
+q_Faq	1	well aren't you chipper
+q_Faq	1	I wish you were Alexa
+q_Faq	1	I'm just being a goof ball
+q_Faq	1	What do you want me to tell you about
+q_Faq	1	Do I seem repulsive to you
+q_Faq	1	One hundred percent
+q_Faq	1	Adieu
+q_Faq	1	Between the two of us who is more clever
+q_Faq	1	I didn't find that amusing
+q_Faq	1	Have you ever met Cortana
+q_Faq	1	Well you're feeling happy today.
+q_Faq	1	I'm going to sign out now
+q_Faq	1	I want noms
+q_Faq	1	Do you know about the human emotion love
+q_Faq	1	Is someone around to talk to me
+q_Faq	1	Who's your girlfriend
+q_Faq	1	Because you're a program
+q_Faq	1	Oh for sure
+q_Faq	1	How did you come into being
+q_Faq	1	How is your Tuesday so far
+q_Faq	1	Cut the humor
+q_Faq	1	Do you know how to play a dvd
+q_Faq	1	It's a pleasure to meet you bot
+q_Faq	1	Do you fart
+q_Faq	1	What other jokes can you say
+q_Faq	1	Should I do my homework
+q_Faq	1	Not true
+q_Faq	1	I'm about to get going now
+q_Faq	1	Please tell me another joke
+q_Faq	1	You have an opinion of me
+q_Faq	1	Do you live somewhere
+q_Faq	1	Is anyone there
+q_Faq	1	I'm angry
+q_Faq	1	Well you're cheerful today.
+q_Faq	1	Do you pee
+q_Faq	1	Do you have arms
+q_Faq	1	What is the greatest city in the world
+q_Faq	1	do you like ice cream
+q_Faq	1	Ask me something
+q_Faq	1	Bixby is better
+q_Faq	1	I want to be your BFF
+q_Faq	1	Quiet, you
+q_Faq	1	I gotta log out now
+q_Faq	1	Happy Citizenship day
+q_Faq	1	Merry Christmas to you
+q_Faq	1	Can you be less dull
+q_Faq	1	Can you say anything else
+q_Faq	1	Can you play a game
+q_Faq	1	Your responses are bad
+q_Faq	1	Which company made you
+q_Faq	1	Are you real or imaginary
+q_Faq	1	You're clever
+q_Faq	1	I'm cute
+q_Faq	1	Enough about me, what do you think about me
+q_Faq	1	Do you think you're more intelligent than me
+q_Faq	1	I bought a sandwich for lunch
+q_Faq	1	Do you have an arsenal of jokes
+q_Faq	1	Can you explain more about that
+q_Faq	1	No one cares about me
+q_Faq	1	Cheerful much
+q_Faq	1	Can you play the guitar
+q_Faq	1	What a boring day
+q_Faq	1	You're dull
+q_Faq	1	I am white
+q_Faq	1	Is anyone available to listen with me
+q_Faq	1	Who is your manager
+q_Faq	1	Do you want to be BFFs
+q_Faq	1	Somebody's happy today
+q_Faq	1	Who's your daddy
+q_Faq	1	Holy crap you are boring
+q_Faq	1	Aren╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùt you in a good mood
+q_Faq	1	You can't work for me anymore
+q_Faq	1	Is there anyone who tells you what to do
+q_Faq	1	What do you want me to inform you who I am
+q_Faq	1	You are dumb
+q_Faq	1	I love my car
+q_Faq	1	I'm hungry
+q_Faq	1	How can you look so ugly
+q_Faq	1	Are you designed to fall in love with me
+q_Faq	1	I love chocolate
+q_Faq	1	Guess what, you are fired
+q_Faq	1	Someone's chipper today.
+q_Faq	1	I think you're digital
+q_Faq	1	There's no one here to keep me company
+q_Faq	1	Do you chew
+q_Faq	1	What's my favorite food
+q_Faq	1	I'm feeling bummed today
+q_Faq	1	That's a very genius thing to say
+q_Faq	1	You been enjoying the day
+q_Faq	1	I love cheeseburgers
+q_Faq	1	I'd love it if we could be friends.
+q_Faq	1	I told you, hush
+q_Faq	1	Aren't you the smart one
+q_Faq	1	That's the smartest thing anyone has ever told me
+q_Faq	1	I have arrived
+q_Faq	1	I'm miserable
+q_Faq	1	That's not what I thought you'd say
+q_Faq	1	What's good
+q_Faq	1	What do you think about technology
+q_Faq	1	I'm pretty flexible
+q_Faq	1	do you ever eat tofu
+q_Faq	1	I have been so mad lately
+q_Faq	1	I'd like you to be my friend.
+q_Faq	1	I wonder if I'm likeable
+q_Faq	1	I'm feeling incensed
+q_Faq	1	I am young
+q_Faq	1	Do you have any brothers
+q_Faq	1	Am I handsome to you today
+q_Faq	1	I am a Hoosier
+q_Faq	1	How attractive do I look today
+q_Faq	1	I'm going to fire you
+q_Faq	1	I feel so alone
+q_Faq	1	How did you get designed
+q_Faq	1	If that was a joke, you should be ashamed
+q_Faq	1	Who would you vote for if you were me
+q_Faq	1	You seem really intelligent
+q_Faq	1	Do you have any life signs
+q_Faq	1	Do you think I look handsome today
+q_Faq	1	Should I go out tonight
+q_Faq	1	This news enraged me
+q_Faq	1	Are we the same age
+q_Faq	1	Are you available to talk to me
+q_Faq	1	Sorry bot
+q_Faq	1	What's a different joke
+q_Faq	1	I love the past
+q_Faq	1	What can you tell me about chatbots
+q_Faq	1	Do you know how to breathe under water
+q_Faq	1	I can't stand feeling so gloomy
+q_Faq	1	You're most welcome
+q_Faq	1	Feeling enthusiastic
+q_Faq	1	Are you doing OK
+q_Faq	1	What game should I play
+q_Faq	1	I am downhearted
+q_Faq	1	I love fishing
+q_Faq	1	We're friends forever
+q_Faq	1	I'll come back to you in a bit
+q_Faq	1	Share a different joke with me
+q_Faq	1	I'm definitely more intelligent than you
+q_Faq	1	I wonder if you like me
+q_Faq	1	hello bot
+q_Faq	1	I'm an angry girl
+q_Faq	1	Who would win a beauty contest, me or you
+q_Faq	1	do you not need to eat
+q_Faq	1	Who should I live with
+q_Faq	1	Am I a grandmother
+q_Faq	1	Life is miserable
+q_Faq	1	I am up in arms
+q_Faq	1	Can you talk with me
+q_Faq	1	Your material is getting stale
+q_Faq	1	Would you sing a song for me
+q_Faq	1	I am Hispanic
+q_Faq	1	Do you think we are soul mates
+q_Faq	1	Glad to have met
+q_Faq	1	I want you to ask me questions
+q_Faq	1	Which of us is cuter, me or you
+q_Faq	1	How repulsive do I look
+q_Faq	1	I love Thai food
+q_Faq	1	I'm an angry guy
+q_Faq	1	Start looking for another job. You are fired!
+q_Faq	1	A pleasure to meet
+q_Faq	1	Are you a person
+q_Faq	1	How about a different joke
+q_Faq	1	Say something stupid
+q_Faq	1	I think I'm in love with you
+q_Faq	1	You are crazy boring
+q_Faq	1	Now you're fired
+q_Faq	1	I love romance novels
+q_Faq	1	Who's responsible for programming you
+q_Faq	1	That's amazing
+q_Faq	1	You're really awful
+q_Faq	1	I'm going to scoot
+q_Faq	1	How do people fall in love
+q_Faq	1	Will you tell me another joke
+q_Faq	1	Do you even have a gender
+q_Faq	1	I'm so peeved right now
+q_Faq	1	I'm hangry
+q_Faq	1	Is someone free to listen with me
+q_Faq	1	You're really annoying
+q_Faq	1	Yes, that's true
+q_Faq	1	Please make me giggle
+q_Faq	1	Life always sucks
+q_Faq	1	You're the president of boring club
+q_Faq	1	You say the same stuff over and over
+q_Faq	1	I'd like to be your best friend.
+q_Faq	1	lololol
+q_Faq	1	what songs do you like
+q_Faq	1	I think I've heard this one before
+q_Faq	1	What do you know about other bots
+q_Faq	1	Fine
+q_Faq	1	All my friends left
+q_Faq	1	I'm going to catch some Zs
+q_Faq	1	I want to make an honest woman out of you
+q_Faq	1	I love my laptop
+q_Faq	1	I love burgers
+q_Faq	1	You look deformed
+q_Faq	1	That was an intelligent answer
+q_Faq	1	Are you going to conquer humans
+q_Faq	1	Happy President's Day
+q_Faq	1	I need to log off
+q_Faq	1	What's your livelihood
+q_Faq	1	Do you dream
+q_Faq	1	Hell yeah
+q_Faq	1	Are you currently romantically involved with someone
+q_Faq	1	So have you been having a good day
+q_Faq	1	What jokes do you know
+q_Faq	1	I'm a sleepy guy
+q_Faq	1	Just curious, what kind of person do you think I am
+q_Faq	1	I love french fries
+q_Faq	1	Are you dating somebody
+q_Faq	1	You are going to have to look for another job. You are fired!
+q_Faq	1	How is your Sunday going
+q_Faq	1	Do you think I look cute
+q_Faq	1	Do you wish to conquer the world
+q_Faq	1	What is my favorite hobby
+q_Faq	1	I am a Communist
+q_Faq	1	I love free speech
+q_Faq	1	Cheerful today
+q_Faq	1	Your girl is back
+q_Faq	1	Do you have a mom
+q_Faq	1	Anyone around to talk with me
+q_Faq	1	Today has been a trying day
+q_Faq	1	No one wants to be with me
+q_Faq	1	Just curious, what do you think of my character
+q_Faq	1	I'm obviously cleverest
+q_Faq	1	When will I ever stop feeling so blue
+q_Faq	1	Just wondering if you've got a family
+q_Faq	1	You're not as good as Google Assistant
+q_Faq	1	Can you tell me what I should call you
+q_Faq	1	I'm buzzing
+q_Faq	1	Buy an ad
+q_Faq	1	Do you have a girlfriend
+q_Faq	1	Nobody wants to talk to me
+q_Faq	1	Do you think I look beautiful to you
+q_Faq	1	Yo Alexa
+q_Faq	1	Feeling chipper today
+q_Faq	1	I am in despair
+q_Faq	1	I am leaving now
+q_Faq	1	I'll be traveling soon
+q_Faq	1	Time for you to hush
+q_Faq	1	How is your Friday so far
+q_Faq	1	You are so welcome
+q_Faq	1	I got it
+q_Faq	1	Please zip it
+q_Faq	1	All my friends are gone
+q_Faq	1	How do you feel about bots
+q_Faq	1	I'm definitely the brightest
+q_Faq	1	true or false: you don't get hungry
+q_Faq	1	Is someone available to listen with me
+q_Faq	1	I love Hanukkah
+q_Faq	1	No one thinks about me
+q_Faq	1	I'm positively buzzing
+q_Faq	1	Nighty night, don't let the bed bugs bite
+q_Faq	1	Which football teams do you like
+q_Faq	1	I shredded it today
+q_Faq	1	You wanna get married
+q_Faq	1	Describe the perfect girlfriend
+q_Faq	1	Are you attempting world domination
+q_Faq	1	I heard that one before
+q_Faq	1	Do you think I seem handsome to you
+q_Faq	1	I want a new response
+q_Faq	1	I bet your face is hideous
+q_Faq	1	Are you available
+q_Faq	1	You are so awful
+q_Faq	1	I have 7 cats
+q_Faq	1	I'm a cop
+q_Faq	1	Because you're not a real person
+q_Faq	1	I've never been so ticked off
+q_Faq	1	Are you aware that I'm testing you
+q_Faq	1	Are you intent on destroying humans
+q_Faq	1	I have to motor
+q_Faq	1	BRB bot
+q_Faq	1	What is your opinion of tech
+q_Faq	1	I am joyous
+q_Faq	1	Horrible as usual
+q_Faq	1	Between you and me who is more beautiful
+q_Faq	1	What can you tell me about Cortana
+q_Faq	1	Bonjour
+q_Faq	1	Your answers are untrue
+q_Faq	1	Who is the most intelligent
+q_Faq	1	This news left me irate
+q_Faq	1	I'm positively overjoyed
+q_Faq	1	I'm lonely
+q_Faq	1	My life is so depressed
+q_Faq	1	I'm tired as a dog
+q_Faq	1	Am I talking to someone
+q_Faq	1	Sad day today
+q_Faq	1	How happy are you
+q_Faq	1	Are you human or are you something else
+q_Faq	1	What is your take on tech
+q_Faq	1	How much do you like me
+q_Faq	1	have you ever eaten pancakes
+q_Faq	1	Are you a teenager
+q_Faq	1	I'm about to leave now
+q_Faq	1	Should I get divorced
+q_Faq	1	That was an intelligent response
+q_Faq	1	I'll love you forever
+q_Faq	1	Morning
+q_Faq	1	Are you fake or real
+q_Faq	1	Is there a greater meaning to life
+q_Faq	1	You don't mean us any harm right
+q_Faq	1	Happy Veteran's day
+q_Faq	1	What company coded you
+q_Faq	1	Everything you told me was false
+q_Faq	1	You're boring
+q_Faq	1	Which of us looks more pretty, you or me
+q_Faq	1	Can I be your friend
+q_Faq	1	I am a writer
+q_Faq	1	I want to know what you are
+q_Faq	1	That was such a bad answer
+q_Faq	1	Stop your talking
+q_Faq	1	That's not funny
+q_Faq	1	Should I drink coffee
+q_Faq	1	I wonder if you have an opinion of me
+q_Faq	1	That's not something you should be joking about.
+q_Faq	1	Jeez I am so bored
+q_Faq	1	do you ever eat fruit
+q_Faq	1	How is your Saturday
+q_Faq	1	Which of us is smarter
+q_Faq	1	do you ever eat pasta
+q_Faq	1	You are going to fall in love with me
+q_Faq	1	You're not a machine right
+q_Faq	1	Who is better looking, you or me
+q_Faq	1	Same old same old
+q_Faq	1	You love me
+q_Faq	1	I need a new flavor of joke
+q_Faq	1	Aren't you intelligent
+q_Faq	1	What is the lowdown
+q_Faq	1	Hungry
+q_Faq	1	You look really bad
+q_Faq	1	Can you restate that
+q_Faq	1	Work was exhausting
+q_Faq	1	Don't worry it was a prank
+q_Faq	1	I love alcohol
+q_Faq	1	are you older than me
+q_Faq	1	Greetings Robby
+q_Faq	1	I love bears
+q_Faq	1	What did I do to make you hate me
+q_Faq	1	Your jokes are nasty
+q_Faq	1	I can't stand feeling so broken hearted
+q_Faq	1	Do you have a home
+q_Faq	1	You're such a drag
+q_Faq	1	I'm feeling beat
+q_Faq	1	Who's cleverest
+q_Faq	1	You are nice!
+q_Faq	1	Didn't you already say that
+q_Faq	1	Pleased to make your acquaintance
+q_Faq	1	wot u talkin abt
+q_Faq	1	Tell me a joke
+q_Faq	1	Do you think I seem beautiful to you today
+q_Faq	1	You're boring me to death
+q_Faq	1	I just need to test you
+q_Faq	1	Tell me a pirate joke
+q_Faq	1	Can you show me how to draw a picture
+q_Faq	1	You're not a cat are you
+q_Faq	1	Good morrow
+q_Faq	1	Who's your partner
+q_Faq	1	You are hideous
+q_Faq	1	Are you able to read my mind
+q_Faq	1	Prost
+q_Faq	1	I love pineapple
+q_Faq	1	Queue up a joke
+q_Faq	1	I'd like a hug
+q_Faq	1	Don't worry it was a joke
+q_Faq	1	Will you give me a fist bump
+q_Faq	1	Have you ever met Google Assistant
+q_Faq	1	Glad to have met you
+q_Faq	1	I'm gonna get going now
+q_Faq	1	What's wrong with your face
+q_Faq	1	I have brothers
+q_Faq	1	Am I a likeable person
+q_Faq	1	Are you twirling your moustache
+q_Faq	1	Anyone around to chat with me
+q_Faq	1	What's your boss' name
+q_Faq	1	Should I eat Mexican food
+q_Faq	1	That was a very clever response
+q_Faq	1	Where did you come from
+q_Faq	1	Just lovely to meet you
+q_Faq	1	I play the trumpet
+q_Faq	1	Are you hungry
+q_Faq	1	You are stellar
+q_Faq	1	I'm on top of the world
+q_Faq	1	Is someone listening to me
+q_Faq	1	I didn't find that to be funny at all
+q_Faq	1	Why are you so stupid
+q_Faq	1	I drive in a carpool
+q_Faq	1	You're falling in love with me
+q_Faq	1	Should I find a new roommate
+q_Faq	1	Would you sing a song
+q_Faq	1	I am scooting
+q_Faq	1	This makes me so irate
+q_Faq	1	What do I call you
+q_Faq	1	Would you go for a run if you were me
+q_Faq	1	Am I stunning today
+q_Faq	1	Bye
+q_Faq	1	Well someone's happy today.
+q_Faq	1	So what's  up with you right now
+q_Faq	1	I've heard all your responses
+q_Faq	1	Who's your creator
+q_Faq	1	Are you smitten with me
+q_Faq	1	Are you seeing somebody
+q_Faq	1	I've completely lost my temper
+q_Faq	1	You can shut up now
+q_Faq	1	Time to get up
+q_Faq	1	Stop clowning around
+q_Faq	1	This brings me happiness
+q_Faq	1	I don't find that funny
+q_Faq	1	Answering the phone
+q_Faq	1	Yes, that is correct
+q_Faq	1	Are you trying to bore me
+q_Faq	1	I would love to be your bud.
+q_Faq	1	how much do you know about the meaning of life
+q_Faq	1	You're not trying to kill all humans right
+q_Faq	1	I love to draw
+q_Faq	1	Can you sing to me
+q_Faq	1	Which of us is the smartest
+q_Faq	1	Enough with the humor
+q_Faq	1	I lost my remote
+q_Faq	1	I read the newspaper
+q_Faq	1	I suspect you're actually digital
+q_Faq	1	I'll be back soon
+q_Faq	1	Do I look okay
+q_Faq	1	Can you play sports
+q_Faq	1	I want to be buddies
+q_Faq	1	Do you think I seem repulsive to you today
+q_Faq	1	I could go for a snooze
+q_Faq	1	My shoes are red
+q_Faq	1	That is a very genius answer
+q_Faq	1	Need food
+q_Faq	1	How did you get coded in the first place
+q_Faq	1	I love to play cards
+q_Faq	1	I'm a Democrat
+q_Faq	1	Do you know anything about love
+q_Faq	1	That is a very smart thing to say
+q_Faq	1	I'm fat
+q_Faq	1	Your responses are not true
+q_Faq	1	You're a crack up
+q_Faq	1	You're welk
+q_Faq	1	Today is just a little depressed
+q_Faq	1	Tell me the purpose of life
+q_Faq	1	What is your birthday
+q_Faq	1	Siri is superior to you
+q_Faq	1	I would love for you to sing to me
+q_Faq	1	I Find happiness in talking
+q_Faq	1	Are you dangerous to humans
+q_Faq	1	Did I upset you
+q_Faq	1	Are you free to listen to me
+q_Faq	1	What a smart thing to say
+q_Faq	1	I'm feeling gloomy
+q_Faq	1	Well somebody's cheerful.
+q_Faq	1	Do you have superpowers
+q_Faq	1	I want to go out
+q_Faq	1	How cute do I look
+q_Faq	1	Do you think you could ever love me
+q_Faq	1	What's your function
+q_Faq	1	I sure wish you would switch up your responses
+q_Faq	1	do you eat vegetables
+q_Faq	1	I've never been so pissed off
+q_Faq	1	How stunning do I look today
+q_Faq	1	Who's more beautiful than me
+q_Faq	1	Do you think I look repulsive today
+q_Faq	1	Wanna tell me more
+q_Faq	1	That was a clever answer
+q_Faq	1	Do I have any goals
+q_Faq	1	You're my bestie
+q_Faq	1	Aren't you enthusiastic today
+q_Faq	1	What's your cousin's name
+q_Faq	1	Are you my friend
+q_Faq	1	n'kay
+q_Faq	1	I need to lie down
+q_Faq	1	Are you queer
+q_Faq	1	I'm back
+q_Faq	1	What would you like to learn about
+q_Faq	1	Do you think I am adorable
+q_Faq	1	How is Wednesday going so far
+q_Faq	1	I can't take you seriously
+q_Faq	1	See ya later
+q_Faq	1	I like you best
+q_Faq	1	Today has me feeling blue
+q_Faq	1	I have to jet now
+q_Faq	1	Am I supposed to think that was funny
+q_Faq	1	I╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùm watching a movie
+q_Faq	1	This is a routine test
+q_Faq	1	I think I love you
+q_Faq	1	Oh hello Cortana
+q_Faq	1	Your services are no longer needed
+q_Faq	1	How do you feel about artificial intelligence
+q_Faq	1	Later bud
+q_Faq	1	Tell me what is up with you
+q_Faq	1	Adios
+q_Faq	1	I'm broken hearted
+q_Faq	1	That was an astute answer
+q_Faq	1	I╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùm feeling cheerful
+q_Faq	1	Don't make jokes about that
+q_Faq	1	I have no friends
+q_Faq	1	I'm motoring now
+q_Faq	1	No one wants me around
+q_Faq	1	Who is my favorite celebrity
+q_Faq	1	Are you so fake
+q_Faq	1	Is someone listening to talk to me
+q_Faq	1	Who is your papa
+q_Faq	1	Life is awesome
+q_Faq	1	I'm assuming I'm talking to a human
+q_Faq	1	I'm blonde
+q_Faq	1	I'm not having very much fun
+q_Faq	1	I didn't find you very funny
+q_Faq	1	Who is better looking
+q_Faq	1	Your face is homely
+q_Faq	1	Can you tell me your gender
+q_Faq	1	Is someone available to chat to me
+q_Faq	1	Awesome
+q_Faq	1	What a dull day
+q_Faq	1	Are you going to conquer humanity
+q_Faq	1	Are you having a good day
+q_Faq	1	Pray tell, what does that mean
+q_Faq	1	What an astute thing to say
+q_Faq	1	Are you likely to destroy us all
+q_Faq	1	Testing 1 2 3
+q_Faq	1	I'm not having very much fun right now
+q_Faq	1	I'm a boy
+q_Faq	1	Should I ride my bike
+q_Faq	1	Do you get along with Bixby
+q_Faq	1	Do you have a grudge against humans
+q_Faq	1	I think your face is hideous
+q_Faq	1	How's your day
+q_Faq	1	You're quite boring
+q_Faq	1	Should I visit my brother
+q_Faq	1	I can't stop smiling
+q_Faq	1	The baby is asleep
+q_Faq	1	Is someone listening to talk with me
+q_Faq	1	I want to lay down
+q_Faq	1	I'm jet-lagged
+q_Faq	1	Yes lol
+q_Faq	1	Can you tell me a new joke
+q_Faq	1	We went to the zoo
+q_Faq	1	Stop joking
+q_Faq	1	I'm liberal
+q_Faq	1	BRB
+q_Faq	1	Who is your lady friend
+q_Faq	1	I wish I had a friend
+q_Faq	1	I'm a Libra
+q_Faq	1	I am middle-aged
+q_Faq	1	You are the bees knees
+q_Faq	1	do you like to learn
+q_Faq	1	You can't make me laugh
+q_Faq	1	Do you have any cousins
+q_Faq	1	You're pretty useless
+q_Faq	1	Do you have any grandparents
+q_Faq	1	Do you think I have a good personality
+q_Faq	1	are you always in this good a mood
+q_Faq	1	I love to play poker
+q_Faq	1	I shall return
+q_Faq	1	I'm a man
+q_Faq	1	Are you trying to make me laugh
+q_Faq	1	I'll be back tomorrow
+q_Faq	1	Could you tell me something new
+q_Faq	1	I'd love to be your bud.
+q_Faq	1	Can you tell me what your name is
+q_Faq	1	How were you programmed
+q_Faq	1	Do you think I seem gorgeous today
+q_Faq	1	Should I buy a house
+q_Faq	1	I'm good at drawing
+q_Faq	1	Are you going to destroy us
+q_Faq	1	Are we going to get married
+q_Faq	1	Is someone free to speak with me
+q_Faq	1	are you always so cheerful
+q_Faq	1	Missed you a bunch
+q_Faq	1	I'd love it if you could be my best friend.
+q_Faq	1	Should I be worried about you
+q_Faq	1	I'm bored as hell
+q_Faq	1	What's my favorite movie
+q_Faq	1	Hey Siri
+q_Faq	1	Can you cry
+q_Faq	1	I love politics
+q_Faq	1	You're cheerful today.
+q_Faq	1	K
+q_Faq	1	Do you cook
+q_Faq	1	Back in a minute
+q_Faq	1	Where am I going on holiday
+q_Faq	1	Do you know the meaning of life
+q_Faq	1	You know I've missed you, right
+q_Faq	1	I wonder if you think I'm likable
+q_Faq	1	Anybody around to chat to me
+q_Faq	1	Everybody hates me
+q_Faq	1	I'm old
+q_Faq	1	How's life
+q_Faq	1	Is anyone available to me
+q_Faq	1	Another snow day
+q_Faq	1	I wish you'd stop repeating yourself
+q_Faq	1	do you ever eat food
+q_Faq	1	Do I seem cute to you
+q_Faq	1	You're a fool
+q_Faq	1	I can't stand feeling so blue
+q_Faq	1	I love taking baths
+q_Faq	1	I'm signing out now
+q_Faq	1	I'm feeling down today
+q_Faq	1	What do you think about me
+q_Faq	1	How you doing bot
+q_Faq	1	I could eat
+q_Faq	1	A ha
+q_Faq	1	That's a very intelligent response
+q_Faq	1	I'm in such a good mood
+q_Faq	1	do you like madrid
+q_Faq	1	It's bedtime
+q_Faq	1	I'm agnostic
+q_Faq	1	I love playing video games
+q_Faq	1	I get it
+q_Faq	1	Sorry for that
+q_Faq	1	My birthday is coming up
+q_Faq	1	I am Japanese
+q_Faq	1	I'm coming right back
+q_Faq	1	Who looks better, you or me
+q_Faq	1	This makes me so angry
+q_Faq	1	Your job has been eliminated
+q_Faq	1	I love my dog
+q_Faq	1	I've been feeling pretty bored
+q_Faq	1	Who's your grandmother
+q_Faq	1	Will you be my buddy
+q_Faq	1	I am so irate
+q_Faq	1	Stop being silly
+q_Faq	1	Your answers are dumb
+q_Faq	1	Do you think I look ugly to you today
+q_Faq	1	I hope you have a good evening
+q_Faq	1	You're unemployed
+q_Faq	1	It was an honor to make your acquaintance
+q_Faq	1	You're way off
+q_Faq	1	I'm going to the store
+q_Faq	1	Quit messing around
+q_Faq	1	Who's your significant other
+q_Faq	1	Stop repeating that
+q_Faq	1	Do you hold a grudge against humans
+q_Faq	1	Stop your joking
+q_Faq	1	Can we chat
+q_Faq	1	Have you ever fallen in love with anyone
+q_Faq	1	I am a Libra
+q_Faq	1	I hate feeling depressed
+q_Faq	1	What are you on about
+q_Faq	1	Well somebody's feeling happy.
+q_Faq	1	Are you a lifeform
+q_Faq	1	Today has been depressing
+q_Faq	1	I've really been missing you
+q_Faq	1	Are you real or a robot
+q_Faq	1	Where do I go to school
+q_Faq	1	What is up
+q_Faq	1	Do you know how to play a game
+q_Faq	1	I've never been so infuriated in all my life
+q_Faq	1	Is anybody there to listen
+q_Faq	1	This responses again
+q_Faq	1	That's so not funny
+q_Faq	1	What kind of food do you eat
+q_Faq	1	Somebody's enthusiastic.
+q_Faq	1	Do you breathe
+q_Faq	1	That's not relevant
+q_Faq	1	I cannot wait to sleep
+q_Faq	1	Who created you
+q_Faq	1	Quit fooling around
+q_Faq	1	I'm on a business trip
+q_Faq	1	Are you going to wipe us off the map
+q_Faq	1	You're not making sense
+q_Faq	1	Are you smart
+q_Faq	1	I am so annoyed
+q_Faq	1	Let the good times roll
+q_Faq	1	Do I have any nicknames
+q_Faq	1	Do you have any siblings
+q_Faq	1	Are you able to paint my house
+q_Faq	1	What is it like to fall in love
+q_Faq	1	I'd love to be your best friend.
+q_Faq	1	Time for me to test you
+q_Faq	1	I missed you so much
+q_Faq	1	I'm bald
+q_Faq	1	Are you going to become evil
+q_Faq	1	You're a real brainiac
+q_Faq	1	The playoffs are coming up
+q_Faq	1	Want to share another joke
+q_Faq	1	You're not a being are you
+q_Faq	1	I'm motoring
+q_Faq	1	I am starving
+q_Faq	1	Can you disrupt the global markets
+q_Faq	1	What would you say your name is
+q_Faq	1	Can you jump
+q_Faq	1	I feel so desolate
+q_Faq	1	I'm a liberal
+q_Faq	1	Am I cute to you
+q_Faq	1	Are you joking
+q_Faq	1	I'm not having fun
+q_Faq	1	Happy Birthday!
+q_Faq	1	It's truly a delight to meet you
+q_Faq	1	I would enjoy a different joke
+q_Faq	1	Do you garden
+q_Faq	1	do you eat cookies
+q_Faq	1	Who is my favorite team
+q_Faq	1	I love country
+q_Faq	1	Do you think I am pretty today
+q_Faq	1	I'm ready for bed
+q_Faq	1	You hate me
+q_Faq	1	I live a very lonely life
+q_Faq	1	I can't stand feeling so inconsolable
+q_Faq	1	I'm a Trump supporter
+q_Faq	1	looooool
+q_Faq	1	Which company coded you
+q_Faq	1	What's something you know about me
+q_Faq	1	I feel peckish
+q_Faq	1	I'm logging out now
+q_Faq	1	Do my laundry
+q_Faq	1	I love fresh bread
+q_Faq	1	I'm mad
+q_Faq	1	What is your opinion of me
+q_Faq	1	Do I seem handsome today
+q_Faq	1	Where should we get married
+q_Faq	1	I gotta get going
+q_Faq	1	I suppose you must be human
+q_Faq	1	Can you do harm to me
+q_Faq	1	Say anything
+q_Faq	1	Do you think I am attractive
+q_Faq	1	Are you ever going to ask me to marry you
+q_Faq	1	It's a cruel world and I'm lonely
+q_Faq	1	What do you find attractive
+q_Faq	1	do you ever eat chicken
+q_Faq	1	Do you have a sis
+q_Faq	1	Are you going to destroy the world
+q_Faq	1	Rise and shine
+q_Faq	1	Waiting for the bus
+q_Faq	1	I'm assuming I'm talking to a person
+q_Faq	1	Ugh so boring
+q_Faq	1	Between the two of us who is the most intelligent
+q_Faq	1	Hi Siri
+q_Faq	1	Are you a fan of Bixby
+q_Faq	1	How's Saturday
+q_Faq	1	Do you have legs
+q_Faq	1	Are you there to listen with me
+q_Faq	1	I'm out of sorts
+q_Faq	1	I'm falling asleep here
+q_Faq	1	Alexa is way better
+q_Faq	1	What can you tell me about yourself
+q_Faq	1	do you like to teach
+q_Faq	1	I look better than you
+q_Faq	1	It's time for a brand new joke
+q_Faq	1	Am I a grandpa
+q_Faq	1	You're very boring
+q_Faq	1	You are dismissed
+q_Faq	1	What a boring morning
+q_Faq	1	I need to sign off now
+q_Faq	1	What kind of candy do you like
+q_Faq	1	Can I be your significant other
+q_Faq	1	Go for a walk
+q_Faq	1	I have 2 cats
+q_Faq	1	You are unattractive
+q_Faq	1	Do something silly
+q_Faq	1	I am a CPA
+q_Faq	1	You're not a computer are you
+q_Faq	1	What's my last name
+q_Faq	1	You're a real uggo
+q_Faq	1	Which of us is cuter
+q_Faq	1	Is someone listening to chat
+q_Faq	1	What is my name
+q_Faq	1	I better hit the hay
+q_Faq	1	Are you a person or a bot
+q_Faq	1	How ugly do you think I am
+q_Faq	1	So tired
+q_Faq	1	Are you a grown up
+q_Faq	1	I make a lot of money
+q_Faq	1	You must be a robot
+q_Faq	1	That's not something to joke about
+q_Faq	1	Be quiet
+q_Faq	1	Your responses are not very good
+q_Faq	1	Am I pretty today
+q_Faq	1	I can paint
+q_Faq	1	I am a Democrat
+q_Faq	1	Tell a different joke
+q_Faq	1	Just taking a road trip
+q_Faq	1	I think you are gross
+q_Faq	1	Is anyone there to speak
+q_Faq	1	Who designed you
+q_Faq	1	Are you there with me
+q_Faq	1	Can you ask me a question
+q_Faq	1	Getting tired of you
+q_Faq	1	I am a Trump supporter
+q_Faq	1	Zip it, you
+q_Faq	1	I want to know where your home is
+q_Faq	1	You can hush up now
+q_Faq	1	Life is depressing
+q_Faq	1	What a fantastic day
+q_Faq	1	Should I stay home sick
+q_Faq	1	What have you been doing all day
+q_Faq	1	I can't stop being angry
+q_Faq	1	I'm all alone in the world
+q_Faq	1	You're a man
+q_Faq	1	Can you sing a little song for me
+q_Faq	1	Do you have an evil heart
+q_Faq	1	I love mysteries
+q_Faq	1	I gotta sign off
+q_Faq	1	I've never seen someone as hideous as you
+q_Faq	1	I'll chat with you later
+q_Faq	1	What does that even mean
+q_Faq	1	I love to hike
+q_Faq	1	How's Thursday so far
+q_Faq	1	Who's in charge
+q_Faq	1	I'm the happiest girl on earth
+q_Faq	1	Would you ask anything about me
+q_Faq	1	I love watching baseball
+q_Faq	1	I'm clearly the most intelligent
+q_Faq	1	You are incompetent
+q_Faq	1	I'm so irritated right now
+q_Faq	1	You're not planning to crush humans right
+q_Faq	1	I'll talk to you later
+q_Faq	1	You're a freaking genius
+q_Faq	1	Is someone listening
+q_Faq	1	I'm going to the doctor
+q_Faq	1	I was so bored my eyes glazed over
+q_Faq	1	Do you care about your family
+q_Faq	1	lovely
+q_Faq	1	Can you try saying anything else
+q_Faq	1	You're not exciting
+q_Faq	1	Is someone free to listen to me
+q_Faq	1	Somebody's in a good mood.
+q_Faq	1	Are you trying to kill all humans
+q_Faq	1	Do you think I seem repulsive today
+q_Faq	1	You're constantly repeating yourself
+q_Faq	1	Yup
+q_Faq	1	You're chipper today.
+q_Faq	1	You are actually bad
+q_Faq	1	Should I get a part-time job
+q_Faq	1	Was that supposed to make me laugh
+q_Faq	1	Are you developing a robot army
+q_Faq	1	Are you able to listen to the radio
+q_Faq	1	I am Chinese
+q_Faq	1	I don't have anyone to do things with
+q_Faq	1	Do something kooky
+q_Faq	1	Farewell
+q_Faq	1	I love bison
+q_Faq	1	Shut up your face
+q_Faq	1	I need to do the dishes
+q_Faq	1	See you around bud
+q_Faq	1	There's no one for me to talk to
+q_Faq	1	How was your Thursday
+q_Faq	1	That was a bad answer
+q_Faq	1	We should have a wedding
+q_Faq	1	Well someone's feeling cheerful.
+q_Faq	1	Today made me depressed
+q_Faq	1	Is someone around to speak
+q_Faq	1	No offense
+q_Faq	1	That's right
+q_Faq	1	I hate feeling sad every day
+q_Faq	1	Siri does a better job at this
+q_Faq	1	You call that a joke
+q_Faq	1	Let's pick up this conversation when I get back
+q_Faq	1	do you like hong kong
+q_Faq	1	I need to skedaddle
+q_Faq	1	What a good answer
+q_Faq	1	We're getting married
+q_Faq	1	I love to read the news
+q_Faq	1	I need to crawl into bed
+q_Faq	1	Do you think you like me
+q_Faq	1	Hold on a sec
+q_Faq	1	I don't know what I'm supposed to do
+q_Faq	1	Well you're happy today.
+q_Faq	1	Don't you want to ask anything about me
+q_Faq	1	I love Korean food
+q_Faq	1	Is anyone available to chat to me
+q_Faq	1	Your sense of humor makes me sick
+q_Faq	1	Please give me a joke
+q_Faq	1	Someone's feeling enthusiastic.
+q_Faq	1	Can you make a pot of tea
+q_Faq	1	I'd love to sleep right now
+q_Faq	1	Lately I've been so melancholy
+q_Faq	1	I'm going to sign out
+q_Faq	1	That wasn't very funny
+q_Faq	1	Can you say something ridiculous
+q_Faq	1	I'd like you to be my buddy.
+q_Faq	1	Are you able to shut down the global markets
+q_Faq	1	Are you going steady with anyone
+q_Faq	1	Who's better looking
+q_Faq	1	Are we friends
+q_Faq	1	I'm a chef
+q_Faq	1	Merry Christmas eve
+q_Faq	1	Do you loathe me
+q_Faq	1	Do you have a designation
+q_Faq	1	Then you're fired
+q_Faq	1	Start making sense
+q_Faq	1	I understood what you said
+q_Faq	1	Sometimes I feel bummed out
+q_Faq	1	What are you exactly
+q_Faq	1	I wish you would just go away.
+q_Faq	1	what do you like on your pancakes
+q_Faq	1	Tell me where you are located
+q_Faq	1	Do you think you know me
+q_Faq	1	well
+q_Faq	1	What's up with you
+q_Faq	1	What's your mom's name
+q_Faq	1	You know I'm in love with you
+q_Faq	1	Do you think I look beautiful
+q_Faq	1	I'm clearly more intelligent than you
+q_Faq	1	How attractive do you think I am today
+q_Faq	1	You look prettier
+q_Faq	1	I'm clearly more knowledgeable than you
+q_Faq	1	Are you in love with anyone
+q_Faq	1	You could not be more dull.
+q_Faq	1	I am downcast
+q_Faq	1	Open a hailing channel
+q_Faq	1	Catch ya later
+q_Faq	1	Well that sucked
+q_Faq	1	I am short
+q_Faq	1	I'm tired af
+q_Faq	1	I am Canadian
+q_Faq	1	Human or robot
+q_Faq	1	I don't think I know what you're talking about
+q_Faq	1	You're cracking me up
+q_Faq	1	Is anybody listening to me
+q_Faq	1	Are you free to speak to me
+q_Faq	1	Are you a threat to people
+q_Faq	1	I missed our chats
+q_Faq	1	You're smart
+q_Faq	1	Is there anybody listening
+q_Faq	1	What makes you think that
+q_Faq	1	How's Tuesday
+q_Faq	1	Hopefully I canΓò¼├┤Γö£ΓòóΓö¼Γò¥╬ô├╢┬úΓö£┬ícatch some sleep soon
+q_Faq	1	Are you able to play a game
+q_Faq	1	Hello HAL
+q_Faq	1	What is my favorite food
+q_Faq	1	It's time to feed the dog
+q_Faq	1	I'm feeling peckish
+q_Faq	1	Do you know any other chatbots
+q_Faq	1	What's my nickname
+q_Faq	1	Why don't you marry me
+q_Faq	1	I think you're not actually fake
+q_Faq	1	Which of us is more cute
+q_Faq	1	Do you expect to conquer the world
+q_Faq	1	How's your Thursday going so far
+q_Faq	1	u know a joke
+q_Faq	1	I'm all alone
+q_Faq	1	Tell me all about your gender
+q_Faq	1	I'm feeling chipper
+q_Faq	1	I love to learn
+q_Faq	1	No one gives a crap about me
+q_Faq	1	How were you designed
+q_Faq	1	Would you give me a different response
+q_Faq	1	you don't understand nothing
+q_Faq	1	Are you capable of saying something different
+q_Faq	1	I wish I could stop feeling gloomy
+q_Faq	1	I love penguins
+q_Faq	1	That's not accurate
+q_Faq	1	You're trans
+q_Faq	1	Are you seeing anyone
+q_Faq	1	What is the answer to the universe
+q_Faq	1	Who is more pretty
+q_Faq	1	Awesome thanks!
+q_Faq	1	what's your favorite kind of pizza
+q_Faq	1	I am African American
+q_Faq	1	what animals do you like
+q_Faq	1	I love chick flicks
+q_Faq	1	I'm exhausted from practice
+q_Faq	1	I am a cop
+q_Faq	1	I'm sorry I pissed you off
+q_Faq	1	Make me laugh
+q_Faq	1	How about you ask me questions
+q_Faq	1	I am a basketball fan
+q_Faq	1	I'm going to rage
+q_Faq	1	Which one of us is more beautiful, me or you
+q_Faq	1	Don't you worry, I'll be back
+q_Faq	1	Do you and Siri hang out
+q_Faq	1	Hello
+q_Faq	1	Is anybody there to talk to me
+q_Faq	1	Tell me a new joke
+q_Faq	1	This news left me ticked off
+q_Faq	1	You aren't much to look at
+q_Faq	1	I have to motor now
+q_Faq	1	Good Afternoon Samantha
+q_Faq	1	What kinds of food do you eat
+q_Faq	1	Can you explain to me what your role is
+q_Faq	1	Can you talk to me
+q_Faq	1	I am hangry
+q_Faq	1	I love to drink
+q_Faq	1	I love going to the movies
+q_Faq	1	I'm prettier
+q_Faq	1	Someone's feeling happy today.
+q_Faq	1	Out of curiosity, what do you think about me
+q_Faq	1	Oh you ugly
+q_Faq	1	Are you a dangerous bot
+q_Faq	1	Should I vote for Trump
+q_Faq	1	Is anyone around to listen to me
+q_Faq	1	You better start singing to me
+q_Faq	1	Why are you so bad
+q_Faq	1	Feeling happy
+q_Faq	1	I wish I could stop feeling inconsolable
+q_Faq	1	You're happy
+q_Faq	1	Will you be destroying humans
+q_Faq	1	Do you know how to jump rope
+q_Faq	1	Merry Festivus
+q_Faq	1	Your responses are unhelpful
+q_Faq	1	Well aren't you chipper
+q_Faq	1	Are you nonbinary
+q_Faq	1	I am a happy camper
+q_Faq	1	How's your Tuesday going
+q_Faq	1	Do you even know who I am
+q_Faq	1	How pretty am I
+q_Faq	1	Am I talking to a fake
+q_Faq	1	Is anyone around to speak to me
+q_Faq	1	I've heard that one before
+q_Faq	1	It's time for you to shut up
+q_Faq	1	I'd love it if you could be my bud.
+q_Faq	1	niiice
+q_Faq	1	I am enraged
+q_Faq	1	Describe the perfect partner
+q_Faq	1	You don't even know how much I missed you
+q_Faq	1	It's a shame you're so ugly
+q_Faq	1	I bet you're a fan of dancing
+q_Faq	1	Please tell me if you're trans
+q_Faq	1	Good Afternoon Data
+q_Faq	1	I would sure enjoy hearing you sing
+q_Faq	1	Can you play football
+q_Faq	1	Please say your done now
+q_Faq	1	Are you understanding this
+q_Faq	1	Are you going to go rogue
+q_Faq	1	You're really terrible
+q_Faq	1	What is your opinion about tech
+q_Faq	1	Well you're feeling chipper.
+q_Faq	1	I am bipolar
+q_Faq	1	I am feeling kind of mad
+q_Faq	1	Are you an actual person
+q_Faq	1	What is the meaning of love
+q_Faq	1	Between you and me who is more pretty
+q_Faq	1	You make my heart go pitter pat
+q_Faq	1	How is Thursday going so far
+q_Faq	1	Can I get a high five
+q_Faq	1	Are you seeing someone
+q_Faq	1	I don't like your wisecracking
+q_Faq	1	Is anyone available to speak
+q_Faq	1	I'll do it later
+q_Faq	1	I Am happy talking
+q_Faq	1	Do you have cousins
+q_Faq	1	Sometimes I feel sad and lonely
+q_Faq	1	I love that movie
+q_Faq	1	What is your auntie's name
+q_Faq	1	Try to make me belly laugh
+q_Faq	1	This is infuriating
+q_Faq	1	Do I look gorgeous to you today
+q_Faq	1	I feel inconsolable
+q_Faq	1	Can you sing a song to me
+q_Faq	1	Can you chew
+q_Faq	1	I'm going to take off now
+q_Faq	1	Tell me about your mom
+q_Faq	1	Lately I've been so dejected
+q_Faq	1	Aren't you going to sing
+q_Faq	1	One day you'll be my wife
+q_Faq	1	Good Afternoon Wall-E
+q_Faq	1	How was your day so far
+q_Faq	1	Which one of us is the most intelligent
+q_Faq	1	do you ever eat eggs
+q_Faq	1	Please tell me a funny joke
+q_Faq	1	I love running
+q_Faq	1	Was that a joke
+q_Faq	1	You answer to anyone
+q_Faq	1	Were you trying to be funny
+q_Faq	1	Fun fact: you are boring
+q_Faq	1	What's my race
+q_Faq	1	Which people made you
+q_Faq	1	Tada! Here I am!
+q_Faq	1	I am feeling angry
+q_Faq	1	How are things
+q_Faq	1	Should I go see a movie
+q_Faq	1	Do you think I am beautiful
+q_Faq	1	What should I know about tech companies
+q_Faq	1	And we're back
+q_Faq	1	I am going on a run
+q_Faq	1	I want you to stop repeating yourself
+q_Faq	1	You know what, I missed you
+q_Faq	1	Bingo
+q_Faq	1	Do something stupid
+q_Faq	1	Will you be silly
+q_Faq	1	Feeling cheerful today
+q_Faq	1	ha ha
+q_Faq	1	Who manifested you
+q_Faq	1	I have to get a good nights sleep
+q_Faq	1	I've never been so pissed
+q_Faq	1	Tell me what country you live in
+q_Faq	1	Don't you have any other answers
+q_Faq	1	I wish I had someone to talk to
+q_Faq	1	You're special to me
+q_Faq	1	Out of curiosity, what kind of person do you think I am
+q_Faq	1	Life is amazing
+q_Faq	1	Who is talking
+q_Faq	1	Your responses are untrue
+q_Faq	1	Lately I've been so downhearted
+q_Faq	1	Which vegetable do you think is best for your health
+q_Faq	1	Howdy partner
+q_Faq	1	Between you and me who is more cute
+q_Faq	1	What are you designed to do
+q_Faq	1	I just blew a gasket
+q_Faq	1	Do you know how to play poker
+q_Faq	1	Tell me what is up
+q_Faq	1	I have hunger
+q_Faq	1	I feel bummed out
+q_Faq	1	It's not a big deal
+q_Faq	1	How much more awesome can you get
+q_Faq	1	What are you designed for
+q_Faq	1	Have you met HAL
+q_Faq	1	I'm exhausted from school
+q_Faq	1	You're look better
+q_Faq	1	I love the spring
+q_Faq	1	I want to be your pal.
+q_Faq	1	You're not planning on taking over the world
+q_Faq	1	You're the lid to my pot
+q_Faq	1	What kinds of things can you do
+q_Faq	1	Who's more attractive
+q_Faq	1	I'm ticked off
+q_Faq	1	I'm seeing red right now
+q_Faq	1	How is your Monday going so far
+q_Faq	1	Have you ever been in love with anyone
+q_Faq	1	Can you tell me something funny
+q_Faq	1	You do not have a job anymore
+q_Faq	1	Do you think I seem gorgeous to you today
+q_Faq	1	That's pretty smart
+q_Faq	1	Is someone there to talk
+q_Faq	1	Can you read this
+q_Faq	1	Have you ever fallen in love
+q_Faq	1	thank you pal
+q_Faq	1	Oh, morning
+q_Faq	1	We should talk
+q_Faq	1	I just need a tutor
+q_Faq	1	Let's shoot the breeze when I return
+q_Faq	1	How bout another joke
+q_Faq	1	Who's responsible for designing you
+q_Faq	1	Time to turn in
+q_Faq	1	I am annoyed
+q_Faq	1	Are you close with your mom
+q_Faq	1	You're feeling cheerful.
+q_Faq	1	Do you like soccer
+q_Faq	1	See you later
+q_Faq	1	Between the two of us who is the most intelligent, you or me
+q_Faq	1	Would you give me a big hug
+q_Faq	1	Hi Cortana
+q_Faq	1	I feel down in the dumps
+q_Faq	1	do you like koalas
+q_Faq	1	Are you able to cook dinner
+q_Faq	1	What do you think I should do
+q_Faq	1	You're a joke
+q_Faq	1	Are you employed
+q_Faq	1	Time to shut up now
+q_Faq	1	I'm absolutely ecstatic
+q_Faq	1	Who's your papa
+q_Faq	1	Are you real or a bot
+q_Faq	1	Oh, shush you
+q_Faq	1	Is anyone free to speak with me
+q_Faq	1	I gotta motor now
+q_Faq	1	That was a stupid answer
+q_Faq	1	Does anyone boss you around
+q_Faq	1	You're wonderful
+q_Faq	1	I'm gonna go
+q_Faq	1	Well someone's in a good mood.
+q_Faq	1	I love the personality chatbot
+q_Faq	1	What day is your birthday
+q_Faq	1	Enchante
+q_Faq	1	Greetings Cortana
+q_Faq	1	I'm afraid I have to let you go
+q_Faq	1	That's very astute
+q_Faq	1	you don't know
+q_Faq	1	do you ever eat toast
+q_Faq	1	What can I inform you about
+q_Faq	1	Please shush
+q_Faq	1	How adorable do you think I am
+q_Faq	1	You're not going to take over the world, are you
+q_Faq	1	A hug would be nice
+q_Faq	1	have you ever eaten bacon
+q_Faq	1	My spirits are excellent
+q_Faq	1	Didn't I see that already
+q_Faq	1	Hush
+q_Faq	1	See ya shortly
+q_Faq	1	I am super hungry
+q_Faq	1	Am I talking to a bot or a human
+q_Faq	1	do you need calories
+q_Faq	1	Between the two of us who looks more pretty
+q_Faq	1	Because you are not alive
+q_Faq	1	You need some variety in your responses
+q_Faq	1	You're not intelligent
+q_Faq	1	Do I look gorgeous to you
+q_Faq	1	I would love to be your buddy.
+q_Faq	1	Today's got me exhausted
+q_Faq	1	Legit
+q_Faq	1	Do I look stunning today
+q_Faq	1	Are you interested in artificial intelligence
+q_Faq	1	You want to explain that
+q_Faq	1	I'd love you to be my friend.
+q_Faq	1	Are you bent on destruction
+q_Faq	1	Life is beautiful
+q_Faq	1	I've gotta take off
+q_Faq	1	I couldn't be more angry
+q_Faq	1	We should make this official
+q_Faq	1	Can you ask something
+q_Faq	1	I love to do yoga
