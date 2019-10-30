@@ -24,8 +24,8 @@ namespace VirtualAssistant.Dialogs
             // This array defines how the Waterfall will execute.
             var waterfallSteps = new WaterfallStep[]
             {
-                TransportStepAsync,
-                NameStepAsync,
+                CheckSearchEntitiesAsync,
+                ReturnResultsAsync,
                 NameConfirmStepAsync,
                 AgeStepAsync,
                 ConfirmStepAsync,
@@ -43,10 +43,12 @@ namespace VirtualAssistant.Dialogs
             InitialDialogId = nameof(WaterfallDialog);
         }
 
-        private static async Task<DialogTurnResult> TransportStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+        private static async Task<DialogTurnResult> CheckSearchEntitiesAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             // WaterfallStep always finishes with the end of the Waterfall or with another dialog; here it is a Prompt Dialog.
             // Running a prompt here means the next WaterfallStep will be run when the users response is received.
+
+
             return await stepContext.PromptAsync(nameof(ChoicePrompt),
                 new PromptOptions
                 {
@@ -55,7 +57,7 @@ namespace VirtualAssistant.Dialogs
                 }, cancellationToken);
         }
 
-        private static async Task<DialogTurnResult> NameStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+        private static async Task<DialogTurnResult> ReturnResultsAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             stepContext.Values["transport"] = ((FoundChoice)stepContext.Result).Value;
 

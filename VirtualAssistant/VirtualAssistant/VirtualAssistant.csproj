@@ -42,6 +42,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>EscalateStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Responses\Profile\ProfileStrings.resx">
+      <LastGenOutput>ProfileStrings.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Responses\Main\MainStrings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MainStrings.Designer.cs</LastGenOutput>
@@ -62,6 +66,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>EscalateStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Responses\Profile\ProfileStrings.Designer.cs">
+      <DependentUpon>ProfileStrings.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Update="Responses\Main\MainStrings.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -94,40 +103,40 @@
     <Content Update="Content\AccountInfo.zh.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\StudentRegister.de.json">
+    <Content Update="Content\StudentProfile.de.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\StudentRegister.es.json">
+    <Content Update="Content\StudentProfile.es.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\StudentRegister.fr.json">
+    <Content Update="Content\StudentProfile.fr.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\StudentRegister.it.json">
+    <Content Update="Content\StudentProfile.it.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\StudentRegister.json">
+    <Content Update="Content\StudentProfile.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\StudentRegister.zh.json">
+    <Content Update="Content\StudentProfile.zh.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\TutorRegister.de.json">
+    <Content Update="Content\TutorProfile.de.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\TutorRegister.es.json">
+    <Content Update="Content\TutorProfile.es.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\TutorRegister.fr.json">
+    <Content Update="Content\TutorProfile.fr.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\TutorRegister.it.json">
+    <Content Update="Content\TutorProfile.it.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\TutorRegister.json">
+    <Content Update="Content\TutorProfile.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Content\TutorRegister.zh.json">
+    <Content Update="Content\TutorProfile.zh.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="Content\CreateAccount.de.json">
