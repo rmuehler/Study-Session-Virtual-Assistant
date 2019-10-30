@@ -52,57 +52,9 @@ l_searchskill	1	is steve martin teaching math
 l_searchskill	1	i really need help in english, does anyone tutor this subject at 9pm
 None	1	goodbye
 None	1	hello
-q_Chitchat	1	Can I use this in another country
-q_Chitchat	1	How do I use the virtual assistant so that I can find study sessions
-q_Chitchat	1	What is this service
-q_Chitchat	1	Is this good for theater majors
-q_Chitchat	1	Who can use this service
-q_Chitchat	1	How to sign up as a tutor
-q_Chitchat	1	Is this a tutor service
-q_Chitchat	1	What entails for student account
-q_Chitchat	1	Will this service end
-q_Chitchat	1	Is this a full proof service
-q_Chitchat	1	I have tutor experience and I would like to join this application to help others
-q_Chitchat	1	I want to tutor for this service
-q_Chitchat	1	Are we allowed to date our tutors
-q_Chitchat	1	Do you guys tutor for any topic because I need help with a topic
-q_Chitchat	1	I would like to make an account as a tutor
-q_Chitchat	1	How can I use this service as a tutor
-q_Chitchat	1	How do I begin this process
-q_Chitchat	1	Tutor assistance
-q_Chitchat	1	What are the required fields to register to be a tutor
-q_Chitchat	1	Where do the tutors come from
-q_Chitchat	1	Assistance with this service
-q_Chitchat	1	Do tutors need any special training before being hired for the process
-q_Chitchat	1	I need to make a student account
-q_Chitchat	1	What if I dont feel comfortable with the tutor
-q_Chitchat	1	Student account
-q_Chitchat	1	How much information is needed to become a tutor
-q_Chitchat	1	Where can I start getting help with this service?
-q_Chitchat	1	Are there tutors under the age 18?
-q_Chitchat	1	How can a tutor connect with me
-q_Chitchat	1	Will this be available forever
-q_Chitchat	1	I would like to tutor and sign up
-q_Chitchat	1	Does this service use skype or team viewer for the hearing impaired
-q_Chitchat	1	Where can I register for this as a tutor
-q_Chitchat	1	As a tutor can we update our information
-q_Chitchat	1	How can parents sign there college student up for this service
-q_Chitchat	1	What if I was sexually harassed
-q_Chitchat	1	Can tutors meet in person
-q_Chitchat	1	How do I find study sessions with a tutor
-q_Chitchat	1	How much would it be to fund this for future work
-q_Chitchat	1	tutor search please
-q_Chitchat	1	Please assist in how to use this
-q_Chitchat	1	Help me get started as a tutor
-q_Chitchat	1	Tutor needs to change information
-q_Chitchat	1	I need help with my class
-q_Chitchat	1	Student account registration
-q_Chitchat	1	Are there tutors over the age 30?
-q_Chitchat	1	Is this a service in any country
-q_Chitchat	1	Student account holder needing to do the search for a tutor
 q_Chitchat	1	How do I use this application
-q_Chitchat	1	How long is this service going on for
-q_Chitchat	1	How many courses can a student recieve tutor service
+q_Chitchat	1	Help me learn how to get a tutor
+q_Chitchat	1	How do I find s tutor
 q_Faq	1	you're idiotic
 q_Faq	1	I'm sexy
 q_Faq	1	Are you smarter than me

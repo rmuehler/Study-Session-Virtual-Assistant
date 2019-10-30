@@ -52,57 +52,9 @@ l_searchskill	1	i need a tutor that specializes in discreet structures at 9pm.
 l_searchskill	1	i am free sunday, can i work with a tutor for the economics course
 None	1	logout
 None	1	hi
-q_Chitchat	1	Do I need to give a lot of information for a student account
-q_Chitchat	1	Is there a help session for this
-q_Chitchat	1	I need to request a tutor service
-q_Chitchat	1	Tuter
-q_Chitchat	1	Tutor sign-up please
-q_Chitchat	1	Is this service open for only college students?
-q_Chitchat	1	Accommodation for the hearing impaired
-q_Chitchat	1	What information do I need to give for a student
-q_Chitchat	1	Are the tutors good at the subject
-q_Chitchat	1	Is this service connected with USF
-q_Chitchat	1	Is this service connected to any organization
-q_Chitchat	1	Hey I need a tutor
-q_Chitchat	1	Can high schools ever do this
-q_Chitchat	1	Help me get this started
-q_Chitchat	1	I am a tutor and I want help to provide my service for others
-q_Chitchat	1	Is it okay to meet the tutors in person
-q_Chitchat	1	Help me find a tutor
-q_Chitchat	1	I would like to connect with a tutor
-q_Chitchat	1	Register for service as a student
-q_Chitchat	1	Are college student able to use this service
-q_Chitchat	1	What courses are being taught with this service
-q_Chitchat	1	I am a tutor, can I update the courses I place on my profile
-q_Chitchat	1	What is I don’t like the tutor?
-q_Chitchat	1	If I want to add a class that I teach, can I change anything in my account
-q_Chitchat	1	What are the chances this service will benefit me
-q_Chitchat	1	Is this good for engineering students
-q_Chitchat	1	I need assistance from a tutor
-q_Chitchat	1	Can we pick a woman tutor
-q_Chitchat	1	What kind of subjects would the tutors teach?
-q_Chitchat	1	Is this included in the students tuition?
-q_Chitchat	1	I am a student and I need to make an account
-q_Chitchat	1	Can this service benefit any majors
-q_Chitchat	1	Are tutors teaching anything
-q_Chitchat	1	I need help from a tutor
-q_Chitchat	1	Help me learn how to get a tutor
-q_Chitchat	1	Help please with this service
-q_Chitchat	1	I need help getting started
-q_Chitchat	1	How advanced are the tutors for the courses?
-q_Chitchat	1	What if I don't need anymore of the tutors service
-q_Chitchat	1	How do I search for a tutor if I already have an account
-q_Chitchat	1	Does this cost anything
-q_Chitchat	1	Will the tutor help me pass
-q_Chitchat	1	Have an account already, please search for tutor
-q_Chitchat	1	What is the cost on this
-q_Chitchat	1	I think I was sexually harassed by the student.
-q_Chitchat	1	How can I get a tutor for a topic
-q_Chitchat	1	Need to register as a student
-q_Chitchat	1	I already have an account, how can I find a tutor
-q_Chitchat	1	Can I benefit if I am a Masters Student
-q_Chitchat	1	I am a tutor and I was wondering if I can update met information
-q_Chitchat	1	What are the rules with dating the tutors.
+q_Chitchat	1	How do I use the virtual assistant so that I can find study sessions
+q_Chitchat	1	Start looking for a tutor\n\n
+q_Chitchat	1	How does this thing work
 q_Faq	1	I just did laundry
 q_Faq	1	so you've really never eaten
 q_Faq	1	That was pretty brilliant

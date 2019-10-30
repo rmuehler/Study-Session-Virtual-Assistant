@@ -1,19 +1,19 @@
 Utterance	Intents
-that is correct	l_General, q_Faq
-goodbye	None, q_Faq
-stop talking	l_General, q_Faq
-pardon	l_General, q_Faq
-sounds great	l_General, q_Faq
-go away	l_General, q_Faq
-okay	l_General, q_Faq
-shut your mouth	l_General, q_Faq
-fine	l_General, q_Faq
-be quiet	l_General, q_Faq
-yes	l_General, q_Faq
-quiet	l_General, q_Faq
-forget about it	l_General, q_Faq
-hello	None, q_Faq
-i just need a tutor	q_Chitchat, q_Faq
 perfect	l_General, q_Faq
-sure	l_General, q_Faq
+that is correct	l_General, q_Faq
+forget about it	l_General, q_Faq
+pardon	l_General, q_Faq
+hello	None, q_Faq
+go away	l_General, q_Faq
+shut your mouth	l_General, q_Faq
+goodbye	None, q_Faq
+be quiet	l_General, q_Faq
+quiet	l_General, q_Faq
+i just need a tutor	q_Chitchat, q_Faq
 hi	None, q_Faq
+sure	l_General, q_Faq
+fine	l_General, q_Faq
+stop talking	l_General, q_Faq
+okay	l_General, q_Faq
+sounds great	l_General, q_Faq
+yes	l_General, q_Faq

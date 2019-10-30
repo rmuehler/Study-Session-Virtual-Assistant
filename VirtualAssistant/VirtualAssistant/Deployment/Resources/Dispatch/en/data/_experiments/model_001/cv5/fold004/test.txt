@@ -52,57 +52,9 @@ l_searchskill	1	i need a tutor at 4pm to help me with chemistry
 l_searchskill	1	is anyone at 6 available to help with asdfsdfsad
 None	1	hello
 None	1	hi
-q_Chitchat	1	What is required to use this service to tutor
-q_Chitchat	1	Hey I need to do a tutor search and I already registered
-q_Chitchat	1	Can I add more course I want to teach at any time
-q_Chitchat	1	What if the person is hearing impaired
-q_Chitchat	1	I would like a tutor please, where do I start
-q_Chitchat	1	Tutor need to create and account
-q_Chitchat	1	Where is the start icon?
-q_Chitchat	1	Is this service ever going to expire?
-q_Chitchat	1	I need assistance with a topic
-q_Chitchat	1	How can I get help with this service
 q_Chitchat	1	I need help with this service.
-q_Chitchat	1	How can I utilize this service as a tutor
-q_Chitchat	1	I think I was sexually harassed by my tutor.
-q_Chitchat	1	Is this good for Art students
-q_Chitchat	1	What courses does this service provide
-q_Chitchat	1	Are the tutors students
-q_Chitchat	1	Is this a service for tutors
-q_Chitchat	1	Tutor information required to create an account
-q_Chitchat	1	Do I sign in here or create an account
-q_Chitchat	1	I need a tutor service
-q_Chitchat	1	Are the tutors interns
-q_Chitchat	1	Hi I am a tutor, how can I tutor students
-q_Chitchat	1	I need to find a tutor that teaches a specific subject, how does this work
-q_Chitchat	1	What are the chances this service is worth it
-q_Chitchat	1	Does this service need funding from the university
-q_Chitchat	1	Help
-q_Chitchat	1	How do I start tutor service
-q_Chitchat	1	Can you tell the board of education to open this for high school students
-q_Chitchat	1	I am a parent, can I sign my college student up for this
-q_Chitchat	1	Is it okay to finish early
-q_Chitchat	1	Are parents allowed to to do this for their college student
-q_Chitchat	1	Is this service going to open up for high schools in the near future
-q_Chitchat	1	Is this a yearly subscription
-q_Chitchat	1	registered student, please search for a tutor
-q_Chitchat	1	If I want to stop teaching a specific subject, can I change anything in my profile
-q_Chitchat	1	The service does what?
-q_Chitchat	1	How much an hour do I need to pay
-q_Chitchat	1	Can we requisition only a female tutor
-q_Chitchat	1	Can we pick a male tutor
-q_Chitchat	1	Are the tutors teaching high school courses
-q_Chitchat	1	Is this a global service
-q_Chitchat	1	How many times can I use this a week
-q_Chitchat	1	Is this good for writing majors
-q_Chitchat	1	I am not in coll
-q_Chitchat	1	Tutor needs to update email
-q_Chitchat	1	Get me started with a student account
-q_Chitchat	1	Tutor wants to update information in the cloud
-q_Chitchat	1	Information to sign up as a tutor
-q_Chitchat	1	How can I get study help for my class
-q_Chitchat	1	What do I need to list for my student account
-q_Chitchat	1	Service?
+q_Chitchat	1	Instructions how to find a tutor
+q_Chitchat	1	I would like a tutor please, where do I start
 q_Faq	1	Can you ask something
 q_Faq	1	I love to do yoga
 q_Faq	1	That joke is whack

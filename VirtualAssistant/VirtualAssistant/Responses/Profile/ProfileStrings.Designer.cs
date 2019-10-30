@@ -70,7 +70,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to What else can I help you with?.
+        ///   Looks up a localized string similar to Please edit your profile above..
         /// </summary>
         public static string COMPLETED {
             get {
@@ -115,7 +115,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to What is this?.
+        ///   Looks up a localized string similar to Why do I need a profile?.
         /// </summary>
         public static string HELP_BTN_TEXT_1 {
             get {
@@ -124,7 +124,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Do I need an account?.
+        ///   Looks up a localized string similar to How do I search for tutors?.
         /// </summary>
         public static string HELP_BTN_TEXT_2 {
             get {
@@ -133,7 +133,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Who are the tutors?.
+        ///   Looks up a localized string similar to What information does the tutor see?.
         /// </summary>
         public static string HELP_BTN_TEXT_3 {
             get {
@@ -142,7 +142,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to What is this?.
+        ///   Looks up a localized string similar to Why do I need a profile?.
         /// </summary>
         public static string HELP_BTN_VALUE_1 {
             get {
@@ -151,7 +151,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Do I need an account?.
+        ///   Looks up a localized string similar to How do I search for tutors?.
         /// </summary>
         public static string HELP_BTN_VALUE_2 {
             get {
@@ -160,7 +160,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Who are the tutors?.
+        ///   Looks up a localized string similar to What information does the tutor see?.
         /// </summary>
         public static string HELP_BTN_VALUE_3 {
             get {

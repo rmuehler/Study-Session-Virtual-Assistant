@@ -103,7 +103,7 @@ namespace VirtualAssistant.Responses.Profile
                 {
                     new CardAction(type: ActionTypes.ImBack, title: ProfileStrings.HELP_BTN_TEXT_1, value: ProfileStrings.HELP_BTN_VALUE_1),
                     new CardAction(type: ActionTypes.ImBack, title: ProfileStrings.HELP_BTN_TEXT_2, value: ProfileStrings.HELP_BTN_VALUE_2),
-                    new CardAction(type: ActionTypes.OpenUrl, title: ProfileStrings.HELP_BTN_TEXT_3, value: ProfileStrings.HELP_BTN_VALUE_3),
+                    new CardAction(type: ActionTypes.ImBack, title: ProfileStrings.HELP_BTN_TEXT_3, value: ProfileStrings.HELP_BTN_VALUE_3),
                 },
             };
 

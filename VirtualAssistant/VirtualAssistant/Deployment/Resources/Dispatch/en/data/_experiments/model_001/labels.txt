@@ -3,5 +3,5 @@ Label	LabelName	Samples
 1	l_profileskill	13
 2	l_searchskill	32
 3	None	12
-4	q_Chitchat	255
+4	q_Chitchat	13
 5	q_Faq	9483

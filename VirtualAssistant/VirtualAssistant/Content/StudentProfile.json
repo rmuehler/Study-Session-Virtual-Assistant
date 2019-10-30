@@ -156,7 +156,15 @@
         "actions": [
           {
             "type": "Action.Submit",
-            "title": "OK"
+            "title": "OK",
+            "data": {
+              "msteams": {
+                "type": "messageBack",
+                "displayText": "I clicked this button",
+                "text": "text to bots",
+                "value": "{\"Networks\": \"Physics\", \"Calculus\": \"from StudentCourseSelect\"}"
+              }
+            }
           }
         ]
       }

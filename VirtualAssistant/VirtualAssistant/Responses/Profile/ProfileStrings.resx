@@ -121,7 +121,7 @@
     <value>Ok, let's start over.</value>
   </data>
   <data name="COMPLETED" xml:space="preserve">
-    <value>What else can I help you with?</value>
+    <value>Please edit your profile above.</value>
   </data>
   <data name="CONFUSED" xml:space="preserve">
     <value>I'm sorry, I'm not able to help with that.</value>
@@ -136,22 +136,22 @@
     <value>Hey, {0}!</value>
   </data>
   <data name="HELP_BTN_TEXT_1" xml:space="preserve">
-    <value>What is this?</value>
+    <value>Why do I need a profile?</value>
   </data>
   <data name="HELP_BTN_TEXT_2" xml:space="preserve">
-    <value>Do I need an account?</value>
+    <value>How do I search for tutors?</value>
   </data>
   <data name="HELP_BTN_TEXT_3" xml:space="preserve">
-    <value>Who are the tutors?</value>
+    <value>What information does the tutor see?</value>
   </data>
   <data name="HELP_BTN_VALUE_1" xml:space="preserve">
-    <value>What is this?</value>
+    <value>Why do I need a profile?</value>
   </data>
   <data name="HELP_BTN_VALUE_2" xml:space="preserve">
-    <value>Do I need an account?</value>
+    <value>How do I search for tutors?</value>
   </data>
   <data name="HELP_BTN_VALUE_3" xml:space="preserve">
-    <value>Who are the tutors?</value>
+    <value>What information does the tutor see?</value>
   </data>
   <data name="HELP_TEXT" xml:space="preserve">
     <value>This card can be used to display information to help your user interact with your bot. The buttons below can be used for sample queries or links to external sites.</value>
