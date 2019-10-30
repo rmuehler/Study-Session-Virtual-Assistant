@@ -8,23 +8,42 @@
             "description": "",
             "authenticationConnections": [],
             "actions": [
-                {
-                    "id": "searchskill_Sample",
-                    "definition": {
-                        "description": "Sample Skill action with no slots",
-                        "slots": [],
-                        "triggers": {
-                            "utteranceSources": [
-                                {
-                                    "locale": "en",
-                                    "source": [
-                                        "searchskill#Sample"
-                                    ]
-                                }
-                            ]
-                        }
-                    }
+              {
+                "id": "searchskill_Search_by_Tutor",
+                "definition": {
+                  "description": "Search for a specific tutor",
+                  "slots": [],
+                  "triggers": {
+                    "utteranceSources": [
+                      {
+                        "locale": "en",
+                        "source": [
+                          "searchskill#Search_by_Tutor"
+                        ]
+                      }
+                    ]
+                  }
                 }
+
+              },
+              {
+                "id": "searchskill_Search_by_Subject",
+                "definition": {
+                  "description": "Search for tutors by Subject",
+                  "slots": [],
+                  "triggers": {
+                    "utteranceSources": [
+                      {
+                        "locale": "en",
+                        "source": [
+                          "searchskill#Search_by_Subject"
+                        ]
+                      }
+                    ]
+                  }
+                }
+
+              }
             ]
         },
         {
@@ -36,7 +55,7 @@
             "authenticationConnections": [],
             "actions": [
                 {
-                    "id": "profileskill_Sample",
+                    "id": "profileskill_Edit_Profile",
                     "definition": {
                         "description": "Sample Skill action with no slots",
                         "slots": [],
@@ -45,7 +64,7 @@
                                 {
                                     "locale": "en",
                                     "source": [
-                                        "profileskill#Sample"
+                                        "profileskill#Edit_Profile"
                                     ]
                                 }
                             ]

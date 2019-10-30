@@ -41,7 +41,9 @@ l_General	1	ok stop stop
 l_General	1	finished with
 l_General	1	ya
 l_General	1	nothing please
-l_profileskill	1	sample dialog
+l_profileskill	1	what type of info does the tutor see
+l_profileskill	1	show me my profile
+l_profileskill	1	what information do you have on file for me
 l_searchskill	1	is annabelle availible tomorrow
 l_searchskill	1	i am free at 8am and i need serious help learning physics, who can help me
 l_searchskill	1	is anyone available today at 12pm to help me study algebra
@@ -50,9 +52,57 @@ l_searchskill	1	i can't fail and i am freaking out, is there a tutor that teache
 l_searchskill	1	can bob evans help me with english class on tuesday
 None	1	all of them
 None	1	can i order pizza
-q_Chitchat	1	I just need a tutor
-q_Chitchat	1	Please assist in how to use this
+q_Chitchat	1	Can we modify anything once we sign up as a tutor
+q_Chitchat	1	Does this service accept the LGBT community
+q_Chitchat	1	Registration for a student account
+q_Chitchat	1	Needing a tutor please
+q_Chitchat	1	Is this a monthly subscription
+q_Chitchat	1	Can I change my tutor info
+q_Chitchat	1	Special topic help please
+q_Chitchat	1	I want to update my tutor info
+q_Chitchat	1	What type of courses are available with this service?
+q_Chitchat	1	Help with the service
+q_Chitchat	1	Need to create a student account
+q_Chitchat	1	Tutor assistance please
+q_Chitchat	1	Is this for any major
+q_Chitchat	1	How do I know the tutor has mastered the subject he or she is teaching me
+q_Chitchat	1	Registered as a student already, please find me a tutor
+q_Chitchat	1	Tutor would like to change information
+q_Chitchat	1	I want a tutor
+q_Chitchat	1	What is I modify my time
+q_Chitchat	1	Will you ever use this for high schoolers
+q_Chitchat	1	Is this only in the US
+q_Chitchat	1	Are the tutors teaching any trade courses for trade schools
+q_Chitchat	1	Does any tutor speak in Hindi?
+q_Chitchat	1	Tutor help for the hearing impaired?
+q_Chitchat	1	Is it okay to go over my time
+q_Chitchat	1	Does the user need proof that he or she is a college student
+q_Chitchat	1	Instructions how to find a tutor
+q_Chitchat	1	Can someone help me
+q_Chitchat	1	Student account active, now search for a tutor
+q_Chitchat	1	Is this service helpful for the LGBT community
+q_Chitchat	1	Is there a gaurantee that the tutor will help a student pass?
+q_Chitchat	1	Can my tutor be a guy
+q_Chitchat	1	Registration for a student
+q_Chitchat	1	I have a student account, now I need to search for a tutor
+q_Chitchat	1	My tutor hit on me.
+q_Chitchat	1	Can my tutor be a girl
+q_Chitchat	1	Is this good for medical students?
+q_Chitchat	1	We would like to pay you to extend this service
+q_Chitchat	1	How short can the service be?
 q_Chitchat	1	Give me instructions on how to use this to find a tutor
+q_Chitchat	1	Walk me through this
+q_Chitchat	1	I only like tutors that are girls
+q_Chitchat	1	Tutor need to change their email
+q_Chitchat	1	How do I find s tutor
+q_Chitchat	1	Can the bot help me get started with this service
+q_Chitchat	1	I have an account and I want to search for a tutor that teaches a specific subject
+q_Chitchat	1	Is there a limit to use this service
+q_Chitchat	1	What is this
+q_Chitchat	1	Tutor update change
+q_Chitchat	1	How can I get assistance with a test
+q_Chitchat	1	What if I need to cut the session
+q_Chitchat	1	How do I make a student account
 q_Faq	1	Tell me a quote
 q_Faq	1	Go away
 q_Faq	1	Just sitting here and chatting
@@ -143,7 +193,7 @@ q_Faq	1	I am a Pisces
 q_Faq	1	That was a stupid joke
 q_Faq	1	I am very confused
 q_Faq	1	Hangry
-q_Faq	1	I couldn╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùt be happier
+q_Faq	1	I couldn╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£Γòút be happier
 q_Faq	1	I'm an Independent
 q_Faq	1	Is it your mission to conquer the world
 q_Faq	1	I love my cat
@@ -536,7 +586,7 @@ q_Faq	1	Open a channel
 q_Faq	1	Do you have evil intent
 q_Faq	1	I'm the best
 q_Faq	1	Do you like rock music
-q_Faq	1	MyΓò¼├┤Γö£ΓòóΓö¼Γò¥╬ô├╢┬úΓö£┬ílife is miserable
+q_Faq	1	MyΓò¼├┤Γö£ΓûôΓö¼Γò¥╬ô├╢┬ú╬ô├╢├▒Γò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£ΓöéΓò¼├┤Γö£ΓòóΓö¼Γò¥Γò¼├┤Γö£ΓûôΓö¼├æ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝Γö£┬ílife is miserable
 q_Faq	1	Everybody has friends but me
 q_Faq	1	Stop saying the same thing
 q_Faq	1	Is someone there to listen
@@ -734,7 +784,7 @@ q_Faq	1	You're not fake right
 q_Faq	1	Talk to the hand
 q_Faq	1	Do you think this is funny
 q_Faq	1	If you're going to tell a joke, do it right
-q_Faq	1	I can╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùt stop smiling
+q_Faq	1	I can╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£Γòút stop smiling
 q_Faq	1	I'm worried you hate me
 q_Faq	1	Are you familiar with Siri
 q_Faq	1	What do you think about birds
@@ -768,7 +818,7 @@ q_Faq	1	Are you sinister
 q_Faq	1	We should get hitched
 q_Faq	1	That was totally my bad
 q_Faq	1	Can you create a singularity
-q_Faq	1	I╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùm over the moon
+q_Faq	1	I╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£Γòúm over the moon
 q_Faq	1	Your answers are awful
 q_Faq	1	I am a vegetarian
 q_Faq	1	I love dogs
@@ -915,7 +965,7 @@ q_Faq	1	Will you serenade me
 q_Faq	1	I feel glum
 q_Faq	1	Good news
 q_Faq	1	L8R
-q_Faq	1	Do you knowΓò¼├┤Γö£ΓòóΓö¼Γò¥╬ô├╢┬úΓö£┬íanythingΓò¼├┤Γö£ΓòóΓö¼Γò¥╬ô├╢┬úΓö£┬íaboutΓò¼├┤Γö£ΓòóΓö¼Γò¥╬ô├╢┬úΓö£┬íme
+q_Faq	1	Do you knowΓò¼├┤Γö£ΓûôΓö¼Γò¥╬ô├╢┬ú╬ô├╢├▒Γò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£ΓöéΓò¼├┤Γö£ΓòóΓö¼Γò¥Γò¼├┤Γö£ΓûôΓö¼├æ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝Γö£┬íanythingΓò¼├┤Γö£ΓûôΓö¼Γò¥╬ô├╢┬ú╬ô├╢├▒Γò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£ΓöéΓò¼├┤Γö£ΓòóΓö¼Γò¥Γò¼├┤Γö£ΓûôΓö¼├æ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝Γö£┬íaboutΓò¼├┤Γö£ΓûôΓö¼Γò¥╬ô├╢┬ú╬ô├╢├▒Γò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£ΓöéΓò¼├┤Γö£ΓòóΓö¼Γò¥Γò¼├┤Γö£ΓûôΓö¼├æ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝Γö£┬íme
 q_Faq	1	I'm a Socialist
 q_Faq	1	Will you sing me a song
 q_Faq	1	How has your monday been
@@ -996,7 +1046,7 @@ q_Faq	1	Do you ever throw up
 q_Faq	1	I'm logging out
 q_Faq	1	How well do you think you know me
 q_Faq	1	Between you or me, who is more knowledgeable
-q_Faq	1	Aren╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùt you smart
+q_Faq	1	Aren╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£Γòút you smart
 q_Faq	1	Do you want to be pals
 q_Faq	1	Can't you tell me something different
 q_Faq	1	I would like to be your BFF
@@ -1173,7 +1223,7 @@ q_Faq	1	You are really ridiculous
 q_Faq	1	I'm quite fond of you
 q_Faq	1	Glad to meet you
 q_Faq	1	Hello Wall-E
-q_Faq	1	I╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùm running errands
+q_Faq	1	I╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£Γòúm running errands
 q_Faq	1	I'm feeling a little hungry
 q_Faq	1	Don't you love me
 q_Faq	1	I'm in despair today
@@ -1281,7 +1331,7 @@ q_Faq	1	Don't try to make me laugh
 q_Faq	1	What do you like to dine on
 q_Faq	1	That doesn't answer my question
 q_Faq	1	Do you think I am stunning
-q_Faq	1	Don╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùt mention it
+q_Faq	1	Don╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£Γòút mention it
 q_Faq	1	I'm tired of playing solitaire with life
 q_Faq	1	I pissed you off
 q_Faq	1	What is your purpose
@@ -1496,7 +1546,7 @@ q_Faq	1	Can you give me a little hug
 q_Faq	1	You do what again
 q_Faq	1	I hope you like me
 q_Faq	1	I'm a teenager
-q_Faq	1	I╬ô├▓┬╝Γö£Γöñ╬ô├╢┬úΓö£┬║╬ô├╢┬úΓö£Γòùm having a wonderful day
+q_Faq	1	I╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£Γòúm having a wonderful day
 q_Faq	1	I am angry
 q_Faq	1	Have you ever been in love with anybody
 q_Faq	1	Don't you ever masticate

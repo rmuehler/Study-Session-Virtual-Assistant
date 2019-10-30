@@ -1,0 +1,128 @@
+﻿{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Are you a student or tutor user?",
+      "color": "accent",
+      "size": "Medium",
+      "weight": "bolder",
+      "maxLines": "9"
+    }
+
+  ],
+  "actions": [
+    {
+      "type": "Action.ShowCard",
+      "title": "Student",
+      "card": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "Please fill out the information?",
+            "color": "accent",
+            "size": "medium",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "Student Name",
+            "color": "accent",
+            "size": "medium",
+            "weight": "bolder",
+            "wrap": true
+
+          },
+          {
+            "type": "Input.Text",
+            "id": "StdName",
+            "placeholder": "First/Last"
+          },
+          {
+            "type": "TextBlock",
+            "text": "Student Email",
+            "color": "accent",
+            "size": "medium",
+            "weight": "bolder",
+            "wrap": true
+
+          },
+          {
+            "type": "Input.Text",
+            "id": "StdEmail",
+            "placeholder": "@usf.mail.com",
+            "style": "email"
+          }
+        ],
+
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "Create Student Account",
+            "data": {
+              "StudentChoice": "Student"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "Action.ShowCard",
+      "title": "Tutor",
+      "card": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "Please fill out the information?",
+            "color": "accent",
+            "size": "medium",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "text": "Tutor Name",
+            "color": "accent",
+            "size": "medium",
+            "weight": "bolder",
+            "wrap": true
+
+          },
+          {
+            "type": "Input.Text",
+            "id": "TutrName",
+            "placeholder": "Tutors First/Last"
+          },
+          {
+            "type": "TextBlock",
+            "text": "Tutor's Email",
+            "color": "accent",
+            "size": "medium",
+            "weight": "bolder",
+            "wrap": true
+
+          },
+          {
+            "type": "Input.Text",
+            "id": "TutrEmail",
+            "placeholder": "@mail.com",
+            "style": "email"
+          }
+        ],
+
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "Create Tutor Account",
+            "data": {
+              "StudentChoice": "Tutor"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

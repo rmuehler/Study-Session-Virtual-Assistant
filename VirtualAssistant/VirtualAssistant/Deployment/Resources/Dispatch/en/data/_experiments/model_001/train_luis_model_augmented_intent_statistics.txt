@@ -1,8 +1,8 @@
 No	Intent	Utterance Count	Utterance Average Length	Utterance Maximum Length	Utterance Minimum Length	Utterance Length StdDev
 0	l_General	209	11.73684	33	2	5.71542
-1	l_profileskill	7	12.28571	17	10	2.28869
+1	l_profileskill	13	27.92308	43	9	10.01217
 2	l_searchskill	32	65.8125	131	24	23.64037
-3	q_Chitchat	13	35.15385	68	19	13.90951
-4	q_Faq	9455	22.89614	110	1	9.05105
+3	q_Chitchat	255	36.33333	82	4	14.84151
+4	q_Faq	9455	23.66748	500	1	16.47935
 5	None	5	14	21	6	5.74456
- 	__ALL__	9721	22.80167	131	1	9.56409
+ 	__ALL__	9969	23.87732	500	1	16.68979

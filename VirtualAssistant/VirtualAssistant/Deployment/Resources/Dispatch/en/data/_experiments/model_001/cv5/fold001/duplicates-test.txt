@@ -1,4 +1,4 @@
 Utterance	Intents
+not even close	l_General, q_Faq
 sorry	l_General, q_Faq
 that is right	l_General, q_Faq
-not even close	l_General, q_Faq

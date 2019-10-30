@@ -136,22 +136,22 @@
     <value>Hey, {0}!</value>
   </data>
   <data name="HELP_BTN_TEXT_1" xml:space="preserve">
-    <value>Test LUIS</value>
+    <value>What is this?</value>
   </data>
   <data name="HELP_BTN_TEXT_2" xml:space="preserve">
-    <value>Test QnA Maker</value>
+    <value>Do I need an account?</value>
   </data>
   <data name="HELP_BTN_TEXT_3" xml:space="preserve">
-    <value>Learn more</value>
+    <value>Who are the tutors?</value>
   </data>
   <data name="HELP_BTN_VALUE_1" xml:space="preserve">
-    <value>Talk to a human</value>
+    <value>What is this?</value>
   </data>
   <data name="HELP_BTN_VALUE_2" xml:space="preserve">
-    <value>What is a Virtual Assistant?</value>
+    <value>Do I need an account?</value>
   </data>
   <data name="HELP_BTN_VALUE_3" xml:space="preserve">
-    <value>https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0</value>
+    <value>Who are the tutors?</value>
   </data>
   <data name="HELP_TEXT" xml:space="preserve">
     <value>This card can be used to display information to help your user interact with your bot. The buttons below can be used for sample queries or links to external sites.</value>
@@ -160,10 +160,10 @@
     <value>HELP</value>
   </data>
   <data name="INTRO_PATH" xml:space="preserve">
-    <value>./Content/NewUserGreeting.json</value>
+    <value>./Content/CreateAccount.json</value>
   </data>
   <data name="INTRO_RETURNING" xml:space="preserve">
-    <value>./Content/ReturningUserGreeting.json</value>
+    <value>./Content/AccountInfo.json</value>
   </data>
   <data name="LOGOUT" xml:space="preserve">
     <value>Ok, you're signed out.</value>

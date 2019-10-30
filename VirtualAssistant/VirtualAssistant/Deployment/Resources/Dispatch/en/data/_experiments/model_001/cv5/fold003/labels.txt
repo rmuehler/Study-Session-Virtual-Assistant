@@ -1,7 +1,7 @@
 Label	LabelName	Samples
 0	l_General	209
-1	l_profileskill	7
+1	l_profileskill	13
 2	l_searchskill	32
 3	None	12
-4	q_Chitchat	13
+4	q_Chitchat	255
 5	q_Faq	9483

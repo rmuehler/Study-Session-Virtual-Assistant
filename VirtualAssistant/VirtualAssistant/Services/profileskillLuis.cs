@@ -19,8 +19,8 @@ namespace Luis
         public string AlteredText;
 
         public enum Intent {
-            None, 
-            Sample
+            Edit_Profile, 
+            None
         };
         [JsonProperty("intents")]
         public Dictionary<Intent, IntentScore> Intents;

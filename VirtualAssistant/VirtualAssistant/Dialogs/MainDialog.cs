@@ -39,7 +39,9 @@ namespace VirtualAssistant.Dialogs
             OnboardingDialog onboardingDialog,
             EscalateDialog escalateDialog,
             CancelDialog cancelDialog,
-            ProfileDialog profileDialog,
+            Edit_Profile editProfile,
+            Search_by_Subject searchSubject,
+            Search_by_Tutor searchtutor,
             List<SkillDialog> skillDialogs,
             IBotTelemetryClient telemetryClient,
             UserState userState)
@@ -54,7 +56,9 @@ namespace VirtualAssistant.Dialogs
             AddDialog(onboardingDialog);
             AddDialog(escalateDialog);
             AddDialog(cancelDialog);
-            AddDialog(profileDialog);
+            AddDialog(editProfile);
+            AddDialog(searchSubject);
+            AddDialog(searchtutor);
 
             foreach (var skillDialog in skillDialogs)
             {
@@ -93,6 +97,7 @@ namespace VirtualAssistant.Dialogs
             if (identifiedSkill != null)
             {
                 // We have identiifed a skill so initialize the skill connection with the target skill
+                Console.WriteLine("Found a skill! " + intent.ToString());
                 var result = await dc.BeginDialogAsync(identifiedSkill.Id);
 
                 if (result.Status == DialogTurnStatus.Complete)
@@ -135,10 +140,10 @@ namespace VirtualAssistant.Dialogs
                     }
                 }
             }
-            else if (intent == DispatchLuis.Intent.l_searchskill)
+           else if (intent == DispatchLuis.Intent.l_searchskill)
             {
                 // If dispatch result is General luis model
-                cognitiveModels.LuisServices.TryGetValue("General", out var luisService);
+                cognitiveModels.LuisServices.TryGetValue("searchskill", out var luisService);
 
                 if (luisService == null)
                 {
@@ -146,21 +151,26 @@ namespace VirtualAssistant.Dialogs
                 }
                 else
                 {
-                    var result = await luisService.RecognizeAsync<GeneralLuis>(dc.Context, CancellationToken.None);
+                    var result = await luisService.RecognizeAsync<searchskillLuis>(dc.Context, CancellationToken.None);
 
-                    var generalIntent = result?.TopIntent().intent;
+                    var searchIntent = result?.TopIntent().intent;
 
                     // switch on general intents
-                    switch (generalIntent)
+                    switch (searchIntent)
                     {
-                        case GeneralLuis.Intent.Escalate:
+                        case searchskillLuis.Intent.Search_by_Subject:
                             {
                                 // start escalate dialog
-                                await dc.BeginDialogAsync(nameof(ProfileDialog));
+                                await dc.BeginDialogAsync(nameof(Search_by_Subject));
                                 break;
                             }
 
-                        case GeneralLuis.Intent.None:
+                        case searchskillLuis.Intent.Search_by_Tutor:
+                            {
+                                await dc.BeginDialogAsync(nameof(Search_by_Tutor));
+                                break;
+                            }
+                        case searchskillLuis.Intent.None:
                         default:
                             {
                                 // No intent was identified, send confused message
@@ -173,7 +183,7 @@ namespace VirtualAssistant.Dialogs
             else if (intent == DispatchLuis.Intent.l_profileskill)
             {
                 // If dispatch result is General luis model
-                cognitiveModels.LuisServices.TryGetValue("General", out var luisService);
+                cognitiveModels.LuisServices.TryGetValue("profileskill", out var luisService);
 
                 if (luisService == null)
                 {
@@ -181,21 +191,21 @@ namespace VirtualAssistant.Dialogs
                 }
                 else
                 {
-                    var result = await luisService.RecognizeAsync<GeneralLuis>(dc.Context, CancellationToken.None);
+                    var result = await luisService.RecognizeAsync<profileskillLuis>(dc.Context, CancellationToken.None);
 
-                    var generalIntent = result?.TopIntent().intent;
+                    var profileIntent = result?.TopIntent().intent;
 
                     // switch on general intents
-                    switch (generalIntent)
+                    switch (profileIntent)
                     {
-                        case GeneralLuis.Intent.Escalate:
+                        case profileskillLuis.Intent.Edit_Profile:
                             {
                                 // start escalate dialog
-                                await dc.BeginDialogAsync(nameof(ProfileDialog));
+                                await dc.BeginDialogAsync(nameof(Edit_Profile));
                                 break;
                             }
 
-                        case GeneralLuis.Intent.None:
+                        case profileskillLuis.Intent.None:
                         default:
                             {
                                 // No intent was identified, send confused message
@@ -208,6 +218,28 @@ namespace VirtualAssistant.Dialogs
             else if (intent == DispatchLuis.Intent.q_Faq)
             {
                 cognitiveModels.QnAServices.TryGetValue("Faq", out var qnaService);
+
+                if (qnaService == null)
+                {
+                    throw new Exception("The specified QnA Maker Service could not be found in your Bot Services configuration.");
+                }
+                else
+                {
+                    var answers = await qnaService.GetAnswersAsync(dc.Context, null, null);
+
+                    if (answers != null && answers.Count() > 0)
+                    {
+                        await dc.Context.SendActivityAsync(answers[0].Answer, speak: answers[0].Answer);
+                    }
+                    else
+                    {
+                        await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
+                    }
+                }
+            }
+            else if (intent == DispatchLuis.Intent.q_Chitchat)
+            {
+                cognitiveModels.QnAServices.TryGetValue("Chitchat", out var qnaService);
 
                 if (qnaService == null)
                 {
@@ -243,9 +275,9 @@ namespace VirtualAssistant.Dialogs
             if (value.GetType() == typeof(JObject))
             {
                 var submit = JObject.Parse(value.ToString());
-                if (value != null && (string)submit["action"] == "startOnboarding")
+                if (value != null && (string)submit["action"] == "submit")
                 {
-                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
+                    await dc.BeginDialogAsync(nameof(Edit_Profile));
                     return;
                 }
             }

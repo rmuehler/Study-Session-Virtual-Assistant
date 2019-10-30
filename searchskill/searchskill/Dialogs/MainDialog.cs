@@ -93,6 +93,7 @@ namespace searchskill.Dialogs
                             await dc.Context.SendActivityAsync(_responseManager.GetResponse(SharedResponses.DidntUnderstandMessage));
                             break;
                         }
+                    case searchskillLuis.Intent.searchsubect:
 
                     default:
                         {

@@ -1081,37 +1081,67 @@
       "entities": []
     },
     {
-      "text": "run dialog",
+      "text": "can i change my name please",
       "intent": "l_profileskill",
       "entities": []
     },
     {
-      "text": "test dialog",
+      "text": "let me edit my contact information",
       "intent": "l_profileskill",
       "entities": []
     },
     {
-      "text": "sample dialog",
+      "text": "is there a way for me to change my email",
       "intent": "l_profileskill",
       "entities": []
     },
     {
-      "text": "run sample dialog",
+      "text": "change phone #",
       "intent": "l_profileskill",
       "entities": []
     },
     {
-      "text": "test profile",
+      "text": "let me change my contact info",
       "intent": "l_profileskill",
       "entities": []
     },
     {
-      "text": "demo dialog",
+      "text": "edit info",
       "intent": "l_profileskill",
       "entities": []
     },
     {
-      "text": "test proifle",
+      "text": "what type of info does the tutor see",
+      "intent": "l_profileskill",
+      "entities": []
+    },
+    {
+      "text": "show me my profile",
+      "intent": "l_profileskill",
+      "entities": []
+    },
+    {
+      "text": "what information do you have on file for me",
+      "intent": "l_profileskill",
+      "entities": []
+    },
+    {
+      "text": "i want to change my phone number",
+      "intent": "l_profileskill",
+      "entities": []
+    },
+    {
+      "text": "what name did i give you guys",
+      "intent": "l_profileskill",
+      "entities": []
+    },
+    {
+      "text": "let me see my profile",
+      "intent": "l_profileskill",
+      "entities": []
+    },
+    {
+      "text": "let me change my profile please",
       "intent": "l_profileskill",
       "entities": []
     },
@@ -1276,22 +1306,172 @@
       "entities": []
     },
     {
-      "text": "how do i use the virtual assistant so that i can find study sessions",
+      "text": "do i need to give a lot of information for a student account",
       "intent": "q_Chitchat",
       "entities": []
     },
     {
-      "text": "start looking for a tutor\\n\\n",
+      "text": "is there a help session for this",
       "intent": "q_Chitchat",
       "entities": []
     },
     {
-      "text": "how does this thing work",
+      "text": "i need to request a tutor service",
       "intent": "q_Chitchat",
       "entities": []
     },
     {
-      "text": "how do i use this application",
+      "text": "tuter",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor sign-up please",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this service open for only college students?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "accommodation for the hearing impaired",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what information do i need to give for a student",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are the tutors good at the subject",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this service connected with usf",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this service connected to any organization",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "hey i need a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can high schools ever do this",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "help me get this started",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i am a tutor and i want help to provide my service for others",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is it okay to meet the tutors in person",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "help me find a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i would like to connect with a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "register for service as a student",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are college student able to use this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what courses are being taught with this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i am a tutor, can i update the courses i place on my profile",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what is i don’t like the tutor?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "if i want to add a class that i teach, can i change anything in my account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what are the chances this service will benefit me",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this good for engineering students",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need assistance from a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can we pick a woman tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what kind of subjects would the tutors teach?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this included in the students tuition?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i am a student and i need to make an account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can this service benefit any majors",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are tutors teaching anything",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need help from a tutor",
       "intent": "q_Chitchat",
       "entities": []
     },
@@ -1301,22 +1481,267 @@
       "entities": []
     },
     {
-      "text": "how do i find s tutor",
+      "text": "help please with this service",
       "intent": "q_Chitchat",
       "entities": []
     },
     {
-      "text": "i just need a tutor",
+      "text": "i need help getting started",
       "intent": "q_Chitchat",
       "entities": []
     },
     {
-      "text": "please assist in how to use this",
+      "text": "how advanced are the tutors for the courses?",
       "intent": "q_Chitchat",
       "entities": []
     },
     {
-      "text": "give me instructions on how to use this to find a tutor",
+      "text": "what if i don't need anymore of the tutors service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how do i search for a tutor if i already have an account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "does this cost anything",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "will the tutor help me pass",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "have an account already, please search for tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what is the cost on this",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i think i was sexually harassed by the student.",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can i get a tutor for a topic",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "need to register as a student",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i already have an account, how can i find a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can i benefit if i am a masters student",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i am a tutor and i was wondering if i can update met information",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what are the rules with dating the tutors.",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can i use this in another country",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how do i use the virtual assistant so that i can find study sessions",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what is this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this good for theater majors",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "who can use this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how to sign up as a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this a tutor service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what entails for student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "will this service end",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this a full proof service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i have tutor experience and i would like to join this application to help others",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i want to tutor for this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are we allowed to date our tutors",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "do you guys tutor for any topic because i need help with a topic",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i would like to make an account as a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can i use this service as a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how do i begin this process",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor assistance",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what are the required fields to register to be a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "where do the tutors come from",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "assistance with this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "do tutors need any special training before being hired for the process",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need to make a student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what if i dont feel comfortable with the tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how much information is needed to become a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "where can i start getting help with this service?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are there tutors under the age 18?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can a tutor connect with me",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "will this be available forever",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i would like to tutor and sign up",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "does this service use skype or team viewer for the hearing impaired",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "where can i register for this as a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "as a tutor can we update our information",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can parents sign there college student up for this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what if i was sexually harassed",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can tutors meet in person",
       "intent": "q_Chitchat",
       "entities": []
     },
@@ -1326,7 +1751,192 @@
       "entities": []
     },
     {
-      "text": "i need help with this service.",
+      "text": "how much would it be to fund this for future work",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor search please",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "please assist in how to use this",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "help me get started as a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor needs to change information",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need help with my class",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "student account registration",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are there tutors over the age 30?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this a service in any country",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "student account holder needing to do the search for a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how do i use this application",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how long is this service going on for",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how many courses can a student recieve tutor service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can we modify anything once we sign up as a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "does this service accept the lgbt community",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "registration for a student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "needing a tutor please",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this a monthly subscription",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can i change my tutor info",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "special topic help please",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i want to update my tutor info",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what type of courses are available with this service?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "help with the service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "need to create a student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor assistance please",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this for any major",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how do i know the tutor has mastered the subject he or she is teaching me",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "registered as a student already, please find me a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor would like to change information",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i want a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what is i modify my time",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "will you ever use this for high schoolers",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this only in the us",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are the tutors teaching any trade courses for trade schools",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "does any tutor speak in hindi?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor help for the hearing impaired?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is it okay to go over my time",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "does the user need proof that he or she is a college student",
       "intent": "q_Chitchat",
       "entities": []
     },
@@ -1336,7 +1946,637 @@
       "entities": []
     },
     {
+      "text": "can someone help me",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "student account active, now search for a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this service helpful for the lgbt community",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is there a gaurantee that the tutor will help a student pass?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can my tutor be a guy",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "registration for a student",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i have a student account, now i need to search for a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "my tutor hit on me.",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can my tutor be a girl",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this good for medical students?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "we would like to pay you to extend this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how short can the service be?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "give me instructions on how to use this to find a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "walk me through this",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i only like tutors that are girls",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor need to change their email",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how do i find s tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can the bot help me get started with this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i have an account and i want to search for a tutor that teaches a specific subject",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is there a limit to use this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what is this",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor update change",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can i get assistance with a test",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what if i need to cut the session",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how do i make a student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can i get help with a specific topic",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can a parent create this service for there college student",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "will my tutor be smart enough to help me in the subject",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what can i do with this",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how much is this",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what if the tutor is acting very inappropriate",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "help please",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "do tutors needs an account to tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how does this thing work",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor question about personal information",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this a service for students",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what subjects do the tutors teach",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "need to create a tutor account asap",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can i hit on my tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can i edit the information i placed as a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "do you have a spanish translator as a filter on here",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how does this service work?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need to search for a tutor and i have an account already",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can we request tutors by gender?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what courses are the tutors teaching",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can college student use this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are the tutors between ages 25 to 30",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are the tutors paid",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can i get in touch with a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i want to open a tutor account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what do i need to give you for a student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can anyone use this service with no discrimination towards sexual orientation",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is there anyone that speaks in spanish",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how do tutors sign in to provide service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can we request only a male tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can i ask out my tutor after the service has ended.",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can i benefit from this if i am a phd student",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how much money does this cost?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are the tutors grad students",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "who are the tutors",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "please connect me with a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how safe is it to give my personal information to the tutor.",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can our university fund this",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what type of person is this service for",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "start looking for a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "register under a student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how much does this service cost?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i just need a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this good for architect majors",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this services connected with google",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "find tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor sign-up info",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "hablas español",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what is required to use this service to tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "hey i need to do a tutor search and i already registered",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can i add more course i want to teach at any time",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what if the person is hearing impaired",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
       "text": "i would like a tutor please, where do i start",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor need to create and account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "where is the start icon?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this service ever going to expire?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need assistance with a topic",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can i get help with this service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need help with this service.",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can i utilize this service as a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i think i was sexually harassed by my tutor.",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this good for art students",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what courses does this service provide",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are the tutors students",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this a service for tutors",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor information required to create an account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "do i sign in here or create an account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need a tutor service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are the tutors interns",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "hi i am a tutor, how can i tutor students",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i need to find a tutor that teaches a specific subject, how does this work",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what are the chances this service is worth it",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "does this service need funding from the university",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how do i start tutor service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can you tell the board of education to open this for high school students",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i am a parent, can i sign my college student up for this",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is it okay to finish early",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are parents allowed to to do this for their college student",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this service going to open up for high schools in the near future",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this a yearly subscription",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "registered student, please search for a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "if i want to stop teaching a specific subject, can i change anything in my profile",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "the service does what?",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how much an hour do i need to pay",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can we requisition only a female tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "can we pick a male tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "are the tutors teaching high school courses",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this a global service",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how many times can i use this a week",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "is this good for writing majors",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "i am not in coll",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor needs to update email",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "get me started with a student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "tutor wants to update information in the cloud",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "information to sign up as a tutor",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "how can i get study help for my class",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "what do i need to list for my student account",
+      "intent": "q_Chitchat",
+      "entities": []
+    },
+    {
+      "text": "service?",
       "intent": "q_Chitchat",
       "entities": []
     },
@@ -2301,7 +3541,7 @@
       "entities": []
     },
     {
-      "text": "heyγò¼├┤γö£γòóγö¼γò¥╬ô├╢┬úγö£┬ígoogle",
+      "text": "heyγò¼├┤γö£γûôγö¼γò¥╬ô├╢┬ú╬ô├╢├▒γò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γöéγò¼├┤γö£γòóγö¼γò¥γò¼├┤γö£γûôγö¼├æ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝γö£┬ígoogle",
       "intent": "q_Faq",
       "entities": []
     },
@@ -2321,7 +3561,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm feeling giddy",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm feeling giddy",
       "intent": "q_Faq",
       "entities": []
     },
@@ -2606,7 +3846,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm watching tv",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm watching tv",
       "intent": "q_Faq",
       "entities": []
     },
@@ -3046,7 +4286,7 @@
       "entities": []
     },
     {
-      "text": "you╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùre ugly",
+      "text": "you╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúre ugly",
       "intent": "q_Faq",
       "entities": []
     },
@@ -3701,7 +4941,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm in such a great mood",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm in such a great mood",
       "intent": "q_Faq",
       "entities": []
     },
@@ -4396,7 +5636,7 @@
       "entities": []
     },
     {
-      "text": "doesn╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt matter to me",
+      "text": "doesn╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút matter to me",
       "intent": "q_Faq",
       "entities": []
     },
@@ -5211,7 +6451,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm overjoyed",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm overjoyed",
       "intent": "q_Faq",
       "entities": []
     },
@@ -5861,7 +7101,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùve never been to mexico",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúve never been to mexico",
       "intent": "q_Faq",
       "entities": []
     },
@@ -9601,7 +10841,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm a happy camper",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm a happy camper",
       "intent": "q_Faq",
       "entities": []
     },
@@ -10101,7 +11341,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm on cloud nine",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm on cloud nine",
       "intent": "q_Faq",
       "entities": []
     },
@@ -11016,7 +12256,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm having a lovely day",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm having a lovely day",
       "intent": "q_Faq",
       "entities": []
     },
@@ -14761,7 +16001,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm reading a book",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm reading a book",
       "intent": "q_Faq",
       "entities": []
     },
@@ -14846,7 +16086,7 @@
       "entities": []
     },
     {
-      "text": "let╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùs go seahawks",
+      "text": "let╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòús go seahawks",
       "intent": "q_Faq",
       "entities": []
     },
@@ -16136,7 +17376,7 @@
       "entities": []
     },
     {
-      "text": "i'm curious, do you think i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm a good person",
+      "text": "i'm curious, do you think i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm a good person",
       "intent": "q_Faq",
       "entities": []
     },
@@ -16771,7 +18011,7 @@
       "entities": []
     },
     {
-      "text": "why won╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt you sing for me",
+      "text": "why won╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút you sing for me",
       "intent": "q_Faq",
       "entities": []
     },
@@ -19411,7 +20651,7 @@
       "entities": []
     },
     {
-      "text": "it╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùs been a long day",
+      "text": "it╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòús been a long day",
       "intent": "q_Faq",
       "entities": []
     },
@@ -19516,7 +20756,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm happy to help",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm happy to help",
       "intent": "q_Faq",
       "entities": []
     },
@@ -19931,7 +21171,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm feeling so chipper",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm feeling so chipper",
       "intent": "q_Faq",
       "entities": []
     },
@@ -20701,7 +21941,7 @@
       "entities": []
     },
     {
-      "text": "i couldn╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt be happier",
+      "text": "i couldn╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút be happier",
       "intent": "q_Faq",
       "entities": []
     },
@@ -22656,7 +23896,7 @@
       "entities": []
     },
     {
-      "text": "myγò¼├┤γö£γòóγö¼γò¥╬ô├╢┬úγö£┬ílife is miserable",
+      "text": "myγò¼├┤γö£γûôγö¼γò¥╬ô├╢┬ú╬ô├╢├▒γò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γöéγò¼├┤γö£γòóγö¼γò¥γò¼├┤γö£γûôγö¼├æ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝γö£┬ílife is miserable",
       "intent": "q_Faq",
       "entities": []
     },
@@ -23641,7 +24881,7 @@
       "entities": []
     },
     {
-      "text": "i can╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt stop smiling",
+      "text": "i can╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút stop smiling",
       "intent": "q_Faq",
       "entities": []
     },
@@ -23811,7 +25051,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm over the moon",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm over the moon",
       "intent": "q_Faq",
       "entities": []
     },
@@ -24546,7 +25786,7 @@
       "entities": []
     },
     {
-      "text": "do you knowγò¼├┤γö£γòóγö¼γò¥╬ô├╢┬úγö£┬íanythingγò¼├┤γö£γòóγö¼γò¥╬ô├╢┬úγö£┬íaboutγò¼├┤γö£γòóγö¼γò¥╬ô├╢┬úγö£┬íme",
+      "text": "do you knowγò¼├┤γö£γûôγö¼γò¥╬ô├╢┬ú╬ô├╢├▒γò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γöéγò¼├┤γö£γòóγö¼γò¥γò¼├┤γö£γûôγö¼├æ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝γö£┬íanythingγò¼├┤γö£γûôγö¼γò¥╬ô├╢┬ú╬ô├╢├▒γò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γöéγò¼├┤γö£γòóγö¼γò¥γò¼├┤γö£γûôγö¼├æ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝γö£┬íaboutγò¼├┤γö£γûôγö¼γò¥╬ô├╢┬ú╬ô├╢├▒γò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γöéγò¼├┤γö£γòóγö¼γò¥γò¼├┤γö£γûôγö¼├æ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝γö£┬íme",
       "intent": "q_Faq",
       "entities": []
     },
@@ -24951,7 +26191,7 @@
       "entities": []
     },
     {
-      "text": "aren╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt you smart",
+      "text": "aren╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút you smart",
       "intent": "q_Faq",
       "entities": []
     },
@@ -25826,7 +27066,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm running errands",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm running errands",
       "intent": "q_Faq",
       "entities": []
     },
@@ -26366,7 +27606,7 @@
       "entities": []
     },
     {
-      "text": "don╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt mention it",
+      "text": "don╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút mention it",
       "intent": "q_Faq",
       "entities": []
     },
@@ -27441,7 +28681,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm having a wonderful day",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm having a wonderful day",
       "intent": "q_Faq",
       "entities": []
     },
@@ -30366,7 +31606,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm watching netflix",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm watching netflix",
       "intent": "q_Faq",
       "entities": []
     },
@@ -31766,7 +33006,7 @@
       "entities": []
     },
     {
-      "text": "don╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt you want to sing to me",
+      "text": "don╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút you want to sing to me",
       "intent": "q_Faq",
       "entities": []
     },
@@ -33591,7 +34831,7 @@
       "entities": []
     },
     {
-      "text": "aren╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt you in a good mood",
+      "text": "aren╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút you in a good mood",
       "intent": "q_Faq",
       "entities": []
     },
@@ -35636,7 +36876,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm watching a movie",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm watching a movie",
       "intent": "q_Faq",
       "entities": []
     },
@@ -35691,7 +36931,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm feeling cheerful",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm feeling cheerful",
       "intent": "q_Faq",
       "entities": []
     },
@@ -37801,7 +39041,7 @@
       "entities": []
     },
     {
-      "text": "hopefully i canγò¼├┤γö£γòóγö¼γò¥╬ô├╢┬úγö£┬ícatch some sleep soon",
+      "text": "hopefully i canγò¼├┤γö£γûôγö¼γò¥╬ô├╢┬ú╬ô├╢├▒γò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γöéγò¼├┤γö£γòóγö¼γò¥γò¼├┤γö£γûôγö¼├æ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝γö£┬ícatch some sleep soon",
       "intent": "q_Faq",
       "entities": []
     },
@@ -41041,7 +42281,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùve never been happier",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúve never been happier",
       "intent": "q_Faq",
       "entities": []
     },
@@ -41991,7 +43231,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm walking on sunshine",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm walking on sunshine",
       "intent": "q_Faq",
       "entities": []
     },
@@ -42306,7 +43546,7 @@
       "entities": []
     },
     {
-      "text": "we couldn╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt be happier",
+      "text": "we couldn╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút be happier",
       "intent": "q_Faq",
       "entities": []
     },
@@ -42516,7 +43756,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm having a good day",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm having a good day",
       "intent": "q_Faq",
       "entities": []
     },
@@ -42781,7 +44021,7 @@
       "entities": []
     },
     {
-      "text": "i don╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt find you amusing",
+      "text": "i don╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút find you amusing",
       "intent": "q_Faq",
       "entities": []
     },
@@ -43811,7 +45051,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm absolutely delighted",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm absolutely delighted",
       "intent": "q_Faq",
       "entities": []
     },
@@ -45626,7 +46866,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm happy as a clam",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm happy as a clam",
       "intent": "q_Faq",
       "entities": []
     },
@@ -45721,7 +46961,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm running late",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm running late",
       "intent": "q_Faq",
       "entities": []
     },
@@ -47131,7 +48371,7 @@
       "entities": []
     },
     {
-      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùm the happiest guy on earth",
+      "text": "i╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòúm the happiest guy on earth",
       "intent": "q_Faq",
       "entities": []
     },
@@ -47611,7 +48851,7 @@
       "entities": []
     },
     {
-      "text": "i don╬ô├▓┬╝γö£γöñ╬ô├╢┬úγö£┬║╬ô├╢┬úγö£γòùt find you very amusing",
+      "text": "i don╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ñγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γòóγö£γûæ╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║╬ô├╢┬╝╬ô├▓├ª╬ô├▓┬╝γö£γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝γö£γòæγò¼├┤γö£γòóγö¼├║γò¼├┤γö£γûôγö£γòút find you very amusing",
       "intent": "q_Faq",
       "entities": []
     },

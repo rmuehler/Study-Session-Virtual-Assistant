@@ -14,12 +14,12 @@ using System.Collections.Generic;
 
 namespace VirtualAssistant.Dialogs
 {
-    public class ProfileDialog : ComponentDialog
+    public class Edit_Profile : ComponentDialog
     {
 
-        public ProfileDialog(BotServices botServices,
+        public Edit_Profile(BotServices botServices,
             UserState userState,
-            IBotTelemetryClient telemetryClient) : base(nameof(ProfileDialog))
+            IBotTelemetryClient telemetryClient) : base(nameof(Edit_Profile))
         {
             // This array defines how the Waterfall will execute.
             var waterfallSteps = new WaterfallStep[]

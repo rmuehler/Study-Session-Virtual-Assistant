@@ -65,15 +65,20 @@ namespace VirtualAssistant.Responses.Main
             var card = AdaptiveCard.FromJson(introCard).Card;
             var attachment = new Attachment(AdaptiveCard.ContentType, content: card);
 
-            var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.AcceptingInput);
+            
+
+            var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.IgnoringInput);
+
+
+            
 
             response.SuggestedActions = new SuggestedActions
             {
                 Actions = new List<CardAction>()
                 {
-                    new CardAction(type: ActionTypes.ImBack, title: MainStrings.HELP_BTN_TEXT_1, value: MainStrings.HELP_BTN_VALUE_1),
-                    new CardAction(type: ActionTypes.ImBack, title: MainStrings.HELP_BTN_TEXT_2, value: MainStrings.HELP_BTN_VALUE_2),
-                    new CardAction(type: ActionTypes.OpenUrl, title: MainStrings.HELP_BTN_TEXT_3, value: MainStrings.HELP_BTN_VALUE_3),
+                    new CardAction(type: ActionTypes.MessageBack, title: MainStrings.HELP_BTN_TEXT_1, value: MainStrings.HELP_BTN_VALUE_1),
+                    new CardAction(type: ActionTypes.MessageBack, title: MainStrings.HELP_BTN_TEXT_2, value: MainStrings.HELP_BTN_VALUE_2),
+                    new CardAction(type: ActionTypes.MessageBack, title: MainStrings.HELP_BTN_TEXT_3, value: MainStrings.HELP_BTN_VALUE_3),
                 },
             };
 
@@ -109,7 +114,9 @@ namespace VirtualAssistant.Responses.Main
                 Text = MainStrings.HELP_TEXT,
             }.ToAttachment();
 
-            var response = MessageFactory.Attachment(attachment, ssml: MainStrings.HELP_TEXT, inputHint: InputHints.AcceptingInput);
+            var response = MessageFactory.Attachment(attachment, ssml: MainStrings.HELP_TEXT, inputHint: InputHints.IgnoringInput);
+
+
 
             response.SuggestedActions = new SuggestedActions
             {
@@ -117,7 +124,7 @@ namespace VirtualAssistant.Responses.Main
                 {
                     new CardAction(type: ActionTypes.ImBack, title: MainStrings.HELP_BTN_TEXT_1, value: MainStrings.HELP_BTN_VALUE_1),
                     new CardAction(type: ActionTypes.ImBack, title: MainStrings.HELP_BTN_TEXT_2, value: MainStrings.HELP_BTN_VALUE_2),
-                    new CardAction(type: ActionTypes.OpenUrl, title: MainStrings.HELP_BTN_TEXT_3, value: MainStrings.HELP_BTN_VALUE_3),
+                    new CardAction(type: ActionTypes.ImBack, title: MainStrings.HELP_BTN_TEXT_3, value: MainStrings.HELP_BTN_VALUE_3),
                 },
             };
 

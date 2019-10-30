@@ -1,10 +1,10 @@
 {
   "intents": [
     {
-      "name": "None"
+      "name": "Edit Profile"
     },
     {
-      "name": "Sample"
+      "name": "None"
     }
   ],
   "entities": [],
@@ -14,6 +14,71 @@
   "model_features": [],
   "regex_features": [],
   "utterances": [
+    {
+      "text": "can i change my name please",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "change phone #",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "edit info",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "i want to change my phone number",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "is there a way for me to change my email?",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "let me change my contact info",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "let me change my profile please",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "let me edit my contact information",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "let me see my profile",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "show me my profile",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "what information do you have on file for me?",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "what name did i give you guys?",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "what type of info does the tutor see?",
+      "intent": "Edit Profile",
+      "entities": []
+    },
     {
       "text": "goodbye",
       "intent": "None",
@@ -32,41 +97,6 @@
     {
       "text": "logout",
       "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "demo dialog",
-      "intent": "Sample",
-      "entities": []
-    },
-    {
-      "text": "run dialog",
-      "intent": "Sample",
-      "entities": []
-    },
-    {
-      "text": "run sample dialog",
-      "intent": "Sample",
-      "entities": []
-    },
-    {
-      "text": "sample dialog",
-      "intent": "Sample",
-      "entities": []
-    },
-    {
-      "text": "test dialog",
-      "intent": "Sample",
-      "entities": []
-    },
-    {
-      "text": "test profile",
-      "intent": "Sample",
-      "entities": []
-    },
-    {
-      "text": "test proifle",
-      "intent": "Sample",
       "entities": []
     }
   ],
