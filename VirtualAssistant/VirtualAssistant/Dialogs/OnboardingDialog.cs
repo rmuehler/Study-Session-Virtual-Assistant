@@ -63,6 +63,7 @@ namespace VirtualAssistant.Dialogs
             await _accessor.SetAsync(sc.Context, _state, cancellationToken);
 
             await _responder.ReplyWith(sc.Context, OnboardingResponses.ResponseIds.HaveNameMessage, new { name });
+            //await _responder.ReplyWith(sc.Context, OnboardingResponses.ResponseIds.HaveEmailMessage, new { name });
             return await sc.EndDialogAsync();
         }
 

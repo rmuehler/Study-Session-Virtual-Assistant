@@ -133,7 +133,7 @@
     <value>Hi there!</value>
   </data>
   <data name="GREETING_WITH_NAME" xml:space="preserve">
-    <value>Hey, {0}!</value>
+    <value>Showing {0}'s profile</value>
   </data>
   <data name="HELP_BTN_TEXT_1" xml:space="preserve">
     <value>Why do I need a profile?</value>

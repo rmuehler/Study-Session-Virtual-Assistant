@@ -1,4 +1,5 @@
 Utterance	Intents
+<<<<<<< HEAD
 hi	None, q_Faq
 sorry	l_General, q_Faq
 shut your mouth	l_General, q_Faq
@@ -15,3 +16,21 @@ pardon	l_General, q_Faq
 sounds good	l_General, q_Faq
 okay	l_General, q_Faq
 that is right	l_General, q_Faq
+=======
+okay	l_General, q_Faq
+hi	None, q_Faq
+goodbye	None, q_Faq
+ok	l_General, q_Faq
+pardon	l_General, q_Faq
+sorry	l_General, q_Faq
+that is right	l_General, q_Faq
+stop talking	l_General, q_Faq
+i need help with this service.	q_Chitchat, q_Faq
+not at all	l_General, q_Faq
+sounds good	l_General, q_Faq
+right	l_General, q_Faq
+great	l_General, q_Faq
+not even close	l_General, q_Faq
+quiet	l_General, q_Faq
+shut your mouth	l_General, q_Faq
+>>>>>>> a0b764ccf9693685eb1bf6afa06784eb001bce37

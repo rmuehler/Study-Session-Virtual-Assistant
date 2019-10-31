@@ -25,6 +25,7 @@ namespace VirtualAssistant.Dialogs
 {
     public class MainDialog : RouterDialog
     {
+
         private const string Location = "location";
         private const string TimeZone = "timezone";
         private BotSettings _settings;
@@ -32,6 +33,7 @@ namespace VirtualAssistant.Dialogs
         private MainResponses _responder = new MainResponses();
         private IStatePropertyAccessor<OnboardingState> _onboardingState;
         private IStatePropertyAccessor<SkillContext> _skillContextAccessor;
+        private OnboardingState _state;
 
         public MainDialog(
             BotSettings settings,
@@ -42,6 +44,7 @@ namespace VirtualAssistant.Dialogs
             Edit_Profile editProfile,
             Search_by_Subject searchSubject,
             Search_by_Tutor searchtutor,
+            SubmitDialog submitDialog,
             List<SkillDialog> skillDialogs,
             IBotTelemetryClient telemetryClient,
             UserState userState)
@@ -59,6 +62,7 @@ namespace VirtualAssistant.Dialogs
             AddDialog(editProfile);
             AddDialog(searchSubject);
             AddDialog(searchtutor);
+            AddDialog(submitDialog);
 
             foreach (var skillDialog in skillDialogs)
             {
@@ -160,6 +164,10 @@ namespace VirtualAssistant.Dialogs
                     // to pass in BeginDialogAsync
                     Luis.searchskillLuis._Entities entities = result.Entities;
                     var searchIntent = result?.TopIntent().intent;
+<<<<<<< HEAD
+=======
+
+>>>>>>> a0b764ccf9693685eb1bf6afa06784eb001bce37
                     
                     // switch on general intents
                     switch (searchIntent)
@@ -281,9 +289,44 @@ namespace VirtualAssistant.Dialogs
             if (value.GetType() == typeof(JObject))
             {
                 var submit = JObject.Parse(value.ToString());
-                if (value != null && (string)submit["action"] == "submit")
+                if (value != null && (string)submit["StudentChoice"] == "Student")
                 {
-                    await dc.BeginDialogAsync(nameof(Edit_Profile));
+                    _state= await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                    var name = _state.Name = (string)submit["StdName"];
+                    var email = _state.Email = (string)submit["StdEmail"];
+                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
+                    await dc.CancelAllDialogsAsync();
+                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
+                    return;
+                }
+                if (value != null && (string)submit["StudentChoice"] == "Tutor")
+                {
+                    _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                    var name = _state.Name = (string)submit["TutrName"];
+                    var email = _state.Email = (string)submit["TutrEmail"];
+                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
+                    await dc.CancelAllDialogsAsync();
+                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
+                    return;
+                }
+                if (value != null && (string)submit["SaveStudentProfile"] == "true")
+                {
+                    _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                    var name = _state.Name = (string)submit["StudentVal"];
+                    var email = _state.Email = (string)submit["StudentEmailVal"];
+                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
+                    await dc.CancelAllDialogsAsync();
+                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
+                    return;
+                }
+                if (value != null && (string)submit["SaveTutorProfile"] == "true")
+                {
+                    _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                    var name = _state.Name = (string)submit["TutorVal"];
+                    var email = _state.Email = (string)submit["TutorEmailVal"];
+                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
+                    await dc.CancelAllDialogsAsync();
+                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
                     return;
                 }
             }
@@ -345,6 +388,10 @@ namespace VirtualAssistant.Dialogs
                             forward = false;
                             break;
                         }
+                    case Events.SubmitButton:
+                        {
+                            break;
+                        }
 
                     case TokenEvents.TokenResponseEventName:
                         {
@@ -402,23 +449,13 @@ namespace VirtualAssistant.Dialogs
 
                     if (luisResult.TopIntent().score > 0.5)
                     {
-             /*           switch (intent)
+                        switch (intent)
                         {
                             case GeneralLuis.Intent.Cancel:
                                 {
                                     return await OnCancel(dc);
                                 }
-
-                            case GeneralLuis.Intent.Help:
-                                {
-                                    return await OnHelp(dc);
-                                }
-
-                            case GeneralLuis.Intent.Logout:
-                                {
-                                    return await OnLogout(dc);
-                                }
-                        }*/
+                        }
                     }
                 }
             }
@@ -431,7 +468,7 @@ namespace VirtualAssistant.Dialogs
             if (dc.ActiveDialog != null && dc.ActiveDialog.Id != nameof(CancelDialog))
             {
                 // Don't start restart cancel dialog
-                await dc.BeginDialogAsync(nameof(CancelDialog));
+                await dc.BeginDialogAsync(nameof(MainDialog));
 
                 // Signal that the dialog is waiting on user response
                 return InterruptionAction.StartedDialog;
@@ -483,6 +520,7 @@ namespace VirtualAssistant.Dialogs
         {
             public const string TimezoneEvent = "VA.Timezone";
             public const string LocationEvent = "VA.Location";
+            public const string SubmitButton = "Action.Submit";
         }
     }
 }
