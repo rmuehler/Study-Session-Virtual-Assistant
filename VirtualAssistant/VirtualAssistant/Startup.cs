@@ -99,6 +99,7 @@ namespace VirtualAssistant
             services.AddTransient<Edit_Profile>();
             services.AddTransient<Search_by_Subject>();
             services.AddTransient<Search_by_Tutor>();
+            services.AddTransient<SubmitDialog>();
 
             // Register skill dialogs
             services.AddTransient(sp =>

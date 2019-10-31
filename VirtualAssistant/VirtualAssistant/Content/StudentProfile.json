@@ -13,6 +13,7 @@
     {
       "type": "Input.Text",
       "placeholder": "Student Name",
+      "value":  "Placeholder Name",
       "style": "text",
       "maxLength": 0,
       "id": "StudentVal"
@@ -20,6 +21,7 @@
     {
       "type": "Input.Text",
       "placeholder": "Student Email",
+      "value":  "Placeholder Email",
       "style": "email",
       "maxLength": 0,
       "id": "StudentEmailVal"
@@ -158,12 +160,7 @@
             "type": "Action.Submit",
             "title": "OK",
             "data": {
-              "msteams": {
-                "type": "messageBack",
-                "displayText": "I clicked this button",
-                "text": "text to bots",
-                "value": "{\"Networks\": \"Physics\", \"Calculus\": \"from StudentCourseSelect\"}"
-              }
+              "SaveStudentProfile": "true"
             }
           }
         ]

@@ -7,12 +7,16 @@ using AdaptiveCards;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.TemplateManager;
 using Microsoft.Bot.Schema;
+using VirtualAssistant.Models;
 
 namespace VirtualAssistant.Responses.Profile
 {
+
     public class ProfileResponses : TemplateManager
     {
+
         private static LanguageTemplateDictionary _responseTemplates = new LanguageTemplateDictionary
+
         {
             ["default"] = new TemplateIdMap
             {
@@ -49,7 +53,7 @@ namespace VirtualAssistant.Responses.Profile
                         inputHint: InputHints.AcceptingInput)
                 },
                 { ResponseIds.Help, (context, data) => BuildHelpCard(context, data) },
-                { ResponseIds.ShowStudentProfile, (context, data) => BuildStudentCard(context, data) },
+                { ResponseIds.ShowStudentProfile, (context, data) => BuildStudentCardAsync(context, data) },
                 { ResponseIds.ShowTutorProfile, (context, data) => BuildTutorCard(context, data) },
             }
         };
@@ -59,14 +63,19 @@ namespace VirtualAssistant.Responses.Profile
             Register(new DictionaryRenderer(_responseTemplates));
         }
 
-        public static IMessageActivity BuildStudentCard(ITurnContext turnContext, dynamic data)
+        public static IMessageActivity BuildStudentCardAsync(ITurnContext turnContext, dynamic data)
         {
             var introCard = File.ReadAllText(ProfileStrings.STUDENTPROFILE_PATH);
-
+            introCard = introCard.Replace("Placeholder Name", data.Name);
+            introCard = introCard.Replace("Placeholder Email", data.Email);
             //introCard.Replace("")
             var card = AdaptiveCard.FromJson(introCard).Card;
 
-            
+/*            dynamic jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject(introCard);
+            jsonObj["body"][1]["placeholder"] = "NEWNAME";
+            string output = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
+            File.WriteAllText("settings.json", output);*/
+
             var attachment = new Attachment(AdaptiveCard.ContentType, content: card);
 
             
@@ -97,7 +106,9 @@ namespace VirtualAssistant.Responses.Profile
 
             var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.AcceptingInput);
 
-            response.SuggestedActions = new SuggestedActions
+
+
+/*            response.SuggestedActions = new SuggestedActions
             {
                 Actions = new List<CardAction>()
                 {
@@ -105,7 +116,7 @@ namespace VirtualAssistant.Responses.Profile
                     new CardAction(type: ActionTypes.ImBack, title: ProfileStrings.HELP_BTN_TEXT_2, value: ProfileStrings.HELP_BTN_VALUE_2),
                     new CardAction(type: ActionTypes.ImBack, title: ProfileStrings.HELP_BTN_TEXT_3, value: ProfileStrings.HELP_BTN_VALUE_3),
                 },
-            };
+            };*/
 
             return response;
         }

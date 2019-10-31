@@ -1,3 +1,8 @@
+LUIS app :8240a254-2552-4164-ba9e-07fd828d25e6 already added to virtualassistanten_Dispatch.dispatch
+LUIS app :58795b63-a6b5-4e90-8184-8e89e43033da already added to virtualassistanten_Dispatch.dispatch
+LUIS app :167f202d-7a46-4dae-a052-f5b4e0dee9ca already added to virtualassistanten_Dispatch.dispatch
+QnA kb id:68226587-11a3-4dd8-8573-aaede0fcb472, name:Faq already added to virtualassistanten_Dispatch.dispatch
+QnA kb id:7050d822-1db3-4eed-a169-ec5014bb062b, name:ChitChat already added to virtualassistanten_Dispatch.dispatch
 Exporting services for dispatch...
 Exporting searchskillen_searchskill LUIS application...
 Exported LUIS app JSON is at C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_L_searchskillen_searchskill.json
@@ -13,13 +18,13 @@ Exporting profileskillen_profileskill LUIS application...
 Exported LUIS app JSON is at C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_L_profileskillen_profileskill.json
 Creating dispatch LUIS model json...
 Creating training data...
-WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\train.txt' that were used by multiple categories: 28
-WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold000\train.txt' that were used by multiple categories: 22
+WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\train.txt' that were used by multiple categories: 27
+WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold000\train.txt' that were used by multiple categories: 21
 WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold000\test.txt' that were used by multiple categories: 1
-WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold001\train.txt' that were used by multiple categories: 18
-WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold001\test.txt' that were used by multiple categories: 3
+WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold001\train.txt' that were used by multiple categories: 17
+WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold001\test.txt' that were used by multiple categories: 4
 WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold002\train.txt' that were used by multiple categories: 18
-WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold003\train.txt' that were used by multiple categories: 15
+WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold003\train.txt' that were used by multiple categories: 16
 WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold003\test.txt' that were used by multiple categories: 2
 WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold004\train.txt' that were used by multiple categories: 19
 WARNING: Number of samples in 'C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_experiments\model_001\cv5\fold004\test.txt' that were used by multiple categories: 2

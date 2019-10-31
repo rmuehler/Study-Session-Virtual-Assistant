@@ -156,7 +156,10 @@
         "actions": [
           {
             "type": "Action.Submit",
-            "title": "OK"
+            "title": "OK",
+            "data": {
+              "SaveTutorProfile": "true"
+            }
           }
         ]
       }

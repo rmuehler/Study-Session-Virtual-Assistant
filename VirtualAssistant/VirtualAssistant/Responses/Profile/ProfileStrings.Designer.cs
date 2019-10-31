@@ -106,7 +106,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hey, {0}!.
+        ///   Looks up a localized string similar to Showing {0}&apos;s profile.
         /// </summary>
         public static string GREETING_WITH_NAME {
             get {
