@@ -52,9 +52,42 @@ l_searchskill	1	i need a tutor that specializes in discreet structures at 9pm.
 l_searchskill	1	i am free sunday, can i work with a tutor for the economics course
 None	1	logout
 None	1	hi
-q_Chitchat	1	How do I use the virtual assistant so that I can find study sessions
-q_Chitchat	1	Start looking for a tutor\n\n
-q_Chitchat	1	How does this thing work
+q_Chitchat	1	Information to sign up as a tutor
+q_Chitchat	1	Does this service accept the LGBT community
+q_Chitchat	1	What are the chances this service is worth it
+q_Chitchat	1	Are the tutors good at the subject
+q_Chitchat	1	Is this included in the students tuition
+q_Chitchat	1	Is this good for medical students
+q_Chitchat	1	We would like to pay you to extend this service
+q_Chitchat	1	Is there a guarantee that the tutor will help a student pass
+q_Chitchat	1	Is it okay to go over my time
+q_Chitchat	1	What information do I need to give for a student
+q_Chitchat	1	Is this a service for students
+q_Chitchat	1	What is this
+q_Chitchat	1	Can a parent create this service for there college student
+q_Chitchat	1	Do I sign in here or create an account
+q_Chitchat	1	tutor sign-up info
+q_Chitchat	1	Need to register as a student
+q_Chitchat	1	How do I find study sessions with a tutor
+q_Chitchat	1	Are the tutors students
+q_Chitchat	1	Tutor help for the hearing impaired
+q_Chitchat	1	Is this service helpful for the LGBT community
+q_Chitchat	1	I need help with my class
+q_Chitchat	1	I am a parent, can I sign my college student up for this
+q_Chitchat	1	The service does what
+q_Chitchat	1	Help please with this service
+q_Chitchat	1	What is I don’t like the tutor
+q_Chitchat	1	What can I do with this
+q_Chitchat	1	What courses are being taught with this service
+q_Chitchat	1	I need assistance with a topic
+q_Chitchat	1	Are the tutors grad students
+q_Chitchat	1	Where can I register for this as a tutor
+q_Chitchat	1	Who can use this service
+q_Chitchat	1	I think I was sexually harassed by my tutor.
+q_Chitchat	1	What do I need to give you for a student account
+q_Chitchat	1	Tutor need to create and account
+q_Chitchat	1	Do you have a Spanish translator as a filter on here
+q_Chitchat	1	How to sign up as a tutor
 q_Faq	1	I just did laundry
 q_Faq	1	so you've really never eaten
 q_Faq	1	That was pretty brilliant

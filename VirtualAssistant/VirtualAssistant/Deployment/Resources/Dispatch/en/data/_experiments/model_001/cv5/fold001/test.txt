@@ -52,9 +52,42 @@ l_searchskill	1	is steve martin teaching math
 l_searchskill	1	i really need help in english, does anyone tutor this subject at 9pm
 None	1	goodbye
 None	1	hello
-q_Chitchat	1	How do I use this application
-q_Chitchat	1	Help me learn how to get a tutor
-q_Chitchat	1	How do I find s tutor
+q_Chitchat	1	Please assist in how to use this
+q_Chitchat	1	Are the tutors paid
+q_Chitchat	1	can I get help with a specific topic
+q_Chitchat	1	Can we request tutors by gender?
+q_Chitchat	1	How does this thing work
+q_Chitchat	1	What is I modify my time
+q_Chitchat	1	Is it okay to finish early
+q_Chitchat	1	Student account registration
+q_Chitchat	1	How does this service work
+q_Chitchat	1	Will this be available forever
+q_Chitchat	1	I am not in coll
+q_Chitchat	1	I need help with this service.
+q_Chitchat	1	Can we pick a male tutor
+q_Chitchat	1	How much does this service cost
+q_Chitchat	1	How long is this service going on for
+q_Chitchat	1	What type of person is this service for
+q_Chitchat	1	What is the cost on this
+q_Chitchat	1	I need help getting started
+q_Chitchat	1	Walk me through this
+q_Chitchat	1	Is this a monthly subscription
+q_Chitchat	1	I want to open a tutor account
+q_Chitchat	1	Help
+q_Chitchat	1	How safe is it to give my personal information to the tutor.
+q_Chitchat	1	Can this service benefit any majors
+q_Chitchat	1	Is this only in the US
+q_Chitchat	1	Will this service end
+q_Chitchat	1	Need to create a tutor account asap
+q_Chitchat	1	Is this a service in any country
+q_Chitchat	1	Are we allowed to date our tutors
+q_Chitchat	1	Does this cost anything
+q_Chitchat	1	Where can I start getting help with this service?
+q_Chitchat	1	How can I utilize this service as a tutor
+q_Chitchat	1	How do I use the virtual assistant so that I can find study sessions
+q_Chitchat	1	Is this services connected with Google
+q_Chitchat	1	Can someone help me
+q_Chitchat	1	Can our university fund this
 q_Faq	1	you're idiotic
 q_Faq	1	I'm sexy
 q_Faq	1	Are you smarter than me

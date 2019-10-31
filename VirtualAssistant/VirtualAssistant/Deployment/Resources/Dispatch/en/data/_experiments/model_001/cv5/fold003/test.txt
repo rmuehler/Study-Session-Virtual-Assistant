@@ -52,9 +52,42 @@ l_searchskill	1	can i get in touch with a tutor at 12pm to study linear systems
 l_searchskill	1	is there someone that teaches algorithms around 4 to 5 today
 None	1	logout
 None	1	goodbye
-q_Chitchat	1	How do I find study sessions with a tutor
-q_Chitchat	1	I need help with this service.
-q_Chitchat	1	Instructions how to find a tutor
+q_Chitchat	1	Is this a service for tutors
+q_Chitchat	1	What do I need to list for my student account
+q_Chitchat	1	I need help
+q_Chitchat	1	Will the tutor help me pass
+q_Chitchat	1	What are the chances this service will benefit me
+q_Chitchat	1	Are there tutors under the age 18
+q_Chitchat	1	Hablas español
+q_Chitchat	1	I only like tutors that are girls
+q_Chitchat	1	Assistance with this service
+q_Chitchat	1	Is this a yearly subscription
+q_Chitchat	1	Do you guys tutor for any topic because I need help with a topic
+q_Chitchat	1	Are parents allowed to to do this for their college student
+q_Chitchat	1	Can I benefit if I am a Masters Student
+q_Chitchat	1	How do I know the tutor has mastered the subject he or she is teaching me
+q_Chitchat	1	How much is this
+q_Chitchat	1	How advanced are the tutors for the courses
+q_Chitchat	1	Does this service need funding from the university
+q_Chitchat	1	Does this service use skype or team viewer for the hearing impaired
+q_Chitchat	1	Is there a help session for this
+q_Chitchat	1	Can my tutor be a girl
+q_Chitchat	1	How can I get help with this service
+q_Chitchat	1	Can the bot help me get started with this service
+q_Chitchat	1	I am a tutor and I want help to provide my service for others
+q_Chitchat	1	Is there a limit to use this service
+q_Chitchat	1	Can I hit on my tutor
+q_Chitchat	1	Can I benefit from this if I am a PHD student
+q_Chitchat	1	What if I dont feel comfortable with the tutor
+q_Chitchat	1	Is this service connected with USF
+q_Chitchat	1	What if I was sexually harassed
+q_Chitchat	1	Can you tell the board of education to open this for high school students
+q_Chitchat	1	Do tutors need any special training before being hired for the process
+q_Chitchat	1	Can my tutor be a guy
+q_Chitchat	1	Can high schools ever do this
+q_Chitchat	1	Is this good for architect majors
+q_Chitchat	1	Are the tutors interns
+q_Chitchat	1	Are there tutors over the age 30
 q_Faq	1	I love to eat
 q_Faq	1	Are you a rap music fan
 q_Faq	1	what do you think of how I look

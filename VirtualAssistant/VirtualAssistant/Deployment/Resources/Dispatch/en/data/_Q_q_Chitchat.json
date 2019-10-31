@@ -1,21 +1,22 @@
 {
   "qnaDocuments": [
     {
-      "id": 138,
+      "id": 141,
       "answer": "You need to make an account",
       "source": "custom editorial",
       "questions": [
         "How do I use the virtual assistant so that I can find study sessions?",
         "How do I use this application?",
-        "How do I find s tutor?",
         "How do I find study sessions with a tutor",
         "How does this thing work",
         "Help me learn how to get a tutor",
         "I would like a tutor please, where do I start",
-        "Start looking for a tutor\\n\\n",
-        "Instructions how to find a tutor",
         "Please assist in how to use this",
-        "Give me instructions on how to use this to find a tutor"
+        "Give me instructions on how to use this to find a tutor",
+        "How does this thing work?",
+        "How do I begin this process?",
+        "Walk me through this",
+        "Do I sign in here or create an account?"
       ],
       "metadata": [],
       "alternateQuestions": "",
@@ -28,11 +29,24 @@
       }
     },
     {
-      "id": 139,
+      "id": 142,
       "answer": "You need to make an account, ask for a tutor service with course subject and time listed",
       "source": "custom editorial",
       "questions": [
-        "I need help with this service."
+        "I need help with this service.",
+        "Help\n\n",
+        "Help me get this started",
+        "Can someone help me",
+        "Is there a help session for this",
+        "Help with the service",
+        "Assistance with this service",
+        "How can I get help with this service",
+        "Help please with this service",
+        "I need help getting started",
+        "I need help",
+        "Where can I start getting help with this service?\n\n",
+        "Can the bot help me get started with this service",
+        "HELP please"
       ],
       "metadata": [],
       "alternateQuestions": "",
@@ -45,11 +59,1203 @@
       }
     },
     {
-      "id": 140,
-      "answer": "You still need to provide was information to make an account first",
-      "source": "custom editorial",
+      "id": 144,
+      "answer": "You first need to create an account",
+      "source": "Editorial",
       "questions": [
-        "I just need a tutor"
+        "can I get help with a specific topic?",
+        "How can I get a tutor for a topic?",
+        "How can I get assistance with a test?",
+        "How can I get study help for my class",
+        "I need help with my class",
+        "I need assistance with a topic",
+        "Special topic help please",
+        "Do you guys tutor for any topic because I need help with a topic\n\n"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 146,
+      "answer": "The required data for a student account is your name, email",
+      "source": "Editorial",
+      "questions": [
+        "What do I need to list for my student account?",
+        "What information do I need to give for a student?",
+        "What do I need to give you for a student account",
+        "Registration for a student account",
+        "Student account registration",
+        "Register for service as a student",
+        "Need to register as a student",
+        "Register under a student account",
+        "Registration for a student"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 147,
+      "answer": "You need to create a tutor account with your name, email, availability and courses you teach",
+      "source": "Editorial",
+      "questions": [
+        "I am a tutor and I want help to provide my service for others",
+        "Hi I am a tutor, how can I tutor students?",
+        "I want to open a tutor account",
+        "Tutor need to create and account",
+        "Need to create a tutor account asap",
+        "How to sign up as a tutor",
+        "Where can I register for this as a tutor",
+        "tutor sign-up info",
+        "Information to sign up as a tutor",
+        "Tutor sign-up please",
+        "How can I utilize this service as a tutor"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 149,
+      "answer": "Yes. This service is open to only college students.",
+      "source": "Editorial",
+      "questions": [
+        "Can college student use this service?",
+        "Does the user need proof that he or she is a college student?",
+        "Are college student able to use this service?",
+        "Is this service open for only college students?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 150,
+      "answer": "College Students.",
+      "source": "Editorial",
+      "questions": [
+        "Who can use this service?",
+        "What type of person is this service for?",
+        "I am not in coll"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 151,
+            "qna": {
+              "id": 151,
+              "answer": "This service is only for college students",
+              "source": "Editorial",
+              "questions": [
+                "Can anyone use this service?",
+                "I am not in school but this sounds very helpful, can I use this service?",
+                "If I just have my GED or high school diploma, can I use this service?",
+                "Who is this service for?",
+                "Is this service open for adult students entering college",
+                "Is this serivces open only to the University of South Florida",
+                "Are these services open to an high school students taking AP classes?",
+                "Is this service open for students in high school?",
+                "Is this service good for middle school?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": [
+                  {
+                    "displayOrder": 0,
+                    "qnaId": 164,
+                    "qna": {
+                      "id": 164,
+                      "answer": "If the student is taking a college course then they may use this service.",
+                      "source": "Editorial",
+                      "questions": [
+                        "I am a dual enrolled high school student, can I use this service for my college courses?",
+                        "Are dual enrolled high school students able to use this?",
+                        "Is this service available for students in dual enrollment"
+                      ],
+                      "metadata": [],
+                      "alternateQuestions": "",
+                      "alternateQuestionClusters": [],
+                      "changeStatus": "NoChange",
+                      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+                      "context": {
+                        "isContextOnly": false,
+                        "prompts": []
+                      }
+                    },
+                    "displayText": "Is this service available for students in dual enrollment\n\n"
+                  },
+                  {
+                    "displayOrder": 0,
+                    "qnaId": 185,
+                    "qna": {
+                      "id": 185,
+                      "answer": "As long as you are a registered college student you qualify to use this service.",
+                      "source": "Editorial",
+                      "questions": [
+                        "Is this service helpful for non degree seekers",
+                        "Can students from a community college use this",
+                        "I am a college student in a community college is that okay?",
+                        "Are community college student allowed this service?"
+                      ],
+                      "metadata": [],
+                      "alternateQuestions": "",
+                      "alternateQuestionClusters": [],
+                      "changeStatus": "NoChange",
+                      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+                      "context": {
+                        "isContextOnly": false,
+                        "prompts": []
+                      }
+                    },
+                    "displayText": "Is this service helpful for non degree seekers  "
+                  },
+                  {
+                    "displayOrder": 0,
+                    "qnaId": 194,
+                    "qna": {
+                      "id": 194,
+                      "answer": "This service can only be used if the student is taking a college Course. If the high school student is enrolled in any college course then they may utilize this service only for the college course they are enrolled in.",
+                      "source": "Editorial",
+                      "questions": [
+                        "Can gifted high school students use this?",
+                        "Can a high school student in a GED program use this?"
+                      ],
+                      "metadata": [],
+                      "alternateQuestions": "",
+                      "alternateQuestionClusters": [],
+                      "changeStatus": "NoChange",
+                      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+                      "context": {
+                        "isContextOnly": false,
+                        "prompts": [
+                          {
+                            "displayOrder": 0,
+                            "qnaId": 185,
+                            "qna": {
+                              "id": 185,
+                              "answer": "As long as you are a registered college student you qualify to use this service.",
+                              "source": "Editorial",
+                              "questions": [
+                                "Is this service helpful for non degree seekers",
+                                "Can students from a community college use this",
+                                "I am a college student in a community college is that okay?",
+                                "Are community college student allowed this service?"
+                              ],
+                              "metadata": [],
+                              "alternateQuestions": "",
+                              "alternateQuestionClusters": [],
+                              "changeStatus": "NoChange",
+                              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+                              "context": {
+                                "isContextOnly": false,
+                                "prompts": []
+                              }
+                            },
+                            "displayText": "Yes they are taking a course one college"
+                          }
+                        ]
+                      }
+                    },
+                    "displayText": "Can gifted high school students use this?"
+                  }
+                ]
+              }
+            },
+            "displayText": "Can anyone use this service?"
+          }
+        ]
+      }
+    },
+    {
+      "id": 152,
+      "answer": "The tutors would teach any college course.",
+      "source": "Editorial",
+      "questions": [
+        "Are tutors teaching anything?",
+        "What subjects do the tutors teach?",
+        "What courses are being taught with this service?",
+        "What courses are the tutors teaching?",
+        "Are the tutors teaching high school courses?",
+        "Are the tutors teaching any trade courses for trade schools?",
+        "What courses does this service provide?",
+        "What kind of subjects would the tutors teach?",
+        "What type of courses are available with this service?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 153,
+            "qna": {
+              "id": 153,
+              "answer": "The tutors are teaching courses from any university",
+              "source": "Editorial",
+              "questions": [
+                "Are these courses in private colleges as well",
+                "Are the courses from private universities such as Everest?",
+                "Are the courses from private universities such as Concord?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "Are these courses in private colleges as well"
+          },
+          {
+            "displayOrder": 0,
+            "qnaId": 184,
+            "qna": {
+              "id": 184,
+              "answer": "It depends on what tutors we have available at the moment.",
+              "source": "Editorial",
+              "questions": [
+                "How many courses does this service provide?",
+                "Is there a specific number of courses that this service provides.",
+                "Does this service provide every course available in the university?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "How many courses does this service provide?\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "id": 154,
+      "answer": "This service is currently  a free resource to all college students",
+      "source": "Editorial",
+      "questions": [
+        "Does this cost anything?",
+        "How much is this?",
+        "Are the tutors paid?",
+        "How much an hour do I need to pay?",
+        "Is this a monthly subscription?",
+        "Is this a yearly subscription?",
+        "What is the cost on this?",
+        "How much money does this cost?",
+        "Is this included in the students tuition?",
+        "How much does this service cost?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 155,
+            "qna": {
+              "id": 155,
+              "answer": "The tutors do not accept any money because this is a volunteered service",
+              "source": "Editorial",
+              "questions": [
+                "Can I give the tutor any money as a tip",
+                "Can I secretly pay the tutor?",
+                "Can I offer money to the service?",
+                "Do the tutors accept donations",
+                "Is there a donation option for this service?",
+                "Can I tip the tutor",
+                "How does the payment work?",
+                "How do the tutors make a living doing this?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "Can I give the tutor any money as a tip"
+          },
+          {
+            "displayOrder": 0,
+            "qnaId": 156,
+            "qna": {
+              "id": 156,
+              "answer": "This is a volunteered service.",
+              "source": "Editorial",
+              "questions": [
+                "Why is this free?",
+                "Is this free?",
+                "Is this a service that is for volunteers",
+                "Are the tutors employees of the university?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "Why is this free?"
+          }
+        ]
+      }
+    },
+    {
+      "id": 158,
+      "answer": "Only college students can create this account unless the student is under the age 18.",
+      "source": "Editorial",
+      "questions": [
+        "I am a parent, can I sign my college student up for this",
+        "Are parents allowed to to do this for their college student?",
+        "How can parents sign there college student up for this service?",
+        "Can a parent create this service for there college student"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 159,
+            "qna": {
+              "id": 159,
+              "answer": "If the college student is under the age of 18, then the parent can have access. Otherwise no.",
+              "source": "Editorial",
+              "questions": [
+                "Can parents have access to the account?",
+                "Can I check my college students account?",
+                "Can I log in for my college student?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "Can parents have access to the account?"
+          }
+        ]
+      }
+    },
+    {
+      "id": 161,
+      "answer": "This is a service that students can log in as either a student or a tutor and receive a tutor session for any college course.",
+      "source": "Editorial",
+      "questions": [
+        "Is this a tutor service?",
+        "What is this?",
+        "What can I do with this?",
+        "Is this a service for students?",
+        "Is this a service for tutors?",
+        "What is this service",
+        "Service?",
+        "The service does what?",
+        "How does this service work?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 165,
+      "answer": "As a leading proponent of equality for all people, regardless of sexual orientation and gender identity and expression, we ask our grantees themselves to model best practices.",
+      "source": "Editorial",
+      "questions": [
+        "Is this service helpful for the LGBT community",
+        "Does this service accept the LGBT community?",
+        "Can anyone use this service with no discrimination towards sexual orientation?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 166,
+            "qna": {
+              "id": 166,
+              "answer": "We do not have special accommodations for this but we welcome anyone to use this service and we do not discriminate based on race, religion or sexual orientation",
+              "source": "Editorial",
+              "questions": [
+                "Do you have tutors that are LGBT",
+                "Are there tutors that are LGBT",
+                "Can I have a tutor that is LGBT"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "Do you have tutors that are LGBT"
+          }
+        ]
+      }
+    },
+    {
+      "id": 167,
+      "answer": "I hope not",
+      "source": "Editorial",
+      "questions": [
+        "Will this service end?",
+        "How long is this service going on for",
+        "Will this be available forever?",
+        "Is this service ever going to expire?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 168,
+      "answer": "As of now, there is no limit to how many times a student uses our service",
+      "source": "Editorial",
+      "questions": [
+        "How many courses can a student recieve tutor service\n\n",
+        "Is there a limit to use this service",
+        "How many times can I use this a week"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 169,
+      "answer": "There is a benefit that the student will have by utilizing our service, the student would have a higher chance passing the courses if they are being assisted with understanding course material",
+      "source": "Editorial",
+      "questions": [
+        "Will the tutor help me pass?",
+        "What are the chances this service will benefit me?",
+        "What are the chances this service is worth it",
+        "Is this a full proof service?",
+        "Is there a guarantee that the tutor will help a student pass?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 170,
+      "answer": "At this moment this service is only in English but if the tutor does speak your native language then they can assist speak in another language. This feature would be added in the near future.",
+      "source": "Editorial",
+      "questions": [
+        "Hablas español",
+        "Is there anyone that speaks in Spanish",
+        "Do you have a Spanish translator as a filter on here?",
+        "Is there a guarantee that the tutor will help a student pass?",
+        "Does any tutor speak in Hindi?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 171,
+            "qna": {
+              "id": 171,
+              "answer": "At this moment we do not have that feature. Please check with us on that in the near future.",
+              "source": "Editorial",
+              "questions": [
+                "Can I have a tutor that speaks certain languages?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "Can I have a tutor that speaks certain languages? "
+          }
+        ]
+      }
+    },
+    {
+      "id": 172,
+      "answer": "Any college student can benefit from this service",
+      "source": "Editorial",
+      "questions": [
+        "Can this service benefit any majors?",
+        "Is this for any major?",
+        "Can I benefit from this if I am a PHD student?",
+        "Can I benefit if I am a Masters Student?",
+        "Is this good for Art students?",
+        "Is this good for theater majors?",
+        "Is this good for engineering students?",
+        "Is this good for writing majors?",
+        "Is this good for architect majors?",
+        "Is this good for medical students?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 175,
+      "answer": "Tutors can meet with the student in person.",
+      "source": "Editorial",
+      "questions": [
+        "Can tutors meet in person?",
+        "Is it okay to meet the tutors in person?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 174,
+            "qna": {
+              "id": 174,
+              "answer": "Study sessions are held at public settings. Coffee shops, libraries, universities, restaurants.",
+              "source": "Editorial",
+              "questions": [
+                "Where are study sessions usually held?",
+                "Where can we study?",
+                "What locations are the best places to have a study session?",
+                "Where do we study?",
+                "Where can we meet",
+                "Best place to meet tutor?",
+                "quiet places to meet to be tutored?",
+                "Where would I study"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "What is the best location to meet with a tutor?"
+          },
+          {
+            "displayOrder": 0,
+            "qnaId": 173,
+            "qna": {
+              "id": 173,
+              "answer": "The place where you decide to have your study session is entirely up to you and the tutors comfort. But our best recommendation is for the study session to always take place at a public place. We do not recommend study sessions being held in anyones home due to the safety of both parties.",
+              "source": "Editorial",
+              "questions": [
+                "Should I study with my tutor at my house?",
+                "What if I need to study at home?",
+                "Is it safe to study at my home?",
+                "Can I give my tutor my address to study at my home?",
+                "Is it safe to go to the tutors home?",
+                "Where should I study?",
+                "Can tutors come to the home?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": [
+                  {
+                    "displayOrder": 0,
+                    "qnaId": 174,
+                    "qna": {
+                      "id": 174,
+                      "answer": "Study sessions are held at public settings. Coffee shops, libraries, universities, restaurants.",
+                      "source": "Editorial",
+                      "questions": [
+                        "Where are study sessions usually held?",
+                        "Where can we study?",
+                        "What locations are the best places to have a study session?",
+                        "Where do we study?",
+                        "Where can we meet",
+                        "Best place to meet tutor?",
+                        "quiet places to meet to be tutored?",
+                        "Where would I study"
+                      ],
+                      "metadata": [],
+                      "alternateQuestions": "",
+                      "alternateQuestionClusters": [],
+                      "changeStatus": "NoChange",
+                      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+                      "context": {
+                        "isContextOnly": false,
+                        "prompts": []
+                      }
+                    },
+                    "displayText": "Where are study sessions usually held?"
+                  }
+                ]
+              }
+            },
+            "displayText": "Does the session have to be in person?"
+          },
+          {
+            "displayOrder": 0,
+            "qnaId": 160,
+            "qna": {
+              "id": 160,
+              "answer": "This service is safe because it gives the option for the student to only meet with the tutor online.",
+              "source": "Editorial",
+              "questions": [
+                "How can I make sure this service is safe?",
+                "How safe is this service?",
+                "Why is this service safer than regular services?",
+                "Is this service safe?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "If I don't feel comfortable can I meet online?"
+          }
+        ]
+      }
+    },
+    {
+      "id": 178,
+      "answer": "Every tutor is a student. At any age someone can enroll as a college student at any university.",
+      "source": "Editorial",
+      "questions": [
+        "Are the tutors between ages 25 to 30",
+        "Are there tutors over the age 30?",
+        "Are there tutors under the age 18?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 179,
+      "answer": "Any student that wants to tutor a course must have received an A in the Course. Besides that, there is no other training.",
+      "source": "Editorial",
+      "questions": [
+        "Do tutors need any special training before being hired for the process?",
+        "Are the tutors good at the subject?",
+        "How do I know the tutor has mastered the subject he or she is teaching me",
+        "How advanced are the tutors for the courses?",
+        "Will my tutor be smart enough to help me in the subject?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 180,
+      "answer": "We do not have that feature yet in the application.",
+      "source": "Editorial",
+      "questions": [
+        "Can we request tutors by gender?\n\n",
+        "Can we pick a woman tutor?",
+        "Can we pick a male tutor?",
+        "Can my tutor be a guy",
+        "Can my tutor be a girl",
+        "I only like tutors that are girls",
+        "Can we requisition only a female tutor?",
+        "Can we request only a male tutor?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 181,
+      "answer": "The service can be shortened or extended as long as it fits into the tutors scheduled availability",
+      "source": "Editorial",
+      "questions": [
+        "What if I don't need anymore of the tutors service?",
+        "What is I modify my time?",
+        "What if I need to cut the session",
+        "Is it okay to finish early",
+        "Is it okay to go over my time?",
+        "How short can the service be?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 162,
+            "qna": {
+              "id": 162,
+              "answer": "It depends on the tutors availability.",
+              "source": "Editorial",
+              "questions": [
+                "Is every session 1 hour?",
+                "Are the hours of availability during the hours of operation for a college university?",
+                "Are there tutors that teach past 9pm?",
+                "Are there set times for every tutor that are exactly the same?",
+                "How many hours can I use this service?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": [
+                  {
+                    "displayOrder": 0,
+                    "qnaId": 163,
+                    "qna": {
+                      "id": 163,
+                      "answer": "You would have to discuss that with the tutor",
+                      "source": "Editorial",
+                      "questions": [
+                        "Can I study with the tutor for more time?",
+                        "Can I persuade the tutor for extra hours?",
+                        "What if I would like to study with the tutor after his available time?",
+                        "Can I meet with a tutor past midnight?"
+                      ],
+                      "metadata": [],
+                      "alternateQuestions": "",
+                      "alternateQuestionClusters": [],
+                      "changeStatus": "NoChange",
+                      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+                      "context": {
+                        "isContextOnly": false,
+                        "prompts": []
+                      }
+                    },
+                    "displayText": "Can I study with the tutor for more time?"
+                  }
+                ]
+              }
+            },
+            "displayText": "What if I want more time with my tutor?"
+          }
+        ]
+      }
+    },
+    {
+      "id": 183,
+      "answer": "This is not allowed. If the tutor reports that a student was showing any sign of unprofessional behavior, he or she will be removed permanently from this service. And for any further actions if necessary. And this is considered for the students personal reports as well. If the tutor shows any sign of sexual harassment or unprofessional behavior they will not be able to serve as a tutor permanently.",
+      "source": "Editorial",
+      "questions": [
+        "Can I ask out my tutor after the service has ended.",
+        "What are the rules with dating the tutors.",
+        "Can I hit on my tutor?",
+        "My tutor hit on me.",
+        "What if I was sexually harassed?",
+        "I think I was sexually harassed by my tutor.",
+        "I think I was sexually harassed by the student.",
+        "Are we allowed to date our tutors",
+        "What if the tutor is acting very inappropriate"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 186,
+      "answer": "At this moment we are only providing this service to universities in the states. But we will consider this in future work.",
+      "source": "Editorial",
+      "questions": [
+        "Can I use this in another country?",
+        "Is this a service in any country?",
+        "Is this only in the US?",
+        "Is this a global service"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 187,
+      "answer": "Not at this moment.",
+      "source": "Editorial",
+      "questions": [
+        "Is this service connected with USF?",
+        "Is this services connected with Google",
+        "Is this service connected to any organization?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 188,
+            "qna": {
+              "id": 188,
+              "answer": "Yes we do have tech support.",
+              "source": "Editorial",
+              "questions": [
+                "Is there tech support?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "Is there tech support?  "
+          }
+        ]
+      }
+    },
+    {
+      "id": 189,
+      "answer": "Unfortunately since this is a volunteered service we can only suggest that you continue the service but with a different tutor.",
+      "source": "Editorial",
+      "questions": [
+        "What is I don’t like the tutor?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 190,
+            "qna": {
+              "id": 190,
+              "answer": "We can not promise you that service. You would just have to sign in again and choose the other tutor that is teaching that specific course if that is possible.",
+              "source": "Editorial",
+              "questions": [
+                "How can I make sure I don't have that person?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "How can I make sure I don't have that person?"
+          }
+        ]
+      }
+    },
+    {
+      "id": 191,
+      "answer": "You can discontinue to the session right away. If there was any sexual abuse or sexual harassment please report that to use immediatley.",
+      "source": "Editorial",
+      "questions": [
+        "What if I dont feel comfortable with the tutor"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 193,
+            "qna": {
+              "id": 193,
+              "answer": "Call 911.",
+              "source": "Editorial",
+              "questions": [
+                "What if I am in danger?",
+                "What if I am not safe?",
+                "What if I was sexually abused?"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "What if I am in danger?"
+          }
+        ]
+      }
+    },
+    {
+      "id": 192,
+      "answer": "Upon your discretion it is your decision to give your personal information to a tutor.  But we strongly advise that you do not give the tutor your personal information. This is based on your comfort.",
+      "source": "Editorial",
+      "questions": [
+        "How safe is it to give my personal information to the tutor."
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 195,
+      "answer": "This would be considered but we have not yet considered opening this service for high school.",
+      "source": "Editorial",
+      "questions": [
+        "Is this service going to open up for high schools in the near future?",
+        "Will you ever use this for high schoolers?",
+        "Can high schools ever do this?",
+        "Can you tell the board of education to open this for high school students?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 196,
+      "answer": "It depends on the comfort and experience of the tutor.",
+      "source": "Editorial",
+      "questions": [
+        "Does this service use skype or team viewer for the hearing impaired",
+        "What if the person is hearing impaired?",
+        "Accommodation for the hearing impaired?",
+        "Tutor help for the hearing impaired?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": [
+          {
+            "displayOrder": 0,
+            "qnaId": 157,
+            "qna": {
+              "id": 157,
+              "answer": "This service is fairly new and currently does not have extra accommodations to students with disabilities. This will be considered in the near future.",
+              "source": "Editorial",
+              "questions": [
+                "Is there a special service for students with disability",
+                "Are there specialized tutors for students with disabilities",
+                "I have a disability, are the tutors trained to help students like myself",
+                "Can I receive accommodations due to my disability",
+                "Do the tutors help college students with disabilities"
+              ],
+              "metadata": [],
+              "alternateQuestions": "",
+              "alternateQuestionClusters": [],
+              "changeStatus": "NoChange",
+              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+              "context": {
+                "isContextOnly": false,
+                "prompts": []
+              }
+            },
+            "displayText": "Does the tutor help with this disability?"
+          }
+        ]
+      }
+    },
+    {
+      "id": 197,
+      "answer": "Please contact management.",
+      "source": "Editorial",
+      "questions": [
+        "Does this service need funding from the university",
+        "Can our university fund this?",
+        "We would like to pay you to extend this service?",
+        "How much would it be to fund this for future work?"
+      ],
+      "metadata": [],
+      "alternateQuestions": "",
+      "alternateQuestionClusters": [],
+      "changeStatus": "NoChange",
+      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
+      "context": {
+        "isContextOnly": false,
+        "prompts": []
+      }
+    },
+    {
+      "id": 198,
+      "answer": "Every tutor is a student at a university",
+      "source": "Editorial",
+      "questions": [
+        "Who are the tutors?",
+        "Where do the tutors come from?",
+        "Are the tutors students?",
+        "Are the tutors grad students",
+        "Where do the tutors come from",
+        "Are the tutors interns?"
       ],
       "metadata": [],
       "alternateQuestions": "",

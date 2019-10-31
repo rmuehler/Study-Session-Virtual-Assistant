@@ -59,6 +59,10 @@
     {
       "name": "DirectionalReference",
       "roles": []
+    },
+    {
+      "name": "ClassName",
+      "roles": []
     }
   ],
   "composites": [],
@@ -773,17 +777,12 @@
       "entities": []
     },
     {
-      "text": "signout",
-      "intent": "Logout",
-      "entities": []
-    },
-    {
       "text": "forget me",
       "intent": "Logout",
       "entities": []
     },
     {
-      "text": "sign out",
+      "text": "log out",
       "intent": "Logout",
       "entities": []
     },
@@ -793,7 +792,12 @@
       "entities": []
     },
     {
-      "text": "log out",
+      "text": "sign out",
+      "intent": "Logout",
+      "entities": []
+    },
+    {
+      "text": "signout",
       "intent": "Logout",
       "entities": []
     },
@@ -2526,7 +2530,9 @@
   "prebuiltEntities": [
     {
       "name": "number",
-      "roles": []
+      "roles": [
+        "hv"
+      ]
     },
     {
       "name": "ordinal",

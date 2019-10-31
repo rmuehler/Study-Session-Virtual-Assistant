@@ -1,20 +1,20 @@
 Utterance	Intents
 sorry	l_General, q_Faq
-perfect	l_General, q_Faq
-that is correct	l_General, q_Faq
-sounds good	l_General, q_Faq
-hello	None, q_Faq
-not at all	l_General, q_Faq
-that is right	l_General, q_Faq
+fine	l_General, q_Faq
+sure	l_General, q_Faq
 goodbye	None, q_Faq
-great	l_General, q_Faq
+ok	l_General, q_Faq
 right	l_General, q_Faq
+yes	l_General, q_Faq
+sounds great	l_General, q_Faq
 not even close	l_General, q_Faq
 shut up	l_General, q_Faq
-i just need a tutor	q_Chitchat, q_Faq
-sure	l_General, q_Faq
-ok	l_General, q_Faq
-fine	l_General, q_Faq
+i need help with this service.	q_Chitchat, q_Faq
+hello	None, q_Faq
+not at all	l_General, q_Faq
+great	l_General, q_Faq
+perfect	l_General, q_Faq
+sounds good	l_General, q_Faq
 okay	l_General, q_Faq
-sounds great	l_General, q_Faq
-yes	l_General, q_Faq
+that is correct	l_General, q_Faq
+that is right	l_General, q_Faq

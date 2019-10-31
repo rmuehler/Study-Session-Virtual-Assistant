@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill.Tests\\searchskill.Tests.csproj": {}
+    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill.Tests\\searchskill.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill.Tests\\searchskill.Tests.csproj": {
+    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill.Tests\\searchskill.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill.Tests\\searchskill.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill.Tests\\searchskill.Tests.csproj",
         "projectName": "searchskill.Tests",
-        "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill.Tests\\searchskill.Tests.csproj",
-        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill.Tests\\obj\\",
+        "projectPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill.Tests\\searchskill.Tests.csproj",
+        "packagesPath": "C:\\Users\\mtuzc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mtuzc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill\\searchskill.csproj": {
-                "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill\\searchskill.csproj"
+              "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill\\searchskill.csproj": {
+                "projectPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill\\searchskill.csproj"
               }
             }
           }
@@ -97,20 +97,20 @@
         }
       }
     },
-    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill\\searchskill.csproj": {
+    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill\\searchskill.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill\\searchskill.csproj",
+        "projectUniqueName": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill\\searchskill.csproj",
         "projectName": "searchskill",
-        "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill\\searchskill.csproj",
-        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\searchskill\\searchskill\\obj\\",
+        "projectPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill\\searchskill.csproj",
+        "packagesPath": "C:\\Users\\mtuzc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\searchskill\\searchskill\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mtuzc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

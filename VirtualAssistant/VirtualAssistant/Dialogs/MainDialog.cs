@@ -90,9 +90,13 @@ namespace VirtualAssistant.Dialogs
             // Check dispatch result
             var dispatchResult = await cognitiveModels.DispatchService.RecognizeAsync<DispatchLuis>(dc.Context, CancellationToken.None);
             var intent = dispatchResult.TopIntent().intent;
+            var test = dispatchResult.Entities;
+            Console.WriteLine(test.ToString());
+
 
             // Identify if the dispatch intent matches any Action within a Skill if so, we pass to the appropriate SkillDialog to hand-off
             var identifiedSkill = SkillRouter.IsSkill(_settings.Skills, intent.ToString());
+            
 
             if (identifiedSkill != null)
             {
@@ -153,15 +157,17 @@ namespace VirtualAssistant.Dialogs
                 {
                     var result = await luisService.RecognizeAsync<searchskillLuis>(dc.Context, CancellationToken.None);
 
+                    // to pass in BeginDialogAsync
+                    Luis.searchskillLuis._Entities entities = result.Entities;
                     var searchIntent = result?.TopIntent().intent;
-
+                    
                     // switch on general intents
                     switch (searchIntent)
                     {
                         case searchskillLuis.Intent.Search_by_Subject:
                             {
                                 // start escalate dialog
-                                await dc.BeginDialogAsync(nameof(Search_by_Subject));
+                                await dc.BeginDialogAsync(nameof(Search_by_Subject), entities.subject);
                                 break;
                             }
 

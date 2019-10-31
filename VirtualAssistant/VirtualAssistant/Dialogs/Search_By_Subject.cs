@@ -16,7 +16,6 @@ namespace VirtualAssistant.Dialogs
 {
     public class Search_by_Subject : ComponentDialog
     {
-
         public Search_by_Subject(BotServices botServices,
             UserState userState,
             IBotTelemetryClient telemetryClient) : base(nameof(Search_by_Subject))
@@ -48,18 +47,28 @@ namespace VirtualAssistant.Dialogs
             // WaterfallStep always finishes with the end of the Waterfall or with another dialog; here it is a Prompt Dialog.
             // Running a prompt here means the next WaterfallStep will be run when the users response is received.
 
+            stepContext.Values["subject"] = (Luis.searchskillLuis._Entities)stepContext.Options;
 
-            return await stepContext.PromptAsync(nameof(ChoicePrompt),
-                new PromptOptions
-                {
-                    Prompt = MessageFactory.Text("Please enter your mode of transport."),
-                    Choices = ChoiceFactory.ToChoices(new List<string> { "Car", "Bus", "Bicycle" }),
-                }, cancellationToken);
+            if (stepContext.Values["subject"] == null)
+            {
+               return await stepContext.PromptAsync(nameof(ChoicePrompt),
+               new PromptOptions
+               {
+                   Prompt = MessageFactory.Text("Please enter the subject."),
+                   /*Choices = ChoiceFactory.ToChoices(new List<string> { "Car", "Bus", "Bicycle" }),*/
+               }, cancellationToken);
+            }
+
+            else
+            {
+                await stepContext.Context.SendActivityAsync(MessageFactory.Text("Searching for available tutors..."), cancellationToken);
+                return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
+            }
         }
 
         private static async Task<DialogTurnResult> ReturnResultsAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            stepContext.Values["transport"] = ((FoundChoice)stepContext.Result).Value;
+            stepContext.Values["subject"] = (string)stepContext.Result;
 
             return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your name.") }, cancellationToken);
         }
