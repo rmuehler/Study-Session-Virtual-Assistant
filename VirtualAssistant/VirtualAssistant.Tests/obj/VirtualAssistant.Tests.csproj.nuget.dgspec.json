@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj": {}
+    "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj": {
+    "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
         "projectName": "VirtualAssistant.Tests",
-        "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
+        "projectPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
         "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\obj\\",
+        "outputPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
-                "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj"
+              "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
+                "projectPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj"
               }
             }
           }
@@ -90,21 +90,27 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
+    "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
         "projectName": "VirtualAssistant",
-        "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
+        "projectPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
         "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\obj\\",
+        "outputPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -244,13 +250,23 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.6.10, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
