@@ -44,7 +44,7 @@ namespace VirtualAssistant.Dialogs
             Edit_Profile editProfile,
             Search_by_Subject searchSubject,
             Search_by_Tutor searchtutor,
-            //Greeting_Dialog greeting_Dialog,
+            Greeting_Dialog greeting_Dialog,
             //
             //
             //
@@ -65,7 +65,7 @@ namespace VirtualAssistant.Dialogs
             AddDialog(cancelDialog);
             AddDialog(editProfile);
             AddDialog(searchSubject);
-            //AddDialog(greeting_Dialog);
+            AddDialog(greeting_Dialog);
             //
             //
             //
@@ -83,11 +83,11 @@ namespace VirtualAssistant.Dialogs
             var view = new MainResponses();
             var onboardingState = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
 
-            //await dc.BeginDialogAsync(nameof(Greeting_Dialog));
+            await dc.BeginDialogAsync(nameof(Greeting_Dialog));
             //
             //
             //
-
+            
             if (string.IsNullOrEmpty(onboardingState.Name))
             {
                 await view.ReplyWith(dc.Context, MainResponses.ResponseIds.NewUserGreeting);

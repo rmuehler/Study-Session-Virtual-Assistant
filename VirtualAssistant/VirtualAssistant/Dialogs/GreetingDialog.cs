@@ -28,13 +28,7 @@ namespace VirtualAssistant.Dialogs
 
             // Add named dialogs to the DialogSet. These names are saved in the dialog state.
             AddDialog(new WaterfallDialog(nameof(WaterfallDialog), waterfallSteps));
-            AddDialog(new TextPrompt(nameof(TextPrompt)));
-            AddDialog(new TextPrompt(nameof(ConfirmPrompt)));
-            AddDialog(new TextPrompt(nameof(TextPrompt)));
-            AddDialog(new TextPrompt(nameof(TextPrompt)));
-            AddDialog(new TextPrompt(nameof(TextPrompt)));
-            AddDialog(new TextPrompt(nameof(TextPrompt)));
-
+            AddDialog(new TextPrompt(nameof(TextPrompt)));         
 
             // The initial child Dialog to run.
             InitialDialogId = nameof(WaterfallDialog);
@@ -42,18 +36,19 @@ namespace VirtualAssistant.Dialogs
 
         private static async Task<DialogTurnResult> AskIfReturningAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            return await stepContext.PromptAsync(nameof(ConfirmPrompt), new PromptOptions { Prompt = MessageFactory.Text("Hello, are you a returning user?") }, cancellationToken);
+            return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Hello, are you a returning user?") }, cancellationToken);
         }
 
         private static async Task<DialogTurnResult> ReturnResultsAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            if ((bool)stepContext.Result)
+            if ((string)stepContext.Result == "yes")
             {
                 stepContext.Values["returning"] = 1;
                 return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your e-mail address to confirm your identity.") }, cancellationToken);
             }
             else
             {
+                stepContext.Values["returning"] = 0;
                 return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your e-mail address to begin your registration.") }, cancellationToken);
             }
         }
@@ -62,10 +57,10 @@ namespace VirtualAssistant.Dialogs
             stepContext.Values["email"] = (string)stepContext.Result;
 
             //use this string for database.
-            string useremail = ((string[])stepContext.Values["email"])[0];
+            string useremail = ((string)stepContext.Values["email"]);
 
             //end greeting if returning user
-            if ((int)stepContext.Values["returning"] == 1)
+            if ((long)stepContext.Values["returning"] == 1)
             {
 
                 //TODO: Connect to database. verify email.
@@ -85,7 +80,7 @@ namespace VirtualAssistant.Dialogs
             stepContext.Values["name"] = (string)stepContext.Result;
 
             //use this string for database.
-            string username = ((string[])stepContext.Values["name"])[0];
+            string username = ((string)stepContext.Values["name"]);
 
             return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Will you be using this service as a tutor or student?") }, cancellationToken);
         }
@@ -94,7 +89,7 @@ namespace VirtualAssistant.Dialogs
             stepContext.Values["usertype"] = (string)stepContext.Result;
 
             //use this string for database.
-            string usertype = ((string[])stepContext.Values["usertype"])[0];
+            string usertype = ((string)stepContext.Values["usertype"]);
 
             if (usertype == "tutor")
             {
@@ -103,14 +98,14 @@ namespace VirtualAssistant.Dialogs
 
             else
             {
-                await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {((string[])stepContext.Values["name"])[0]}! You may now use this service."), cancellationToken);
+                await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {((string)stepContext.Values["name"])}! You may now use this service."), cancellationToken);
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
             }
         }
         private static async Task<DialogTurnResult> ReturnCourseAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             stepContext.Values["course"] = (string)stepContext.Result;
-            await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {((string[])stepContext.Values["name"])[0]}!"), cancellationToken);
+            await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {((string)stepContext.Values["name"])}!"), cancellationToken);
             return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
         }
     }
