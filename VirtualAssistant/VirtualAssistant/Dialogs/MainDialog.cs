@@ -44,6 +44,10 @@ namespace VirtualAssistant.Dialogs
             Edit_Profile editProfile,
             Search_by_Subject searchSubject,
             Search_by_Tutor searchtutor,
+            //Greeting_Dialog greeting_Dialog,
+            //
+            //
+            //
             SubmitDialog submitDialog,
             List<SkillDialog> skillDialogs,
             IBotTelemetryClient telemetryClient,
@@ -61,6 +65,10 @@ namespace VirtualAssistant.Dialogs
             AddDialog(cancelDialog);
             AddDialog(editProfile);
             AddDialog(searchSubject);
+            //AddDialog(greeting_Dialog);
+            //
+            //
+            //
             AddDialog(searchtutor);
             AddDialog(submitDialog);
 
@@ -74,6 +82,11 @@ namespace VirtualAssistant.Dialogs
         {
             var view = new MainResponses();
             var onboardingState = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+
+            //await dc.BeginDialogAsync(nameof(Greeting_Dialog));
+            //
+            //
+            //
 
             if (string.IsNullOrEmpty(onboardingState.Name))
             {
@@ -164,10 +177,6 @@ namespace VirtualAssistant.Dialogs
                     // to pass in BeginDialogAsync
                     Luis.searchskillLuis._Entities entities = result.Entities;
                     var searchIntent = result?.TopIntent().intent;
-<<<<<<< HEAD
-=======
-
->>>>>>> a0b764ccf9693685eb1bf6afa06784eb001bce37
                     
                     // switch on general intents
                     switch (searchIntent)
@@ -181,7 +190,7 @@ namespace VirtualAssistant.Dialogs
 
                         case searchskillLuis.Intent.Search_by_Tutor:
                             {
-                                await dc.BeginDialogAsync(nameof(Search_by_Tutor));
+                                await dc.BeginDialogAsync(nameof(Search_by_Tutor), entities.personName);
                                 break;
                             }
                         case searchskillLuis.Intent.None:

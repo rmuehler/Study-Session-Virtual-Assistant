@@ -20,7 +20,8 @@ namespace Luis
 
         public enum Intent {
             Edit_Profile, 
-            None
+            None, 
+            View_Profile
         };
         [JsonProperty("intents")]
         public Dictionary<Intent, IntentScore> Intents;
@@ -28,9 +29,19 @@ namespace Luis
         public class _Entities
         {
 
+            // Built-in entities
+            public string[] email;
+
+            public string[] personName;
+
+            public string[] phonenumber;
+
             // Instance
             public class _Instance
             {
+                public InstanceData[] email;
+                public InstanceData[] personName;
+                public InstanceData[] phonenumber;
             }
             [JsonProperty("$instance")]
             public _Instance _instance;

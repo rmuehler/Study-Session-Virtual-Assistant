@@ -41,53 +41,35 @@ l_General	1	human service
 l_General	1	do nothing
 l_General	1	no no thank you
 l_General	1	go away
-l_profileskill	1	i want to change my phone number
-l_profileskill	1	what name did i give you guys
-l_profileskill	1	let me see my profile
-l_searchskill	1	i am having a hard semester in program design, i need a tutor everyday at 3pm.
-l_searchskill	1	how much time in advance do i need to request a tutor because i need help friday at 9am to study electronic materials for my final.
-l_searchskill	1	i need help with physics2, do you have a tutor that teaches at 11am
-l_searchskill	1	i need a tutor asap that can help me understand calc3 at 5pm.
-l_searchskill	1	can i get in touch with a tutor at 12pm to study linear systems
-l_searchskill	1	is there someone that teaches algorithms around 4 to 5 today
+l_profileskill	1	i want to change my email
+l_profileskill	1	what is my number
+l_profileskill	1	change my email to bob@bob.com
+l_searchskill	1	is steve martin teaching math
+l_searchskill	1	i want to search by tutor name.
+l_searchskill	1	is there a tutor that comprehends this class well available at 7pm
+l_searchskill	1	hi, i need a tutor for physics at 4pm to help me please.
 None	1	logout
 None	1	goodbye
-q_Chitchat	1	Is this a service for tutors
-q_Chitchat	1	What do I need to list for my student account
-q_Chitchat	1	I need help
-q_Chitchat	1	Will the tutor help me pass
-q_Chitchat	1	What are the chances this service will benefit me
-q_Chitchat	1	Are there tutors under the age 18
-q_Chitchat	1	Hablas español
-q_Chitchat	1	I only like tutors that are girls
-q_Chitchat	1	Assistance with this service
-q_Chitchat	1	Is this a yearly subscription
-q_Chitchat	1	Do you guys tutor for any topic because I need help with a topic
-q_Chitchat	1	Are parents allowed to to do this for their college student
-q_Chitchat	1	Can I benefit if I am a Masters Student
-q_Chitchat	1	How do I know the tutor has mastered the subject he or she is teaching me
-q_Chitchat	1	How much is this
-q_Chitchat	1	How advanced are the tutors for the courses
-q_Chitchat	1	Does this service need funding from the university
-q_Chitchat	1	Does this service use skype or team viewer for the hearing impaired
-q_Chitchat	1	Is there a help session for this
-q_Chitchat	1	Can my tutor be a girl
-q_Chitchat	1	How can I get help with this service
-q_Chitchat	1	Can the bot help me get started with this service
-q_Chitchat	1	I am a tutor and I want help to provide my service for others
-q_Chitchat	1	Is there a limit to use this service
-q_Chitchat	1	Can I hit on my tutor
-q_Chitchat	1	Can I benefit from this if I am a PHD student
+q_Chitchat	1	Are the tutors grad students
+q_Chitchat	1	Is this a monthly subscription
+q_Chitchat	1	What is the cost on this
 q_Chitchat	1	What if I dont feel comfortable with the tutor
-q_Chitchat	1	Is this service connected with USF
-q_Chitchat	1	What if I was sexually harassed
-q_Chitchat	1	Can you tell the board of education to open this for high school students
-q_Chitchat	1	Do tutors need any special training before being hired for the process
-q_Chitchat	1	Can my tutor be a guy
-q_Chitchat	1	Can high schools ever do this
-q_Chitchat	1	Is this good for architect majors
-q_Chitchat	1	Are the tutors interns
-q_Chitchat	1	Are there tutors over the age 30
+q_Chitchat	1	What if I don’t like the tutor
+q_Chitchat	1	How advanced are the tutors for the courses
+q_Chitchat	1	Are the tutors paid
+q_Chitchat	1	How does this service work
+q_Chitchat	1	Service
+q_Chitchat	1	Need to create a tutor account asap
+q_Chitchat	1	Can college student use this service
+q_Chitchat	1	Where do the tutors come from
+q_Chitchat	1	Is this a service for tutors
+q_Chitchat	1	Is there a limit to use this service
+q_Chitchat	1	Student account registration
+q_Chitchat	1	Is there a guarantee that the tutor will help a student pass
+q_Chitchat	1	How much money does this cost
+q_Chitchat	1	Please assist in how to use this
+q_Chitchat	1	Do you have a Spanish translator as a filter on here
+q_Chitchat	1	Tutor help for the hearing impaired
 q_Faq	1	I love to eat
 q_Faq	1	Are you a rap music fan
 q_Faq	1	what do you think of how I look

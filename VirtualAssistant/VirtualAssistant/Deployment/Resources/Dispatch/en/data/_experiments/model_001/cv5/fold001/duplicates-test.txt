@@ -1,11 +1,4 @@
 Utterance	Intents
-<<<<<<< HEAD
 not even close	l_General, q_Faq
-sorry	l_General, q_Faq
 that is right	l_General, q_Faq
-=======
-that is right	l_General, q_Faq
-not even close	l_General, q_Faq
 sorry	l_General, q_Faq
->>>>>>> a0b764ccf9693685eb1bf6afa06784eb001bce37
-i need help with this service.	q_Chitchat, q_Faq
