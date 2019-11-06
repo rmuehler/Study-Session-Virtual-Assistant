@@ -1,5 +1,4 @@
 Utterance	Intents
-that is right	l_General, q_Faq
 not even close	l_General, q_Faq
+that is right	l_General, q_Faq
 sorry	l_General, q_Faq
-i need help with this service.	q_Chitchat, q_Faq

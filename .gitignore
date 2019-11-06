@@ -4,3 +4,23 @@
 
 /.vs
 /VirtualAssistant/.vs
+profileskill.Tests.assets.cache
+profileskill.Tests.csprojAssemblyReference.cache
+/profileskill/profileskill/obj/release/netcoreapp2.2/profileskill.csprojAssemblyReference.cache
+/profileskill/profileskill/obj/release/netcoreapp2.2/profileskill.AssemblyInfo.cs
+/profileskill/profileskill/obj/release/netcoreapp2.2/profileskill.AssemblyInfoInputs.cache
+/profileskill/profileskill/obj/release/netcoreapp2.2/profileskill.assets.cache
+/profileskill/profileskill/obj/Debug
+/searchskill/.vs
+/searchskill/searchskill/obj/searchskill.csproj.nuget.g.props
+/searchskill/searchskill/obj/project.assets.json
+/searchskill/searchskill/obj/searchskill.csproj.nuget.cache
+/searchskill/searchskill/obj/searchskill.csproj.nuget.dgspec.json
+/searchskill/searchskill/obj/Debug
+/searchskill/searchskill/obj/release/netcoreapp2.2/searchskill.csproj.CoreCompileInputs.cache
+/searchskill/searchskill/obj/release/netcoreapp2.2/searchskill.csprojAssemblyReference.cache
+/searchskill/searchskill/obj/release/netcoreapp2.2/searchskill.assets.cache
+/VirtualAssistant/.vs
+/VirtualAssistant/VirtualAssistant/obj
+/VirtualAssistant/VirtualAssistant/bin/Debug
+/VirtualAssistant/VirtualAssistant.Tests/obj

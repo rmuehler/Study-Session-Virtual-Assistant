@@ -11,6 +11,9 @@
     },
     {
       "name": "None"
+    },
+    {
+      "name": "View Profile"
     }
   ],
   "entities": [],
@@ -18,23 +21,41 @@
   "closedLists": [],
   "patternAnyEntities": [],
   "regex_entities": [],
-  "prebuiltEntities": [],
+  "prebuiltEntities": [
+    {
+      "name": "email",
+      "roles": []
+    },
+    {
+      "name": "personName",
+      "roles": []
+    },
+    {
+      "name": "phonenumber",
+      "roles": []
+    }
+  ],
   "model_features": [],
   "regex_features": [],
   "patterns": [],
   "utterances": [
     {
-      "text": "can i change my name please",
+      "text": "change my # to 8294834",
       "intent": "Edit Profile",
       "entities": []
     },
     {
-      "text": "change phone #",
+      "text": "change my email to bob@bob.com",
       "intent": "Edit Profile",
       "entities": []
     },
     {
-      "text": "edit info",
+      "text": "change my name to bob",
+      "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "change my phone number to 8882939",
       "intent": "Edit Profile",
       "entities": []
     },
@@ -54,33 +75,33 @@
       "entities": []
     },
     {
-      "text": "i want to change my phone number",
+      "text": "i want to change my contact information",
       "intent": "Edit Profile",
       "entities": []
     },
     {
-      "text": "is there a way for me to change my email?",
+      "text": "i want to change my email",
       "intent": "Edit Profile",
       "entities": []
     },
     {
-      "text": "let me change my contact info",
+      "text": "i want to change my name",
       "intent": "Edit Profile",
       "entities": []
     },
     {
-      "text": "let me change my profile please",
+      "text": "i want to change my number",
       "intent": "Edit Profile",
       "entities": []
     },
     {
-      "text": "let me edit my contact information",
+      "text": "i want to edit my profile",
       "intent": "Edit Profile",
       "entities": []
     },
     {
-      "text": "let me see my profile",
-      "intent": "Edit Profile",
+      "text": "i want to see my profile",
+      "intent": "View Profile",
       "entities": []
     },
     {
@@ -89,23 +110,28 @@
       "entities": []
     },
     {
-      "text": "show me my profile",
-      "intent": "Edit Profile",
+      "text": "show me my information",
+      "intent": "View Profile",
       "entities": []
     },
     {
-      "text": "what information do you have on file for me?",
-      "intent": "Edit Profile",
+      "text": "what is my email",
+      "intent": "View Profile",
       "entities": []
     },
     {
-      "text": "what name did i give you guys?",
-      "intent": "Edit Profile",
+      "text": "what is my name",
+      "intent": "View Profile",
       "entities": []
     },
     {
-      "text": "what type of info does the tutor see?",
-      "intent": "Edit Profile",
+      "text": "what is my number",
+      "intent": "View Profile",
+      "entities": []
+    },
+    {
+      "text": "what is my phone number",
+      "intent": "View Profile",
       "entities": []
     }
   ],

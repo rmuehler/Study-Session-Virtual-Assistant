@@ -41,53 +41,35 @@ l_General	1	ok stop stop
 l_General	1	finished with
 l_General	1	ya
 l_General	1	nothing please
-l_profileskill	1	what type of info does the tutor see
-l_profileskill	1	show me my profile
-l_profileskill	1	what information do you have on file for me
+l_profileskill	1	what is my phone number
+l_profileskill	1	i want to change my contact information
+l_profileskill	1	what is my email
+l_searchskill	1	is pete stevens teaching
+l_searchskill	1	are there tutors that teach history and are available at 4pm
+l_searchskill	1	i am free sunday, can i work with a tutor for the economics course
 l_searchskill	1	is annabelle availible tomorrow
-l_searchskill	1	i am free at 8am and i need serious help learning physics, who can help me
-l_searchskill	1	is anyone available today at 12pm to help me study algebra
-l_searchskill	1	hello, i need a tutor for math at 2pm.
-l_searchskill	1	i can't fail and i am freaking out, is there a tutor that teaches computer organization at 9pm
-l_searchskill	1	can bob evans help me with english class on tuesday
 None	1	all of them
 None	1	can i order pizza
-q_Chitchat	1	What if I don't need anymore of the tutors service
-q_Chitchat	1	Help with the service
-q_Chitchat	1	Can we requisition only a female tutor
-q_Chitchat	1	Are tutors teaching anything
-q_Chitchat	1	Registration for a student account
-q_Chitchat	1	Is this a full proof service
-q_Chitchat	1	How can I get study help for my class
-q_Chitchat	1	What type of courses are available with this service
-q_Chitchat	1	How much would it be to fund this for future work
-q_Chitchat	1	What are the rules with dating the tutors.
-q_Chitchat	1	Are the tutors teaching high school courses
-q_Chitchat	1	HELP please
-q_Chitchat	1	Can college student use this service
-q_Chitchat	1	Hi I am a tutor, how can I tutor students
-q_Chitchat	1	My tutor hit on me.
-q_Chitchat	1	Are college student able to use this service
-q_Chitchat	1	How many times can I use this a week
-q_Chitchat	1	Are the tutors between ages 25 to 30
-q_Chitchat	1	What if the person is hearing impaired
-q_Chitchat	1	How do I begin this process
-q_Chitchat	1	Help me get this started
-q_Chitchat	1	Will my tutor be smart enough to help me in the subject
-q_Chitchat	1	How much an hour do I need to pay
-q_Chitchat	1	Is this service ever going to expire
-q_Chitchat	1	How do I use this application
-q_Chitchat	1	How can I get a tutor for a topic
-q_Chitchat	1	Can we request only a male tutor
-q_Chitchat	1	What is this service
+q_Chitchat	1	I would like a tutor please, where do I start
+q_Chitchat	1	Are the tutors good at the subject
 q_Chitchat	1	Is this good for theater majors
-q_Chitchat	1	Does the user need proof that he or she is a college student
-q_Chitchat	1	Is this service open for only college students
-q_Chitchat	1	Can I use this in another country
-q_Chitchat	1	Is this for any major
-q_Chitchat	1	I think I was sexually harassed by the student.
-q_Chitchat	1	What subjects do the tutors teach
+q_Chitchat	1	Hi I am a tutor, how can I tutor students
 q_Chitchat	1	Is this good for Art students
+q_Chitchat	1	Registration for a student account
+q_Chitchat	1	How does this thing work
+q_Chitchat	1	Who can use this service
+q_Chitchat	1	Is this good for medical students
+q_Chitchat	1	What do I need to give you for a student account
+q_Chitchat	1	How safe is it to give my personal information to the tutor.
+q_Chitchat	1	Can you tell the board of education to open this for high school students
+q_Chitchat	1	How much an hour do I need to pay
+q_Chitchat	1	Are the tutors students
+q_Chitchat	1	What do I need to list for my student account
+q_Chitchat	1	I want to open a tutor account
+q_Chitchat	1	Register for service as a student
+q_Chitchat	1	What if the person is hearing impaired
+q_Chitchat	1	How many courses can a student recieve tutor service
+q_Chitchat	1	Will the tutor help me pass
 q_Faq	1	Tell me a quote
 q_Faq	1	Go away
 q_Faq	1	Just sitting here and chatting

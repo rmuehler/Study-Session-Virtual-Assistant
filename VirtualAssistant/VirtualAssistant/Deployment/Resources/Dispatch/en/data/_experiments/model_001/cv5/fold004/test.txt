@@ -41,53 +41,35 @@ l_General	1	pardon
 l_General	1	go back to
 l_General	1	i didn't hear repeat again
 l_General	1	no shut up
-l_profileskill	1	what name did i give you guys
-l_profileskill	1	let me see my profile
-l_profileskill	1	let me change my profile please
-l_searchskill	1	after 8am i need a tutor for 7 hours to study for my final in calculus please.
-l_searchskill	1	is there a spanish speaking tutor at 8am that teaches software systems development
-l_searchskill	1	the professor that teaches theory in cs sucks, can i get help by a tutor with this course at 9am
-l_searchskill	1	at 5pm i would like to meet some to help me with afsdfasdf
-l_searchskill	1	i need a tutor at 4pm to help me with chemistry
-l_searchskill	1	is anyone at 6 available to help with asdfsdfsad
+l_profileskill	1	change my # to 8294834
+l_profileskill	1	what is my name
+l_profileskill	1	show me my information
+l_searchskill	1	is a specific tutor available
+l_searchskill	1	can bob evans help me with english class on tuesday
+l_searchskill	1	is anyone available today at 12pm to help me study algebra
+l_searchskill	1	next tuesday i would like to meet with johann hari. is that possible
 None	1	hello
 None	1	hi
-q_Chitchat	1	Can I ask out my tutor after the service has ended.
-q_Chitchat	1	Tutor sign-up please
-q_Chitchat	1	How much money does this cost
-q_Chitchat	1	What courses does this service provide
-q_Chitchat	1	What kind of subjects would the tutors teach
-q_Chitchat	1	Is it okay to meet the tutors in person
-q_Chitchat	1	Who are the tutors
-q_Chitchat	1	Is this service connected to any organization
-q_Chitchat	1	Can anyone use this service with no discrimination towards sexual orientation
-q_Chitchat	1	Is this a tutor service
-q_Chitchat	1	Is this good for writing majors
-q_Chitchat	1	How can I get assistance with a test
-q_Chitchat	1	Registration for a student
-q_Chitchat	1	Is this a global service
-q_Chitchat	1	Give me instructions on how to use this to find a tutor
-q_Chitchat	1	What courses are the tutors teaching
-q_Chitchat	1	What if I need to cut the session
+q_Chitchat	1	How many times can I use this a week
+q_Chitchat	1	tutor sign-up info
 q_Chitchat	1	Is there anyone that speaks in Spanish
-q_Chitchat	1	Accommodation for the hearing impaired
-q_Chitchat	1	Are the tutors teaching any trade courses for trade schools
+q_Chitchat	1	How do I use this application
+q_Chitchat	1	Does any tutor speak in Hindi
+q_Chitchat	1	How do I use the virtual assistant so that I can find study sessions
+q_Chitchat	1	Tutor sign-up please
+q_Chitchat	1	Registration for a student
+q_Chitchat	1	Can I benefit from this if I am a PHD student
+q_Chitchat	1	How can I utilize this service as a tutor
+q_Chitchat	1	How do I know the tutor has mastered the subject he or she is teaching me
+q_Chitchat	1	What is this service
+q_Chitchat	1	Can high schools ever do this
 q_Chitchat	1	Can tutors meet in person
-q_Chitchat	1	Is this service going to open up for high schools in the near future
-q_Chitchat	1	How can parents sign there college student up for this service
-q_Chitchat	1	I would like a tutor please, where do I start
-q_Chitchat	1	How short can the service be
-q_Chitchat	1	Register for service as a student
-q_Chitchat	1	How many courses can a student recieve tutor service
-q_Chitchat	1	Special topic help please
-q_Chitchat	1	Can we pick a woman tutor
-q_Chitchat	1	Is this good for engineering students
+q_Chitchat	1	Do I sign in here or create an account
+q_Chitchat	1	How much is this
+q_Chitchat	1	What are the chances this service is worth it
 q_Chitchat	1	Will you ever use this for high schoolers
-q_Chitchat	1	Where do the tutors come from
-q_Chitchat	1	Help me learn how to get a tutor
-q_Chitchat	1	Service
-q_Chitchat	1	What if the tutor is acting very inappropriate
-q_Chitchat	1	Register under a student account
+q_Chitchat	1	Tutor need to create and account
+q_Chitchat	1	How to sign up as a tutor
 q_Faq	1	Can you ask something
 q_Faq	1	I love to do yoga
 q_Faq	1	That joke is whack

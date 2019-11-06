@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\profileskill\\profileskill\\profileskill.csproj": {}
+    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\ProfileSkill\\profileskill\\profileskill.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\profileskill\\profileskill\\profileskill.csproj": {
+    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\ProfileSkill\\profileskill\\profileskill.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\profileskill\\profileskill\\profileskill.csproj",
+        "projectUniqueName": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\ProfileSkill\\profileskill\\profileskill.csproj",
         "projectName": "profileskill",
-        "projectPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\profileskill\\profileskill\\profileskill.csproj",
+        "projectPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\ProfileSkill\\profileskill\\profileskill.csproj",
         "packagesPath": "C:\\Users\\mtuzc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\profileskill\\profileskill\\obj\\",
+        "outputPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\ProfileSkill\\profileskill\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
