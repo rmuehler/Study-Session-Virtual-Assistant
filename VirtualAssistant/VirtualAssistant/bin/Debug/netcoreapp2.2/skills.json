@@ -1,0 +1,77 @@
+{
+    "skills": [
+        {
+            "id": "searchskill",
+            "msaAppId": "764ed113-e818-48c9-ba03-dfd954592fa4",
+            "name": "searchskill",
+            "endpoint": "http://searchskill-lb7xerf.azurewebsites.net/api/skill/messages",
+            "description": "",
+            "authenticationConnections": [],
+            "actions": [
+              {
+                "id": "searchskill_Search_by_Tutor",
+                "definition": {
+                  "description": "Search for a specific tutor",
+                  "slots": [],
+                  "triggers": {
+                    "utteranceSources": [
+                      {
+                        "locale": "en",
+                        "source": [
+                          "searchskill#Search_by_Tutor"
+                        ]
+                      }
+                    ]
+                  }
+                }
+
+              },
+              {
+                "id": "searchskill_Search_by_Subject",
+                "definition": {
+                  "description": "Search for tutors by Subject",
+                  "slots": [],
+                  "triggers": {
+                    "utteranceSources": [
+                      {
+                        "locale": "en",
+                        "source": [
+                          "searchskill#Search_by_Subject"
+                        ]
+                      }
+                    ]
+                  }
+                }
+
+              }
+            ]
+        },
+        {
+            "id": "profileskill",
+            "msaAppId": "330d1a20-5df0-4473-921b-3e398cf107bc",
+            "name": "profileskill",
+            "endpoint": "http://profileskill-zyoa2gw.azurewebsites.net/api/skill/messages",
+            "description": "",
+            "authenticationConnections": [],
+            "actions": [
+                {
+                    "id": "profileskill_Edit_Profile",
+                    "definition": {
+                        "description": "Sample Skill action with no slots",
+                        "slots": [],
+                        "triggers": {
+                            "utteranceSources": [
+                                {
+                                    "locale": "en",
+                                    "source": [
+                                        "profileskill#Edit_Profile"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

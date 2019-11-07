@@ -1,0 +1,252 @@
+{
+  "luis_schema_version": "4.0.0",
+  "versionId": "0.1",
+  "name": "searchskillen_searchskill",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "Search by Subject"
+    },
+    {
+      "name": "Search by Tutor"
+    }
+  ],
+  "entities": [
+    {
+      "name": "subject",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    },
+    {
+      "name": "email",
+      "roles": []
+    },
+    {
+      "name": "personName",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "are there tutors that teach history and are available at 4pm?",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 28,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "can bob evans help me with english class on tuesday?",
+      "intent": "Search by Tutor",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 27,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "can i get help by a tutor in math at 9am?",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 29,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "can i order pizza",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "goodbye",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello, i need a tutor for math at 2pm.",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 26,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi i need a tutor that teaches java at 3pm",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 31,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "hi, i need a tutor for physics at 4pm to help me please.",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 23,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "i am free sunday, can i work with a tutor for the economics course?",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 50,
+          "endPos": 58
+        }
+      ]
+    },
+    {
+      "text": "i need a tutor at 4pm to help me with chemistry",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 38,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "i need a tutor that specializes in discreet structures at 9pm.",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 35,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "i want to search by tutor name.",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "is a specific tutor available?",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "is annabelle availible tomorrow?",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "is anyone at 6 available to help with asdfsdfsad",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 38,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "is anyone available today at 12pm to help me study algebra?",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 51,
+          "endPos": 57
+        }
+      ]
+    },
+    {
+      "text": "is david still teaching calculus at 4pm today?",
+      "intent": "Search by Tutor",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 24,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "is pete stevens teaching?",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "is steve martin teaching math?",
+      "intent": "Search by Tutor",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 25,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "is there a tutor that comprehends this class well available at 7pm?",
+      "intent": "Search by Subject",
+      "entities": []
+    },
+    {
+      "text": "logout",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "next tuesday i would like to meet with johann hari. is that possible?",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "search for a tutor",
+      "intent": "Search by Tutor",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

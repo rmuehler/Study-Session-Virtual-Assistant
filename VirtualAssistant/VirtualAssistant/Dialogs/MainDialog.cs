@@ -44,6 +44,7 @@ namespace VirtualAssistant.Dialogs
             Edit_Profile editProfile,
             Search_by_Subject searchSubject,
             Search_by_Tutor searchtutor,
+            Greeting_Dialog greeting_Dialog,
             SubmitDialog submitDialog,
             List<SkillDialog> skillDialogs,
             IBotTelemetryClient telemetryClient,
@@ -61,6 +62,7 @@ namespace VirtualAssistant.Dialogs
             AddDialog(cancelDialog);
             AddDialog(editProfile);
             AddDialog(searchSubject);
+            AddDialog(greeting_Dialog);
             AddDialog(searchtutor);
             AddDialog(submitDialog);
 
@@ -75,13 +77,15 @@ namespace VirtualAssistant.Dialogs
             var view = new MainResponses();
             var onboardingState = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
 
+            await dc.BeginDialogAsync(nameof(Greeting_Dialog));
+            
             if (string.IsNullOrEmpty(onboardingState.Name))
             {
-                await view.ReplyWith(dc.Context, MainResponses.ResponseIds.NewUserGreeting);
+                //await view.ReplyWith(dc.Context, MainResponses.ResponseIds.NewUserGreeting);
             }
             else
             {
-                await view.ReplyWith(dc.Context, MainResponses.ResponseIds.ReturningUserGreeting);
+                //await view.ReplyWith(dc.Context, MainResponses.ResponseIds.ReturningUserGreeting);
             }
         }
 
@@ -94,9 +98,13 @@ namespace VirtualAssistant.Dialogs
             // Check dispatch result
             var dispatchResult = await cognitiveModels.DispatchService.RecognizeAsync<DispatchLuis>(dc.Context, CancellationToken.None);
             var intent = dispatchResult.TopIntent().intent;
+            var test = dispatchResult.Entities;
+            Console.WriteLine(test.ToString());
+
 
             // Identify if the dispatch intent matches any Action within a Skill if so, we pass to the appropriate SkillDialog to hand-off
             var identifiedSkill = SkillRouter.IsSkill(_settings.Skills, intent.ToString());
+            
 
             if (identifiedSkill != null)
             {
@@ -157,8 +165,9 @@ namespace VirtualAssistant.Dialogs
                 {
                     var result = await luisService.RecognizeAsync<searchskillLuis>(dc.Context, CancellationToken.None);
 
+                    // to pass in BeginDialogAsync
+                    Luis.searchskillLuis._Entities entities = result.Entities;
                     var searchIntent = result?.TopIntent().intent;
-
                     
                     // switch on general intents
                     switch (searchIntent)
@@ -166,13 +175,13 @@ namespace VirtualAssistant.Dialogs
                         case searchskillLuis.Intent.Search_by_Subject:
                             {
                                 // start escalate dialog
-                                await dc.BeginDialogAsync(nameof(Search_by_Subject));
+                                await dc.BeginDialogAsync(nameof(Search_by_Subject), entities.subject);
                                 break;
                             }
 
                         case searchskillLuis.Intent.Search_by_Tutor:
                             {
-                                await dc.BeginDialogAsync(nameof(Search_by_Tutor));
+                                await dc.BeginDialogAsync(nameof(Search_by_Tutor), entities.personName);
                                 break;
                             }
                         case searchskillLuis.Intent.None:

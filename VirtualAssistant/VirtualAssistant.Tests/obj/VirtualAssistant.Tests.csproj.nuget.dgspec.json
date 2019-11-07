@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj": {}
+    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj": {
+    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
         "projectName": "VirtualAssistant.Tests",
-        "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
-        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\obj\\",
+        "projectPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
+        "packagesPath": "C:\\Users\\mtuzc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mtuzc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
-                "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj"
+              "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
+                "projectPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj"
               }
             }
           }
@@ -97,20 +97,20 @@
         }
       }
     },
-    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
+    "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
+        "projectUniqueName": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
         "projectName": "VirtualAssistant",
-        "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
-        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\obj\\",
+        "projectPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
+        "packagesPath": "C:\\Users\\mtuzc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mtuzc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

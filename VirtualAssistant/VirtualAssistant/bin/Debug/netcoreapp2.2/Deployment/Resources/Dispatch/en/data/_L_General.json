@@ -1,0 +1,1123 @@
+{
+  "luis_schema_version": "4.0.0",
+  "versionId": "0.1",
+  "name": "virtualassistanten_General",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Cancel"
+    },
+    {
+      "name": "Confirm"
+    },
+    {
+      "name": "Escalate"
+    },
+    {
+      "name": "FinishTask"
+    },
+    {
+      "name": "GoBack"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Reject"
+    },
+    {
+      "name": "Repeat"
+    },
+    {
+      "name": "Stop"
+    }
+  ],
+  "entities": [
+    {
+      "name": "DirectionalReference",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "number",
+      "roles": []
+    },
+    {
+      "name": "ordinal",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "again",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "all finished",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "all of them",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "all set",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "baby just be quiet",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "back",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "back please",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "back to",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "back to last",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "back to last step",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "be quiet",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "be quiet now",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "can i talk to a person",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel app",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel it",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel never mind",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancel that",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "canceled",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "cancelled",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "come on stop",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "confirm",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "contact support",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "contact the customer service",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "could you say it again",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "customer service",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "dismiss",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "do it",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "do nothing",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "done",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "don't do that",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "don't do that anymore",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "end",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "end it",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "exit exit",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "exit stop",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "fine",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "finish",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "finished",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "finished with",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "forget about it",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "get back",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "get back please",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "get back to last",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "go away",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "go back",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "go back on",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "go back please",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "go back to",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "go for it",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "god shut up",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "great",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "hey stop",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "human service",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "i am done",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "i am finished",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "i didn't hear repeat again",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "i don't like it",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "i have not heard",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "i love you to stop talking",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "i mean stop listening",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "i need manual customer service",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "i need real human help",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "i need support",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "i reject",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "i said stop",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "i want them all",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to all of them",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a human",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "i want to talk to a real human",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "i'm sure",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "is there any person i can talk to",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "is there any real human",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "is there any real person",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "it finished",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "it's done",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "it's fine",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "it's finished",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "just be",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "just be quiet",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "just cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "just cancel it",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "last step",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "my god shut up",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "negative",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "nerver mind",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "never",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "never mind",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "never mind cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "never mind cancel that",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "never mind stop",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "no",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no be quiet",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "no be quiet now",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "no cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "no cancel cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "no cancel it",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "no cancel that",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "no doubt",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "no go back to",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "no i don't want that",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no later",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no leave it",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no more no",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no never mind",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "no no",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no no cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "no no cancel it",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "no no go back to",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "no no no",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no no no no stop talking",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "no no thank you",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no not that one",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no reject it",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no shut up",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "no stop",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "no thank you",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no thanks",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no way",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "no wrong",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "nobody cares stop talking",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "nope",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "not",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "not at all",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "not even close",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "not exactly",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "not now",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "not quite",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "not right now",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "not that",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "nothing much",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "nothing never mind",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "nothing please",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "nowhere just be quiet",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "of course",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "oh cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "oh don't do that",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "oh my god shut up",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "oh no",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "oh yeah",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "oh yes",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "ok",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "ok for now",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "ok stop stop",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "okay",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "pardon",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "perfect",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "perfect thank you",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "please do nothing",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "please return",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "quiet",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "quiet now",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "quit",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "reject",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "reject it",
+      "intent": "Reject",
+      "entities": []
+    },
+    {
+      "text": "repeat",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "repeat please",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "repeat that",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "return",
+      "intent": "GoBack",
+      "entities": []
+    },
+    {
+      "text": "right",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "right yes",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "say again",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "say again please",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "say that again",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "shut the fuck up",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "shut up",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "shut up be quiet",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "shut up quiet",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "shut your mouth",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "sorry",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "sorry, don't do it",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "sounds good",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds good thank you",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds good thanks",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds good to me",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds great",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "sounds perfect",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "stop please",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "stop talking",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "submit",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "submit it",
+      "intent": "FinishTask",
+      "entities": []
+    },
+    {
+      "text": "sure",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "sure does",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "sure is",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "sure thing",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "sure yes",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "talk to a human",
+      "intent": "Escalate",
+      "entities": []
+    },
+    {
+      "text": "thank you very much",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "thank you yes",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "that is correct",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "that is right",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "that right",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "that sounds good",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "that's fine",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "this is good",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "turn off",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "turn off stop",
+      "intent": "Stop",
+      "entities": []
+    },
+    {
+      "text": "very good",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "what",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "what did you say",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "what was that again",
+      "intent": "Repeat",
+      "entities": []
+    },
+    {
+      "text": "ya",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah baby",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah bro",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah buddy",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah cool",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah go ahead",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah go for it",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "yeah good",
+      "intent": "Confirm",
+      "entities": []
+    },
+    {
+      "text": "yes",
+      "intent": "Confirm",
+      "entities": []
+    }
+  ],
+  "settings": []
+}

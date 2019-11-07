@@ -1,3 +1,2 @@
 Utterance	Intents
-fine	l_General, q_Faq
-that is correct	l_General, q_Faq
+yes	l_General, q_Faq

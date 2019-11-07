@@ -1,0 +1,97 @@
+﻿{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Here are the students that are high skilled in that subject",
+      "horizontalAlignment": "Center",
+      "wrap": true,
+      "height": "stretch",
+      "size": "Medium",
+      "weight": "Bolder",
+      "color": "Accent",
+      "maxLines": 0
+    },
+    {
+      "type": "ActionSet",
+      "height": "stretch",
+      "horizontalAlignment": "Left",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Jacob",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+          },
+          "iconUrl": "https://picsum.photos/id/453/2048/1365"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Jacob4@hotmail.com\n                                    Availability: Sun/Sat 5-9pm  and Fri 9-11pm",
+      "spacing": "Small",
+      "horizontalAlignment": "Center",
+      "height": "stretch",
+      "wrap": true,
+      "maxLines": 2,
+      "size": "Small",
+      "weight": "Lighter",
+      "color": "Accent"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Tracy",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+          },
+          "iconUrl": "https://picsum.photos/id/996/4272/2848"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Tracy4@hotmail.com\nAvailability: Mon/Wed 5-9pm,Ts/Tr 8-2pm \n",
+      "spacing": "None",
+      "separator": true,
+      "horizontalAlignment": "Center",
+      "wrap": true,
+      "maxLines": 2,
+      "size": "Small",
+      "weight": "Lighter",
+      "color": "Accent"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Keisha",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+          },
+          "iconUrl": "https://picsum.photos/id/838/5760/3840"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Keisha4@hotmail.com\nAvailability: Mon/Wed/Friday 5-9pm and Ts/Tr 8-2am ",
+      "spacing": "Small",
+      "horizontalAlignment": "Center",
+      "wrap": true,
+      "maxLines": 1,
+      "size": "Small",
+      "weight": "Lighter",
+      "color": "Accent"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

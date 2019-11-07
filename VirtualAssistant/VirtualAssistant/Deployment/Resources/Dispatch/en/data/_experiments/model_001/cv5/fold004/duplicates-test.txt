@@ -1,3 +1,3 @@
 Utterance	Intents
-hi	None, q_Faq
-stop talking	l_General, q_Faq
+hello	None, q_Faq
+what is my name	l_profileskill, q_Faq
