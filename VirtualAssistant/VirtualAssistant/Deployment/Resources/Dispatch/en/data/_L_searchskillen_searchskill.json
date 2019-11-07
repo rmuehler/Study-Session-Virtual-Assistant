@@ -83,6 +83,11 @@
       "entities": []
     },
     {
+      "text": "find me a tutor",
+      "intent": "Search by Subject",
+      "entities": []
+    },
+    {
       "text": "goodbye",
       "intent": "None",
       "entities": []
@@ -164,6 +169,11 @@
       ]
     },
     {
+      "text": "i want to be tutored",
+      "intent": "Search by Subject",
+      "entities": []
+    },
+    {
       "text": "i want to search by tutor name.",
       "intent": "Search by Tutor",
       "entities": []
@@ -201,22 +211,6 @@
       ]
     },
     {
-      "text": "is david still teaching calculus at 4pm today?",
-      "intent": "Search by Tutor",
-      "entities": [
-        {
-          "entity": "subject",
-          "startPos": 24,
-          "endPos": 31
-        }
-      ]
-    },
-    {
-      "text": "is pete stevens teaching?",
-      "intent": "Search by Tutor",
-      "entities": []
-    },
-    {
       "text": "is steve martin teaching math?",
       "intent": "Search by Tutor",
       "entities": [
@@ -235,11 +229,6 @@
     {
       "text": "logout",
       "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "next tuesday i would like to meet with johann hari. is that possible?",
-      "intent": "Search by Tutor",
       "entities": []
     },
     {

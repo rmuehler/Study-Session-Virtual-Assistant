@@ -38,7 +38,7 @@ namespace VirtualAssistant.Dialogs
         private static async Task<DialogTurnResult> CheckSearchEntitiesAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             stepContext.Values["tutor"] = stepContext.Options;
-            string ss = ((string[])stepContext.Values["tutor"])[0];
+            string ss = (string)stepContext.Values["tutor"];
             if (stepContext.Values["tutor"] == null)
             {
                 return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter the name of the tutor you would like to search for.") }, cancellationToken);

@@ -25,6 +25,7 @@ namespace VirtualAssistant.Dialogs
             {
                 CheckSearchEntitiesAsync,
                 ReturnResultsAsync,
+                ReturnTimeResultsAsync,
             };
 
             // Add named dialogs to the DialogSet. These names are saved in the dialog state.
@@ -37,10 +38,36 @@ namespace VirtualAssistant.Dialogs
 
         private static async Task<DialogTurnResult> CheckSearchEntitiesAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            stepContext.Values["subject"] = stepContext.Options;
+
+            Luis.searchskillLuis._Entities ents = (Luis.searchskillLuis._Entities)stepContext.Options;
+            stepContext.Values["subject"] = ents.subject;
+            stepContext.Values["time"] = ents.datetime;
+
             if (stepContext.Values["subject"] == null)
             {
                 return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter the course name.") }, cancellationToken);
+            }
+
+            else if (stepContext.Values["time"] != null)
+            {
+                await stepContext.Context.SendActivityAsync(MessageFactory.Text("Searching for available tutors..."), cancellationToken);
+                /*
+                //TODO: Connect to database. Fetch tutors.
+                */
+                return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
+            }
+
+            else return await stepContext.ContinueDialogAsync();
+
+        }
+
+        private static async Task<DialogTurnResult> ReturnResultsAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+        {
+            stepContext.Values["subject"] = (string)stepContext.Result;
+
+            if (stepContext.Values["time"] == null)
+            {
+                return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your preferred time.") }, cancellationToken);
             }
 
             else
@@ -53,9 +80,10 @@ namespace VirtualAssistant.Dialogs
             }
         }
 
-        private static async Task<DialogTurnResult> ReturnResultsAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+        private static async Task<DialogTurnResult> ReturnTimeResultsAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            stepContext.Values["subject"] = (string)stepContext.Result;
+            stepContext.Values["time"] = (string)stepContext.Result;
+
             await stepContext.Context.SendActivityAsync(MessageFactory.Text("Searching for available tutors..."), cancellationToken);
             /*
             //TODO: Connect to database. Fetch tutors.

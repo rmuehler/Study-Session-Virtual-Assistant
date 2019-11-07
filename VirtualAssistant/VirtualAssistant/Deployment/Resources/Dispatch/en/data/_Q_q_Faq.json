@@ -10919,40 +10919,6 @@
         "isContextOnly": false,
         "prompts": []
       }
-    },
-    {
-      "id": 931,
-      "answer": "You need to make an account, ask for a tutor service with course subject and time listed",
-      "source": "custom editorial",
-      "questions": [
-        "I need help with this service."
-      ],
-      "metadata": [],
-      "alternateQuestions": "",
-      "alternateQuestionClusters": [],
-      "changeStatus": "NoChange",
-      "kbId": "68226587-11a3-4dd8-8573-aaede0fcb472",
-      "context": {
-        "isContextOnly": false,
-        "prompts": []
-      }
-    },
-    {
-      "id": 932,
-      "answer": "You still need to provide was information to make an account first",
-      "source": "custom editorial",
-      "questions": [
-        "I just need a tutor"
-      ],
-      "metadata": [],
-      "alternateQuestions": "",
-      "alternateQuestionClusters": [],
-      "changeStatus": "NoChange",
-      "kbId": "68226587-11a3-4dd8-8573-aaede0fcb472",
-      "context": {
-        "isContextOnly": false,
-        "prompts": []
-      }
     }
   ]
 }

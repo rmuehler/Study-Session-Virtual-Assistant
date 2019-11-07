@@ -69,15 +69,44 @@ namespace VirtualAssistant
             }
         }
 
-/*        static void Main(string[] args)
+
+
+        //This doesnt work.
+        public void postNewUser(User newUserObject)
         {
+            //client.BaseAddress = new Uri(StorageAccountUriUsers);
+            //string relativeUri = $"&$filter=EmailAdress%20eq%20%27{searchEmail}%27";
 
-            var database = new Database();
-            User newUser = database.getUserFromEmail("RJackson@mail.usf.edu");
-            Console.WriteLine(newUser.value[0].Name);
+            //set up the HttpClient w/URI and response type
+            client.BaseAddress = new Uri(uriUsers);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.ParseAdd("application/json;odata=nometadata");
 
+            //make GET request
+            HttpResponseMessage response = client.PostAsJsonAsync("", newUserObject).Result;
+            try
+            {
+                //throw exception if POST not successful
+                response.EnsureSuccessStatusCode();
+
+                //convert results to json string
+                String result = response.Content.ReadAsStringAsync().Result;
+            }
+            catch
+            {
+                throw;
+            }
         }
-*/
+
+        /*        static void Main(string[] args)
+                {
+
+                    var database = new Database();
+                    User newUser = database.getUserFromEmail("RJackson@mail.usf.edu");
+                    Console.WriteLine(newUser.value[0].Name);
+
+                }
+        */
 
 
 
