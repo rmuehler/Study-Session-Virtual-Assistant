@@ -4329,15 +4329,6 @@
           "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
-      "RestSharp/106.6.10": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/RestSharp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/RestSharp.dll": {}
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -6944,8 +6935,7 @@
           "Microsoft.Bot.Schema": "4.5.1",
           "Microsoft.Extensions.Logging": "2.2.0",
           "Microsoft.Extensions.Options": "2.2.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0",
-          "RestSharp": "106.6.10"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0"
         },
         "compile": {
           "bin/placeholder/VirtualAssistant.dll": {}
@@ -11941,21 +11931,6 @@
         "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.xml",
         "remotion.linq.2.2.0.nupkg.sha512",
         "remotion.linq.nuspec"
-      ]
-    },
-    "RestSharp/106.6.10": {
-      "sha512": "x1FM32hjnVOIn+DKtCs2Y4Q2DCUE5KW08NUXUd4GjgKjE+5PE0F6e9XfUg7nILo05M0TA/HRkRD/SeQ8+duOUA==",
-      "type": "package",
-      "path": "restsharp/106.6.10",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/RestSharp.dll",
-        "lib/net452/RestSharp.xml",
-        "lib/netstandard2.0/RestSharp.dll",
-        "lib/netstandard2.0/RestSharp.xml",
-        "restsharp.106.6.10.nupkg.sha512",
-        "restsharp.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -18186,11 +18161,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
       "projectName": "VirtualAssistant.Tests",
-      "projectPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
+      "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\VirtualAssistant.Tests.csproj",
       "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\obj\\",
+      "outputPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -18209,8 +18184,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
-              "projectPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj"
+            "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
+              "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj"
             }
           }
         }

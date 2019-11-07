@@ -223,7 +223,6 @@ C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Session
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\data\_L_searchskillen_searchskill.json
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\data\_Q_q_Chitchat.json
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\data\_Q_q_Faq.json
-C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\seniorprojectvaen_Dispatch.json
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\Dispatch\en\virtualassistanten_Dispatch.json
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\parameters.template.json
 C:\Users\rober\Source\Repos\rmuehler\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\bin\Debug\netcoreapp2.2\Deployment\Resources\template.json

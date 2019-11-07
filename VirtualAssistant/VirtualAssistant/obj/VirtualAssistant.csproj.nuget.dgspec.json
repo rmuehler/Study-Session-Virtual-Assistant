@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {}
+    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
+    "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
         "projectName": "VirtualAssistant",
-        "projectPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
+        "projectPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
         "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\source\\repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\obj\\",
+        "outputPath": "C:\\Users\\rober\\Source\\Repos\\rmuehler\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -151,10 +151,6 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.2.0, )"
-            },
-            "RestSharp": {
-              "target": "Package",
-              "version": "[106.6.10, )"
             }
           },
           "imports": [

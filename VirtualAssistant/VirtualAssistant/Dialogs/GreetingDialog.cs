@@ -11,6 +11,7 @@ namespace VirtualAssistant.Dialogs
 {
     public class Greeting_Dialog : ComponentDialog
     {
+
         public Greeting_Dialog(BotServices botServices,
             UserState userState,
             IBotTelemetryClient telemetryClient) : base(nameof(Greeting_Dialog))
@@ -28,7 +29,9 @@ namespace VirtualAssistant.Dialogs
 
             // Add named dialogs to the DialogSet. These names are saved in the dialog state.
             AddDialog(new WaterfallDialog(nameof(WaterfallDialog), waterfallSteps));
-            AddDialog(new TextPrompt(nameof(TextPrompt)));         
+            AddDialog(new TextPrompt(nameof(TextPrompt)));
+
+            //Add connection to the database
 
             // The initial child Dialog to run.
             InitialDialogId = nameof(WaterfallDialog);
@@ -65,7 +68,23 @@ namespace VirtualAssistant.Dialogs
 
                 //TODO: Connect to database. verify email.
 
-                await stepContext.Context.SendActivityAsync(MessageFactory.Text("Welcome Back!"), cancellationToken);
+                //Get user from database
+                Database db = new Database();
+                User currentuser = db.getUserFromEmail(useremail);
+                
+
+                if (currentuser != null)
+                {
+                    await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Welcome Back {currentuser.value[0].Name}!"), cancellationToken);
+                }
+
+                else
+                {
+                    //TODO:  user does not exists: either reprompt email or ask to make new account
+                    await stepContext.Context.SendActivityAsync(MessageFactory.Text($"No user found with that account."), cancellationToken);
+                }
+                
+
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
             }
 
@@ -81,7 +100,7 @@ namespace VirtualAssistant.Dialogs
 
             //use this string for database.
             string username = ((string)stepContext.Values["name"]);
-
+            
             return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Will you be using this service as a tutor or student?") }, cancellationToken);
         }
         private static async Task<DialogTurnResult> ReturnUserTypeAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
