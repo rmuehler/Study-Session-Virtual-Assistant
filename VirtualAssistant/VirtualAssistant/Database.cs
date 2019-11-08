@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -20,7 +21,7 @@ namespace VirtualAssistant
     {
         public string PartitionKey { get; set; }
         public string RowKey { get; set; }
-        public DateTime Timestamp { get; set; }
+        //public DateTime Timestamp { get; set; }
         public string Class { get; set; }
         public string Classification { get; set; }
         public string EmailAdress { get; set; }
@@ -39,7 +40,6 @@ namespace VirtualAssistant
 
         public User getUserFromEmail(string searchEmail)
         {
-            //client.BaseAddress = new Uri(StorageAccountUriUsers);
             string relativeUri = $"&$filter=EmailAdress%20eq%20%27{searchEmail}%27";
 
             //set up the HttpClient w/URI and response type
@@ -72,25 +72,33 @@ namespace VirtualAssistant
 
 
         //This doesnt work.
-        public void postNewUser(User newUserObject)
+        public void postNewUserAsync(User newUserObject)
         {
-            //client.BaseAddress = new Uri(StorageAccountUriUsers);
-            //string relativeUri = $"&$filter=EmailAdress%20eq%20%27{searchEmail}%27";
+            //Add required PartitionKey and Rowkey
+            newUserObject.value[0].PartitionKey = "University of South Florida";
+            newUserObject.value[0].RowKey = "003C"; //TODO this needs to change to email in database
+            
 
-            //set up the HttpClient w/URI and response type
+
+            //set up URI and headers
             client.BaseAddress = new Uri(uriUsers);
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.ParseAdd("application/json;odata=nometadata");
+            client.DefaultRequestHeaders.Add("Content-Type", "application/json");
 
-            //make GET request
-            HttpResponseMessage response = client.PostAsJsonAsync("", newUserObject).Result;
+            //for testing
+            var jsonObject = JsonConvert.SerializeObject(newUserObject);
+            Console.WriteLine(jsonObject.ToString());
+            
+            //POST
+            HttpResponseMessage response = client.PostAsJsonAsync("", newUserObject).Result; //this serializes User as json and POSTS 
+
+            //testing
+            Console.WriteLine(response.Content.ReadAsStringAsync());
             try
             {
                 //throw exception if POST not successful
                 response.EnsureSuccessStatusCode();
-
-                //convert results to json string
-                String result = response.Content.ReadAsStringAsync().Result;
             }
             catch
             {
