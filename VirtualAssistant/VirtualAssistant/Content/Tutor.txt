@@ -1,0 +1,434 @@
+Last login: Thu Nov  7 22:09:07 on console
+-bash: /user/.libexec/jave_home: No such file or directory
+Macs-MBP:~ macuser$ vim Tutor.json
+
+
+
+
+
+
+
+
+
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Tutor Availability",
+            "color": "Good",
+            "horizontalAlignment": "Center"
+        },
+        
+
+        {
+            "type": "TextBlock",
+            "size": "Smal",
+            "weight": "Plain",
+            "text": "What days of the week are you available?",
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                   "type": "Input.ChoiceSet",
+                                    "id": "TutorDayCol1",
+                                    "isMultiSelect": true,
+                                    "value": "1,10",
+                                    "choices": [
+                                    {
+                                        "title": "Monday",
+                                        "value": "MonChoice"
+                                    },
+                                    {
+                                        "title": "Tuesday",
+                                        "value": "TuesChoice"
+                                    },
+                                    {
+                                        "title": "Wednesday",
+                                        "value": "WedChoice"
+                                    },
+                                    {
+                                        "title": "Thursday",
+                                        "value": "ThursChoice"
+                                    }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Input.ChoiceSet",
+                                    "id": "TutorDayCol2",
+                                    "isMultiSelect": true,
+                                    "value": "1,10",
+                                    "choices": [
+                                        {
+                                            "title": "Friday",
+                                            "value": "FridChoice"
+                                        },
+                                        {
+                                            "title": "Saturday",
+                                            "value": "SatChoice"
+                                        },
+                                        {
+                                            "title": "Sunday",
+                                            "value": "SundChoice"
+                                        }
+                                    ],
+                                    "style": "expanded"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "size": "Smal",
+            "weight": "Plain",
+            "text": "What times are you available?",
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Start Time"
+                        },
+                        {
+                            "type":"Input.ChoiceSet",
+                            "id": "TutorTimeStart",
+                            "style":"compact",
+                            "value":"1",
+                            "choices":[
+                                {
+                                    "title": "6am",
+                                    "value":"1",
+                                    "id":"TutorStart1"
+                                },
+                                {
+                                    "title": "7am",
+                                    "value":"2",
+                                    "id":"TutorStart1"
+                                },
+                                {
+                                    "title": "8am",
+                                    "value":"3",
+                                    "id":"TutorStart1"
+                                },
+                                {
+                                    "title": "9am",
+                                    "value":"4",
+                                    "id":"TutorStart2"
+                                },
+                                {
+                                    "title": "10am",
+                                    "value":"5",
+                                    "id":"TutorStart3"
+                                },
+                                {
+                                    "title": "11am",
+                                    "value":"6",
+                                    "id":"TutorStart4"
+                                },
+                                {
+                                    "title": "12pm",
+                                    "value":"7",
+                                    "id":"TutorStart5"
+                                },
+                                {
+                                    "title": "1pm",
+                                    "value":"8",
+                                    "id":"TutorStart6"
+                                },
+                                {
+                                    "title": "2pm",
+                                    "value":"9",
+                                    "id":"TutorStart7"
+                                },
+                                {
+                                    "title": "3pm",
+                                    "value":"10",
+                                    "id":"TutorStart8"
+                                },
+                                {
+                                    "title": "4pm",
+                                    "value":"11",
+                                    "id":"TutorStart9"
+                                },
+                                {
+                                    "title": "5pm",
+                                    "value":"12",
+                                    "id":"TutorStart10"
+                                },
+                                {
+                                    "title": "6pm",
+                                    "value":"13",
+                                    "id":"TutorStart11"
+                                },
+                                {
+                                    "title": "7pm",
+                                    "value":"14",
+                                    "id":"TutorStart12"
+                                },
+                                {
+                                    "title": "8pm",
+                                    "value":"15",
+                                    "id":"TutorStart13"
+                                },
+                                {
+                                    "title": "9pm",
+                                    "value":"16",
+                                    "id":"TutorStart13"
+                                },
+                                {
+                                    "title": "10pm",
+                                    "value":"17",
+                                    "id":"TutorStart13"
+                                },
+                                {
+                                    "title": "11pm",
+                                    "value":"18",
+                                    "id":"TutorStart13"
+                                }
+                                
+                            ]
+
+                        }
+                        
+                    ]
+                }
+            ]
+        },
+        {
+             "type": "ColumnSet",
+             "columns": [
+                 {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items":[
+                        {
+                            "type": "TextBlock",
+                            "text":"EndTime"
+                        },
+                        {
+                            "type":"Input.ChoiceSet",
+                            "id": "TutorTimeStart",
+                            "style":"compact",
+                            "value":"1",
+                             "choices":[
+                                {
+                                    "title": "7am",
+                                    "value":"1",
+                                    "id":"TutorEnd1"
+                                },
+                                {
+                                    "title": "8am",
+                                    "value":"2",
+                                    "id":"TutorEnd1"
+                                },
+                                {
+                                    "title": "9am",
+                                    "value":"3",
+                                    "id":"TutorEnd1"
+                                },
+                                {
+                                    "title": "10am",
+                                    "value":"4",
+                                    "id":"TutorEnd2"
+                                },
+                                {
+                                    "title": "11am",
+                                    "value":"5",
+                                    "id":"TutorEnd3"
+                                },
+                                {
+                                    "title": "12pm",
+                                    "value":"6",
+                                    "id":"TutorEnd4"
+                                },
+                                {
+                                    "title": "1pm",
+                                    "value":"7",
+                                    "id":"TutorEnd5"
+                                },
+                                {
+                                    "title": "2pm",
+                                    "value":"8",
+                                    "id":"TutorEnd6"
+                                },
+                                {
+                                    "title": "3pm",
+                                    "value":"9",
+                                    "id":"TutorEnd7"
+                                },
+                                {
+                                    "title": "4pm",
+                                    "value":"10",
+                                    "id":"TutorEnd8"
+                                },
+                                {
+                                    "title": "5pm",
+                                    "value":"11",
+                                    "id":"TutorEnd9"
+                                },
+                                {
+                                    "title": "6pm",
+                                    "value":"12",
+                                    "id":"TutorEnd10"
+                                },
+                                {
+                                    "title": "7pm",
+                                    "value":"13",
+                                    "id":"TutorEnd11"
+                                },
+                                {
+                                    "title": "8pm",
+                                    "value":"14",
+                                    "id":"TutorEnd12"
+                                },
+                                {
+                                    "title": "9pm",
+                                    "value":"15",
+                                    "id":"TutorEnd13"
+                                },
+                                {
+                                    "title": "10pm",
+                                    "value":"16",
+                                    "id":"TutorEnd13"
+                                },
+                                {
+                                    "title": "11pm",
+                                    "value":"17",
+                                    "id":"TutorEnd13"
+                                },
+                                {
+                                    "title": "12am",
+                                    "value":"18",
+                                    "id":"TutorEnd13"
+                                }
+                             ]
+
+                        }
+                    ]
+                 }
+
+             ]
+
+        },
+        {
+            "type": "TextBlock",
+            "text": "What course do you teach? (multiselect)"
+        },
+        {
+            "type": "Container",
+            "items": [
+            {
+                    "type": "ColumnSet",
+                    "columns": [
+                    {
+                        "type": "Column",
+                        "width": "stretch",
+                        "items": [
+                        {
+                            "type": "Input.ChoiceSet",
+                            "id": "TutorCourseCol1",
+                            "isMultiSelect": true,
+                            "value": "1,10",
+                            "choices": [
+                            {
+                                "title": "Program Design",
+                                "value": "1"
+                            },
+                            {
+                                "title": "Computer Organization",
+                                "value": "2"
+                            },
+                            {
+                                "title": "Object Oriented",
+                                "value": "3"
+                            },
+                            {
+                                "title": "Networks",
+                                "value": "4"
+                            },
+                            {
+                                "title": "Logic Design",
+                                "value": "5"
+                            },
+                            {
+                                "title": "Computer Architecture",
+                                "value": "6"
+                            }
+                            ],
+                            "style": "expanded"
+            
+                        }
+                        ]
+
+                    },
+                    {
+                        "type": "Column",
+                        "width": "stretch",
+                        "items":[
+                        {
+                            "type": "Input.ChoiceSet",
+                            "id": "TutorCourseCol2",
+                            "isMultiSelect": true,
+                            "value": "7,10",
+                            "choices": [
+                            {
+                                "title": "Alogorithms",
+                                "value": "7"
+                            },
+                            {
+                                "title": "Operating Systems",
+                                "value": "8"
+                            },
+                            {
+                                "title": "Physics",
+                                "value": "9"
+                            },
+                            {
+                                "title": "Calculus",
+                                "value": "10"
+                            }
+                            ]
+                        }
+                        ]
+                    }
+                    ]
+
+            }
+            ]
+        }
+        
+],
+
+
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
+
+
