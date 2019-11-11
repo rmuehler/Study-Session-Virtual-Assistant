@@ -1,123 +1,174 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
+using Microsoft.Azure.Cosmos.Table;
 using System.Collections.Generic;
-using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
 
 namespace VirtualAssistant
 {
-
-
-    public class User
+    public class User : TableEntity
     {
-        public UserData[] value { get; set; }
-    }
-
-    public class UserData
-    {
-        public string PartitionKey { get; set; }
-        public string RowKey { get; set; }
-        //public DateTime Timestamp { get; set; }
+        public User()
+        {
+            PartitionKey = "University of South Florida";
+            Timestamp = DateTime.UtcNow;
+        }
+        public string Key => PartitionKey;
+        public string EmailAdress => RowKey;
+        public DateTimeOffset Time => Timestamp;
         public string Class { get; set; }
         public string Classification { get; set; }
-        public string EmailAdress { get; set; }
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
     }
 
+    public class Availability : TableEntity
+    {
+        public string Key => PartitionKey;
+        public string Email => RowKey;
+        public DateTimeOffset Time => Timestamp;
+        public string AM0000 { get; set; }
+        public string AM0100 { get; set; }
+        public string AM0200 { get; set; }
+        public string AM0300 { get; set; }
+        public string AM0400 { get; set; }
+        public string AM0500 { get; set; }
+        public string AM0600 { get; set; }
+        public string AM0700 { get; set; }
+        public string AM0800 { get; set; }
+        public string AM0900 { get; set; }
+        public string AM1000 { get; set; }
+        public string AM1100 { get; set; }
+        public string PM0100 { get; set; }
+        public string PM0200 { get; set; }
+        public string PM0300 { get; set; }
+        public string PM0400 { get; set; }
+        public string PM0500 { get; set; }
+        public string PM0600 { get; set; }
+        public string PM0700 { get; set; }
+        public string PM0800 { get; set; }
+        public string PM0900 { get; set; }
+        public string PM1000 { get; set; }
+        public string PM1100 { get; set; }
+        public string PM1200 { get; set; }
+        public Dictionary<int, string> getAvailabilityMap(Availability ava)
+        {
+            var map = new Dictionary<int, string>
+            {
+                { 8, ava.AM0800 },
+                { 9, ava.AM0900 },
+                { 10, ava.AM1000 },
+                { 11, ava.AM1100 },
+                { 12, ava.PM1200 },
+                { 13, ava.PM0100 },
+                { 14, ava.PM0200 },
+                { 15, ava.PM0300 },
+                { 16, ava.PM0400 },
+                { 17, ava.PM0500 },
+                { 18, ava.PM0600 },
+                { 19, ava.PM0700 },
+                { 20, ava.PM0800 },
+                { 21, ava.PM0900 }
+            };
+            return map;
+        }
+    }
 
     public class Database
     {
-        const string uriUsers = "https://virtualassistantlmo3sv4.table.core.windows.net/UserData?st=2019-10-31T21%3A29%3A36Z&se=2020-01-01T16%3A37%3A00Z&sp=raud&sv=2018-03-28&tn=userdata&sig=69KOp%2FBJcdTUJHjpNyI%2FuSlY5bUFFF9Hq9UN0PvPaPE%3D";
+        const string tableName = "virtualassistantlmo3sv4";
+        const string tableKey = "hzDFC2IKa6K3DEf+pG1rluOPDqmeFemzDP+GC7k4v3AbhtyMEDZL6hyAMydO5VhpOBaqLDkWt56LWQWHIxpAbA==";
 
-        //static HttpClient client = new HttpClient();
-        HttpClient client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate });
+        StorageCredentials creds;
+        CloudStorageAccount account;
+        CloudTableClient tableClient;
 
-
-        public User getUserFromEmail(string searchEmail)
+        public Database()
         {
-            string relativeUri = $"&$filter=EmailAdress%20eq%20%27{searchEmail}%27";
-
-            //set up the HttpClient w/URI and response type
-            client.BaseAddress = new Uri(uriUsers + relativeUri);
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.ParseAdd("application/json;odata=nometadata");
-
-            //make GET request
-            HttpResponseMessage response = client.GetAsync("").Result;
-            try
-            {
-                //throw exception if GET not successful
-                response.EnsureSuccessStatusCode(); 
-
-                //convert results to josn string
-                String result = response.Content.ReadAsStringAsync().Result;
-
-                //deserialize json string into User object
-                var userData = JsonConvert.DeserializeObject<User>(result);
-
-                //return the user object
-                return userData;
-            }
-            catch
-            {
-                return null;
-            }
+            creds = new StorageCredentials(tableName, tableKey);
+            account = new CloudStorageAccount(creds, true);
+            tableClient = account.CreateCloudTableClient();
         }
 
-
-
-        //This doesnt work.
-        public void postNewUserAsync(User newUserObject)
+        public void postNewUser(User newUserObject)
         {
-            //Add required PartitionKey and Rowkey
-            newUserObject.value[0].PartitionKey = "University of South Florida";
-            newUserObject.value[0].RowKey = "003C"; //TODO this needs to change to email in database
-            
-
-
-            //set up URI and headers
-            client.BaseAddress = new Uri(uriUsers);
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.ParseAdd("application/json;odata=nometadata");
-            client.DefaultRequestHeaders.Add("Content-Type", "application/json");
-
-            //for testing
-            var jsonObject = JsonConvert.SerializeObject(newUserObject);
-            Console.WriteLine(jsonObject.ToString());
-            
-            //POST
-            HttpResponseMessage response = client.PostAsJsonAsync("", newUserObject).Result; //this serializes User as json and POSTS 
-
-            //testing
-            Console.WriteLine(response.Content.ReadAsStringAsync());
-            try
-            {
-                //throw exception if POST not successful
-                response.EnsureSuccessStatusCode();
-            }
-            catch
-            {
-                throw;
-            }
+            CloudTable table = tableClient.GetTableReference("UserAccounts");
+            table.ExecuteAsync(TableOperation.InsertOrReplace(newUserObject));
         }
 
-        /*        static void Main(string[] args)
-                {
+        public User getUserFromEmail(string email)
+        {
+            CloudTable table = tableClient.GetTableReference("UserAccounts");
+            var tableResult = table.ExecuteAsync(TableOperation.Retrieve<User>("University of South Florida", email));
+            return (User)tableResult.Result.Result;
+        }
 
-                    var database = new Database();
-                    User newUser = database.getUserFromEmail("RJackson@mail.usf.edu");
-                    Console.WriteLine(newUser.value[0].Name);
+        public User getUserFromName(string searchName)
+        {
+            CloudTable table = tableClient.GetTableReference("UserAccounts");
+            var condition = TableQuery.CombineFilters(
+               TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
+               TableOperators.And,
+               TableQuery.GenerateFilterCondition("Name", QueryComparisons.Equal, searchName)
+               );
 
-                }
-        */
+            var query = new TableQuery<User>().Where(condition);
+            foreach (User entity in table.ExecuteQuery(query))
+            {
+                return entity;
+            }
 
+            return null;
+        }
 
+        public Dictionary<int, string> getAvailabilityFromEmail(string searchEmail)
+        {
+            CloudTable table = tableClient.GetTableReference("TutorAvailability");
+            var condition = TableQuery.CombineFilters(
+               TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
+               TableOperators.And,
+               TableQuery.GenerateFilterCondition("RowKey", QueryComparisons.Equal, searchEmail)
+               );
 
+            var query = new TableQuery<Availability>().Where(condition);
+            foreach (Availability entity in table.ExecuteQuery(query))
+            {
+                return entity.getAvailabilityMap(entity);
+            }
 
+            return null;
+        }
+
+        public List<User> findTutors_SubjectTime(string time, string subject)
+        {
+            CloudTable table = tableClient.GetTableReference("TutorAvailability");
+            CloudTable table2 = tableClient.GetTableReference("UserData");
+
+            var condition = TableQuery.CombineFilters(
+               TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
+               TableOperators.And,
+               TableQuery.CombineFilters(TableQuery.GenerateFilterCondition("Class", QueryComparisons.Equal, subject),
+               TableOperators.And, TableQuery.GenerateFilterCondition($"{time}", QueryComparisons.Equal, "-")));
+
+            var query = new TableQuery<Availability>().Where(condition);
+
+            List<string> foundTutorEmails = new List<string>();
+            List<User> foundTutors = new List<User>();
+
+            foreach (Availability entity in table.ExecuteQuery(query))
+            {
+                var condition2 = TableQuery.CombineFilters(
+                TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
+                TableOperators.And, TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, entity.Email));
+                var query2 = new TableQuery<User>().Where(condition);
+
+                //dont worry about the complexity lol
+                foreach (User entity2 in table2.ExecuteQuery(query2)) foundTutors.Add(entity2);
+            }
+
+            if (foundTutors.Count > 0)
+            {
+                return foundTutors;
+            }
+            return null;
+        }
     }
 }

@@ -46,65 +46,67 @@
           "dependencies": {
             "AdaptiveCards": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.2.4, )"
             },
             "Microsoft.ApplicationInsights": {
               "target": "Package",
-              "version": "[2.10.0, )"
+              "version": "[2.11.0, )"
             },
             "Microsoft.ApplicationInsights.AspNetCore": {
               "target": "Package",
-              "version": "[2.7.0, )"
+              "version": "[2.8.2, )"
             },
             "Microsoft.ApplicationInsights.DependencyCollector": {
               "target": "Package",
-              "version": "[2.10.0, )"
+              "version": "[2.11.2, )"
             },
-            "Microsoft.AspNetCore.All": {
-              "suppressParent": "All",
+            "Microsoft.AspNetCore.App": {
               "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
-              "version": "[2.2.2, )"
+              "version": "[2.2.5, )"
             },
             "Microsoft.Azure.CognitiveServices.Language": {
               "target": "Package",
               "version": "[1.0.1-preview, )"
             },
+            "Microsoft.Azure.Cosmos.Table": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
             "Microsoft.Bot.Builder": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Builder.AI.Luis": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Builder.AI.QnA": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Builder.ApplicationInsights": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Builder.Azure": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Builder.Dialogs": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Builder.Integration.ApplicationInsights.Core": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Builder.Integration.AspNet.Core": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Builder.Skills": {
               "target": "Package",
@@ -120,27 +122,55 @@
             },
             "Microsoft.Bot.Builder.TemplateManager": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Configuration": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Connector": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
             },
             "Microsoft.Bot.Schema": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.6.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Microsoft.Extensions.Options": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -150,7 +180,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

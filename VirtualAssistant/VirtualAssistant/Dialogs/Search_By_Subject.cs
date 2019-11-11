@@ -5,12 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
-using VirtualAssistant.Responses.Escalate;
 using VirtualAssistant.Services;
-using VirtualAssistant.Responses.Cancel;
-using VirtualAssistant.Responses.Main;
-using Microsoft.Bot.Builder.Dialogs.Choices;
-using System.Collections.Generic;
 
 namespace VirtualAssistant.Dialogs
 {
@@ -51,9 +46,13 @@ namespace VirtualAssistant.Dialogs
             else if (stepContext.Values["time"] != null)
             {
                 await stepContext.Context.SendActivityAsync(MessageFactory.Text("Searching for available tutors..."), cancellationToken);
-                /*
-                //TODO: Connect to database. Fetch tutors.
-                */
+
+                //put this in adavtive card i guess
+                //this accepts the dumb AM0800 format
+                Database db = new Database();
+                db.findTutors_SubjectTime((string)stepContext.Values["time"], (string)stepContext.Values["subject"]);
+                ///////
+
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
             }
 
@@ -73,9 +72,11 @@ namespace VirtualAssistant.Dialogs
             else
             {
                 await stepContext.Context.SendActivityAsync(MessageFactory.Text("Searching for available tutors..."), cancellationToken);
-                /*
-                //TODO: Connect to database. Fetch tutors.
-                */
+                //put this in adavtive card i guess
+                //this accepts the dumb AM0800 format
+                Database db = new Database();
+                db.findTutors_SubjectTime((string)stepContext.Values["time"], (string)stepContext.Values["subject"]);
+                ///////
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
             }
         }
@@ -85,9 +86,11 @@ namespace VirtualAssistant.Dialogs
             stepContext.Values["time"] = (string)stepContext.Result;
 
             await stepContext.Context.SendActivityAsync(MessageFactory.Text("Searching for available tutors..."), cancellationToken);
-            /*
-            //TODO: Connect to database. Fetch tutors.
-            */
+            //put this in adavtive card i guess
+            //this accepts the dumb AM0800 format
+            Database db = new Database();
+            db.findTutors_SubjectTime((string)stepContext.Values["time"], (string)stepContext.Values["subject"]);
+            ///////
             return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
         }
     }

@@ -74,8 +74,6 @@ namespace VirtualAssistant.Dialogs
         private static async Task<DialogTurnResult> ReturnEmailAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             stepContext.Values["email"] = (string)stepContext.Result;
-
-            //use this string for database.
             string useremail = ((string)stepContext.Values["email"]);
 
             //end greeting if returning user
@@ -85,42 +83,31 @@ namespace VirtualAssistant.Dialogs
                 Database db = new Database();
                 User currentuser = db.getUserFromEmail(useremail);
 
-                if (currentuser.value.Length > 0)
+                if (currentuser != null)
                 {
-                    await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Welcome Back {currentuser.value[0].Name}!"), cancellationToken);
+                    await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Welcome Back {currentuser.Name}!"), cancellationToken);
                     return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
                 }
 
                 else
                 {
-                    //TODO:  user does not exists: either reprompt email or ask to make new account
-                    await stepContext.Context.SendActivityAsync(MessageFactory.Text("No user found with that account. Creating a new account with your email ..."), cancellationToken);
-                    return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your full name.") }, cancellationToken);
+                  //TODO: user does not exists: either reprompt email or ask to make new account
+                  await stepContext.Context.SendActivityAsync(MessageFactory.Text("No user found with that account. Creating a new account with your email ..."), cancellationToken);
+                  return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your full name.") }, cancellationToken);
                 }
-
             }
 
-            else
-            {
-                return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your full name.") }, cancellationToken);
-            }
-
+            return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your full name.") }, cancellationToken);
         }
 
         private static async Task<DialogTurnResult> ReturnNameAync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             stepContext.Values["name"] = (string)stepContext.Result;
-
-            //use this string for database.
-            string username = ((string)stepContext.Values["name"]);
-            
             return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Will you be using this service as a tutor or student?") }, cancellationToken);
         }
         private static async Task<DialogTurnResult> ReturnUserTypeAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             stepContext.Values["usertype"] = (string)stepContext.Result;
-
-            //use this string for database.
             string usertype = ((string)stepContext.Values["usertype"]);
 
             if (usertype == "tutor")
@@ -132,35 +119,32 @@ namespace VirtualAssistant.Dialogs
             {
                 //Creates the user object
                 User newUser = new User();
-                newUser.value = new VirtualAssistant.UserData[1] { new UserData() };
-                newUser.value[0].EmailAdress = (string)stepContext.Values["email"];
-                newUser.value[0].Classification = "student";
-                newUser.value[0].Name = (string)stepContext.Values["name"];
+                newUser.RowKey = (string)stepContext.Values["email"];
+                newUser.Classification = "student";
+                newUser.Name = (string)stepContext.Values["name"];
+                newUser.PartitionKey = "University of South Florida";
+                Database db = new Database();
+                db.postNewUser(newUser);
 
-
-                await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {((string)stepContext.Values["name"])}! You may now use this service."), cancellationToken);
+                await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {newUser.Name}! You may now use this service."), cancellationToken);
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
             }
         }
         private static async Task<DialogTurnResult> ReturnCourseAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-
             stepContext.Values["course"] = (string)stepContext.Result;
 
             //Creates the user object
             User newUser = new User();
-            newUser.value = new VirtualAssistant.UserData[1] {new UserData()};
-            newUser.value[0].EmailAdress = (string)stepContext.Values["email"];
-            newUser.value[0].Classification = "tutor";
-            newUser.value[0].Name = (string)stepContext.Values["name"];
-            newUser.value[0].Class = (string)stepContext.Values["course"];
+            newUser.RowKey = (string)stepContext.Values["email"];
+            newUser.Classification = "tutor";
+            newUser.Name = (string)stepContext.Values["name"];
+            newUser.Class = (string)stepContext.Values["course"];
 
-
-            //i tried lol
             Database db = new Database();
             db.postNewUser(newUser);
 
-            await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {((string)stepContext.Values["name"])}!"), cancellationToken);
+            await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {newUser.Name}!"), cancellationToken);
             return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
         }
     }

@@ -7,31 +7,41 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AdaptiveCards" Version="1.2.0" />
-    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.10.0" />
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.7.0" />
-    <PackageReference Include="Microsoft.ApplicationInsights.DependencyCollector" Version="2.10.0" />
-    <PackageReference Include="Microsoft.AspNetCore.All" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.2" />
+    <PackageReference Include="AdaptiveCards" Version="1.2.4" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.11.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.8.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights.DependencyCollector" Version="2.11.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App">
+      <Version>2.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.Azure.CognitiveServices.Language" Version="1.0.1-preview" />
-    <PackageReference Include="Microsoft.Bot.Builder" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Builder.AI.Luis" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Builder.AI.QnA" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Builder.ApplicationInsights" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Builder.Azure" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.5.1" />
+    <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="1.0.5" />
+    <PackageReference Include="Microsoft.Bot.Builder" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.AI.Luis" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.AI.QnA" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.ApplicationInsights" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Azure" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Integration.ApplicationInsights.Core" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.6.2" />
     <PackageReference Include="Microsoft.Bot.Builder.Skills" Version="4.5.4" />
     <PackageReference Include="Microsoft.Bot.Builder.Solutions" Version="4.5.4" />
     <PackageReference Include="Microsoft.Bot.Builder.StreamingExtensions" Version="4.5.1-preview1" />
-    <PackageReference Include="Microsoft.Bot.Builder.TemplateManager" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Configuration" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Connector" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Bot.Schema" Version="4.5.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="2.2.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Bot.Builder.TemplateManager" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Configuration" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Connector" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Bot.Schema" Version="4.6.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>

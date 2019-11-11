@@ -12,5 +12,7 @@ namespace VirtualAssistant.Models
         public string Phonenumber { get; set; }
 
         public string Location { get; set; }
+
+        public string ConfuseCounter { get; set; }
     }
 }
