@@ -47,10 +47,13 @@ namespace VirtualAssistant.Dialogs
             {
                 await stepContext.Context.SendActivityAsync(MessageFactory.Text("Searching for available tutors..."), cancellationToken);
 
-                //put this in adavtive card i guess
-                //this accepts the dumb AM0800 format
+                //put this in adaptive card i guess
                 Database db = new Database();
-                db.findTutors_SubjectTime((string)stepContext.Values["time"], (string)stepContext.Values["subject"]);
+                //
+                //
+                //IMPORTANT: Time string format: "YYYY-MM-DDTHH" (e.g. "2019-11-11T16" where T16 = 16:00 hour)
+                Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[] time = (Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[])stepContext.Values["time"];
+                db.findTutors_SubjectTime(db.convertBotTimeToString(time), db.normalizeCourseName(stepContext.Values["subject"].ToString()));
                 ///////
 
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
@@ -72,10 +75,14 @@ namespace VirtualAssistant.Dialogs
             else
             {
                 await stepContext.Context.SendActivityAsync(MessageFactory.Text("Searching for available tutors..."), cancellationToken);
-                //put this in adavtive card i guess
-                //this accepts the dumb AM0800 format
+                //put this in adaptive card i guess
                 Database db = new Database();
-                db.findTutors_SubjectTime((string)stepContext.Values["time"], (string)stepContext.Values["subject"]);
+
+                //
+                //
+                //IMPORTANT: Time string format: "YYYY-MM-DDTHH" (e.g. "2019-11-11T16" where T16 = 16:00 hour)
+                Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[] time = (Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[])stepContext.Values["time"];
+                db.findTutors_SubjectTime(db.convertBotTimeToString(time), db.normalizeCourseName(stepContext.Values["subject"].ToString()));
                 ///////
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
             }
@@ -86,10 +93,13 @@ namespace VirtualAssistant.Dialogs
             stepContext.Values["time"] = (string)stepContext.Result;
 
             await stepContext.Context.SendActivityAsync(MessageFactory.Text("Searching for available tutors..."), cancellationToken);
-            //put this in adavtive card i guess
-            //this accepts the dumb AM0800 format
+            //put this in adaptive card i guess
             Database db = new Database();
-            db.findTutors_SubjectTime((string)stepContext.Values["time"], (string)stepContext.Values["subject"]);
+            //
+            //
+            //IMPORTANT: Time string format: "YYYY-MM-DDTHH" (e.g. "2019-11-11T16" where T16 = 16:00 hour)
+            Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[] time = (Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[])stepContext.Values["time"];
+            db.findTutors_SubjectTime(db.convertBotTimeToString(time), db.normalizeCourseName(stepContext.Values["subject"].ToString()));
             ///////
             return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
         }

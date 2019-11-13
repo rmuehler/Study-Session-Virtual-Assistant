@@ -13,6 +13,6 @@ namespace VirtualAssistant.Models
 
         public string Location { get; set; }
 
-        public string ConfuseCounter { get; set; }
+        public int ConfuseCounter { get; set; }
     }
 }

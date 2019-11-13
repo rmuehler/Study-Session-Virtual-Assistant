@@ -116,8 +116,6 @@ namespace VirtualAssistant.Responses.Main
 
             var response = MessageFactory.Attachment(attachment, ssml: MainStrings.HELP_TEXT, inputHint: InputHints.IgnoringInput);
 
-
-
             response.SuggestedActions = new SuggestedActions
             {
                 Actions = new List<CardAction>()

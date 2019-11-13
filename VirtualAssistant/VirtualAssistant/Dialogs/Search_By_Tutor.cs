@@ -49,7 +49,7 @@ namespace VirtualAssistant.Dialogs
                 await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Searching for availability of {ss}..."), cancellationToken);
                 Database db = new Database();
                 User tutor = db.getUserFromName(ss);
-                Dictionary<int, string>  avlOfRequestedTutor = db.getAvailabilityFromEmail(tutor.EmailAdress);
+                Dictionary<string, string>  avlOfRequestedTutor = db.getAvailabilityFromEmail(tutor.EmailAdress);
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
             }
         }
@@ -59,8 +59,8 @@ namespace VirtualAssistant.Dialogs
             stepContext.Values["tutor"] = (string)stepContext.Result;
             await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Searching for availability of {stepContext.Result}..."), cancellationToken);
             Database db = new Database();
-            User tutor = db.getUserFromName(ss);
-            Dictionary<int, string> avlOfRequestedTutor = db.getAvailabilityFromEmail(tutor.EmailAdress);
+            User tutor = db.getUserFromName((string)stepContext.Values["tutor"]);
+            Dictionary<string, string> avlOfRequestedTutor = db.getAvailabilityFromEmail(tutor.EmailAdress);
             return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
         }
     }

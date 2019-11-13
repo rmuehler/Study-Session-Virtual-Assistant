@@ -76,6 +76,9 @@ namespace VirtualAssistant.Dialogs
         {
             var view = new MainResponses();
             var onboardingState = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+            _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+            var name = _state.ConfuseCounter++;
+            await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
 
             await dc.BeginDialogAsync(nameof(Greeting_Dialog));
             
@@ -100,7 +103,6 @@ namespace VirtualAssistant.Dialogs
             var intent = dispatchResult.TopIntent().intent;
             var test = dispatchResult.Entities;
             Console.WriteLine(test.ToString());
-
 
             // Identify if the dispatch intent matches any Action within a Skill if so, we pass to the appropriate SkillDialog to hand-off
             var identifiedSkill = SkillRouter.IsSkill(_settings.Skills, intent.ToString());
@@ -146,6 +148,9 @@ namespace VirtualAssistant.Dialogs
                         default:
                             {
                                 // No intent was identified, send confused message
+                                _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                                var name = _state.ConfuseCounter++;
+                                await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
                                 await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
                                 break;
                             }
@@ -175,7 +180,7 @@ namespace VirtualAssistant.Dialogs
                         case searchskillLuis.Intent.Search_by_Subject:
                             {
                                 // start escalate dialog
-                                await dc.BeginDialogAsync(nameof(Search_by_Subject), entities.subject);
+                                await dc.BeginDialogAsync(nameof(Search_by_Subject), entities);
                                 break;
                             }
 
@@ -188,6 +193,9 @@ namespace VirtualAssistant.Dialogs
                         default:
                             {
                                 // No intent was identified, send confused message
+                                _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                                var name = _state.ConfuseCounter++;
+                                await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
                                 await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
                                 break;
                             }
@@ -223,6 +231,9 @@ namespace VirtualAssistant.Dialogs
                         default:
                             {
                                 // No intent was identified, send confused message
+                                _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                                var name = _state.ConfuseCounter++;
+                                await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
                                 await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
                                 break;
                             }
@@ -247,6 +258,9 @@ namespace VirtualAssistant.Dialogs
                     }
                     else
                     {
+                        _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                        var name = _state.ConfuseCounter++;
+                        await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
                         await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
                     }
                 }
@@ -269,6 +283,9 @@ namespace VirtualAssistant.Dialogs
                     }
                     else
                     {
+                        _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                        var name = _state.ConfuseCounter++;
+                        await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
                         await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
                     }
                 }
@@ -277,7 +294,19 @@ namespace VirtualAssistant.Dialogs
             {
                 // If dispatch intent does not map to configured models, send "confused" response.
                 // Alternatively as a form of backup you can try QnAMaker for anything not understood by dispatch.
+                _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                var name = _state.ConfuseCounter ++;
+                await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
                 await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
+            }
+
+
+            if (_state.ConfuseCounter >= 3)
+            {
+                _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                var name = _state.ConfuseCounter = 0;
+                await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
+                await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Help);
             }
         }
 

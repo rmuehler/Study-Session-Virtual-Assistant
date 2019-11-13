@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Azure.Cosmos.Table;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace VirtualAssistant
 {
@@ -49,24 +50,24 @@ namespace VirtualAssistant
         public string PM1000 { get; set; }
         public string PM1100 { get; set; }
         public string PM1200 { get; set; }
-        public Dictionary<int, string> getAvailabilityMap(Availability ava)
+        public Dictionary<string, string> getAvailabilityMap()
         {
-            var map = new Dictionary<int, string>
+            var map = new Dictionary<string, string>
             {
-                { 8, ava.AM0800 },
-                { 9, ava.AM0900 },
-                { 10, ava.AM1000 },
-                { 11, ava.AM1100 },
-                { 12, ava.PM1200 },
-                { 13, ava.PM0100 },
-                { 14, ava.PM0200 },
-                { 15, ava.PM0300 },
-                { 16, ava.PM0400 },
-                { 17, ava.PM0500 },
-                { 18, ava.PM0600 },
-                { 19, ava.PM0700 },
-                { 20, ava.PM0800 },
-                { 21, ava.PM0900 }
+                { "T8", AM0800 },
+                { "T9", AM0900 },
+                { "T10", AM1000 },
+                { "T11", AM1100 },
+                { "T12", PM1200 },
+                { "T13", PM0100 },
+                { "T14", PM0200 },
+                { "T15", PM0300 },
+                { "T16", PM0400 },
+                { "T17", PM0500 },
+                { "T18", PM0600 },
+                { "T19", PM0700 },
+                { "T20", PM0800 },
+                { "T21", PM0900 }
             };
             return map;
         }
@@ -119,7 +120,7 @@ namespace VirtualAssistant
             return null;
         }
 
-        public Dictionary<int, string> getAvailabilityFromEmail(string searchEmail)
+        public Dictionary<string, string> getAvailabilityFromEmail(string searchEmail)
         {
             CloudTable table = tableClient.GetTableReference("TutorAvailability");
             var condition = TableQuery.CombineFilters(
@@ -131,7 +132,7 @@ namespace VirtualAssistant
             var query = new TableQuery<Availability>().Where(condition);
             foreach (Availability entity in table.ExecuteQuery(query))
             {
-                return entity.getAvailabilityMap(entity);
+                return entity.getAvailabilityMap();
             }
 
             return null;
@@ -169,6 +170,51 @@ namespace VirtualAssistant
                 return foundTutors;
             }
             return null;
+        }
+
+
+        //returns time string format: "YYYY-MM-DD,THH" (e.g. "2019-11-11,T16" where T16 = 16:00 hour)
+        public string convertBotTimeToString(Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[] time)
+        {
+            if (time.Length == 3)
+            {
+                return DateTime.Today.ToString() + "," + time[0].Expressions[0];
+            }
+
+            else
+            {
+                return time[0].Expressions[0];
+            }
+        }
+
+        public string normalizeCourseName(string course)
+        {
+            if(new[] { "calc1", "calc 1", "calculus1", "calculus 1" }.Contains(course))
+            {
+                return "calculus1";
+            }
+
+            if (new[] { "calc2", "calc 2", "calculus2", "calculus 2" }.Contains(course))
+            {
+                return "calculus2";
+            }
+
+            if (new[] { "calc3", "calc 3", "calculus3", "calculus 3" }.Contains(course))
+            {
+                return "calculus3";
+            }
+
+            if (new[] { "physics1", "physics 1"}.Contains(course))
+            {
+                return "physics1";
+            }
+
+            if (new[] { "physics2", "physics 2"}.Contains(course))
+            {
+                return "physics2";
+            }
+
+            return course;
         }
     }
 }

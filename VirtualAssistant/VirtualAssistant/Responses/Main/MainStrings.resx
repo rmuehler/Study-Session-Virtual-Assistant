@@ -154,7 +154,8 @@
     <value>Who are the tutors?</value>
   </data>
   <data name="HELP_TEXT" xml:space="preserve">
-    <value>This card can be used to display information to help your user interact with your bot. The buttons below can be used for sample queries or links to external sites.</value>
+    <value>I have noticed that you are having trouble with this service. If you are looking to find a tutor, try asking me in the following format: 
+"I need a tutor at 4pm tomorrow to help me with calculus1".</value>
   </data>
   <data name="HELP_TITLE" xml:space="preserve">
     <value>HELP</value>

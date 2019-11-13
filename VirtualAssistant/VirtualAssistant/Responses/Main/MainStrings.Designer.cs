@@ -169,7 +169,8 @@ namespace VirtualAssistant.Responses.Main {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This card can be used to display information to help your user interact with your bot. The buttons below can be used for sample queries or links to external sites..
+        ///   Looks up a localized string similar to I have noticed that you are having trouble with this service. If you are looking to find a tutor, try asking me in the following format: 
+        ///&quot;I need a tutor at 4pm tomorrow to help me with calculus1&quot;..
         /// </summary>
         public static string HELP_TEXT {
             get {
