@@ -1,10 +1,12 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Builder.Dialogs.Choices;
 using VirtualAssistant.Services;
 
 namespace VirtualAssistant.Dialogs
@@ -31,6 +33,7 @@ namespace VirtualAssistant.Dialogs
             // Add named dialogs to the DialogSet. These names are saved in the dialog state.
             AddDialog(new WaterfallDialog(nameof(WaterfallDialog), waterfallSteps));
             AddDialog(new TextPrompt(nameof(TextPrompt)));
+            AddDialog(new ChoicePrompt(nameof(ChoicePrompt)));
 
             // The initial child Dialog to run.
             InitialDialogId = nameof(WaterfallDialog);
@@ -38,27 +41,50 @@ namespace VirtualAssistant.Dialogs
 
         private static async Task<DialogTurnResult> AskIfReturningAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Hello, are you a returning user?") }, cancellationToken);
+
+            //create set of possible choices (no isn't really needeed)
+            Choice choice1 = new Choice("yes");
+            choice1.Synonyms = new List<string> { "yeah", "yup", "y", "ye" , "of course", "i am"};
+            choice1.Value = "yes";
+            Choice choice2 = new Choice("no");
+            choice2.Synonyms = new List<string> { "nah", "i don't" };
+            choice2.Value = "no";
+
+            IList<Choice> choices = new List<Choice> { choice1, choice2};
+
+            return await stepContext.PromptAsync(nameof(ChoicePrompt), new PromptOptions { Prompt = MessageFactory.Text("Hello, are you a returning user?"), Choices = choices, Style = ListStyle.Auto}, cancellationToken);
         }
 
         private static async Task<DialogTurnResult> ReturnResultsAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            if ((string)stepContext.Result == "yes")
+
+            var choice = (FoundChoice)stepContext.Result;
+            if (choice.Value == "yes")
             {
                 stepContext.Values["returning"] = 1;
                 return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your e-mail address to confirm your identity.") }, cancellationToken);
             }
             else
             {
+                Choice choice1 = new Choice("yes");
+                choice1.Synonyms = new List<string> { "yeah", "yup", "y", "ye", "of course", "i am" };
+                choice1.Value = "yes";
+                Choice choice2 = new Choice("no");
+                choice2.Synonyms = new List<string> { "nah", "i don't" };
+                choice2.Value = "no";
                 stepContext.Values["returning"] = 0;
-                return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Would you like to register for this service?") }, cancellationToken);
+
+                IList<Choice> choices = new List<Choice> { choice1, choice2 };
+
+                return await stepContext.PromptAsync(nameof(ChoicePrompt), new PromptOptions { Prompt = MessageFactory.Text("Would you like to register for this service?"), Choices = choices }, cancellationToken);
             }
         }
         private static async Task<DialogTurnResult> ReturnResult2Async(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
+            var choice = (FoundChoice)stepContext.Result;
             if ((long)stepContext.Values["returning"] == 0)
             {
-                if ((string)stepContext.Result == "no")
+                if (choice.Value == "no")
                 {
                     return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
                 }
