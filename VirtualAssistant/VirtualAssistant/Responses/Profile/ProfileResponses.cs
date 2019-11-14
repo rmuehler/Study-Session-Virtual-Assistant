@@ -63,29 +63,26 @@ namespace VirtualAssistant.Responses.Profile
             Register(new DictionaryRenderer(_responseTemplates));
         }
 
-        public static IMessageActivity BuildStudentCardAsync(ITurnContext turnContext, dynamic data)
+        public static IMessageActivity BuildStudentCardAsync(ITurnContext turnContext, User user)
         {
             var introCard = File.ReadAllText(ProfileStrings.STUDENTPROFILE_PATH);
-            introCard = introCard.Replace("Placeholder Name", data.Name);
-            introCard = introCard.Replace("Placeholder Email", data.Email);
-            //introCard.Replace("")
+
+            introCard = introCard.Replace("Placeholder Name", user.Name);
+            introCard = introCard.Replace("Placeholder Email", user.EmailAdress);
+
+            if (user.PhoneNumber == null)
+            {
+                introCard = introCard.Replace("Placeholder P#", "");
+            }
+            else
+            {
+                introCard = introCard.Replace("Placeholder P#", user.PhoneNumber);
+            }
             var card = AdaptiveCard.FromJson(introCard).Card;
-
-/*            dynamic jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject(introCard);
-            jsonObj["body"][1]["placeholder"] = "NEWNAME";
-            string output = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
-            File.WriteAllText("settings.json", output);*/
-
             var attachment = new Attachment(AdaptiveCard.ContentType, content: card);
+            var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.AcceptingInput);
 
-            
-
-            var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.IgnoringInput);
-
-
-            
-
-            response.SuggestedActions = new SuggestedActions
+/*            response.SuggestedActions = new SuggestedActions
             {
                 Actions = new List<CardAction>()
                 {
@@ -93,7 +90,7 @@ namespace VirtualAssistant.Responses.Profile
                     new CardAction(type: ActionTypes.MessageBack, title: ProfileStrings.HELP_BTN_TEXT_2, value: ProfileStrings.HELP_BTN_VALUE_2),
                     new CardAction(type: ActionTypes.MessageBack, title: ProfileStrings.HELP_BTN_TEXT_3, value: ProfileStrings.HELP_BTN_VALUE_3),
                 },
-            };
+            };*/
 
             return response;
         }

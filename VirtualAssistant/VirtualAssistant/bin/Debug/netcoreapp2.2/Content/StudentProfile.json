@@ -5,15 +5,15 @@
   "body": [
     {
       "type": "TextBlock",
-      "size": "medium",
-      "weight": "bolder",
+      "size": "Medium",
+      "weight": "Bolder",
       "text": "Student Account",
-      "horizontalAlignment": "center"
+      "horizontalAlignment": "Center"
     },
     {
       "type": "Input.Text",
       "placeholder": "Student Name",
-      "value":  "Placeholder Name",
+      "value": "Placeholder Name",
       "style": "text",
       "maxLength": 0,
       "id": "StudentVal"
@@ -21,24 +21,30 @@
     {
       "type": "Input.Text",
       "placeholder": "Student Email",
-      "value":  "Placeholder Email",
-      "style": "email",
+      "value": "Placeholder Email",
+      "style": "Email",
       "maxLength": 0,
       "id": "StudentEmailVal"
     },
     {
-      "type": "TextBlock",
-      "size": "medium",
-      "weight": "bolder",
-      "text": "Student Availability",
-      "horizontalAlignment": "center"
+      "type": "Input.Text",
+      "placeholder": "Phone Number",
+      "value": "Placeholder P#",
+      "id": "StudentPhoneVal"
     },
     {
       "type": "TextBlock",
-      "size": "small",
-      "weight": "bolder",
+      "size": "Medium",
+      "weight": "Bolder",
+      "text": "Student Availability",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "TextBlock",
+      "size": "Small",
+      "weight": "Bolder",
       "text": "Dates",
-      "horizontalAlignment": "left"
+      "horizontalAlignment": "Left"
     },
     {
       "type": "Input.Date",
@@ -48,16 +54,14 @@
     },
     {
       "type": "TextBlock",
-      "size": "small",
-      "weight": "bolder",
+      "size": "Small",
+      "weight": "Bolder",
       "text": "Time",
-      "horizontalAlignment": "left"
+      "horizontalAlignment": "Left"
     },
-
     {
       "type": "Input.ChoiceSet",
       "id": "StudentTimeSelectVal",
-      "style": "compact",
       "value": "1",
       "choices": [
         {
@@ -76,7 +80,6 @@
           "title": "6pm-9pm",
           "value": "4"
         }
-
       ]
     },
     {
@@ -131,14 +134,13 @@
         }
       ]
     }
-
   ],
   "actions": [
     {
       "type": "Action.Submit",
       "title": "Submit",
       "data": {
-        "id": "1234567890"
+        "id": "SaveStudentProfile"
       }
     },
     {
@@ -163,7 +165,8 @@
               "SaveStudentProfile": "true"
             }
           }
-        ]
+        ],
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
       }
     }
   ]

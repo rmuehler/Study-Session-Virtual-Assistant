@@ -12,6 +12,9 @@ using Microsoft.Bot.Builder.Dialogs.Choices;
 using System.Collections.Generic;
 using VirtualAssistant.Responses.Onboarding;
 using VirtualAssistant.Models;
+using System.IO;
+using AdaptiveCards;
+using Microsoft.Bot.Schema;
 
 namespace VirtualAssistant.Dialogs
 {
@@ -45,21 +48,24 @@ namespace VirtualAssistant.Dialogs
         {
             _state = await _accessor.GetAsync(sc.Context, () => new OnboardingState());
 
-            if(!string.IsNullOrWhiteSpace(_state.Name) && !string.IsNullOrWhiteSpace(_state.Email))
+            if (!string.IsNullOrWhiteSpace(_state.Email))
             {
-                await _responder.ReplyWith(sc.Context, ProfileResponses.ResponseIds.ShowStudentProfile, _state);
-                return await sc.EndDialogAsync();
+                Database db = new Database();
+                User user = db.getUserFromEmail(_state.Email);
+
+                if (user != null)
+                {
+                    await _responder.ReplyWith(sc.Context, ProfileResponses.ResponseIds.ShowStudentProfile, user);
+                    return await sc.EndDialogAsync(cancellationToken: cancellationToken);
+                }
             }
+            //if no userstate email or user not found through email
+            await sc.Context.SendActivityAsync(MessageFactory.Text("Please log in first."), cancellationToken);
+            return await sc.EndDialogAsync(cancellationToken: cancellationToken);
 
-
-            return await sc.EndDialogAsync();
         }
 
-
-        
-
-        
-    }
+        }
 
 
 }

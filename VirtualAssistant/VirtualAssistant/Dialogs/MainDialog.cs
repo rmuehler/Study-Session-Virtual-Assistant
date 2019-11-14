@@ -222,7 +222,7 @@ namespace VirtualAssistant.Dialogs
                     {
                         case profileskillLuis.Intent.Edit_Profile:
                             {
-                                // start escalate dialog
+                                // start edit dialog
                                 await dc.BeginDialogAsync(nameof(Edit_Profile));
                                 break;
                             }
@@ -315,37 +315,28 @@ namespace VirtualAssistant.Dialogs
             // Check if there was an action submitted from intro card
             var value = dc.Context.Activity.Value;
 
+
+
+
             if (value.GetType() == typeof(JObject))
             {
                 var submit = JObject.Parse(value.ToString());
-                if (value != null && (string)submit["StudentChoice"] == "Student")
-                {
-                    _state= await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
-                    var name = _state.Name = (string)submit["StdName"];
-                    var email = _state.Email = (string)submit["StdEmail"];
-                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
-                    await dc.CancelAllDialogsAsync();
-                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
-                    return;
-                }
-                if (value != null && (string)submit["StudentChoice"] == "Tutor")
+                Database db = new Database();
+                _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+                User user = db.getUserFromEmail(_state.Email);
+
+                if ((string)submit["id"] == "SaveStudentProfile")
                 {
                     _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
-                    var name = _state.Name = (string)submit["TutrName"];
-                    var email = _state.Email = (string)submit["TutrEmail"];
+                    user.Name = _state.Name = (string)submit["StudentVal"];
+                    user.PhoneNumber = _state.Email = (string)submit["StudentPhoneVal"];
                     await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
-                    await dc.CancelAllDialogsAsync();
-                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
-                    return;
-                }
-                if (value != null && (string)submit["SaveStudentProfile"] == "true")
-                {
-                    _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
-                    var name = _state.Name = (string)submit["StudentVal"];
-                    var email = _state.Email = (string)submit["StudentEmailVal"];
-                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
-                    await dc.CancelAllDialogsAsync();
-                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
+
+                    //TODO: this should update user, not create a new one?
+                    db.postNewUser(user);
+
+                    await dc.Context.SendActivityAsync(MessageFactory.Text("Profile has been saved."), cancellationToken);
+
                     return;
                 }
                 if (value != null && (string)submit["SaveTutorProfile"] == "true")

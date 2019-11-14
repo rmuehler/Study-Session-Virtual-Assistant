@@ -10,12 +10,15 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Dialogs.Choices;
+using VirtualAssistant.Models;
 using VirtualAssistant.Services;
 
 namespace VirtualAssistant.Dialogs
 {
     public class Greeting_Dialog : ComponentDialog
     {
+        private OnboardingState _state;
+        private IStatePropertyAccessor<OnboardingState> _accessor;
 
         public Greeting_Dialog(BotServices botServices,
             UserState userState,
@@ -38,13 +41,16 @@ namespace VirtualAssistant.Dialogs
             AddDialog(new TextPrompt(nameof(TextPrompt)));
             AddDialog(new ChoicePrompt(nameof(ChoicePrompt)));
 
+            //set up accessor for current userstate
+            _accessor = userState.CreateProperty<OnboardingState>(nameof(OnboardingState));
+
             // The initial child Dialog to run.
             InitialDialogId = nameof(WaterfallDialog);
         }
 
         private static async Task<DialogTurnResult> AskIfReturningAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-
+            
             //create set of possible choices (no isn't really needeed)
             Choice choice1 = new Choice("yes");
             choice1.Synonyms = new List<string> { "yeah", "yup", "y", "ye" , "of course", "i am"};
@@ -106,10 +112,9 @@ namespace VirtualAssistant.Dialogs
 
             else return await stepContext.ContinueDialogAsync();
         }
-        private static async Task<DialogTurnResult> ReturnEmailAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+        private async Task<DialogTurnResult> ReturnEmailAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             string useremail = null;
-
             //need to make sure we are setting a string
             if(stepContext.Result.GetType() == typeof(string))
             {
@@ -138,6 +143,13 @@ namespace VirtualAssistant.Dialogs
                 if (currentuser != null)
                 {
                     await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Welcome Back {currentuser.Name}!"), cancellationToken);
+
+                    //include name and email in user state, for easy user lookup later
+                    _state = await _accessor.GetAsync(stepContext.Context, () => new OnboardingState());
+                    _state.Name = currentuser.Name;
+                    _state.Email = currentuser.EmailAdress;
+                    await _accessor.SetAsync(stepContext.Context, _state, cancellationToken);
+
                     return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
                 }
 
