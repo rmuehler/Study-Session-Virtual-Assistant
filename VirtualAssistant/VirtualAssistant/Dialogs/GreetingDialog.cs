@@ -1,7 +1,10 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
+using System;
 using System.Collections.Generic;
+using System.Net.Mail;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
@@ -81,7 +84,13 @@ namespace VirtualAssistant.Dialogs
         }
         private static async Task<DialogTurnResult> ReturnResult2Async(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            var choice = (FoundChoice)stepContext.Result;
+            FoundChoice choice = null;
+
+            //since we either get a choice or a string, need to make sure we are evaluatin a Choice
+            if(stepContext.Result.GetType() == (typeof(FoundChoice)))
+            {
+                choice = (FoundChoice)stepContext.Result;
+            }
             if ((long)stepContext.Values["returning"] == 0)
             {
                 if (choice.Value == "no")
@@ -99,12 +108,29 @@ namespace VirtualAssistant.Dialogs
         }
         private static async Task<DialogTurnResult> ReturnEmailAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            stepContext.Values["email"] = (string)stepContext.Result;
-            string useremail = ((string)stepContext.Values["email"]);
+            string useremail = null;
+
+            //need to make sure we are setting a string
+            if(stepContext.Result.GetType() == typeof(string))
+            {
+                stepContext.Values["email"] = (string)stepContext.Result;
+                useremail = ((string)stepContext.Values["email"]);
+            }
 
             //end greeting if returning user
             if ((long)stepContext.Values["returning"] == 1)
             {
+                //validate email using regex
+                try
+                {
+                    MailAddress m = new MailAddress(useremail);
+                }
+                catch (FormatException)
+                {
+                    await stepContext.Context.SendActivityAsync(MessageFactory.Text("This is not a valid email address"), cancellationToken);
+                    //TODO: have this reprompt user to enter email again
+                }
+
                 //Get user from database
                 Database db = new Database();
                 User currentuser = db.getUserFromEmail(useremail);
