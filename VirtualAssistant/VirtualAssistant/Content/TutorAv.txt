@@ -1,0 +1,63 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Here are the Tutors available, Happy Studying!",
+            "horizontalAlignment": "Center",
+            "wrap": true,
+            "height": "stretch",
+            "size": "Medium",
+            "weight": "Bolder",
+            "color": "Accent",
+            "maxLines": 0
+        },
+        {
+            "type": "Image",
+                    "url": "https://picsum.photos/id/0/5616/3744",
+                    "size": "Medium",
+                    "horizontalAlignment":"Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "",
+            "spacing": "None",
+            "separator": true,
+            "horizontalAlignment": "Center",
+            "wrap": true,
+            "maxLines": 2,
+            "size": "Small",
+            "weight": "Lighter",
+            "color": "Accent"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.ShowCard",
+                    "title": "Name of Tutor ",
+                    "id":"TutorName",
+                    "color":"Accent",
+                    "card": {
+                        "type": "AdaptiveCard",
+                        "body": [
+                    {
+                        "type": "TextBlock",
+                        "text": "Tutor Info",
+                        "size": "Small",
+                        "wrap": true,
+                        "id":"TutorInfo",
+                        "color":"accent"
+                    }
+                        ],
+                        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+                    }
+                    
+                }
+            ]
+        }
+        
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
