@@ -77,10 +77,12 @@ namespace VirtualAssistant.Dialogs
             var view = new MainResponses();
             var onboardingState = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
             _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
-            var name = _state.ConfuseCounter++;
-            await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
+            var name = _state.ConfuseCounter = 0;
 
-            await dc.BeginDialogAsync(nameof(Greeting_Dialog));
+            DialogTurnResult re = await dc.BeginDialogAsync(nameof(Greeting_Dialog));
+            var self =  _state.self = (User)re.Result;
+            await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
+            
             
             if (string.IsNullOrEmpty(onboardingState.Name))
             {
@@ -103,6 +105,15 @@ namespace VirtualAssistant.Dialogs
             var intent = dispatchResult.TopIntent().intent;
             var test = dispatchResult.Entities;
             Console.WriteLine(test.ToString());
+
+
+
+            var onboardingState = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+
+            _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+            User self = _state.self;
+
+
 
             // Identify if the dispatch intent matches any Action within a Skill if so, we pass to the appropriate SkillDialog to hand-off
             var identifiedSkill = SkillRouter.IsSkill(_settings.Skills, intent.ToString());
@@ -186,7 +197,7 @@ namespace VirtualAssistant.Dialogs
 
                         case searchskillLuis.Intent.Search_by_Tutor:
                             {
-                                await dc.BeginDialogAsync(nameof(Search_by_Tutor), entities.personName);
+                                await dc.BeginDialogAsync(nameof(Search_by_Tutor), entities);
                                 break;
                             }
                         case searchskillLuis.Intent.None:
@@ -300,8 +311,10 @@ namespace VirtualAssistant.Dialogs
                 await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Confused);
             }
 
+            _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
+            var name1 = _state.ConfuseCounter;
 
-            if (_state.ConfuseCounter >= 3)
+            if (name1 >= 3)
             {
                 _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
                 var name = _state.ConfuseCounter = 0;

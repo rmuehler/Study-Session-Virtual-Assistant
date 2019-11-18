@@ -15,62 +15,9 @@ namespace VirtualAssistant
         public string Key => PartitionKey;
         public string EmailAdress => RowKey;
         public DateTimeOffset Time => Timestamp;
-        public string Class { get; set; }
         public string Classification { get; set; }
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
-    }
-
-    public class Availability : TableEntity
-    {
-        public string Key => PartitionKey;
-        public string Email => RowKey;
-        public DateTimeOffset Time => Timestamp;
-        public string AM0000 { get; set; }
-        public string AM0100 { get; set; }
-        public string AM0200 { get; set; }
-        public string AM0300 { get; set; }
-        public string AM0400 { get; set; }
-        public string AM0500 { get; set; }
-        public string AM0600 { get; set; }
-        public string AM0700 { get; set; }
-        public string AM0800 { get; set; }
-        public string AM0900 { get; set; }
-        public string AM1000 { get; set; }
-        public string AM1100 { get; set; }
-        public string PM0100 { get; set; }
-        public string PM0200 { get; set; }
-        public string PM0300 { get; set; }
-        public string PM0400 { get; set; }
-        public string PM0500 { get; set; }
-        public string PM0600 { get; set; }
-        public string PM0700 { get; set; }
-        public string PM0800 { get; set; }
-        public string PM0900 { get; set; }
-        public string PM1000 { get; set; }
-        public string PM1100 { get; set; }
-        public string PM1200 { get; set; }
-        public Dictionary<string, string> getAvailabilityMap()
-        {
-            var map = new Dictionary<string, string>
-            {
-                { "T8", AM0800 },
-                { "T9", AM0900 },
-                { "T10", AM1000 },
-                { "T11", AM1100 },
-                { "T12", PM1200 },
-                { "T13", PM0100 },
-                { "T14", PM0200 },
-                { "T15", PM0300 },
-                { "T16", PM0400 },
-                { "T17", PM0500 },
-                { "T18", PM0600 },
-                { "T19", PM0700 },
-                { "T20", PM0800 },
-                { "T21", PM0900 }
-            };
-            return map;
-        }
     }
 
     public class Database
@@ -120,70 +67,178 @@ namespace VirtualAssistant
             return null;
         }
 
-        public Dictionary<string, string> getAvailabilityFromEmail(string searchEmail)
+        public ICollection<string> getTutorCourses(string email)
         {
-            CloudTable table = tableClient.GetTableReference("TutorAvailability");
+            CloudTable table = tableClient.GetTableReference("TutorClasses");
             var condition = TableQuery.CombineFilters(
                TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
                TableOperators.And,
-               TableQuery.GenerateFilterCondition("RowKey", QueryComparisons.Equal, searchEmail)
+               TableQuery.GenerateFilterCondition("RowKey", QueryComparisons.Equal, email)
                );
 
-            var query = new TableQuery<Availability>().Where(condition);
-            foreach (Availability entity in table.ExecuteQuery(query))
+            var query = new TableQuery<DynamicTableEntity>().Where(condition);
+            foreach (DynamicTableEntity entity in table.ExecuteQuery(query))
             {
-                return entity.getAvailabilityMap();
+                IDictionary<string, EntityProperty> d = entity.WriteEntity(new OperationContext());
+                return d.Keys;
+            }
+            return new List<string>();
+        }
+
+        public void setTutorCourses(User tutor, string courses)
+        {
+            List<string> myList = courses.Split(',').ToList();
+            CloudTable table = tableClient.GetTableReference("TutorClasses");
+
+            DynamicTableEntity entity = new DynamicTableEntity
+            {
+                PartitionKey = "University of South Florida",
+                RowKey = tutor.EmailAdress
+            };
+
+            IDictionary<string, EntityProperty> d = new Dictionary<string, EntityProperty>() { };
+            foreach (string s in getCurrentListOfCourses())
+            {
+                if (myList.Contains(s))
+                {
+                    d.Add(s, EntityProperty.GeneratePropertyForBool(true));
+                }
+                else d.Add(s, EntityProperty.GeneratePropertyForBool(false));
+
+            }
+            entity.Properties = d;
+            table.ExecuteAsync(TableOperation.InsertOrReplace(entity));
+
+        }
+
+        public void setTutorAvailability_RESET(User tutor)
+        {
+            CloudTable table = tableClient.GetTableReference("TutorAvailability");
+            DynamicTableEntity entity = new DynamicTableEntity
+            {
+                PartitionKey = "University of South Florida",
+                RowKey = tutor.EmailAdress
+            };
+
+            IDictionary<string, EntityProperty> d = new Dictionary<string, EntityProperty>() { };
+            foreach (string s in getCurrentListOfDateTimes()) d.Add(s, EntityProperty.GeneratePropertyForBool(true));
+
+            entity.Properties = d;
+            table.ExecuteAsync(TableOperation.InsertOrReplace(entity));
+        }
+        public ICollection<string> getCurrentListOfCourses()
+        {
+            CloudTable table = tableClient.GetTableReference("TutorClasses");
+            var query = new TableQuery<DynamicTableEntity>();
+            foreach (DynamicTableEntity entity in table.ExecuteQuery(query))
+            {
+                IDictionary<string, EntityProperty> d = entity.WriteEntity(new OperationContext());
+                return d.Keys;
+            }
+            return new List<string>();
+        }
+
+        public ICollection<string> getCurrentListOfDateTimes()
+        {
+            CloudTable table = tableClient.GetTableReference("TutorAvailability");
+            var query = new TableQuery<DynamicTableEntity>();
+            foreach (DynamicTableEntity entity in table.ExecuteQuery(query))
+            {
+                IDictionary<string, EntityProperty> d = entity.WriteEntity(new OperationContext());
+                return d.Keys;
+            }
+            return new List<string>();
+        }
+
+        public bool getAvailability(string searchEmail, string time)
+        {
+            CloudTable tutorAvailabilityTable = tableClient.GetTableReference("TutorAvailability");
+
+            var condition = TableQuery.CombineFilters(
+                TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
+                TableOperators.And,
+                TableQuery.CombineFilters(TableQuery.GenerateFilterCondition("RowKey", QueryComparisons.Equal, searchEmail),
+                TableOperators.And, TableQuery.GenerateFilterConditionForBool(time, QueryComparisons.Equal, true)));
+
+            var query = new TableQuery<TableEntity>().Where(condition);
+            foreach (TableEntity entity in tutorAvailabilityTable.ExecuteQuery(query))
+            {
+                return true;
             }
 
-            return null;
+            return false;
+        }
+
+        public void reserveTutor(User tutor, User student, string time, string course)
+        {
+            CloudTable tutorAvailabilityTable = tableClient.GetTableReference("TutorAvailability");
+            CloudTable registrationTable = tableClient.GetTableReference("RegistrationData");
+            DynamicTableEntity entity = new DynamicTableEntity
+            {
+                PartitionKey = "University of South Florida",
+                RowKey = tutor.EmailAdress
+            };
+
+            entity.Properties.Add("student", EntityProperty.GeneratePropertyForString(student.Name));
+            entity.Properties.Add("time", EntityProperty.GeneratePropertyForString(time));
+            entity.Properties.Add("class", EntityProperty.GeneratePropertyForString(course));
+
+            registrationTable.ExecuteAsync(TableOperation.InsertOrReplace(entity));
         }
 
         public List<User> findTutors_SubjectTime(string time, string subject)
         {
-            CloudTable table = tableClient.GetTableReference("TutorAvailability");
-            CloudTable table2 = tableClient.GetTableReference("UserData");
+            List<User> availableTutors = new List<User>();
+            List<User> allTutors = new List<User>();
+            CloudTable tutorAvailabilityTable = tableClient.GetTableReference("TutorAvailability");
+            CloudTable userAccountsTable = tableClient.GetTableReference("UserAccounts");
+            CloudTable tutorClassesTable = tableClient.GetTableReference("TutorClasses");
 
-            var condition = TableQuery.CombineFilters(
+            var condition1 = TableQuery.CombineFilters(
                TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
                TableOperators.And,
-               TableQuery.CombineFilters(TableQuery.GenerateFilterCondition("Class", QueryComparisons.Equal, subject),
-               TableOperators.And, TableQuery.GenerateFilterCondition($"{time}", QueryComparisons.Equal, "-")));
+               TableQuery.GenerateFilterCondition("Classification", QueryComparisons.Equal, "tutor"));
+            var query1 = new TableQuery<User>().Where(condition1);
 
-            var query = new TableQuery<Availability>().Where(condition);
-
-            List<string> foundTutorEmails = new List<string>();
-            List<User> foundTutors = new List<User>();
-
-            foreach (Availability entity in table.ExecuteQuery(query))
+            foreach (User entity in userAccountsTable.ExecuteQuery(query1))
             {
+                allTutors.Add(entity);
                 var condition2 = TableQuery.CombineFilters(
                 TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
-                TableOperators.And, TableQuery.GenerateFilterCondition("Email", QueryComparisons.Equal, entity.Email));
-                var query2 = new TableQuery<User>().Where(condition);
+                TableOperators.And,
+                TableQuery.CombineFilters(TableQuery.GenerateFilterCondition("RowKey", QueryComparisons.Equal, entity.EmailAdress),
+                TableOperators.And, TableQuery.GenerateFilterConditionForBool(subject, QueryComparisons.Equal, true)));
+                var query2 = new TableQuery<TableEntity>().Where(condition2);
 
-                //dont worry about the complexity lol
-                foreach (User entity2 in table2.ExecuteQuery(query2)) foundTutors.Add(entity2);
+                foreach (TableEntity entity2 in tutorClassesTable.ExecuteQuery(query2))
+                {
+                    var condition3 = TableQuery.CombineFilters(
+                    TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
+                    TableOperators.And,
+                    TableQuery.CombineFilters(TableQuery.GenerateFilterCondition("RowKey", QueryComparisons.Equal, entity.EmailAdress),
+                    TableOperators.And, TableQuery.GenerateFilterConditionForBool(time, QueryComparisons.Equal, true)));
+                    var query3 = new TableQuery<TableEntity>().Where(condition3);
+
+                    foreach (TableEntity entity3 in tutorAvailabilityTable.ExecuteQuery(query3))
+                        foreach (User u in allTutors) if (u.RowKey == entity3.RowKey) availableTutors.Add(u);
+                }
             }
 
-            if (foundTutors.Count > 0)
-            {
-                return foundTutors;
-            }
-            return null;
+            if (availableTutors.Count > 0) return availableTutors;
+            return new List<User>();
         }
 
 
-        //returns time string format: "YYYY-MM-DD,THH" (e.g. "2019-11-11,T16" where T16 = 16:00 hour)
+        //returns time string format: "YYYY_MM_DD_THH" (e.g. "2019_11_11_T16" where T16 = 16:00 hour)
         public string convertBotTimeToString(Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[] time)
         {
-            if (time.Length == 3)
+            if (time[0].Expressions[0].Length == 3)
             {
-                return DateTime.Today.ToString() + "," + time[0].Expressions[0];
+                return "D" + DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH").Remove(10).Replace('-', '_') + "_" + time[0].Expressions[0];
             }
-
             else
             {
-                return time[0].Expressions[0];
+                return "D" + time[0].Expressions[0].Replace('-', '_').Replace(',', '_').Insert(10, "_");
             }
         }
 

@@ -44,7 +44,6 @@ namespace VirtualAssistant.Dialogs
         private async Task<DialogTurnResult> EditProfileAsync(WaterfallStepContext sc, CancellationToken cancellationToken)
         {
             _state = await _accessor.GetAsync(sc.Context, () => new OnboardingState());
-
             if(!string.IsNullOrWhiteSpace(_state.Name) && !string.IsNullOrWhiteSpace(_state.Email))
             {
                 await _responder.ReplyWith(sc.Context, ProfileResponses.ResponseIds.ShowStudentProfile, _state);

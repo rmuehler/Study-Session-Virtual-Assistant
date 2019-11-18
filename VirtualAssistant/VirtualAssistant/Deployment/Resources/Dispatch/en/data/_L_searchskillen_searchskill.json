@@ -56,6 +56,11 @@
       ]
     },
     {
+      "text": "bob",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
       "text": "can bob evans help me with english class on tuesday?",
       "intent": "Search by Tutor",
       "entities": [
@@ -78,13 +83,24 @@
       ]
     },
     {
-      "text": "can i order pizza",
-      "intent": "None",
+      "text": "can i have help at 4pm",
+      "intent": "Search by Subject",
       "entities": []
     },
     {
-      "text": "find me a tutor",
+      "text": "can i have help in european history",
       "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 19,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "can i order pizza",
+      "intent": "None",
       "entities": []
     },
     {
@@ -105,6 +121,17 @@
           "entity": "subject",
           "startPos": 26,
           "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "help in calculus",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 8,
+          "endPos": 15
         }
       ]
     },
@@ -174,16 +201,6 @@
       "entities": []
     },
     {
-      "text": "i want to search by tutor name.",
-      "intent": "Search by Tutor",
-      "entities": []
-    },
-    {
-      "text": "is a specific tutor available?",
-      "intent": "Search by Tutor",
-      "entities": []
-    },
-    {
       "text": "is annabelle availible tomorrow?",
       "intent": "Search by Tutor",
       "entities": []
@@ -211,6 +228,31 @@
       ]
     },
     {
+      "text": "is brody li available to tutor?",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "is caroline offering classes tonight",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "is charlie available ?",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "is derek sults free at 5:30pm?",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "is rebecca offering a session this week",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
       "text": "is steve martin teaching math?",
       "intent": "Search by Tutor",
       "entities": [
@@ -222,19 +264,51 @@
       ]
     },
     {
+      "text": "is there a tutor for program design",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 21,
+          "endPos": 34
+        }
+      ]
+    },
+    {
       "text": "is there a tutor that comprehends this class well available at 7pm?",
       "intent": "Search by Subject",
       "entities": []
     },
     {
-      "text": "logout",
+      "text": "is timothy free this afternoon?",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "sorry",
       "intent": "None",
       "entities": []
     },
     {
-      "text": "search for a tutor",
+      "text": "what is the next open slot for greg firth?",
       "intent": "Search by Tutor",
       "entities": []
+    },
+    {
+      "text": "when is kelly smith next available?",
+      "intent": "Search by Tutor",
+      "entities": []
+    },
+    {
+      "text": "who is the earliest available tutor for linear systems?",
+      "intent": "Search by Subject",
+      "entities": [
+        {
+          "entity": "subject",
+          "startPos": 40,
+          "endPos": 53
+        }
+      ]
     }
   ],
   "settings": []

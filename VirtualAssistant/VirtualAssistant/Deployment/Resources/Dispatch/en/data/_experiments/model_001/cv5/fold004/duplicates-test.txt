@@ -1,3 +1,0 @@
-Utterance	Intents
-hello	None, q_Faq
-what is my name	l_profileskill, q_Faq

@@ -1,2 +1,0 @@
-Utterance	Intents
-sorry	l_General, q_Faq

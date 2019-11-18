@@ -1,9 +1,9 @@
 {
   "qnaDocuments": [
     {
-      "id": 149,
+      "id": 199,
       "answer": "Yes. This service is open to only college students.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Can college student use this service?",
         "Does the user need proof that he or she is a college student?",
@@ -21,9 +21,9 @@
       }
     },
     {
-      "id": 150,
+      "id": 200,
       "answer": "College Students.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Who can use this service?",
         "What type of person is this service for?"
@@ -39,9 +39,9 @@
       }
     },
     {
-      "id": 154,
-      "answer": "This service is currently  a free resource to all college students",
-      "source": "Editorial",
+      "id": 201,
+      "answer": "This service is currently ┬áa free resource to all college students",
+      "source": "custom editorial",
       "questions": [
         "Does this cost anything?",
         "How much is this?",
@@ -61,68 +61,13 @@
       "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
       "context": {
         "isContextOnly": false,
-        "prompts": [
-          {
-            "displayOrder": 0,
-            "qnaId": 155,
-            "qna": {
-              "id": 155,
-              "answer": "The tutors do not accept any money because this is a volunteered service",
-              "source": "Editorial",
-              "questions": [
-                "Can I give the tutor any money as a tip",
-                "Can I secretly pay the tutor?",
-                "Can I offer money to the service?",
-                "Do the tutors accept donations",
-                "Is there a donation option for this service?",
-                "Can I tip the tutor",
-                "How does the payment work?",
-                "How do the tutors make a living doing this?"
-              ],
-              "metadata": [],
-              "alternateQuestions": "",
-              "alternateQuestionClusters": [],
-              "changeStatus": "NoChange",
-              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
-              "context": {
-                "isContextOnly": false,
-                "prompts": []
-              }
-            },
-            "displayText": "Can I give the tutor any money as a tip"
-          },
-          {
-            "displayOrder": 0,
-            "qnaId": 156,
-            "qna": {
-              "id": 156,
-              "answer": "This is a volunteered service.",
-              "source": "Editorial",
-              "questions": [
-                "Why is this free?",
-                "Is this free?",
-                "Is this a service that is for volunteers",
-                "Are the tutors employees of the university?"
-              ],
-              "metadata": [],
-              "alternateQuestions": "",
-              "alternateQuestionClusters": [],
-              "changeStatus": "NoChange",
-              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
-              "context": {
-                "isContextOnly": false,
-                "prompts": []
-              }
-            },
-            "displayText": "Why is this free?"
-          }
-        ]
+        "prompts": []
       }
     },
     {
-      "id": 161,
+      "id": 202,
       "answer": "This is a service that students can log in as either a student or a tutor and receive a tutor session for any college course.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Is this a tutor service?",
         "What is this?",
@@ -145,11 +90,11 @@
       }
     },
     {
-      "id": 168,
+      "id": 203,
       "answer": "As of now, there is no limit to how many times a student uses our service",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
-        "How many courses can a student recieve tutor service\n\n",
+        "How many courses can a student recieve tutor service",
         "Is there a limit to use this service",
         "How many times can I use this a week"
       ],
@@ -164,9 +109,9 @@
       }
     },
     {
-      "id": 169,
+      "id": 204,
       "answer": "There is a benefit that the student will have by utilizing our service, the student would have a higher chance passing the courses if they are being assisted with understanding course material",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Will the tutor help me pass?",
         "What are the chances this service will benefit me?",
@@ -185,11 +130,10 @@
       }
     },
     {
-      "id": 170,
+      "id": 205,
       "answer": "At this moment this service is only in English but if the tutor does speak your native language then they can assist speak in another language. This feature would be added in the near future.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
-        "Hablas español",
         "Is there anyone that speaks in Spanish",
         "Do you have a Spanish translator as a filter on here?",
         "Is there a guarantee that the tutor will help a student pass?",
@@ -198,40 +142,17 @@
       "metadata": [],
       "alternateQuestions": "",
       "alternateQuestionClusters": [],
-      "changeStatus": "NoChange",
+      "changeStatus": "Update",
       "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
       "context": {
         "isContextOnly": false,
-        "prompts": [
-          {
-            "displayOrder": 0,
-            "qnaId": 171,
-            "qna": {
-              "id": 171,
-              "answer": "At this moment we do not have that feature. Please check with us on that in the near future.",
-              "source": "Editorial",
-              "questions": [
-                "Can I have a tutor that speaks certain languages?"
-              ],
-              "metadata": [],
-              "alternateQuestions": "",
-              "alternateQuestionClusters": [],
-              "changeStatus": "NoChange",
-              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
-              "context": {
-                "isContextOnly": false,
-                "prompts": []
-              }
-            },
-            "displayText": "Can I have a tutor that speaks certain languages? "
-          }
-        ]
+        "prompts": []
       }
     },
     {
-      "id": 172,
+      "id": 206,
       "answer": "Any college student can benefit from this service",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Can this service benefit any majors?",
         "Is this for any major?",
@@ -255,9 +176,9 @@
       }
     },
     {
-      "id": 175,
+      "id": 207,
       "answer": "Tutors can meet with the student in person.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Can tutors meet in person?",
         "Is it okay to meet the tutors in person?"
@@ -269,126 +190,13 @@
       "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
       "context": {
         "isContextOnly": false,
-        "prompts": [
-          {
-            "displayOrder": 0,
-            "qnaId": 174,
-            "qna": {
-              "id": 174,
-              "answer": "Study sessions are held at public settings. Coffee shops, libraries, universities, restaurants.",
-              "source": "Editorial",
-              "questions": [
-                "Where are study sessions usually held?",
-                "Where can we study?",
-                "What locations are the best places to have a study session?",
-                "Where do we study?",
-                "Where can we meet",
-                "Best place to meet tutor?",
-                "quiet places to meet to be tutored?",
-                "Where would I study"
-              ],
-              "metadata": [],
-              "alternateQuestions": "",
-              "alternateQuestionClusters": [],
-              "changeStatus": "NoChange",
-              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
-              "context": {
-                "isContextOnly": false,
-                "prompts": []
-              }
-            },
-            "displayText": "What is the best location to meet with a tutor?"
-          },
-          {
-            "displayOrder": 0,
-            "qnaId": 173,
-            "qna": {
-              "id": 173,
-              "answer": "The place where you decide to have your study session is entirely up to you and the tutors comfort. But our best recommendation is for the study session to always take place at a public place. We do not recommend study sessions being held in anyones home due to the safety of both parties.",
-              "source": "Editorial",
-              "questions": [
-                "Should I study with my tutor at my house?",
-                "What if I need to study at home?",
-                "Is it safe to study at my home?",
-                "Can I give my tutor my address to study at my home?",
-                "Is it safe to go to the tutors home?",
-                "Where should I study?",
-                "Can tutors come to the home?"
-              ],
-              "metadata": [],
-              "alternateQuestions": "",
-              "alternateQuestionClusters": [],
-              "changeStatus": "NoChange",
-              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
-              "context": {
-                "isContextOnly": false,
-                "prompts": [
-                  {
-                    "displayOrder": 0,
-                    "qnaId": 174,
-                    "qna": {
-                      "id": 174,
-                      "answer": "Study sessions are held at public settings. Coffee shops, libraries, universities, restaurants.",
-                      "source": "Editorial",
-                      "questions": [
-                        "Where are study sessions usually held?",
-                        "Where can we study?",
-                        "What locations are the best places to have a study session?",
-                        "Where do we study?",
-                        "Where can we meet",
-                        "Best place to meet tutor?",
-                        "quiet places to meet to be tutored?",
-                        "Where would I study"
-                      ],
-                      "metadata": [],
-                      "alternateQuestions": "",
-                      "alternateQuestionClusters": [],
-                      "changeStatus": "NoChange",
-                      "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
-                      "context": {
-                        "isContextOnly": false,
-                        "prompts": []
-                      }
-                    },
-                    "displayText": "Where are study sessions usually held?"
-                  }
-                ]
-              }
-            },
-            "displayText": "Does the session have to be in person?"
-          },
-          {
-            "displayOrder": 0,
-            "qnaId": 160,
-            "qna": {
-              "id": 160,
-              "answer": "This service is safe because it gives the option for the student to only meet with the tutor online.",
-              "source": "Editorial",
-              "questions": [
-                "How can I make sure this service is safe?",
-                "How safe is this service?",
-                "Why is this service safer than regular services?",
-                "Is this service safe?"
-              ],
-              "metadata": [],
-              "alternateQuestions": "",
-              "alternateQuestionClusters": [],
-              "changeStatus": "NoChange",
-              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
-              "context": {
-                "isContextOnly": false,
-                "prompts": []
-              }
-            },
-            "displayText": "If I don't feel comfortable can I meet online?"
-          }
-        ]
+        "prompts": []
       }
     },
     {
-      "id": 179,
+      "id": 208,
       "answer": "Any student that wants to tutor a course must have received an A in the Course. Besides that, there is no other training.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Do tutors need any special training before being hired for the process?",
         "Are the tutors good at the subject?",
@@ -407,9 +215,9 @@
       }
     },
     {
-      "id": 187,
+      "id": 209,
       "answer": "Not at this moment.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Is this service connected with USF?",
         "Is this services connected with Google",
@@ -426,11 +234,11 @@
       }
     },
     {
-      "id": 189,
+      "id": 210,
       "answer": "Unfortunately since this is a volunteered service we can only suggest that you continue the service but with a different tutor.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
-        "What if I don’t like the tutor?"
+        "What if┬áI donΓÇÖt like the tutor?"
       ],
       "metadata": [],
       "alternateQuestions": "",
@@ -443,9 +251,9 @@
       }
     },
     {
-      "id": 191,
+      "id": 211,
       "answer": "You can discontinue to the session right away. If there was any sexual abuse or sexual harassment please report that to use immediatley.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "What if I dont feel comfortable with the tutor"
       ],
@@ -456,38 +264,13 @@
       "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
       "context": {
         "isContextOnly": false,
-        "prompts": [
-          {
-            "displayOrder": 0,
-            "qnaId": 193,
-            "qna": {
-              "id": 193,
-              "answer": "Call 911.",
-              "source": "Editorial",
-              "questions": [
-                "What if I am in danger?",
-                "What if I am not safe?",
-                "What if I was sexually abused?"
-              ],
-              "metadata": [],
-              "alternateQuestions": "",
-              "alternateQuestionClusters": [],
-              "changeStatus": "NoChange",
-              "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
-              "context": {
-                "isContextOnly": false,
-                "prompts": []
-              }
-            },
-            "displayText": "What if I am in danger?"
-          }
-        ]
+        "prompts": []
       }
     },
     {
-      "id": 192,
-      "answer": "Upon your discretion it is your decision to give your personal information to a tutor.  But we strongly advise that you do not give the tutor your personal information. This is based on your comfort.",
-      "source": "Editorial",
+      "id": 212,
+      "answer": "Upon your discretion it is your decision to give your personal information to a tutor. ┬áBut we strongly advise that you do not give the tutor your personal information. This is based on your comfort.",
+      "source": "custom editorial",
       "questions": [
         "How safe is it to give my personal information to the tutor."
       ],
@@ -502,9 +285,9 @@
       }
     },
     {
-      "id": 195,
+      "id": 213,
       "answer": "This would be considered but we have not yet considered opening this service for high school.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Is this service going to open up for high schools in the near future?",
         "Will you ever use this for high schoolers?",
@@ -522,9 +305,9 @@
       }
     },
     {
-      "id": 196,
+      "id": 214,
       "answer": "It depends on the comfort and experience of the tutor.",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Does this service use skype or team viewer for the hearing impaired",
         "What if the person is hearing impaired?",
@@ -542,9 +325,9 @@
       }
     },
     {
-      "id": 198,
+      "id": 215,
       "answer": "Every tutor is a student at a university",
-      "source": "Editorial",
+      "source": "custom editorial",
       "questions": [
         "Who are the tutors?",
         "Where do the tutors come from?",
