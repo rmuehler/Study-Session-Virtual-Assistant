@@ -66,6 +66,9 @@ namespace VirtualAssistant.Dialogs
 
             if (stepContext.Values["time"] == null)
             {
+                await stepContext.Context.SendActivityAsync(MessageFactory.Text("Please ask me again with your preferred time."), cancellationToken);
+                return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
+
                 return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter your preferred time.") }, cancellationToken);
             }
 
@@ -76,9 +79,13 @@ namespace VirtualAssistant.Dialogs
         {
             if (stepContext.Values["time"] == null)
             {
-                Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[] time = new Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[1];
-                time.SetValue(stepContext.Result, 0);
-                stepContext.Values["time"] = time[0];
+
+                await stepContext.Context.SendActivityAsync(MessageFactory.Text("Please ask me again with your preferred time."), cancellationToken);
+                return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
+
+               // Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[] time = new Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[1] { (Microsoft.Bot.Builder.AI.Luis.DateTimeSpec)stepContext.Result };
+               // time.SetValue(stepContext.Result, 0);
+               // stepContext.Values["time"] = time[0];
             }
             return await stepContext.ContinueDialogAsync();
         }

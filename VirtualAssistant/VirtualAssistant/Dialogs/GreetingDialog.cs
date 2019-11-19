@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using VirtualAssistant.Services;
+using System.Collections.Generic;
 
 namespace VirtualAssistant.Dialogs
 {
@@ -92,6 +93,35 @@ namespace VirtualAssistant.Dialogs
                     await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Welcome Back {currentuser.Name}!"), cancellationToken);
                     var userProfile = await _userProfileAccessor.GetAsync(stepContext.Context, () => new UserProfile(), cancellationToken);
                     userProfile.self = currentuser;
+
+                    if (currentuser.Classification == "tutor")
+                    {
+                        Dictionary<int, Dictionary<string, string>> registrations = db.getRegistrationUpdate(currentuser.EmailAdress);
+                        if (registrations.Count == 0)
+                        {
+                            await stepContext.Context.SendActivityAsync(MessageFactory.Text("You have no upcoming reservations."), cancellationToken);
+
+                        }
+                        
+                        else
+                        {
+                            await stepContext.Context.SendActivityAsync(MessageFactory.Text("I found some upcoming reservations for you! Here are the details: "), cancellationToken);
+                        }
+
+                        foreach (var s in registrations)
+                        {
+                            string printout = "";
+                            foreach (var ss in s.Value)
+                            {
+                                printout += ss.Key + ": " + ss.Value + "\r\n";
+                            }
+
+                            await stepContext.Context.SendActivityAsync(MessageFactory.Text($"{printout}"), cancellationToken);
+
+                        }
+                    }
+                   
+
                     return await stepContext.EndDialogAsync(currentuser, cancellationToken: cancellationToken);
                 }
 

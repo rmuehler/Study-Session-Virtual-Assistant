@@ -15259,11 +15259,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
+      "projectUniqueName": "C:\\Users\\mtuzc\\Desktop\\proj2\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
       "projectName": "VirtualAssistant",
-      "projectPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
+      "projectPath": "C:\\Users\\mtuzc\\Desktop\\proj2\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\VirtualAssistant.csproj",
       "packagesPath": "C:\\Users\\mtuzc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mtuzc\\Desktop\\USF\\5-F\\SeniorProject\\Project\\VirtualAssistant\\VirtualAssistant\\obj\\",
+      "outputPath": "C:\\Users\\mtuzc\\Desktop\\proj2\\Virtual-Assistant-for-Finding-Study-Sessions\\VirtualAssistant\\VirtualAssistant\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

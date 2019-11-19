@@ -67,6 +67,57 @@ namespace VirtualAssistant
             return null;
         }
 
+        public Dictionary<int, Dictionary<string, string>> getRegistrationUpdate(string tutorEmail)
+        {
+            Dictionary<int, Dictionary<string, string>> registrations = new Dictionary<int, Dictionary<string, string>>();
+            CloudTable regTable = tableClient.GetTableReference("RegistrationData");
+            int count = 1;
+            var regCondition = TableQuery.GenerateFilterCondition("tutor", QueryComparisons.Equal, tutorEmail);
+            var regQuery = new TableQuery<DynamicTableEntity>().Where(regCondition);
+            
+            foreach (DynamicTableEntity entity in regTable.ExecuteQuery(regQuery))
+            {
+                if (timeCompare(entity.Properties["time"].StringValue) < 0)
+                {
+                    IDictionary<string, EntityProperty> d = entity.WriteEntity(new OperationContext());
+                    Dictionary<string, string> dic = new Dictionary<string, string>();
+
+                    foreach (var pair in d)
+                    {
+                        if (pair.Key == "tutor") continue;
+                        string val = pair.Value.StringValue;
+                        if (pair.Key == "time") val = prettyDateTime(pair.Value.StringValue);
+                        dic.Add(pair.Key, val);
+                    }
+
+                    registrations.Add(count++, dic);
+                }
+            }
+
+            return registrations;
+        }
+
+        //return -1 if yyyy_mm_dd_Thh string format is later than current time
+        public int timeCompare(string time)
+        {
+
+            return DateTime.Compare(DateTime.Now, new DateTime(Int32.Parse(new string(time.Substring(1).Remove(4))),
+                                              Int32.Parse(new string(time.Substring(6).Remove(2))),
+                                              Int32.Parse(new string(time.Substring(9).Remove(2))),
+                                              Int32.Parse(new string(time.Substring(13))),
+                                              0, 0
+                                              ));
+        }
+
+        //convert yyyy_mm_dd_Thh format to a format you can display in chat to users
+        public string prettyDateTime(string time)
+        {
+            return   Int32.Parse(new string(time.Substring(1).Remove(4))) + "/"
+                   + Int32.Parse(new string(time.Substring(6).Remove(2))) + "/"
+                   + Int32.Parse(new string(time.Substring(9).Remove(2))) + " at "
+                   + Int32.Parse(new string(time.Substring(13))) + ":00 EST";
+        }
+
         public ICollection<string> getTutorCourses(string email)
         {
             CloudTable table = tableClient.GetTableReference("TutorClasses");
@@ -176,9 +227,10 @@ namespace VirtualAssistant
             DynamicTableEntity entity = new DynamicTableEntity
             {
                 PartitionKey = "University of South Florida",
-                RowKey = tutor.EmailAdress
+                RowKey = DateTime.Now.Ticks.ToString(),
             };
 
+            entity.Properties.Add("tutor", EntityProperty.GeneratePropertyForString(tutor.EmailAdress));
             entity.Properties.Add("student", EntityProperty.GeneratePropertyForString(student.Name));
             entity.Properties.Add("time", EntityProperty.GeneratePropertyForString(time));
             entity.Properties.Add("class", EntityProperty.GeneratePropertyForString(course));
