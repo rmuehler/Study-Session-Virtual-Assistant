@@ -1,4 +1,10 @@
 {
+  "luis_schema_version": "4.0.0",
+  "versionId": "0.1",
+  "name": "profileskillen_profileskill",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
   "intents": [
     {
       "name": "Edit Profile"
@@ -7,15 +13,38 @@
       "name": "None"
     },
     {
+      "name": "Update Availability"
+    },
+    {
       "name": "View Profile"
     }
   ],
   "entities": [],
   "composites": [],
   "closedLists": [],
+  "patternAnyEntities": [],
   "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "email",
+      "roles": []
+    },
+    {
+      "name": "keyPhrase",
+      "roles": []
+    },
+    {
+      "name": "personName",
+      "roles": []
+    },
+    {
+      "name": "phonenumber",
+      "roles": []
+    }
+  ],
   "model_features": [],
   "regex_features": [],
+  "patterns": [],
   "utterances": [
     {
       "text": "change my # to 8294834",
@@ -35,6 +64,26 @@
     {
       "text": "change my phone number to 8882939",
       "intent": "Edit Profile",
+      "entities": []
+    },
+    {
+      "text": "edit my availability",
+      "intent": "Update Availability",
+      "entities": []
+    },
+    {
+      "text": "goodbye",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "None",
       "entities": []
     },
     {
@@ -63,18 +112,8 @@
       "entities": []
     },
     {
-      "text": "goodbye",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "hello",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "hi",
-      "intent": "None",
+      "text": "i want to see my profile",
+      "intent": "View Profile",
       "entities": []
     },
     {
@@ -83,13 +122,18 @@
       "entities": []
     },
     {
-      "text": "i want to see my profile",
-      "intent": "View Profile",
+      "text": "set my availability",
+      "intent": "Update Availability",
       "entities": []
     },
     {
       "text": "show me my information",
       "intent": "View Profile",
+      "entities": []
+    },
+    {
+      "text": "update availability",
+      "intent": "Update Availability",
       "entities": []
     },
     {
@@ -113,25 +157,5 @@
       "entities": []
     }
   ],
-  "patterns": [],
-  "patternAnyEntities": [],
-  "prebuiltEntities": [
-    {
-      "name": "email",
-      "roles": []
-    },
-    {
-      "name": "personName",
-      "roles": []
-    },
-    {
-      "name": "phonenumber",
-      "roles": []
-    }
-  ],
-  "luis_schema_version": "3.0.0",
-  "versionId": "0.1",
-  "name": "profileskill",
-  "desc": "",
-  "culture": "en-us"
+  "settings": []
 }

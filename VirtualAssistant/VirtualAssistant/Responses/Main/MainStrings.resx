@@ -132,6 +132,27 @@
   <data name="GREETING" xml:space="preserve">
     <value>Hi there!</value>
   </data>
+  <data name="GREETING_BTN_1" xml:space="preserve">
+    <value>How much money does this cost?</value>
+  </data>
+  <data name="GREETING_BTN_1_VALUE" xml:space="preserve">
+    <value>How much money does this cost?</value>
+  </data>
+  <data name="GREETING_BTN_2" xml:space="preserve">
+    <value>Who are the tutors?</value>
+  </data>
+  <data name="GREETING_BTN_2_VALUE" xml:space="preserve">
+    <value>Who are the tutors?</value>
+  </data>
+  <data name="GREETING_BTN_3" xml:space="preserve">
+    <value>Is this service connected with USF?</value>
+  </data>
+  <data name="GREETING_BTN_3_VALUE" xml:space="preserve">
+    <value>Is this service connected with USF?</value>
+  </data>
+  <data name="GREETING_CARD" xml:space="preserve">
+    <value>./Content/Welcome.json</value>
+  </data>
   <data name="GREETING_WITH_NAME" xml:space="preserve">
     <value>Hey, {0}!</value>
   </data>

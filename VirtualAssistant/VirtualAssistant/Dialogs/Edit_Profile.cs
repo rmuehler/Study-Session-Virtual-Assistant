@@ -17,7 +17,7 @@ namespace VirtualAssistant.Dialogs
 {
     public class Edit_Profile : ComponentDialog
     {
-        private IStatePropertyAccessor<OnboardingState> _accessor;
+        private readonly IStatePropertyAccessor<UserProfile> _userProfileAccessor;
         private OnboardingState _state;
         private ProfileResponses _responder = new ProfileResponses();
 
@@ -26,7 +26,7 @@ namespace VirtualAssistant.Dialogs
             IBotTelemetryClient telemetryClient) : base(nameof(Edit_Profile))
         {
             {
-                _accessor = userState.CreateProperty<OnboardingState>(nameof(OnboardingState));
+                _userProfileAccessor = userState.CreateProperty<UserProfile>("UserProfile");
                 InitialDialogId = nameof(Edit_Profile);
 
 
@@ -43,13 +43,18 @@ namespace VirtualAssistant.Dialogs
         }
         private async Task<DialogTurnResult> EditProfileAsync(WaterfallStepContext sc, CancellationToken cancellationToken)
         {
-            _state = await _accessor.GetAsync(sc.Context, () => new OnboardingState());
-            if(!string.IsNullOrWhiteSpace(_state.Name) && !string.IsNullOrWhiteSpace(_state.Email))
+            var userProfile = await _userProfileAccessor.GetAsync(sc.Context, () => new UserProfile(), cancellationToken);
+            User self = userProfile.self;
+            
+            if (self.Classification == "student")
             {
-                await _responder.ReplyWith(sc.Context, ProfileResponses.ResponseIds.ShowStudentProfile, _state);
-                return await sc.EndDialogAsync();
+                await _responder.ReplyWith(sc.Context, ProfileResponses.ResponseIds.ShowStudentProfile, self);
             }
+            else
+            {
+                await _responder.ReplyWith(sc.Context, ProfileResponses.ResponseIds.ShowTutorProfile, self);
 
+            }
 
             return await sc.EndDialogAsync();
         }

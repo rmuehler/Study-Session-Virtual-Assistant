@@ -61,17 +61,6 @@
       "entities": []
     },
     {
-      "text": "can bob evans help me with english class on tuesday?",
-      "intent": "Search by Tutor",
-      "entities": [
-        {
-          "entity": "subject",
-          "startPos": 27,
-          "endPos": 33
-        }
-      ]
-    },
-    {
       "text": "can i get help by a tutor in math at 9am?",
       "intent": "Search by Subject",
       "entities": [
@@ -253,17 +242,6 @@
       "entities": []
     },
     {
-      "text": "is steve martin teaching math?",
-      "intent": "Search by Tutor",
-      "entities": [
-        {
-          "entity": "subject",
-          "startPos": 25,
-          "endPos": 28
-        }
-      ]
-    },
-    {
       "text": "is there a tutor for program design",
       "intent": "Search by Subject",
       "entities": [
@@ -287,11 +265,6 @@
     {
       "text": "sorry",
       "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "what is the next open slot for greg firth?",
-      "intent": "Search by Tutor",
       "entities": []
     },
     {

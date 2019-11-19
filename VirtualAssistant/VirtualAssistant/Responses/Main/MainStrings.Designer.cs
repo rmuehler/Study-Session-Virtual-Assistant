@@ -106,6 +106,69 @@ namespace VirtualAssistant.Responses.Main {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to How much money does this cost?.
+        /// </summary>
+        public static string GREETING_BTN_1 {
+            get {
+                return ResourceManager.GetString("GREETING_BTN_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How much money does this cost?.
+        /// </summary>
+        public static string GREETING_BTN_1_VALUE {
+            get {
+                return ResourceManager.GetString("GREETING_BTN_1_VALUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Who are the tutors?.
+        /// </summary>
+        public static string GREETING_BTN_2 {
+            get {
+                return ResourceManager.GetString("GREETING_BTN_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Who are the tutors?.
+        /// </summary>
+        public static string GREETING_BTN_2_VALUE {
+            get {
+                return ResourceManager.GetString("GREETING_BTN_2_VALUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is this service connected with USF?.
+        /// </summary>
+        public static string GREETING_BTN_3 {
+            get {
+                return ResourceManager.GetString("GREETING_BTN_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is this service connected with USF?.
+        /// </summary>
+        public static string GREETING_BTN_3_VALUE {
+            get {
+                return ResourceManager.GetString("GREETING_BTN_3_VALUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ./Content/Welcome.json.
+        /// </summary>
+        public static string GREETING_CARD {
+            get {
+                return ResourceManager.GetString("GREETING_CARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hey, {0}!.
         /// </summary>
         public static string GREETING_WITH_NAME {

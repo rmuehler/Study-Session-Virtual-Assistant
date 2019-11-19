@@ -43,7 +43,7 @@ namespace VirtualAssistant.Dialogs
 
         private static async Task<DialogTurnResult> AskIfReturningAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Hello, are you a returning user?") }, cancellationToken);
+            return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Were you previously registered with us?") }, cancellationToken);
         }
 
         private static async Task<DialogTurnResult> ReturnResultsAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
@@ -93,6 +93,7 @@ namespace VirtualAssistant.Dialogs
                     await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Welcome Back {currentuser.Name}!"), cancellationToken);
                     var userProfile = await _userProfileAccessor.GetAsync(stepContext.Context, () => new UserProfile(), cancellationToken);
                     userProfile.self = currentuser;
+                    await _userProfileAccessor.SetAsync(stepContext.Context, userProfile, cancellationToken);
 
                     if (currentuser.Classification == "tutor")
                     {
@@ -167,6 +168,7 @@ namespace VirtualAssistant.Dialogs
                 await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {newUser.Name}! You may now use this service."), cancellationToken);
                 var userProfile = await _userProfileAccessor.GetAsync(stepContext.Context, () => new UserProfile(), cancellationToken);
                 userProfile.self = newUser;
+                await _userProfileAccessor.SetAsync(stepContext.Context, userProfile, cancellationToken);
 
                 return await stepContext.EndDialogAsync(newUser, cancellationToken: cancellationToken);
             }
@@ -192,6 +194,8 @@ namespace VirtualAssistant.Dialogs
             await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {newUser.Name}!"), cancellationToken);
             var userProfile = await _userProfileAccessor.GetAsync(stepContext.Context, () => new UserProfile(), cancellationToken);
             userProfile.self = newUser;
+            await _userProfileAccessor.SetAsync(stepContext.Context, userProfile, cancellationToken);
+
             return await stepContext.EndDialogAsync(newUser, cancellationToken: cancellationToken);
         }
     }

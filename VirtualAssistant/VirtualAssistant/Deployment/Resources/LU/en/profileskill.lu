@@ -37,6 +37,12 @@
 - what is my phone number
 
 
+## Update Availability
+- set my availability
+- update availability
+- edit my availability
+
+
 > # Entity definitions
 
 
@@ -46,7 +52,6 @@ $PREBUILT:email
 
 $PREBUILT:personName
 
-$PREBUILT:phonenumber
 
 
 > # Phrase list definitions
@@ -55,5 +60,3 @@ $PREBUILT:phonenumber
 > # List entities
 
 > # RegEx entities
-
-

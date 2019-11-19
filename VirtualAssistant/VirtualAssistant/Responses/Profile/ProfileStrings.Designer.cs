@@ -88,6 +88,15 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Your new information is saved..
+        /// </summary>
+        public static string EDIT_SUCCESS {
+            get {
+                return ResourceManager.GetString("EDIT_SUCCESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sorry, it looks like something went wrong..
         /// </summary>
         public static string ERROR {
@@ -210,6 +219,15 @@ namespace VirtualAssistant.Responses.Profile {
         public static string TUTORPROFILE_PATH {
             get {
                 return ResourceManager.GetString("TUTORPROFILE_PATH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ./Content/TutorAvailability.json.
+        /// </summary>
+        public static string UPDATEAVAILABILITY_PATH {
+            get {
+                return ResourceManager.GetString("UPDATEAVAILABILITY_PATH", resourceCulture);
             }
         }
     }

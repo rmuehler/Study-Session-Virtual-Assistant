@@ -39,6 +39,7 @@ namespace VirtualAssistant
         public void postNewUser(User newUserObject)
         {
             CloudTable table = tableClient.GetTableReference("UserAccounts");
+            table.ExecuteAsync(TableOperation.Delete(getUserFromEmail(newUserObject.EmailAdress)));
             table.ExecuteAsync(TableOperation.InsertOrReplace(newUserObject));
         }
 
@@ -177,6 +178,22 @@ namespace VirtualAssistant
             entity.Properties = d;
             table.ExecuteAsync(TableOperation.InsertOrReplace(entity));
         }
+        public void setTutorAvailability(User tutor, string avl)
+        {
+            CloudTable table = tableClient.GetTableReference("TutorAvailability");
+            DynamicTableEntity entity = new DynamicTableEntity
+            {
+                PartitionKey = "University of South Florida",
+                RowKey = tutor.EmailAdress
+            };
+
+            IDictionary<string, EntityProperty> d = new Dictionary<string, EntityProperty>() { };
+            foreach (string s in getCurrentListOfDateTimes()) d.Add(s, EntityProperty.GeneratePropertyForBool(true));
+
+            entity.Properties = d;
+            table.ExecuteAsync(TableOperation.InsertOrReplace(entity));
+        }
+
         public ICollection<string> getCurrentListOfCourses()
         {
             CloudTable table = tableClient.GetTableReference("TutorClasses");

@@ -54,23 +54,40 @@
             "description": "",
             "authenticationConnections": [],
             "actions": [
-                {
-                    "id": "profileskill_Edit_Profile",
-                    "definition": {
-                        "description": "Sample Skill action with no slots",
-                        "slots": [],
-                        "triggers": {
-                            "utteranceSources": [
-                                {
-                                    "locale": "en",
-                                    "source": [
-                                        "profileskill#Edit_Profile"
-                                    ]
-                                }
-                            ]
-                        }
-                    }
+              {
+                "id": "profileskill_Update_Availability",
+                "definition": {
+                  "description": "Update_Availability",
+                  "slots": [],
+                  "triggers": {
+                    "utteranceSources": [
+                      {
+                        "locale": "en",
+                        "source": [
+                          "profileskill#Update_Availability"
+                        ]
+                      }
+                    ]
+                  }
                 }
+              },
+              {
+                "id": "profileskill_Edit_Profile",
+                "definition": {
+                  "description": "Edit_Profile",
+                  "slots": [],
+                  "triggers": {
+                    "utteranceSources": [
+                      {
+                        "locale": "en",
+                        "source": [
+                          "profileskill#Edit_Profile"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
             ]
         }
     ]

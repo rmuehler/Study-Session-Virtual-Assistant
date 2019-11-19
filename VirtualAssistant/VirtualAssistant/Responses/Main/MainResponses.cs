@@ -43,10 +43,7 @@ namespace VirtualAssistant.Responses.Main
                 {
                     ResponseIds.Greeting,
                     (context, data) =>
-                    MessageFactory.Text(
-                        text: MainStrings.GREETING,
-                        ssml: MainStrings.GREETING,
-                        inputHint: InputHints.AcceptingInput)
+                    BuildGreetingCard(context, data)
                 },
                 { ResponseIds.Help, (context, data) => BuildHelpCard(context, data) },
                 { ResponseIds.NewUserGreeting, (context, data) => BuildNewUserGreetingCard(context, data) },
@@ -59,6 +56,27 @@ namespace VirtualAssistant.Responses.Main
             Register(new DictionaryRenderer(_responseTemplates));
         }
 
+        public static IMessageActivity BuildGreetingCard(ITurnContext turnContext, dynamic data)
+        {
+            var introCard = File.ReadAllText(MainStrings.GREETING_CARD);
+            var card = AdaptiveCard.FromJson(introCard).Card;
+            var attachment = new Attachment(AdaptiveCard.ContentType, content: card);
+
+            var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.IgnoringInput);
+
+            response.SuggestedActions = new SuggestedActions
+            {
+                Actions = new List<CardAction>()
+                {
+                    new CardAction(type: ActionTypes.ImBack, title: MainStrings.GREETING_BTN_1, value: MainStrings.GREETING_BTN_1_VALUE),
+                    new CardAction(type: ActionTypes.ImBack, title: MainStrings.GREETING_BTN_2, value: MainStrings.GREETING_BTN_2_VALUE),
+                    new CardAction(type: ActionTypes.ImBack, title: MainStrings.GREETING_BTN_3, value: MainStrings.GREETING_BTN_3_VALUE),
+                },
+            };
+
+            return response;
+        }
+
         public static IMessageActivity BuildNewUserGreetingCard(ITurnContext turnContext, dynamic data)
         {
             var introCard = File.ReadAllText(MainStrings.INTRO_PATH);
@@ -67,7 +85,7 @@ namespace VirtualAssistant.Responses.Main
 
             
 
-            var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.IgnoringInput);
+            var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.AcceptingInput);
 
 
             

@@ -1,7 +1,7 @@
 {
   "qnaDocuments": [
     {
-      "id": 199,
+      "id": 216,
       "answer": "Yes. This service is open to only college students.",
       "source": "custom editorial",
       "questions": [
@@ -21,7 +21,7 @@
       }
     },
     {
-      "id": 200,
+      "id": 217,
       "answer": "College Students.",
       "source": "custom editorial",
       "questions": [
@@ -39,8 +39,8 @@
       }
     },
     {
-      "id": 201,
-      "answer": "This service is currently ┬áa free resource to all college students",
+      "id": 218,
+      "answer": "This service is currently Γö¼├ía free resource to all college students",
       "source": "custom editorial",
       "questions": [
         "Does this cost anything?",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": 202,
+      "id": 219,
       "answer": "This is a service that students can log in as either a student or a tutor and receive a tutor session for any college course.",
       "source": "custom editorial",
       "questions": [
@@ -90,7 +90,7 @@
       }
     },
     {
-      "id": 203,
+      "id": 220,
       "answer": "As of now, there is no limit to how many times a student uses our service",
       "source": "custom editorial",
       "questions": [
@@ -109,7 +109,7 @@
       }
     },
     {
-      "id": 204,
+      "id": 221,
       "answer": "There is a benefit that the student will have by utilizing our service, the student would have a higher chance passing the courses if they are being assisted with understanding course material",
       "source": "custom editorial",
       "questions": [
@@ -130,10 +130,11 @@
       }
     },
     {
-      "id": 205,
+      "id": 222,
       "answer": "At this moment this service is only in English but if the tutor does speak your native language then they can assist speak in another language. This feature would be added in the near future.",
       "source": "custom editorial",
       "questions": [
+        "Hablas espaΓö£ΓûÆol",
         "Is there anyone that speaks in Spanish",
         "Do you have a Spanish translator as a filter on here?",
         "Is there a guarantee that the tutor will help a student pass?",
@@ -142,7 +143,7 @@
       "metadata": [],
       "alternateQuestions": "",
       "alternateQuestionClusters": [],
-      "changeStatus": "Update",
+      "changeStatus": "NoChange",
       "kbId": "7050d822-1db3-4eed-a169-ec5014bb062b",
       "context": {
         "isContextOnly": false,
@@ -150,7 +151,7 @@
       }
     },
     {
-      "id": 206,
+      "id": 223,
       "answer": "Any college student can benefit from this service",
       "source": "custom editorial",
       "questions": [
@@ -176,7 +177,7 @@
       }
     },
     {
-      "id": 207,
+      "id": 224,
       "answer": "Tutors can meet with the student in person.",
       "source": "custom editorial",
       "questions": [
@@ -194,7 +195,7 @@
       }
     },
     {
-      "id": 208,
+      "id": 225,
       "answer": "Any student that wants to tutor a course must have received an A in the Course. Besides that, there is no other training.",
       "source": "custom editorial",
       "questions": [
@@ -215,7 +216,7 @@
       }
     },
     {
-      "id": 209,
+      "id": 226,
       "answer": "Not at this moment.",
       "source": "custom editorial",
       "questions": [
@@ -234,11 +235,11 @@
       }
     },
     {
-      "id": 210,
+      "id": 227,
       "answer": "Unfortunately since this is a volunteered service we can only suggest that you continue the service but with a different tutor.",
       "source": "custom editorial",
       "questions": [
-        "What if┬áI donΓÇÖt like the tutor?"
+        "What ifΓö¼├íI don╬ô├ç├ût like the tutor?"
       ],
       "metadata": [],
       "alternateQuestions": "",
@@ -251,7 +252,7 @@
       }
     },
     {
-      "id": 211,
+      "id": 228,
       "answer": "You can discontinue to the session right away. If there was any sexual abuse or sexual harassment please report that to use immediatley.",
       "source": "custom editorial",
       "questions": [
@@ -268,8 +269,8 @@
       }
     },
     {
-      "id": 212,
-      "answer": "Upon your discretion it is your decision to give your personal information to a tutor. ┬áBut we strongly advise that you do not give the tutor your personal information. This is based on your comfort.",
+      "id": 229,
+      "answer": "Upon your discretion it is your decision to give your personal information to a tutor. Γö¼├íBut we strongly advise that you do not give the tutor your personal information. This is based on your comfort.",
       "source": "custom editorial",
       "questions": [
         "How safe is it to give my personal information to the tutor."
@@ -285,7 +286,7 @@
       }
     },
     {
-      "id": 213,
+      "id": 230,
       "answer": "This would be considered but we have not yet considered opening this service for high school.",
       "source": "custom editorial",
       "questions": [
@@ -305,7 +306,7 @@
       }
     },
     {
-      "id": 214,
+      "id": 231,
       "answer": "It depends on the comfort and experience of the tutor.",
       "source": "custom editorial",
       "questions": [
@@ -325,7 +326,7 @@
       }
     },
     {
-      "id": 215,
+      "id": 232,
       "answer": "Every tutor is a student at a university",
       "source": "custom editorial",
       "questions": [

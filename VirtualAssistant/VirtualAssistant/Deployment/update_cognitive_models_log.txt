@@ -5,11 +5,11 @@ QnA kb id:68226587-11a3-4dd8-8573-aaede0fcb472, name:Faq already added to virtua
 QnA kb id:7050d822-1db3-4eed-a169-ec5014bb062b, name:ChitChat already added to virtualassistanten_Dispatch.dispatch
 Exporting services for dispatch...
 Exporting searchskillen_searchskill LUIS application...
-Exported LUIS app JSON is at C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_L_searchskillen_searchskill.json
+Exported LUIS app JSON is at C:\Users\mtuzc\Desktop\proj2\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_L_searchskillen_searchskill.json
 Exporting ChitChat QnA kb...
-Exported QnA app JSON is at C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_Q_q_Chitchat.json
+Exported QnA app JSON is at C:\Users\mtuzc\Desktop\proj2\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\data\_Q_q_Chitchat.json
 Expanding kb 7050d822-1db3-4eed-a169-ec5014bb062b with word alterations
 Exporting ChitChat QnA kb...
 QnA kb 68226587-11a3-4dd8-8573-aaede0fcb472 is empty
 Failed exporting one or more services (Luis/QnA), please check your services info (id, key, version) in .dispatch file and make sure they are entered correctly
-Please review your updated dispatch model in C:\Users\mtuzc\Desktop\USF\5-F\SeniorProject\Project\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\Summary*.html
+Please review your updated dispatch model in C:\Users\mtuzc\Desktop\proj2\Virtual-Assistant-for-Finding-Study-Sessions\VirtualAssistant\VirtualAssistant\Deployment\Resources\Dispatch\en\Summary*.html

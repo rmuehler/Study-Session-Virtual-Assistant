@@ -31,6 +31,7 @@ namespace VirtualAssistant.Dialogs
         private BotSettings _settings;
         private BotServices _services;
         private MainResponses _responder = new MainResponses();
+        private readonly IStatePropertyAccessor<UserProfile> _userProfileAccessor;
         private IStatePropertyAccessor<OnboardingState> _onboardingState;
         private IStatePropertyAccessor<SkillContext> _skillContextAccessor;
         private OnboardingState _state;
@@ -46,6 +47,7 @@ namespace VirtualAssistant.Dialogs
             Search_by_Tutor searchtutor,
             Greeting_Dialog greeting_Dialog,
             SubmitDialog submitDialog,
+            Update_Availability updateAvailability,
             List<SkillDialog> skillDialogs,
             IBotTelemetryClient telemetryClient,
             UserState userState)
@@ -56,6 +58,7 @@ namespace VirtualAssistant.Dialogs
             TelemetryClient = telemetryClient;
             _onboardingState = userState.CreateProperty<OnboardingState>(nameof(OnboardingState));
             _skillContextAccessor = userState.CreateProperty<SkillContext>(nameof(SkillContext));
+            _userProfileAccessor = userState.CreateProperty<UserProfile>("UserProfile");
 
             AddDialog(onboardingDialog);
             AddDialog(escalateDialog);
@@ -65,6 +68,8 @@ namespace VirtualAssistant.Dialogs
             AddDialog(greeting_Dialog);
             AddDialog(searchtutor);
             AddDialog(submitDialog);
+            AddDialog(updateAvailability);
+
 
             foreach (var skillDialog in skillDialogs)
             {
@@ -79,19 +84,11 @@ namespace VirtualAssistant.Dialogs
             _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
             var name = _state.ConfuseCounter = 0;
 
+
+           // await view.ReplyWith(dc.Context, MainResponses.ResponseIds.Greeting);
             DialogTurnResult re = await dc.BeginDialogAsync(nameof(Greeting_Dialog));
             var self =  _state.self = (User)re.Result;
             await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
-            
-            
-            if (string.IsNullOrEmpty(onboardingState.Name))
-            {
-                //await view.ReplyWith(dc.Context, MainResponses.ResponseIds.NewUserGreeting);
-            }
-            else
-            {
-                //await view.ReplyWith(dc.Context, MainResponses.ResponseIds.ReturningUserGreeting);
-            }
         }
 
         protected override async Task RouteAsync(DialogContext dc, CancellationToken cancellationToken = default(CancellationToken))
@@ -238,6 +235,16 @@ namespace VirtualAssistant.Dialogs
                                 break;
                             }
 
+                        case profileskillLuis.Intent.Update_Availability:
+                            {
+                                // start escalate dialog
+                                await dc.BeginDialogAsync(nameof(Update_Availability));
+                                break;
+                            }
+
+
+
+
                         case profileskillLuis.Intent.None:
                         default:
                             {
@@ -331,133 +338,41 @@ namespace VirtualAssistant.Dialogs
             if (value.GetType() == typeof(JObject))
             {
                 var submit = JObject.Parse(value.ToString());
-                if (value != null && (string)submit["StudentChoice"] == "Student")
+
+                if (value != null && (string)submit["id"] == "SaveStudentProfile")
                 {
-                    _state= await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
-                    var name = _state.Name = (string)submit["StdName"];
-                    var email = _state.Email = (string)submit["StdEmail"];
-                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
+                    var userProfile = await _userProfileAccessor.GetAsync(dc.Context, () => new UserProfile(), cancellationToken);
+                    User self = userProfile.self;
+                    self.Name = (string)submit["StudentVal"];
+                    self.RowKey = (string)submit["StudentEmailVal"];
+                    await _userProfileAccessor.SetAsync(dc.Context, userProfile, cancellationToken);
+                    Database db = new Database();
+                    db.postNewUser(self);
                     await dc.CancelAllDialogsAsync();
-                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
                     return;
                 }
-                if (value != null && (string)submit["StudentChoice"] == "Tutor")
+                if (value != null && (string)submit["id"] == "SaveTutorProfile")
                 {
-                    _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
-                    var name = _state.Name = (string)submit["TutrName"];
-                    var email = _state.Email = (string)submit["TutrEmail"];
-                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
+                    var userProfile = await _userProfileAccessor.GetAsync(dc.Context, () => new UserProfile(), cancellationToken);
+                    User self = userProfile.self;
+                    self.Name = (string)submit["TutorVal"];
+                    self.RowKey = (string)submit["TutorEmailVal"];
+                    string courses = (string)submit["TutorCourseSelectVal"];
+                    await _userProfileAccessor.SetAsync(dc.Context, userProfile, cancellationToken);
+                    Database db = new Database();
+                    db.setTutorCourses(self, courses);
+                    db.postNewUser(self);
                     await dc.CancelAllDialogsAsync();
-                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
-                    return;
-                }
-                if (value != null && (string)submit["SaveStudentProfile"] == "true")
-                {
-                    _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
-                    var name = _state.Name = (string)submit["StudentVal"];
-                    var email = _state.Email = (string)submit["StudentEmailVal"];
-                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
-                    await dc.CancelAllDialogsAsync();
-                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
-                    return;
-                }
-                if (value != null && (string)submit["SaveTutorProfile"] == "true")
-                {
-                    _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
-                    var name = _state.Name = (string)submit["TutorVal"];
-                    var email = _state.Email = (string)submit["TutorEmailVal"];
-                    await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
-                    await dc.CancelAllDialogsAsync();
-                    await dc.BeginDialogAsync(nameof(OnboardingDialog));
                     return;
                 }
             }
 
-            var forward = true;
-            var ev = dc.Context.Activity.AsEventActivity();
-            if (!string.IsNullOrWhiteSpace(ev.Name))
+
+            var result = await dc.ContinueDialogAsync();
+
+            if (result.Status == DialogTurnStatus.Complete)
             {
-                switch (ev.Name)
-                {
-                    case Events.TimezoneEvent:
-                        {
-                            try
-                            {
-                                var timezone = ev.Value.ToString();
-                                var tz = TimeZoneInfo.FindSystemTimeZoneById(timezone);
-                                var timeZoneObj = new JObject();
-                                timeZoneObj.Add(TimeZone, JToken.FromObject(tz));
-
-                                var skillContext = await _skillContextAccessor.GetAsync(dc.Context, () => new SkillContext());
-                                if (skillContext.ContainsKey(TimeZone))
-                                {
-                                    skillContext[TimeZone] = timeZoneObj;
-                                }
-                                else
-                                {
-                                    skillContext.Add(TimeZone, timeZoneObj);
-                                }
-
-                                await _skillContextAccessor.SetAsync(dc.Context, skillContext);
-                            }
-                            catch
-                            {
-                                await dc.Context.SendActivityAsync(new Activity(type: ActivityTypes.Trace, text: $"Timezone passed could not be mapped to a valid Timezone. Property not set."));
-                            }
-
-                            forward = false;
-                            break;
-                        }
-
-                    case Events.LocationEvent:
-                        {
-                            var location = ev.Value.ToString();
-                            var locationObj = new JObject();
-                            locationObj.Add(Location, JToken.FromObject(location));
-
-                            var skillContext = await _skillContextAccessor.GetAsync(dc.Context, () => new SkillContext());
-                            if (skillContext.ContainsKey(Location))
-                            {
-                                skillContext[Location] = locationObj;
-                            }
-                            else
-                            {
-                                skillContext.Add(Location, locationObj);
-                            }
-
-                            await _skillContextAccessor.SetAsync(dc.Context, skillContext);
-
-                            forward = false;
-                            break;
-                        }
-                    case Events.SubmitButton:
-                        {
-                            break;
-                        }
-
-                    case TokenEvents.TokenResponseEventName:
-                        {
-                            forward = true;
-                            break;
-                        }
-
-                    default:
-                        {
-                            await dc.Context.SendActivityAsync(new Activity(type: ActivityTypes.Trace, text: $"Unknown Event {ev.Name} was received but not processed."));
-                            forward = false;
-                            break;
-                        }
-                }
-            }
-
-            if (forward)
-            {
-                var result = await dc.ContinueDialogAsync();
-
-                if (result.Status == DialogTurnStatus.Complete)
-                {
-                    await CompleteAsync(dc);
-                }
+                await CompleteAsync(dc);
             }
         }
 
@@ -467,7 +382,7 @@ namespace VirtualAssistant.Dialogs
             await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Completed);
 
             // Request feedback on the last activity.
-            await FeedbackMiddleware.RequestFeedbackAsync(dc.Context, Id);
+            //await FeedbackMiddleware.RequestFeedbackAsync(dc.Context, Id);
         }
 
         protected override async Task<InterruptionAction> OnInterruptDialogAsync(DialogContext dc, CancellationToken cancellationToken)

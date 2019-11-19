@@ -26,60 +26,7 @@
     },
     {
       "type": "TextBlock",
-      "size": "medium",
-      "weight": "bolder",
-      "text": "Tutor Availability",
-      "horizontalAlignment": "center"
-    },
-    {
-      "type": "TextBlock",
-      "size": "small",
-      "weight": "bolder",
-      "text": "Dates",
-      "horizontalAlignment": "left"
-    },
-    {
-      "type": "Input.Date",
-      "placeholder": "Due Date",
-      "id": "TutorDateVal",
-      "value": "2017-09-20"
-    },
-    {
-      "type": "TextBlock",
-      "size": "small",
-      "weight": "bolder",
-      "text": "Time",
-      "horizontalAlignment": "left"
-    },
-
-    {
-      "type": "Input.ChoiceSet",
-      "id": "TutorTimeSelectVal",
-      "style": "compact",
-      "value": "1",
-      "choices": [
-        {
-          "title": "9am-11am",
-          "value": "1"
-        },
-        {
-          "title": "11am-2pm",
-          "value": "2"
-        },
-        {
-          "title": "3pm-6pm",
-          "value": "3"
-        },
-        {
-          "title": "6pm-9pm",
-          "value": "4"
-        }
-
-      ]
-    },
-    {
-      "type": "TextBlock",
-      "text": "What course do you teach? (multiselect)"
+      "text": "What courses do you tutor?"
     },
     {
       "type": "Input.ChoiceSet",
@@ -88,44 +35,52 @@
       "value": "1,10",
       "choices": [
         {
-          "title": "Program Design",
-          "value": "1"
+          "title": "Algebra",
+          "value": "algebra"
         },
         {
-          "title": "Computer Organization",
-          "value": "2"
+          "title": "Algorithms",
+          "value": "algorithms"
         },
         {
-          "title": "Object Oriented",
-          "value": "3"
+          "title": "Architecture",
+          "value": "architecture"
         },
         {
-          "title": "Networks",
-          "value": "4"
+          "title": "Biology",
+          "value": "biology"
         },
         {
-          "title": "Logic Design",
-          "value": "5"
+          "title": "Calculus I",
+          "value": "calculus1"
         },
         {
-          "title": "Computer Architecture",
-          "value": "6"
+          "title": "Calculus II",
+          "value": "calculus2"
         },
         {
-          "title": "Alogorithms",
-          "value": "7"
+          "title": "Calculus III",
+          "value": "calculus3"
         },
         {
-          "title": "Operating Systems",
-          "value": "8"
+          "title": "Chemistry",
+          "value": "chemistry"
         },
         {
-          "title": "Physics",
-          "value": "9"
+          "title": "Composition",
+          "value": "composition"
         },
         {
-          "title": "Calculus",
-          "value": "10"
+          "title": "Economics",
+          "value": "economics"
+        },
+        {
+          "title": "Physics I",
+          "value": "physics1"
+        },
+        {
+          "title": "Physics II",
+          "value": "physics2"
         }
       ]
     }
@@ -136,32 +91,7 @@
       "type": "Action.Submit",
       "title": "Submit",
       "data": {
-        "id": "1234567890"
-      }
-    },
-    {
-      "type": "Action.ShowCard",
-      "title": "Comments from Tutor",
-      "card": {
-        "type": "AdaptiveCard",
-        "body": [
-          {
-            "type": "Input.Text",
-            "placeholder": "enter comment",
-            "style": "text",
-            "maxLength": 0,
-            "id": "TutorCommentVal"
-          }
-        ],
-        "actions": [
-          {
-            "type": "Action.Submit",
-            "title": "OK",
-            "data": {
-              "SaveTutorProfile": "true"
-            }
-          }
-        ]
+        "id": "SaveTutorProfile"
       }
     }
   ]
