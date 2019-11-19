@@ -1,0 +1,19 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Welcome to Tutor Search",
+            "color":"accent",
+            "weight": "Bolder",
+            "size": "Medium"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Hi! Thank you for visiting us, I am your virtual assistant. Can I help you get started? Do you have an account with us?",
+            "wrap": true
+        }
+    ]
+}
