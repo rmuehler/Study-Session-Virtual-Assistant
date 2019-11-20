@@ -54,8 +54,7 @@ namespace VirtualAssistant.Dialogs
                 //IMPORTANT: Time string format: "YYYY-MM-DDTHH" (e.g. "2019-11-11T16" where T16 = 16:00 hour)
                 Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[] time = (Microsoft.Bot.Builder.AI.Luis.DateTimeSpec[])stepContext.Values["time"];
                 db.findTutors_SubjectTime(db.convertBotTimeToString(time), db.normalizeCourseName(stepContext.Values["subject"].ToString()));
-                ///////
-
+                //////
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
             }
 

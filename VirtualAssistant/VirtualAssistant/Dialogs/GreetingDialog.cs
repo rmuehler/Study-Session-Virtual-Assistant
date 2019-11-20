@@ -11,13 +11,14 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Dialogs.Choices;
 using VirtualAssistant.Models;
+using VirtualAssistant.Responses.Main;
 using VirtualAssistant.Services;
 
 namespace VirtualAssistant.Dialogs
 {
     public class Greeting_Dialog : ComponentDialog
     {
-        private OnboardingState _state;
+        OnboardingState _state;
         private IStatePropertyAccessor<OnboardingState> _accessor;
 
         public Greeting_Dialog(BotServices botServices,
@@ -50,7 +51,8 @@ namespace VirtualAssistant.Dialogs
 
         private static async Task<DialogTurnResult> AskIfReturningAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
-            
+            var view = new MainResponses();
+            await view.ReplyWith(stepContext.Context, MainResponses.ResponseIds.NewUserGreeting);
             //create set of possible choices (no isn't really needeed)
             Choice choice1 = new Choice("yes");
             choice1.Synonyms = new List<string> { "yeah", "yup", "y", "ye" , "of course", "i am"};
@@ -139,7 +141,7 @@ namespace VirtualAssistant.Dialogs
                 //Get user from database
                 Database db = new Database();
                 User currentuser = db.getUserFromEmail(useremail);
-
+                
                 if (currentuser != null)
                 {
                     await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Welcome Back {currentuser.Name}!"), cancellationToken);
@@ -178,7 +180,6 @@ namespace VirtualAssistant.Dialogs
             {
                 return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions { Prompt = MessageFactory.Text("Please enter which course you will be tutoring for.") }, cancellationToken);
             }
-
             else
             {
                 //Creates the user object
@@ -191,6 +192,13 @@ namespace VirtualAssistant.Dialogs
                 db.postNewUser(newUser);
 
                 await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Thank you for registering, {newUser.Name}! You may now use this service."), cancellationToken);
+
+                //save info in username for easy access
+/*                _state = await _accessor.GetAsync(stepContext.Context, () => new OnboardingState());
+                _state.Name = newUser.Name;
+                _state.Email = newUser.EmailAdress;
+                await _accessor.SetAsync(stepContext.Context, _state, cancellationToken);*/
+
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
             }
         }

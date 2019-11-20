@@ -88,7 +88,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sorry, it looks like something went wrong..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string ERROR {
             get {
@@ -97,7 +97,7 @@ namespace VirtualAssistant.Responses.Profile {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hi there!.
+        ///   Looks up a localized string similar to f.
         /// </summary>
         public static string GREETING {
             get {

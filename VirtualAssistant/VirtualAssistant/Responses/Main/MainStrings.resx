@@ -127,7 +127,7 @@
     <value>I'm sorry, I'm not able to help with that.</value>
   </data>
   <data name="ERROR" xml:space="preserve">
-    <value>Sorry, it looks like something went wrong.</value>
+    <value />
   </data>
   <data name="GREETING" xml:space="preserve">
     <value>Hi there!</value>
@@ -161,10 +161,10 @@
     <value>HELP</value>
   </data>
   <data name="INTRO_PATH" xml:space="preserve">
-    <value>./Content/CreateAccount.json</value>
+    <value>./Content/NewUserGreeting.json</value>
   </data>
   <data name="INTRO_RETURNING" xml:space="preserve">
-    <value>./Content/AccountInfo.json</value>
+    <value>./Content/ReturningUserGreeting.json</value>
   </data>
   <data name="LOGOUT" xml:space="preserve">
     <value>Ok, you're signed out.</value>

@@ -88,7 +88,7 @@ namespace VirtualAssistant.Responses.Main {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sorry, it looks like something went wrong..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string ERROR {
             get {
@@ -188,7 +188,7 @@ namespace VirtualAssistant.Responses.Main {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ./Content/CreateAccount.json.
+        ///   Looks up a localized string similar to ./Content/NewUserGreeting.json.
         /// </summary>
         public static string INTRO_PATH {
             get {
@@ -197,7 +197,7 @@ namespace VirtualAssistant.Responses.Main {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ./Content/AccountInfo.json.
+        ///   Looks up a localized string similar to ./Content/ReturningUserGreeting.json.
         /// </summary>
         public static string INTRO_RETURNING {
             get {
