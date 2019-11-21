@@ -7,17 +7,14 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using VirtualAssistant.Services;
 using VirtualAssistant.Responses.Profile;
-using VirtualAssistant.Responses.Main;
-using Microsoft.Bot.Builder.Dialogs.Choices;
-using System.Collections.Generic;
-using VirtualAssistant.Responses.Onboarding;
+using Microsoft.Bot.Schema;
 using VirtualAssistant.Models;
 
 namespace VirtualAssistant.Dialogs
 {
     public class Edit_Profile : ComponentDialog
     {
-        private readonly IStatePropertyAccessor<UserProfile> _userProfileAccessor;
+        private IStatePropertyAccessor<UserProfile> _userProfileAccessor;
         private OnboardingState _state;
         private ProfileResponses _responder = new ProfileResponses();
 
@@ -34,9 +31,14 @@ namespace VirtualAssistant.Dialogs
                 var editprofile = new WaterfallStep[]
                 {
                 EditProfileAsync,
+                ReturnStuffAsync,
                 };
 
-                AddDialog(new WaterfallDialog(InitialDialogId, editprofile));
+                AddDialog(new WaterfallDialog(nameof(WaterfallDialog), editprofile));
+                AddDialog(new TextPrompt(nameof(TextPrompt)));
+                // The initial child Dialog to run.
+                InitialDialogId = nameof(WaterfallDialog);
+
             }
 
 
@@ -56,13 +58,23 @@ namespace VirtualAssistant.Dialogs
 
             }
 
-            return await sc.EndDialogAsync();
+            var opts = new PromptOptions
+            {
+                Prompt = new Activity
+                {
+                    Type = ActivityTypes.Message,
+                }
+            };
+
+            // Display a Text Prompt and wait for input
+            return await sc.PromptAsync(nameof(TextPrompt), opts);
+        }
+        private async Task<DialogTurnResult> ReturnStuffAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
+        {
+            await stepContext.Context.SendActivityAsync(MessageFactory.Text($"You're all set!"), cancellationToken);
+            return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);
         }
 
-
-        
-
-        
     }
 
 

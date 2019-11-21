@@ -8,53 +8,6 @@
 
 > # QnA pairs
 
-> Source: custom editorial
-## ? How do I use the virtual assistant so that I can find study sessions?
-- How do I use this application?
-- How does this thing work
-- I would like a tutor please, where do I start
-- Please assist in how to use this
-- Give me instructions on how to use this to find a tutor
-- How does this thing work?
-- How do I begin this process?
-- Walk me through this
-- Do I sign in here or create an account?
-
-```markdown
-You need to make an account
-```
-
-> Source: Editorial
-## ? What do I need to list for my student account?
-- What information do I need to give for a student?
-- What do I need to give you for a student account
-- Registration for a student account
-- Student account registration
-- Register for service as a student
-- Need to register as a student
-- Register under a student account
-- Registration for a student
-
-```markdown
-The required data for a student account is your name, email
-```
-
-> Source: Editorial
-## ? Hi I am a tutor, how can I tutor students?
-- I want to open a tutor account
-- Tutor need to create and account
-- Need to create a tutor account asap
-- How to sign up as a tutor
-- Where can I register for this as a tutor
-- tutor sign-up info
-- Information to sign up as a tutor
-- Tutor sign-up please
-- How can I utilize this service as a tutor
-
-```markdown
-You need to create a tutor account with your name, email, availability and courses you teach
-```
-
 > Source: Editorial
 ## ? Can college student use this service?
 - Does the user need proof that he or she is a college student?
@@ -232,5 +185,14 @@ It depends on the comfort and experience of the tutor.
 
 ```markdown
 Every tutor is a student at a university
+```
+
+> Source: Editorial
+## ? What are the common phrases
+- What are the common phrases
+- What phrases do I need to type
+
+```markdown
+Is there a tutor for {class} at {date/time}
 ```
 

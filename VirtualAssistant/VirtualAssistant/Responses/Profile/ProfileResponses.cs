@@ -76,8 +76,11 @@ namespace VirtualAssistant.Responses.Profile
         public static IMessageActivity BuildStudentCardAsync(ITurnContext turnContext, dynamic data)
         {
             var introCard = File.ReadAllText(ProfileStrings.STUDENTPROFILE_PATH);
-            introCard = introCard.Replace("Placeholder Name", data.Name);
-            introCard = introCard.Replace("Placeholder Email", data.EmailAdress);
+            if (data != null)
+            {
+                introCard = introCard.Replace("\"placeholder\": \"Student Name\",", $"\"value\": \"{data.Name}\",");
+                introCard = introCard.Replace("\"placeholder\": \"Student Email\",", $"\"value\": \"{data.EmailAdress}\",");
+            }
             var card = AdaptiveCard.FromJson(introCard).Card;
             var attachment = new Attachment(AdaptiveCard.ContentType, content: card);
             var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.IgnoringInput);
@@ -97,10 +100,14 @@ namespace VirtualAssistant.Responses.Profile
         public static IMessageActivity BuildTutorCard(ITurnContext turnContext, dynamic data)
         {
             var introCard = File.ReadAllText(ProfileStrings.TUTORPROFILE_PATH);
+            if (data != null)
+            {
+                introCard = introCard.Replace("\"placeholder\": \"Tutor Name\",", $"\"value\": \"{data.Name}\",");
+                introCard = introCard.Replace("\"placeholder\": \"Tutor Email\",", $"\"value\": \"{data.EmailAdress}\",");
+            }
+
             var card = AdaptiveCard.FromJson(introCard).Card;
             var attachment = new Attachment(AdaptiveCard.ContentType, content: card);
-            introCard = introCard.Replace("Placeholder Name", data.Name);
-            introCard = introCard.Replace("Placeholder Email", data.EmailAdress);
             var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.AcceptingInput);
             return response;
         }

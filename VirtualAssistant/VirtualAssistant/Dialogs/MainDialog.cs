@@ -25,13 +25,10 @@ namespace VirtualAssistant.Dialogs
 {
     public class MainDialog : RouterDialog
     {
-
-        private const string Location = "location";
-        private const string TimeZone = "timezone";
         private BotSettings _settings;
         private BotServices _services;
         private MainResponses _responder = new MainResponses();
-        private readonly IStatePropertyAccessor<UserProfile> _userProfileAccessor;
+        private IStatePropertyAccessor<UserProfile> _userProfileAccessor;
         private IStatePropertyAccessor<OnboardingState> _onboardingState;
         private IStatePropertyAccessor<SkillContext> _skillContextAccessor;
         private OnboardingState _state;
@@ -84,8 +81,8 @@ namespace VirtualAssistant.Dialogs
             _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
             var name = _state.ConfuseCounter = 0;
 
-
-           // await view.ReplyWith(dc.Context, MainResponses.ResponseIds.Greeting);
+            // await dc.BeginDialogAsync(nameof(Update_Availability));
+            //Task s = view.ReplyWith(dc.Context, MainResponses.ResponseIds.Greeting);
             DialogTurnResult re = await dc.BeginDialogAsync(nameof(Greeting_Dialog));
             var self =  _state.self = (User)re.Result;
             await _onboardingState.SetAsync(dc.Context, _state, cancellationToken);
@@ -103,18 +100,13 @@ namespace VirtualAssistant.Dialogs
             var test = dispatchResult.Entities;
             Console.WriteLine(test.ToString());
 
-
-
             var onboardingState = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
 
             _state = await _onboardingState.GetAsync(dc.Context, () => new OnboardingState());
             User self = _state.self;
 
-
-
             // Identify if the dispatch intent matches any Action within a Skill if so, we pass to the appropriate SkillDialog to hand-off
             var identifiedSkill = SkillRouter.IsSkill(_settings.Skills, intent.ToString());
-            
 
             if (identifiedSkill != null)
             {
@@ -127,6 +119,7 @@ namespace VirtualAssistant.Dialogs
                     await CompleteAsync(dc);
                 }
             }
+
             else if (intent == DispatchLuis.Intent.l_General)
             {
                 // If dispatch result is General luis model
@@ -242,9 +235,6 @@ namespace VirtualAssistant.Dialogs
                                 break;
                             }
 
-
-
-
                         case profileskillLuis.Intent.None:
                         default:
                             {
@@ -341,45 +331,93 @@ namespace VirtualAssistant.Dialogs
 
                 if (value != null && (string)submit["id"] == "SaveStudentProfile")
                 {
+                    Database db = new Database();
+
                     var userProfile = await _userProfileAccessor.GetAsync(dc.Context, () => new UserProfile(), cancellationToken);
                     User self = userProfile.self;
+                    
                     self.Name = (string)submit["StudentVal"];
-                    self.RowKey = (string)submit["StudentEmailVal"];
+                    self.EmailAdress = (string)submit["StudentEmailVal"];
+                    self.EmailAdress = self.EmailAdress.ToLower();
+                    self.Name = self.Name.ToLower();
+                    self.PartitionKey = "University of South Florida";
+                    self.Classification = "student";
+                    userProfile.self = self;
                     await _userProfileAccessor.SetAsync(dc.Context, userProfile, cancellationToken);
-                    Database db = new Database();
+
                     db.postNewUser(self);
-                    await dc.CancelAllDialogsAsync();
-                    return;
                 }
                 if (value != null && (string)submit["id"] == "SaveTutorProfile")
                 {
+                    Database db = new Database();
                     var userProfile = await _userProfileAccessor.GetAsync(dc.Context, () => new UserProfile(), cancellationToken);
                     User self = userProfile.self;
                     self.Name = (string)submit["TutorVal"];
-                    self.RowKey = (string)submit["TutorEmailVal"];
+                    self.EmailAdress = (string)submit["TutorEmailVal"];
+                    self.EmailAdress = self.EmailAdress.ToLower();
+                    self.Name = self.Name.ToLower();
+                    self.PartitionKey = "University of South Florida";
+                    self.Classification = "tutor";
+                    userProfile.self = self;
                     string courses = (string)submit["TutorCourseSelectVal"];
-                    await _userProfileAccessor.SetAsync(dc.Context, userProfile, cancellationToken);
-                    Database db = new Database();
+
+
                     db.setTutorCourses(self, courses);
                     db.postNewUser(self);
+                    await _userProfileAccessor.SetAsync(dc.Context, userProfile, cancellationToken);
+
+                }
+                if (value != null && (string)submit["id"] == "SaveAvailability")
+                {
+                    Database db = new Database();
+                    var userProfile = await _userProfileAccessor.GetAsync(dc.Context, () => new UserProfile(), cancellationToken);
+                    User self = userProfile.self;
+
+                    string sel1 = (string)submit["TutorDayCol1"];
+                    string sel2 = (string)submit["TutorDayCol2"];
+                    string commaDays = sel1;
+                    if (sel2 != null ) commaDays = sel1 + "," + sel2;
+                    string[] days = commaDays.Split(new char[] { ',' });
+
+                    int Tstart = Int32.Parse((string)submit["TutorTimeStart"]);
+                    int Tend = Int32.Parse((string)submit["TutorTimeEnd"]);
+                    List<string> availabilities = new List<string>();
+
+                    foreach (string d in days)
+                    {
+                        for (int i = Tstart; i <= Tend; i++)
+                        {
+                            string hr;
+                            if (i < 10) hr = "0" + i.ToString();
+                            else hr = i.ToString();
+                            DateTime temp = db.GetNextWeekday(DateTime.Today.Date, (DayOfWeek)Int32.Parse(d));
+                            string avl = "D" + temp.Year.ToString() + "_" + temp.Month.ToString() + "_" + temp.Day.ToString() + "_T" + hr;
+                            availabilities.Add(avl);
+                        }
+                    }
+
+                    db.setTutorAvailability(self, availabilities);
                     await dc.CancelAllDialogsAsync();
-                    return;
                 }
             }
 
 
             var result = await dc.ContinueDialogAsync();
 
-            if (result.Status == DialogTurnStatus.Complete)
-            {
-                await CompleteAsync(dc);
-            }
+            //if (result.Status == DialogTurnStatus.Complete)
+            //{
+            //    await CompleteAsync(dc);
+            //}
         }
 
         protected override async Task CompleteAsync(DialogContext dc, DialogTurnResult result = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             // The active dialog's stack ended with a complete status
-            await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Completed);
+            Database db = new Database();
+            var userProfile = await _userProfileAccessor.GetAsync(dc.Context, () => new UserProfile(), cancellationToken);
+            User self = userProfile.self;
+
+            await _responder.ReplyWith(dc.Context, MainResponses.ResponseIds.Completed, self);
 
             // Request feedback on the last activity.
             //await FeedbackMiddleware.RequestFeedbackAsync(dc.Context, Id);

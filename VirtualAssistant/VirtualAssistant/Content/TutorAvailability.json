@@ -37,19 +37,19 @@
                   "choices": [
                     {
                       "title": "Monday",
-                      "value": "M"
+                      "value": "1"
                     },
                     {
                       "title": "Tuesday",
-                      "value": "Tu"
+                      "value": "2"
                     },
                     {
                       "title": "Wednesday",
-                      "value": "W"
+                      "value": "3"
                     },
                     {
                       "title": "Thursday",
-                      "value": "TR"
+                      "value": "4"
                     }
                   ],
                   "style": "expanded"
@@ -68,15 +68,15 @@
                   "choices": [
                     {
                       "title": "Friday",
-                      "value": "F"
+                      "value": "5"
                     },
                     {
                       "title": "Saturday",
-                      "value": "Sa"
+                      "value": "6"
                     },
                     {
                       "title": "Sunday",
-                      "value": "Su"
+                      "value": "0"
                     }
                   ],
                   "style": "expanded"
@@ -113,7 +113,7 @@
               "choices": [
                 {
                   "title": "9am",
-                  "value": "9",
+                  "value": "09",
                   "id": "TutorStart2"
                 },
                 {

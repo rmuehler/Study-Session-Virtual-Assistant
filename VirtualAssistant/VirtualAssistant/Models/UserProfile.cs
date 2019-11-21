@@ -16,7 +16,6 @@ namespace VirtualAssistant
         public int Phonenumber { get; set; }
 
         public string Date { get; set; }
-        public User self { get; set; }
-
+        public User self { get; set; } = new User();
     }
 }

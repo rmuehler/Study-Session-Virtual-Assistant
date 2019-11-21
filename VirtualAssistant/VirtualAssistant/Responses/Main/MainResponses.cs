@@ -27,10 +27,7 @@ namespace VirtualAssistant.Responses.Main
                 {
                     ResponseIds.Completed,
                     (context, data) =>
-                    MessageFactory.Text(
-                        text: MainStrings.COMPLETED,
-                        ssml: MainStrings.COMPLETED,
-                        inputHint: InputHints.AcceptingInput)
+                        BuildCompleteDialog(context, data)
                 },
                 {
                     ResponseIds.Confused,
@@ -56,6 +53,41 @@ namespace VirtualAssistant.Responses.Main
             Register(new DictionaryRenderer(_responseTemplates));
         }
 
+        public static IMessageActivity BuildCompleteDialog(ITurnContext context, dynamic data)
+        {
+            var reply = MessageFactory.Text("What else can I help you with?");
+            reply.Type = ActivityTypes.Message;
+            reply.TextFormat = TextFormatTypes.Plain;
+
+            if (data.Classification == "student")
+            {
+                reply.SuggestedActions = new SuggestedActions()
+                {
+                    Actions = new List<CardAction>()
+                {
+                    new CardAction(){ Title = "Edit Profile", Type=ActionTypes.ImBack, Value="Edit my profile." },
+                    new CardAction(){ Title = "Search", Type=ActionTypes.ImBack, Value="How do I perform a search?" },
+                    }
+                };
+            }
+
+            else
+            {
+                reply.SuggestedActions = new SuggestedActions()
+                {
+                    Actions = new List<CardAction>()
+                {
+                    new CardAction(){ Title = "Edit Profile", Type=ActionTypes.ImBack, Value="Edit my profile." },
+                    new CardAction(){ Title = "Update Availability", Type=ActionTypes.ImBack, Value="Update my availability." },
+
+                }
+                };
+            }
+            
+
+            return reply;
+        }
+
         public static IMessageActivity BuildGreetingCard(ITurnContext turnContext, dynamic data)
         {
             var introCard = File.ReadAllText(MainStrings.GREETING_CARD);
@@ -64,15 +96,15 @@ namespace VirtualAssistant.Responses.Main
 
             var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.IgnoringInput);
 
-            response.SuggestedActions = new SuggestedActions
-            {
-                Actions = new List<CardAction>()
-                {
-                    new CardAction(type: ActionTypes.ImBack, title: MainStrings.GREETING_BTN_1, value: MainStrings.GREETING_BTN_1_VALUE),
-                    new CardAction(type: ActionTypes.ImBack, title: MainStrings.GREETING_BTN_2, value: MainStrings.GREETING_BTN_2_VALUE),
-                    new CardAction(type: ActionTypes.ImBack, title: MainStrings.GREETING_BTN_3, value: MainStrings.GREETING_BTN_3_VALUE),
-                },
-            };
+            //response.SuggestedActions = new SuggestedActions
+            //{
+            //    Actions = new List<CardAction>()
+            //    {
+            //        new CardAction(type: ActionTypes.ImBack, title: MainStrings.GREETING_BTN_1, value: MainStrings.GREETING_BTN_1_VALUE),
+            //        new CardAction(type: ActionTypes.ImBack, title: MainStrings.GREETING_BTN_2, value: MainStrings.GREETING_BTN_2_VALUE),
+            //        new CardAction(type: ActionTypes.ImBack, title: MainStrings.GREETING_BTN_3, value: MainStrings.GREETING_BTN_3_VALUE),
+            //    },
+            //};
 
             return response;
         }
@@ -85,7 +117,7 @@ namespace VirtualAssistant.Responses.Main
 
             
 
-            var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.AcceptingInput);
+            var response = MessageFactory.Attachment(attachment, ssml: card.Speak, inputHint: InputHints.ExpectingInput);
 
 
             

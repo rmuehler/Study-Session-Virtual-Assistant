@@ -17,7 +17,7 @@ namespace VirtualAssistant.Dialogs
 {
     public class Update_Availability : ComponentDialog
     {
-        private readonly IStatePropertyAccessor<UserProfile> _userProfileAccessor;
+        private IStatePropertyAccessor<UserProfile> _userProfileAccessor;
         private OnboardingState _state;
         private ProfileResponses _responder = new ProfileResponses();
 
@@ -44,17 +44,17 @@ namespace VirtualAssistant.Dialogs
         private async Task<DialogTurnResult> UpdateAvailabilityAsync(WaterfallStepContext sc, CancellationToken cancellationToken)
         {
             var userProfile = await _userProfileAccessor.GetAsync(sc.Context, () => new UserProfile(), cancellationToken);
-            User self = userProfile.self;
+            // User self = userProfile.self;
 
-            if (self.Classification == "student")
-            {
-                await sc.Context.SendActivityAsync(MessageFactory.Text("Only tutors can set their availability!"), cancellationToken);
-            }
-            else
-            {
-                await _responder.ReplyWith(sc.Context, ProfileResponses.ResponseIds.UpdateAvailability, self);
+            // if (self.Classification == "student")
+            //{
+            //await sc.Context.SendActivityAsync(MessageFactory.Text("Only tutors can set their availability!"), cancellationToken);
+            // }
+            // else
+            // {
+            await _responder.ReplyWith(sc.Context, ProfileResponses.ResponseIds.UpdateAvailability);//, self);
 
-            }
+           // }
 
             return await sc.EndDialogAsync();
         }

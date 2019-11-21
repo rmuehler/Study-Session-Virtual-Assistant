@@ -11,9 +11,11 @@ namespace VirtualAssistant
         {
             PartitionKey = "University of South Florida";
             Timestamp = DateTime.UtcNow;
+            RowKey = DateTime.Now.Ticks.ToString();
+
         }
         public string Key => PartitionKey;
-        public string EmailAdress => RowKey;
+        public string EmailAdress { get; set; }
         public DateTimeOffset Time => Timestamp;
         public string Classification { get; set; }
         public string Name { get; set; }
@@ -39,15 +41,33 @@ namespace VirtualAssistant
         public void postNewUser(User newUserObject)
         {
             CloudTable table = tableClient.GetTableReference("UserAccounts");
-            table.ExecuteAsync(TableOperation.Delete(getUserFromEmail(newUserObject.EmailAdress)));
+            //table.ExecuteAsync(TableOperation.Delete(getUserFromEmail(newUserObject.RowKey)));
             table.ExecuteAsync(TableOperation.InsertOrReplace(newUserObject));
+        }
+
+        public void delUser(User user)
+        {
+            CloudTable table = tableClient.GetTableReference("UserAccounts");
+            table.ExecuteAsync(TableOperation.Delete(getUserFromEmail(user.EmailAdress)));
+            table.ExecuteAsync(TableOperation.InsertOrReplace(user));
         }
 
         public User getUserFromEmail(string email)
         {
             CloudTable table = tableClient.GetTableReference("UserAccounts");
-            var tableResult = table.ExecuteAsync(TableOperation.Retrieve<User>("University of South Florida", email));
-            return (User)tableResult.Result.Result;
+            var condition = TableQuery.CombineFilters(
+               TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "University of South Florida"),
+               TableOperators.And,
+               TableQuery.GenerateFilterCondition("EmailAdress", QueryComparisons.Equal, email)
+               );
+
+            var query = new TableQuery<User>().Where(condition);
+            foreach (User entity in table.ExecuteQuery(query))
+            {
+                return entity;
+            }
+
+            return null;
         }
 
         public User getUserFromName(string searchName)
@@ -178,7 +198,7 @@ namespace VirtualAssistant
             entity.Properties = d;
             table.ExecuteAsync(TableOperation.InsertOrReplace(entity));
         }
-        public void setTutorAvailability(User tutor, string avl)
+        public void setTutorAvailability(User tutor, List<string> avl)
         {
             CloudTable table = tableClient.GetTableReference("TutorAvailability");
             DynamicTableEntity entity = new DynamicTableEntity
@@ -188,8 +208,8 @@ namespace VirtualAssistant
             };
 
             IDictionary<string, EntityProperty> d = new Dictionary<string, EntityProperty>() { };
-            foreach (string s in getCurrentListOfDateTimes()) d.Add(s, EntityProperty.GeneratePropertyForBool(true));
-
+            //foreach (string s in getCurrentListOfDateTimes()) d.Add(s, EntityProperty.GeneratePropertyForBool(false));
+            foreach (string s in avl) d.Add(s, EntityProperty.GeneratePropertyForBool(true));
             entity.Properties = d;
             table.ExecuteAsync(TableOperation.InsertOrReplace(entity));
         }
@@ -248,7 +268,7 @@ namespace VirtualAssistant
             };
 
             entity.Properties.Add("tutor", EntityProperty.GeneratePropertyForString(tutor.EmailAdress));
-            entity.Properties.Add("student", EntityProperty.GeneratePropertyForString(student.Name));
+            entity.Properties.Add("student", EntityProperty.GeneratePropertyForString(student.EmailAdress));
             entity.Properties.Add("time", EntityProperty.GeneratePropertyForString(time));
             entity.Properties.Add("class", EntityProperty.GeneratePropertyForString(course));
 
@@ -289,7 +309,7 @@ namespace VirtualAssistant
                     var query3 = new TableQuery<TableEntity>().Where(condition3);
 
                     foreach (TableEntity entity3 in tutorAvailabilityTable.ExecuteQuery(query3))
-                        foreach (User u in allTutors) if (u.RowKey == entity3.RowKey) availableTutors.Add(u);
+                        foreach (User u in allTutors) if (u.EmailAdress == entity3.RowKey) availableTutors.Add(u);
                 }
             }
 
@@ -309,6 +329,12 @@ namespace VirtualAssistant
             {
                 return "D" + time[0].Expressions[0].Replace('-', '_').Replace(',', '_').Insert(10, "_");
             }
+        }
+
+        public DateTime GetNextWeekday(DateTime start, DayOfWeek day)
+        {
+            int daysToAdd = ((int)day - (int)start.DayOfWeek + 7) % 7;
+            return start.AddDays(daysToAdd);
         }
 
         public string normalizeCourseName(string course)

@@ -28,15 +28,6 @@
         "I need help with this service."
       ],
       "metadata": []
-    },
-    {
-      "id": 0,
-      "answer": "You still need to provide was information to make an account first",
-      "source": "custom editorial",
-      "questions": [
-        "I just need a tutor"
-      ],
-      "metadata": []
     }
   ],
   "files": [],

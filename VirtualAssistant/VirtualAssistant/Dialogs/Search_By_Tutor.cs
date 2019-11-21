@@ -12,7 +12,7 @@ namespace VirtualAssistant.Dialogs
 {
     public class Search_by_Tutor : ComponentDialog
     {
-        private readonly IStatePropertyAccessor<UserProfile> _userProfileAccessor;
+        private IStatePropertyAccessor<UserProfile> _userProfileAccessor;
 
         public Search_by_Tutor(BotServices botServices,
             UserState userState,

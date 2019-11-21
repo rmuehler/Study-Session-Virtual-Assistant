@@ -8,6 +8,7 @@ using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Schema;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json.Linq;
 
 namespace VirtualAssistant.Bots
 {
@@ -34,6 +35,12 @@ namespace VirtualAssistant.Bots
             {
                 _telemetryClient.TrackTrace($"Timeout in {turnContext.Activity.ChannelId} channel: Bot took too long to respond.", Severity.Information, null);
                 return;
+            }
+            var activity = turnContext.Activity;
+
+            if (string.IsNullOrWhiteSpace(activity.Text) && activity.Value != null)
+            {
+                activity.Text = "l";
             }
 
             await _dialog.RunAsync(turnContext, _conversationState.CreateProperty<DialogState>(nameof(DialogState)), cancellationToken);

@@ -1,19 +1,53 @@
 {
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "type": "AdaptiveCard",
-    "version": "1.0",
-    "body": [
-        {
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "altText": "",
+      "url": "https://i.imgur.com/OlsOTC6.png"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Click below for more information about the Virtual Assistant:",
+      "color": "Accent",
+      "size": "Medium",
+      "weight": "Bolder",
+      "wrap": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.ShowCard",
+      "title": "Student",
+      "card": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
             "type": "TextBlock",
-            "text": "Welcome to Tutor Search",
-            "color":"accent",
-            "weight": "Bolder",
-            "size": "Medium"
-        },
-        {
-            "type": "TextBlock",
-            "text": "Hi! Thank you for visiting us, I am your virtual assistant. Can I help you get started? Do you have an account with us?",
+            "text": "Students can use the service to search for tutors offering free study sessions to USF students.  Tutors are students that have completed a course and wish to volunteer their knowledge.",
+            "horizontalAlignment": "Left",
             "wrap": true
-        }
-    ]
+          }
+        ],
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+      }
+    },
+    {
+      "type": "Action.ShowCard",
+      "title": "Tutor",
+      "card": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "Tutors are USF students that volunteer to provide a study sessions which students can sign up for.  Tutors are able to enter which subjects they wish to offer help in, and pick a schedule that works for them.",
+            "wrap": true
+          }
+        ],
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+      }
+    }
+  ]
 }

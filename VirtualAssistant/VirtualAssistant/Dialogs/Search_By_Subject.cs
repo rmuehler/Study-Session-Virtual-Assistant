@@ -12,7 +12,7 @@ namespace VirtualAssistant.Dialogs
 {
     public class Search_by_Subject : ComponentDialog
     {
-        private readonly IStatePropertyAccessor<UserProfile> _userProfileAccessor;
+        private IStatePropertyAccessor<UserProfile> _userProfileAccessor;
 
         public Search_by_Subject(BotServices botServices,
             UserState userState,
@@ -102,6 +102,15 @@ namespace VirtualAssistant.Dialogs
             {
                 tutorNames.Add(t.Name);
             }
+            if (tutorNames.Count == 0)
+            {
+                return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions
+                {
+                    Prompt = MessageFactory.Text($"Sorry! There are currently no tutors that are available at that time to teach {subject}.")
+                }, cancellationToken);
+
+            }
+
             return await stepContext.PromptAsync(nameof(TextPrompt), new PromptOptions {
                 Prompt = MessageFactory.Text($"I found some tutors that are available at that time to teach {subject}. Please choose one of the following tutors:\n{string.Join(", ", tutorNames)}") }, cancellationToken);
         }
