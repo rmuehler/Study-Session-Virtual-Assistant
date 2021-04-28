@@ -1,4 +1,4 @@
-# Virtual Assistant for Finding Studying Sessions
+# Virtual Assistant for Finding Study Sessions
 
 A chat bot using Microsoft's Bot Services to help students find local study sessions offered by other students.
 
